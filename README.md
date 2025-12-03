@@ -2,7 +2,7 @@
 
 Copy-paste data for your designs. Names, places, companies, prices, and more.
 
-**Live site:** https://lists-eyd.pages.dev
+**Live site:** https://lists.gariasf.com
 
 ## What is this?
 

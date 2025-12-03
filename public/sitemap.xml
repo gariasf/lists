@@ -1,597 +1,597 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lists-eyd.pages.dev/</loc>
+    <loc>https://lists.gariasf.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/names/</loc>
+    <loc>https://lists.gariasf.com/list/names/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/names-en-us/</loc>
+    <loc>https://lists.gariasf.com/list/names-en-us/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/names-en-gb/</loc>
+    <loc>https://lists.gariasf.com/list/names-en-gb/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/names-de-de/</loc>
+    <loc>https://lists.gariasf.com/list/names-de-de/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/names-es-es/</loc>
+    <loc>https://lists.gariasf.com/list/names-es-es/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/names-fr-fr/</loc>
+    <loc>https://lists.gariasf.com/list/names-fr-fr/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/names-nl-nl/</loc>
+    <loc>https://lists.gariasf.com/list/names-nl-nl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/names-pt-pt/</loc>
+    <loc>https://lists.gariasf.com/list/names-pt-pt/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/nameslong/</loc>
+    <loc>https://lists.gariasf.com/list/nameslong/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/namesinitial/</loc>
+    <loc>https://lists.gariasf.com/list/namesinitial/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/celebrities/</loc>
+    <loc>https://lists.gariasf.com/list/celebrities/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/leaders/</loc>
+    <loc>https://lists.gariasf.com/list/leaders/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/jobs/</loc>
+    <loc>https://lists.gariasf.com/list/jobs/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/address-en-us/</loc>
+    <loc>https://lists.gariasf.com/list/address-en-us/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/address-en-gb/</loc>
+    <loc>https://lists.gariasf.com/list/address-en-gb/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/address-en-ca/</loc>
+    <loc>https://lists.gariasf.com/list/address-en-ca/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/address-de-de/</loc>
+    <loc>https://lists.gariasf.com/list/address-de-de/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/address-es-es/</loc>
+    <loc>https://lists.gariasf.com/list/address-es-es/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/address-fr-fr/</loc>
+    <loc>https://lists.gariasf.com/list/address-fr-fr/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/address-nl-nl/</loc>
+    <loc>https://lists.gariasf.com/list/address-nl-nl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/address-pt-br/</loc>
+    <loc>https://lists.gariasf.com/list/address-pt-br/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/cities/</loc>
+    <loc>https://lists.gariasf.com/list/cities/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/cities-nl-nl/</loc>
+    <loc>https://lists.gariasf.com/list/cities-nl-nl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/countries/</loc>
+    <loc>https://lists.gariasf.com/list/countries/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/airports-en/</loc>
+    <loc>https://lists.gariasf.com/list/airports-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/airports-en-us/</loc>
+    <loc>https://lists.gariasf.com/list/airports-en-us/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/gpscoordinates/</loc>
+    <loc>https://lists.gariasf.com/list/gpscoordinates/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/hotels/</loc>
+    <loc>https://lists.gariasf.com/list/hotels/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/companies/</loc>
+    <loc>https://lists.gariasf.com/list/companies/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/companiesfake/</loc>
+    <loc>https://lists.gariasf.com/list/companiesfake/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/banks/</loc>
+    <loc>https://lists.gariasf.com/list/banks/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/budgetbusiness-en/</loc>
+    <loc>https://lists.gariasf.com/list/budgetbusiness-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/budgetcategories-en/</loc>
+    <loc>https://lists.gariasf.com/list/budgetcategories-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/budgetspendings-en/</loc>
+    <loc>https://lists.gariasf.com/list/budgetspendings-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/dunsnumber-en-us/</loc>
+    <loc>https://lists.gariasf.com/list/dunsnumber-en-us/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/ein-en-us/</loc>
+    <loc>https://lists.gariasf.com/list/ein-en-us/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/emailaddresses/</loc>
+    <loc>https://lists.gariasf.com/list/emailaddresses/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/emailsubjects-en/</loc>
+    <loc>https://lists.gariasf.com/list/emailsubjects-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/phone-en-us/</loc>
+    <loc>https://lists.gariasf.com/list/phone-en-us/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/phone-en-gb/</loc>
+    <loc>https://lists.gariasf.com/list/phone-en-gb/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/languages/</loc>
+    <loc>https://lists.gariasf.com/list/languages/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/creditcardnumber/</loc>
+    <loc>https://lists.gariasf.com/list/creditcardnumber/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/creditcardexpiration/</loc>
+    <loc>https://lists.gariasf.com/list/creditcardexpiration/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/creditcardtype/</loc>
+    <loc>https://lists.gariasf.com/list/creditcardtype/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/currencies/</loc>
+    <loc>https://lists.gariasf.com/list/currencies/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/iban/</loc>
+    <loc>https://lists.gariasf.com/list/iban/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/bitcoinaddresses/</loc>
+    <loc>https://lists.gariasf.com/list/bitcoinaddresses/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/prices0to99-dollar/</loc>
+    <loc>https://lists.gariasf.com/list/prices0to99-dollar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/prices0to099-dollar/</loc>
+    <loc>https://lists.gariasf.com/list/prices0to099-dollar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/prices100to999-dollar/</loc>
+    <loc>https://lists.gariasf.com/list/prices100to999-dollar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/pricesthousand-dollar/</loc>
+    <loc>https://lists.gariasf.com/list/pricesthousand-dollar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/prices0to99-euro/</loc>
+    <loc>https://lists.gariasf.com/list/prices0to99-euro/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/prices0to099-euro/</loc>
+    <loc>https://lists.gariasf.com/list/prices0to099-euro/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/prices100to999-euro/</loc>
+    <loc>https://lists.gariasf.com/list/prices100to999-euro/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/pricesthousand-euro/</loc>
+    <loc>https://lists.gariasf.com/list/pricesthousand-euro/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/prices0to99-pound/</loc>
+    <loc>https://lists.gariasf.com/list/prices0to99-pound/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/prices0to099-pound/</loc>
+    <loc>https://lists.gariasf.com/list/prices0to099-pound/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/prices100to999-pound/</loc>
+    <loc>https://lists.gariasf.com/list/prices100to999-pound/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/pricesthousand-pound/</loc>
+    <loc>https://lists.gariasf.com/list/pricesthousand-pound/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/clothes-en/</loc>
+    <loc>https://lists.gariasf.com/list/clothes-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/gifts-en/</loc>
+    <loc>https://lists.gariasf.com/list/gifts-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/food-en/</loc>
+    <loc>https://lists.gariasf.com/list/food-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/fruits-en/</loc>
+    <loc>https://lists.gariasf.com/list/fruits-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/movies/</loc>
+    <loc>https://lists.gariasf.com/list/movies/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/musicartists/</loc>
+    <loc>https://lists.gariasf.com/list/musicartists/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/musicsongs/</loc>
+    <loc>https://lists.gariasf.com/list/musicsongs/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/bookstitles-en/</loc>
+    <loc>https://lists.gariasf.com/list/bookstitles-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/booksauthors/</loc>
+    <loc>https://lists.gariasf.com/list/booksauthors/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/bookspublishers/</loc>
+    <loc>https://lists.gariasf.com/list/bookspublishers/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/booksisbn/</loc>
+    <loc>https://lists.gariasf.com/list/booksisbn/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/events/</loc>
+    <loc>https://lists.gariasf.com/list/events/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/articlessports-en/</loc>
+    <loc>https://lists.gariasf.com/list/articlessports-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/headlinessports-en/</loc>
+    <loc>https://lists.gariasf.com/list/headlinessports-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/durationmarathon/</loc>
+    <loc>https://lists.gariasf.com/list/durationmarathon/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/devicesphones/</loc>
+    <loc>https://lists.gariasf.com/list/devicesphones/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/deviceslaptops/</loc>
+    <loc>https://lists.gariasf.com/list/deviceslaptops/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/devicestablets/</loc>
+    <loc>https://lists.gariasf.com/list/devicestablets/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/fileformats/</loc>
+    <loc>https://lists.gariasf.com/list/fileformats/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/mimetype/</loc>
+    <loc>https://lists.gariasf.com/list/mimetype/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/ipv4/</loc>
+    <loc>https://lists.gariasf.com/list/ipv4/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/ipv6/</loc>
+    <loc>https://lists.gariasf.com/list/ipv6/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/hashmd5/</loc>
+    <loc>https://lists.gariasf.com/list/hashmd5/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/hashsha1/</loc>
+    <loc>https://lists.gariasf.com/list/hashsha1/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/articlestech-en/</loc>
+    <loc>https://lists.gariasf.com/list/articlestech-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/headlinestech-en/</loc>
+    <loc>https://lists.gariasf.com/list/headlinestech-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/colors-en/</loc>
+    <loc>https://lists.gariasf.com/list/colors-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/colorshex/</loc>
+    <loc>https://lists.gariasf.com/list/colorshex/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/colorsrgb/</loc>
+    <loc>https://lists.gariasf.com/list/colorsrgb/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/numbers0to99/</loc>
+    <loc>https://lists.gariasf.com/list/numbers0to99/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/numbers0to099/</loc>
+    <loc>https://lists.gariasf.com/list/numbers0to099/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/numbers100to999/</loc>
+    <loc>https://lists.gariasf.com/list/numbers100to999/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/numbersthousand/</loc>
+    <loc>https://lists.gariasf.com/list/numbersthousand/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/numberpercentages/</loc>
+    <loc>https://lists.gariasf.com/list/numberpercentages/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/calendar-en/</loc>
+    <loc>https://lists.gariasf.com/list/calendar-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/datesddmmy/</loc>
+    <loc>https://lists.gariasf.com/list/datesddmmy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/datesddmmyslash-en/</loc>
+    <loc>https://lists.gariasf.com/list/datesddmmyslash-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/datesmmddydash/</loc>
+    <loc>https://lists.gariasf.com/list/datesmmddydash/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/datesmmddyslash/</loc>
+    <loc>https://lists.gariasf.com/list/datesmmddyslash/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/datestimestamps-en/</loc>
+    <loc>https://lists.gariasf.com/list/datestimestamps-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/durationsong/</loc>
+    <loc>https://lists.gariasf.com/list/durationsong/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/durationmovie/</loc>
+    <loc>https://lists.gariasf.com/list/durationmovie/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/durationshortfilm/</loc>
+    <loc>https://lists.gariasf.com/list/durationshortfilm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/durationsleep/</loc>
+    <loc>https://lists.gariasf.com/list/durationsleep/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/frequency-en/</loc>
+    <loc>https://lists.gariasf.com/list/frequency-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/adjectives-en/</loc>
+    <loc>https://lists.gariasf.com/list/adjectives-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/objects-en/</loc>
+    <loc>https://lists.gariasf.com/list/objects-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/animals-en/</loc>
+    <loc>https://lists.gariasf.com/list/animals-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/dinosaurs-en/</loc>
+    <loc>https://lists.gariasf.com/list/dinosaurs-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/excuses-en/</loc>
+    <loc>https://lists.gariasf.com/list/excuses-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/phobias-en/</loc>
+    <loc>https://lists.gariasf.com/list/phobias-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/navigation-en/</loc>
+    <loc>https://lists.gariasf.com/list/navigation-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/articlesscience-en/</loc>
+    <loc>https://lists.gariasf.com/list/articlesscience-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/articlesworld-en/</loc>
+    <loc>https://lists.gariasf.com/list/articlesworld-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/headlinesscience-en/</loc>
+    <loc>https://lists.gariasf.com/list/headlinesscience-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/headlinesworld-en/</loc>
+    <loc>https://lists.gariasf.com/list/headlinesworld-en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/colleges-en-us/</loc>
+    <loc>https://lists.gariasf.com/list/colleges-en-us/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/carbrands/</loc>
+    <loc>https://lists.gariasf.com/list/carbrands/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lists-eyd.pages.dev/list/carmodels/</loc>
+    <loc>https://lists.gariasf.com/list/carmodels/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

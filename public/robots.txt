@@ -62,4 +62,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://lists-eyd.pages.dev/sitemap.xml
+Sitemap: https://lists.gariasf.com/sitemap.xml
