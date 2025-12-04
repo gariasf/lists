@@ -637,8 +637,14 @@ button {
 /* Responsive */
 @media (max-width: 900px) {
   .header {
-    padding: 0 10px;
-    height: 30px;
+    padding: 0 16px;
+    height: 52px;
+    border-bottom: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .header-logo {
+    font-size: 1.35rem;
   }
 
   .header-nav {
@@ -650,27 +656,42 @@ button {
   }
 
   .category-nav {
-    padding: 20px 10px;
+    padding: 16px;
+    padding-top: 12px;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    gap: 8px;
+    background: var(--color-background);
+    position: sticky;
+    top: 52px;
+    z-index: 50;
   }
 
   .category-pill {
-    margin: 0 2px;
+    margin: 0;
     font-size: 13px;
-    padding: 8px 10px 9px;
+    padding: 10px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .category-pill.active {
+    box-shadow: 0 2px 8px rgba(41, 121, 255, 0.3);
   }
 
   .list-grid {
-    padding: 0 10px 10px;
-    gap: 5px;
+    padding: 8px 16px 24px;
+    gap: 12px;
     grid-template-columns: 1fr;
   }
 
   .list-card {
     height: auto;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 16px 18px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.04);
   }
 
   .list-card::before {
@@ -678,8 +699,10 @@ button {
   }
 
   .list-card-title {
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 500;
     margin: 0;
+    color: var(--color-text);
   }
 
   .list-card-items {
@@ -694,12 +717,17 @@ button {
     transform: none;
   }
 
+  .list-card:active {
+    background: var(--color-accent-light);
+    transform: scale(0.98);
+  }
+
   .list-page {
     padding: 1rem;
   }
 
   .list-page-container {
-    padding: 20px 10px 0;
+    padding: 20px 16px 0;
     margin-top: 10px;
   }
 
