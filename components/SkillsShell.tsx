@@ -40,7 +40,6 @@ const SKILL_ICONS: Record<string, React.ComponentType> = {
 
 const SKILL_INSTALL_CMD =
   'mkdir -p .claude/skills && curl -sL https://lists.gariasf.com/claude-skill/lists.tar.gz | tar -xz -C .claude/skills'
-const MCP_INSTALL_CMD = 'claude mcp add lists https://lists.gariasf.com/mcp'
 
 export default function SkillsShell({ allLists }: { allLists: CatalogEntry[] }) {
   const { openPalette } = usePalette()
@@ -201,61 +200,34 @@ export default function SkillsShell({ allLists }: { allLists: CatalogEntry[] }) 
               <div className="claude-cta-head">
                 <div className="claude-cta-eyebrow">Use with Claude Code</div>
                 <div className="claude-cta-title">
-                  Generate from any project
+                  Install as a local Skill
                 </div>
                 <p className="claude-cta-desc">
-                  Drop a single SKILL.md into your project to give Claude
-                  access to all 365 lists and 5 generators. Or wire the
-                  MCP server up with one CLI command.
+                  Bundled tarball: all 365 lists + composition recipes
+                  for the five built-in scenarios. Unpacks into{' '}
+                  <code>.claude/skills/lists/</code>. Zero network
+                  calls after install — Claude is the generator.
                 </p>
               </div>
-              <div className="claude-cta-grid">
-                <div className="claude-cta-card">
-                  <h3>Install as a Skill (local, offline)</h3>
-                  <p>
-                    Bundled tarball: all 365 lists + composition recipes.
-                    Unpacks into <code>.claude/skills/lists/</code>.
-                    Zero network calls after install.
-                  </p>
-                  <pre>{SKILL_INSTALL_CMD}</pre>
-                  <div className="claude-cta-actions">
-                    <a
-                      className="btn btn-primary"
-                      href="/claude-skill/lists.tar.gz"
-                      download="lists.tar.gz"
-                    >
-                      <Download />
-                      Download bundle (~585 KB)
-                    </a>
-                    <button
-                      type="button"
-                      className="btn btn-secondary"
-                      onClick={() => copyText(SKILL_INSTALL_CMD, 'skill')}
-                    >
-                      {copied === 'skill' ? <Check /> : <Copy />}
-                      {copied === 'skill' ? 'Copied' : 'Copy command'}
-                    </button>
-                  </div>
-                </div>
-                <div className="claude-cta-card">
-                  <h3>Or wire up via MCP (remote)</h3>
-                  <p>
-                    Hits this site over the network. Useful if you want
-                    fresh data + the AI generators rather than the local
-                    bundle. Endpoint:{' '}
-                    <code>https://lists.gariasf.com/mcp</code>.
-                  </p>
-                  <pre>{MCP_INSTALL_CMD}</pre>
-                  <div className="claude-cta-actions">
-                    <button
-                      type="button"
-                      className="btn btn-primary"
-                      onClick={() => copyText(MCP_INSTALL_CMD, 'mcp')}
-                    >
-                      {copied === 'mcp' ? <Check /> : <Copy />}
-                      {copied === 'mcp' ? 'Copied' : 'Copy command'}
-                    </button>
-                  </div>
+              <div className="claude-cta-card">
+                <pre>{SKILL_INSTALL_CMD}</pre>
+                <div className="claude-cta-actions">
+                  <a
+                    className="btn btn-primary"
+                    href="/claude-skill/lists.tar.gz"
+                    download="lists.tar.gz"
+                  >
+                    <Download />
+                    Download bundle (~585 KB)
+                  </a>
+                  <button
+                    type="button"
+                    className="btn btn-secondary"
+                    onClick={() => copyText(SKILL_INSTALL_CMD, 'skill')}
+                  >
+                    {copied === 'skill' ? <Check /> : <Copy />}
+                    {copied === 'skill' ? 'Copied' : 'Copy command'}
+                  </button>
                 </div>
               </div>
             </div>

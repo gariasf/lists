@@ -2,7 +2,7 @@
  * Per-IP + global rate limiting for AI endpoints, backed by Workers KV.
  *
  * Two kinds:
- *   - "llm"   for any Llama-grade call (generate / skill / augment / mcp gen)
+ *   - "llm"   for any Llama-grade call (generate / skill / augment)
  *   - "embed" for the much cheaper bge embedding (semantic search)
  *
  * Hard ceilings are deliberately well below the Workers AI 10K-neurons-per-day
