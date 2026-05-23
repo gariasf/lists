@@ -83,7 +83,7 @@ export default async function RootLayout({
     category: l.category,
   }));
 
-  const jsonLd = {
+  const webAppLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: "Lists",
@@ -96,6 +96,23 @@ export default async function RootLayout({
       "@type": "Offer",
       price: "0",
       priceCurrency: "USD",
+    },
+  };
+
+  const webSiteLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Lists",
+    url: BASE_URL,
+    description:
+      "365 curated lists of realistic mock data for designers and developers.",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${BASE_URL}/?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
     },
   };
 
@@ -114,7 +131,11 @@ export default async function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteLd) }}
         />
       </head>
       <body>
