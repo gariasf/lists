@@ -232,7 +232,18 @@ export default function CommandPalette() {
     (slug: string) => {
       pushRecent(slug)
       closePalette()
-      router.push(`/list/${slug}/`)
+      const href = `/list/${slug}/`
+      const doc = document as Document & {
+        startViewTransition?: (cb: () => void | Promise<void>) => unknown
+      }
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      if (doc.startViewTransition && !reduced) {
+        doc.startViewTransition(() => {
+          router.push(href)
+        })
+      } else {
+        router.push(href)
+      }
     },
     [pushRecent, closePalette, router],
   )

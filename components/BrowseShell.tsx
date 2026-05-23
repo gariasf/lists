@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo, useState, useEffect, useRef } from 'react'
-import Link from 'next/link'
+import Link from '@/components/TLink'
 import { useSearchParams } from 'next/navigation'
 import type { ListItem, Category } from '@/lib/types'
 import { CATEGORIES } from '@/lib/types'
@@ -94,7 +94,12 @@ function PreviewCard({ list, onCopyAll }: { list: ListItem; onCopyAll: (list: Li
           <ListIcon list={list} />
         </span>
         <div style={{ flex: 1, minWidth: 0 }}>
-          <h2 className="ls-card-title">{list.name}</h2>
+          <h2
+            className="ls-card-title"
+            style={{ viewTransitionName: `t-${list.slug}` }}
+          >
+            {list.name}
+          </h2>
           <div className="ls-card-sub">
             {list.items.length} items{isHex ? ' · hex' : ''}
           </div>
@@ -136,7 +141,12 @@ function MobileRow({ list }: { list: ListItem }) {
           <ListIcon list={list} />
         </span>
         <div style={{ flex: 1, minWidth: 0 }}>
-          <div className="m-row-title">{list.name}</div>
+          <div
+            className="m-row-title"
+            style={{ viewTransitionName: `t-${list.slug}` }}
+          >
+            {list.name}
+          </div>
           <div className="m-row-sub">{list.items.length} items</div>
         </div>
         <span className="m-row-chev">

@@ -720,6 +720,45 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   color: var(--color-success);
 }
 
+/* View transitions */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 220ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+::view-transition-old(root) {
+  animation-name: vt-root-out;
+}
+::view-transition-new(root) {
+  animation-name: vt-root-in;
+}
+
+@keyframes vt-root-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes vt-root-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Named-element morph (list-card title → detail title): tune for "intentional"
+   feel — slower than the root crossfade, snappy easing. */
+::view-transition-group(*) {
+  animation-duration: 380ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root),
+  ::view-transition-group(*),
+  ::view-transition-image-pair(*) {
+    animation: none !important;
+  }
+}
+
 /* Command palette */
 .cmd-overlay {
   position: fixed;
