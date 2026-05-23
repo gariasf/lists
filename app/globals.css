@@ -150,8 +150,8 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 
 .ls-brand-name {
   font-size: 15px;
-  font-weight: 500;
-  letter-spacing: -0.005em;
+  font-weight: 600;
+  letter-spacing: -0.015em;
 }
 
 .ls-brand-beta {
@@ -165,12 +165,12 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 }
 
 .ls-side-label {
-  font-size: 10.5px;
+  font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.09em;
   color: var(--text-subdued);
-  padding: 14px 12px 6px;
-  font-weight: 500;
+  padding: 16px 12px 8px;
+  font-weight: 600;
 }
 
 .ls-side-link {
@@ -290,6 +290,12 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 .ls-icon-btn svg { width: 14px; height: 14px; }
 .ls-icon-btn:hover { background: var(--bg-surface-hover); }
 
+.ls-icon-btn.ghost {
+  background: transparent;
+  box-shadow: none;
+}
+.ls-icon-btn.ghost:hover { background: var(--bg-surface-inset); }
+
 /* Main content */
 .ls-main {
   display: flex;
@@ -315,9 +321,9 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 }
 
 .ls-h1 {
-  font-size: 26px;
-  font-weight: 500;
-  letter-spacing: -0.012em;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.022em;
   line-height: 1.1;
   margin: 0;
 }
@@ -382,27 +388,44 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   gap: 14px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1280px) {
   .ls-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+.ls-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 64px 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.ls-empty p { margin: 0; }
 
 .ls-card {
   background: var(--bg-container);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-border-xs);
-  padding: 16px 16px 12px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 12px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: box-shadow 150ms ease-out;
+  transition: box-shadow 180ms ease-out, transform 180ms ease-out;
   color: inherit;
   text-decoration: none;
 }
 
-.ls-card:hover { box-shadow: var(--shadow-border-sm); }
+.ls-card:hover {
+  box-shadow:
+    0 6px 12px -3px rgba(11, 11, 11, 0.08),
+    0 0 0 1px rgba(11, 11, 11, 0.06);
+  transform: translateY(-2px);
+}
 
 .ls-card-head {
   display: flex;
@@ -414,7 +437,7 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   width: 26px;
   height: 26px;
   border-radius: 7px;
-  background: var(--bg-surface-inset);
+  background: transparent;
   color: var(--text-secondary);
   display: grid;
   place-items: center;
@@ -459,7 +482,7 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   position: absolute;
   inset: auto 0 0 0;
   height: 32px;
-  background: linear-gradient(to bottom, rgba(247, 247, 247, 0), var(--bg-container-inset));
+  background: linear-gradient(to bottom, transparent, var(--bg-container-inset));
   pointer-events: none;
 }
 
@@ -472,24 +495,32 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 .ls-card-foot {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 8px;
   color: var(--text-subdued);
   font-size: 11px;
+  min-height: 26px;
 }
 
 .ls-card-foot .copy {
-  margin-left: auto;
   display: inline-flex;
   align-items: center;
   gap: 5px;
   color: var(--text-secondary);
-  padding: 4px 8px;
+  padding: 5px 10px;
   border-radius: 6px;
   background: var(--bg-surface-inset);
   font-size: 11px;
   font-weight: 500;
   border: 0;
   font-family: inherit;
+  transition: background 150ms ease-out, color 150ms ease-out, box-shadow 150ms ease-out;
+}
+
+.ls-card:hover .copy {
+  background: var(--bg-container);
+  box-shadow: var(--shadow-border-xs);
+  color: var(--text-primary);
 }
 
 .ls-card-foot .copy svg { width: 11px; height: 11px; }
@@ -577,11 +608,15 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 }
 
 .ls-detail-head {
-  padding: 22px 24px 18px;
-  border-bottom: 1px solid var(--border-tertiary);
+  padding: 22px 24px 14px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.ls-detail-tabs {
+  padding: 0 24px 14px;
+  border-bottom: 1px solid var(--border-tertiary);
 }
 
 .ls-detail-title-row {
@@ -592,9 +627,9 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 }
 
 .ls-detail-title {
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: -0.01em;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.018em;
   margin: 0;
 }
 
@@ -615,13 +650,13 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 .ls-detail-list {
   list-style: none;
   margin: 0;
-  padding: 4px 0;
+  padding: 6px 14px;
   columns: 2;
-  column-gap: 0;
+  column-gap: 24px;
 }
 
 @media (max-width: 700px) {
-  .ls-detail-list { columns: 1; }
+  .ls-detail-list { columns: 1; column-gap: 0; padding: 6px 10px; }
 }
 
 .ls-detail-item {
@@ -629,16 +664,15 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 9px 24px;
+  padding: 8px 10px;
   font-family: var(--font-mono);
   font-size: 12.5px;
   color: var(--text-primary);
-  border-top: 1px solid var(--border-subdued);
   cursor: pointer;
-  line-height: 1;
+  line-height: 1.2;
+  border-radius: 6px;
 }
 
-.ls-detail-item:first-child { border-top: 0; }
 .ls-detail-item:hover { background: var(--bg-container-hover); }
 
 .ls-detail-item .idx {
@@ -660,17 +694,21 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 .ls-detail-item .copy-btn {
   margin-left: auto;
   color: var(--text-subdued);
-  opacity: 0;
+  opacity: 0.35;
   width: 22px;
   height: 22px;
   display: grid;
   place-items: center;
   border-radius: 5px;
   flex: 0 0 22px;
+  transition: opacity 120ms ease-out, color 120ms ease-out;
 }
 
 .ls-detail-item:hover .copy-btn,
-.ls-detail-item:focus-visible .copy-btn { opacity: 1; }
+.ls-detail-item:focus-visible .copy-btn {
+  opacity: 1;
+  color: var(--text-primary);
+}
 
 .ls-detail-item .copy-btn svg { width: 12px; height: 12px; }
 
@@ -684,12 +722,13 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   position: fixed;
   inset: 0;
   z-index: 1000;
-  background: rgba(11, 11, 11, 0.22);
+  background: rgba(11, 11, 11, 0.32);
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 12vh 16px 16px;
   animation: cmd-fade-in 120ms ease-out;
+  backdrop-filter: blur(2px);
 }
 
 @keyframes cmd-fade-in {
@@ -702,17 +741,18 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   background: var(--bg-container);
   border-radius: 14px;
   box-shadow:
-    0 24px 60px rgba(11, 11, 11, 0.18),
+    0 32px 80px rgba(11, 11, 11, 0.22),
+    0 2px 6px rgba(11, 11, 11, 0.06),
     0 0 0 1px rgba(11, 11, 11, 0.08);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   max-height: 70vh;
-  animation: cmd-pop 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  animation: cmd-pop 180ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes cmd-pop {
-  from { opacity: 0; transform: translateY(-8px) scale(0.985); }
+  from { opacity: 0; transform: translateY(6px) scale(0.985); }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
@@ -747,16 +787,6 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   color: var(--text-subdued);
 }
 
-.cmd-esc {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--text-subdued);
-  background: var(--bg-surface-inset);
-  padding: 2px 7px;
-  border-radius: 4px;
-  flex: 0 0 auto;
-}
-
 .cmd-scroll {
   overflow-y: auto;
   flex: 1;
@@ -764,22 +794,47 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 }
 
 .cmd-empty {
-  padding: 28px 18px;
+  padding: 36px 18px 32px;
   font-size: 13px;
   color: var(--text-secondary);
   text-align: center;
 }
 
-.cmd-group-label {
-  font-size: 10.5px;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
+.cmd-empty-title {
+  font-size: 14px;
   font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.005em;
+}
+
+.cmd-empty-sub {
+  font-size: 12.5px;
   color: var(--text-subdued);
-  padding: 14px 18px 6px;
+  line-height: 1.7;
+}
+
+.cmd-kbd {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  background: var(--bg-surface-inset);
+  padding: 2px 7px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.cmd-group-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-weight: 600;
+  color: var(--text-subdued);
+  padding: 14px 18px 8px;
 }
 
 .cmd-row {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -850,6 +905,8 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   place-items: center;
   background: transparent;
   border: 0;
+  opacity: 0;
+  transition: opacity 80ms ease-out;
 }
 
 .cmd-row .pin svg {
@@ -857,17 +914,34 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   height: 13px;
 }
 
+.cmd-row:hover .pin,
+.cmd-row.on .pin,
+.cmd-row .pin.on {
+  opacity: 1;
+}
+
 .cmd-row .pin:hover {
   color: var(--text-primary);
-  background: var(--bg-container);
+  background: var(--bg-surface-inset);
 }
 
 .cmd-row .pin.on {
-  color: var(--color-black);
+  color: var(--text-primary);
 }
 
 .cmd-row.on {
   background: var(--bg-surface-inset);
+}
+
+.cmd-row.on::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: var(--color-black);
+  border-radius: 0 2px 2px 0;
 }
 
 .cmd-row.on .arr {
@@ -885,20 +959,32 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   padding: 10px 18px;
   border-top: 1px solid var(--border-tertiary);
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 18px;
   font-size: 11.5px;
-  color: var(--text-secondary);
-  background: var(--bg-surface-inset);
+  background: var(--bg-container);
   flex-wrap: wrap;
+}
+
+.cmd-foot-hints {
+  display: flex;
+  gap: 18px;
+  color: var(--text-secondary);
+}
+
+.cmd-foot-status {
+  color: var(--text-subdued);
+  font-variant-numeric: tabular-nums;
 }
 
 .cmd-foot .k {
   font-family: var(--font-mono);
-  background: var(--bg-container);
+  background: var(--bg-surface-inset);
   padding: 1px 6px;
   border-radius: 4px;
-  box-shadow: var(--shadow-border-xs);
   margin-right: 6px;
+  color: var(--text-primary);
 }
 
 /* Code preview block (JSON/CSV/TS output) */
@@ -929,28 +1015,63 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 .rail-card + .rail-card { margin-top: 14px; }
 
 .rail-eyebrow {
-  font-size: 10.5px;
+  font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.09em;
   color: var(--text-subdued);
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 12px;
+}
+
+.rail-card-hero { padding: 20px 20px 16px; }
+
+.rail-hero {
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-subdued);
+  margin-bottom: 14px;
+}
+
+.rail-hero-value {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.rail-hero-label {
+  font-size: 12px;
+  color: var(--text-subdued);
+  margin-top: 2px;
+}
+
+.rail-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
 }
 
 .rail-stat {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 6px 0;
-  font-size: 12.5px;
-  color: var(--text-secondary);
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rail-stat .lbl {
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-subdued);
+  font-weight: 600;
 }
 
 .rail-stat .v {
   color: var(--text-primary);
   font-variant-numeric: tabular-nums;
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .rail-related {
@@ -1376,4 +1497,75 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 /* Hide desktop shell content variants on mobile */
 @media (max-width: 900px) {
   .d-only { display: none !important; }
+}
+
+/* ============================================================
+   Dark mode
+   ============================================================ */
+:root[data-theme="dark"] {
+  --bg-surface: #0B0B0B;
+  --bg-surface-hover: #171717;
+  --bg-surface-inset: #171717;
+  --bg-container: #141414;
+  --bg-container-hover: #1c1c1c;
+  --bg-container-inset: #1a1a1a;
+
+  --text-primary: #f5f5f5;
+  --text-secondary: #a1a1a1;
+  --text-subdued: #6e6e6e;
+  --text-inverse: #0B0B0B;
+
+  --border-primary: rgba(255, 255, 255, 0.18);
+  --border-secondary: rgba(255, 255, 255, 0.12);
+  --border-tertiary: rgba(255, 255, 255, 0.08);
+  --border-subdued: rgba(255, 255, 255, 0.05);
+
+  --button-bg-primary: #f5f5f5;
+
+  --tab-bg-group: #171717;
+  --tab-item-active: #242424;
+
+  --shadow-xs: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+  --shadow-border-xs: var(--shadow-xs), 0px 0px 0px 1px rgba(255, 255, 255, 0.05);
+  --shadow-border-sm: var(--shadow-sm), 0px 0px 0px 1px rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .btn-primary {
+  background: var(--button-bg-primary);
+  color: var(--text-inverse);
+}
+
+[data-theme="dark"] .ls-chip.on,
+[data-theme="dark"] .m-chip.on {
+  background: var(--text-primary);
+  color: var(--bg-surface);
+}
+
+[data-theme="dark"] .ls-brand-mark,
+[data-theme="dark"] .m-nav .brand-mark {
+  background: var(--text-primary);
+  color: var(--bg-surface);
+}
+
+[data-theme="dark"] .rail-card.dark {
+  background: var(--bg-surface-inset);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .cmd-overlay {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+[data-theme="dark"] .cmd-row mark,
+[data-theme="dark"] .ls-detail-item mark,
+[data-theme="dark"] .m-item mark {
+  background: rgba(234, 179, 8, 0.35);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .ls-card:hover {
+  box-shadow:
+    0 6px 14px -3px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
 }

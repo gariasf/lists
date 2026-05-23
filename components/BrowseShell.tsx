@@ -109,7 +109,6 @@ function PreviewCard({ list, onCopyAll }: { list: ListItem; onCopyAll: (list: Li
         </div>
       )}
       <div className="ls-card-foot">
-        <span>Open list</span>
         <button
           type="button"
           className={`copy${copied ? ' copied' : ''}`}
@@ -286,7 +285,7 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
             </a>
             <button
               type="button"
-              className="ls-icon-btn"
+              className="ls-icon-btn ghost"
               onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
               aria-label="Toggle theme"
             >
@@ -299,34 +298,27 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
               <div className="ls-h1-row">
                 <h1 className="ls-h1">{activeLabel}</h1>
                 <div className="ls-meta">
-                  {filtered.length} of {lists.length} lists · {totalItems.toLocaleString()} items · Copy any value with one click.
+                  {filtered.length === lists.length
+                    ? `${lists.length} lists · ${totalItems.toLocaleString()} items`
+                    : `${filtered.length} of ${lists.length} lists · ${totalItems.toLocaleString()} items`}
                 </div>
               </div>
             </div>
 
-            <div className="ls-chip-row">
-              {categoriesWithCount.map((c) => {
-                const Icon = CATEGORY_ICONS[c.id] ?? Layers
-                const on = activeCategory === c.id
-                return (
-                  <button
-                    key={c.id}
-                    type="button"
-                    className={`ls-chip${on ? ' on' : ''}`}
-                    onClick={() => setActiveCategory(c.id)}
-                  >
-                    <Icon />
-                    {c.label}
-                    <span className="n">{counts[c.id] ?? 0}</span>
-                  </button>
-                )
-              })}
-            </div>
-
             {filtered.length === 0 ? (
-              <p style={{ color: 'var(--text-secondary)', fontSize: 13 }}>
-                No lists match that filter.
-              </p>
+              <div className="ls-empty">
+                <p>No lists match that filter.</p>
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={() => {
+                    setActiveCategory('all')
+                    setQuery('')
+                  }}
+                >
+                  Clear filters
+                </button>
+              </div>
             ) : (
               <div className="ls-grid">
                 {filtered.map((list) => (

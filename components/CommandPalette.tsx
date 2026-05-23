@@ -15,16 +15,14 @@ import { loadSearchIndex, type LoadedIndex } from '@/lib/search-index'
 import {
   ArrowRight,
   CATEGORY_ICONS,
+  Check,
   ChevronR,
   Copy,
-  Github,
   Layers,
-  Moon,
   Search,
   Sparkles,
   Star,
   StarFilled,
-  Sun,
 } from '@/components/icons'
 
 const MAX_LIST_RESULTS = 6
@@ -94,18 +92,13 @@ export default function CommandPalette() {
   const router = useRouter()
   const [query, setQuery] = useState('')
   const [selected, setSelected] = useState(0)
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
   const [index, setIndex] = useState<LoadedIndex | null>(null)
   const [toast, setToast] = useState<string | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const listRef = useRef<HTMLDivElement>(null)
 
-  // Detect current theme on open so the toggle action reflects it.
   useEffect(() => {
     if (!open) return
-    setTheme(
-      document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light',
-    )
     setQuery('')
     setSelected(0)
     requestAnimationFrame(() => inputRef.current?.focus())
@@ -228,49 +221,6 @@ export default function CommandPalette() {
         })
       if (recentRows.length > 0) built.push({ label: 'Recent', rows: recentRows })
 
-      built.push({
-        label: 'Try',
-        rows: [
-          {
-            key: 'tip-jump',
-            icon: <Search />,
-            title: 'Type to search lists or items',
-            subtitle: '"names", "stripe", "+44"',
-            onActivate: () => {},
-            group: 'Try',
-          },
-          {
-            key: 'tip-random',
-            icon: <Sparkles />,
-            title: 'Type "random <list>" to copy one item',
-            subtitle: 'Or "10 names" to copy ten',
-            onActivate: () => {},
-            group: 'Try',
-          },
-          {
-            key: 'theme',
-            icon: theme === 'dark' ? <Sun /> : <Moon />,
-            title: theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme',
-            onActivate: () => {
-              const next = theme === 'dark' ? 'light' : 'dark'
-              setTheme(next)
-              if (next === 'dark')
-                document.documentElement.setAttribute('data-theme', 'dark')
-              else document.documentElement.removeAttribute('data-theme')
-            },
-            group: 'Try',
-          },
-          {
-            key: 'github',
-            icon: <Github />,
-            title: 'View source on GitHub',
-            onActivate: () => {
-              window.open('https://github.com/gariasf/lists', '_blank', 'noopener')
-            },
-            group: 'Try',
-          },
-        ],
-      })
       return built
     }
 
@@ -367,7 +317,6 @@ export default function CommandPalette() {
     pinned,
     recent,
     index,
-    theme,
     goToList,
     randomFromSlug,
     copyText,
@@ -446,12 +395,25 @@ export default function CommandPalette() {
             autoComplete="off"
             spellCheck={false}
           />
-          <span className="cmd-esc">esc</span>
         </div>
 
         <div className="cmd-scroll" ref={listRef}>
           {flatRows.length === 0 ? (
-            <div className="cmd-empty">No matches. Try fewer characters.</div>
+            <div className="cmd-empty">
+              {query.trim().length === 0 ? (
+                <>
+                  <div className="cmd-empty-title">Search across {catalog.length} lists</div>
+                  <div className="cmd-empty-sub">
+                    Try <span className="cmd-kbd">names</span>,{' '}
+                    <span className="cmd-kbd">stripe</span>,{' '}
+                    <span className="cmd-kbd">random emoji</span>, or{' '}
+                    <span className="cmd-kbd">10 hex</span>
+                  </div>
+                </>
+              ) : (
+                <>No matches for &ldquo;{query}&rdquo;.</>
+              )}
+            </div>
           ) : (
             (() => {
               let renderIdx = 0
@@ -493,11 +455,13 @@ export default function CommandPalette() {
                             {r.subtitle && <span className="sub">{r.subtitle}</span>}
                           </span>
                           {r.pinSlug && (
-                            <span
-                              role="button"
+                            <button
+                              type="button"
+                              tabIndex={-1}
                               aria-label={
                                 isPinned(r.pinSlug) ? 'Unpin' : 'Pin'
                               }
+                              title={isPinned(r.pinSlug) ? 'Unpin' : 'Pin'}
                               className={`pin${isPinned(r.pinSlug) ? ' on' : ''}`}
                               onMouseDown={(e) => {
                                 e.preventDefault()
@@ -510,7 +474,7 @@ export default function CommandPalette() {
                               }}
                             >
                               {isPinned(r.pinSlug) ? <StarFilled /> : <Star />}
-                            </span>
+                            </button>
                           )}
                           {r.trailing && <span className="arr">{r.trailing}</span>}
                         </button>
@@ -528,20 +492,22 @@ export default function CommandPalette() {
         </div>
 
         <div className="cmd-foot">
-          <span>
-            <span className="k">↑↓</span>Navigate
-          </span>
-          <span>
-            <span className="k">↵</span>Open
-          </span>
-          <span>
-            <span className="k">esc</span>Close
-          </span>
-          <span style={{ marginLeft: 'auto' }}>
+          <div className="cmd-foot-hints">
+            <span>
+              <span className="k">↑↓</span>Navigate
+            </span>
+            <span>
+              <span className="k">↵</span>Open
+            </span>
+            <span>
+              <span className="k">esc</span>Close
+            </span>
+          </div>
+          <div className="cmd-foot-status">
             {index
               ? `${index.items.length.toLocaleString()} items indexed`
               : 'Loading index…'}
-          </span>
+          </div>
         </div>
       </div>
 

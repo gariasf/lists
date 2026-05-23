@@ -14,7 +14,6 @@ import {
   Copy,
   Check,
   Download,
-  Eye,
   ChevronL,
   ChevronR,
   ArrowUpRight,
@@ -193,14 +192,6 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
     URL.revokeObjectURL(url)
   }
 
-  const handleOpenJson = () => {
-    const blob = new Blob([toJSON(list.items, list.structured)], {
-      type: 'application/json',
-    })
-    const url = URL.createObjectURL(blob)
-    window.open(url, '_blank')
-  }
-
   const category = CATEGORIES.find((c) => c.id === list.category)
   const CategoryIcon = CATEGORY_ICONS[list.category] ?? Layers
   const sidebarCategories = useMemo(() => {
@@ -282,7 +273,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
             </a>
             <button
               type="button"
-              className="ls-icon-btn"
+              className="ls-icon-btn ghost"
               onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
               aria-label="Toggle theme"
             >
@@ -309,18 +300,11 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                         <button
                           type="button"
                           className="btn btn-secondary"
-                          onClick={handleOpenJson}
-                        >
-                          <Eye />
-                          Preview JSON
-                        </button>
-                        <button
-                          type="button"
-                          className="btn btn-secondary"
                           onClick={handleDownload}
+                          title={`Download .${format === 'list' ? 'txt' : format}`}
                         >
                           <Download />
-                          Download .json
+                          Download
                         </button>
                         <button
                           type="button"
@@ -333,10 +317,6 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                       </div>
                     </div>
                     <div className="ls-detail-meta-row">
-                      <span className="pill">
-                        <CategoryIcon />
-                        {category?.label}
-                      </span>
                       <span className="pill">{list.items.length} items</span>
                       {list.structured && <span className="pill">structured</span>}
                       {query && (
@@ -344,22 +324,23 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                           {filteredItems.length} match{filteredItems.length === 1 ? '' : 'es'}
                         </span>
                       )}
-                      <div style={{ marginLeft: 'auto' }}>
-                        <div className="fmt-tabs" role="tablist" aria-label="Output format">
-                          {(['list', 'json', 'csv', 'ts'] as const).map((f) => (
-                            <button
-                              key={f}
-                              type="button"
-                              role="tab"
-                              aria-selected={format === f}
-                              className={format === f ? 'on' : ''}
-                              onClick={() => setFormat(f)}
-                            >
-                              {f === 'ts' ? 'TS' : f === 'csv' ? 'CSV' : f === 'json' ? 'JSON' : 'List'}
-                            </button>
-                          ))}
-                        </div>
-                      </div>
+                    </div>
+                  </div>
+
+                  <div className="ls-detail-tabs">
+                    <div className="fmt-tabs" role="tablist" aria-label="Output format">
+                      {(['list', 'json', 'csv', 'ts'] as const).map((f) => (
+                        <button
+                          key={f}
+                          type="button"
+                          role="tab"
+                          aria-selected={format === f}
+                          className={format === f ? 'on' : ''}
+                          onClick={() => setFormat(f)}
+                        >
+                          {f === 'ts' ? 'TS' : f === 'csv' ? 'CSV' : f === 'json' ? 'JSON' : 'List'}
+                        </button>
+                      ))}
                     </div>
                   </div>
 
@@ -437,27 +418,22 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
               </div>
 
               <div>
-                <div className="rail-card">
-                  <div className="rail-eyebrow">About this list</div>
-                  <div className="rail-stat">
-                    <span>Items</span>
-                    <span className="v">{formatNumber(list.items.length)}</span>
+                <div className="rail-card rail-card-hero">
+                  <div className="rail-hero">
+                    <div className="rail-hero-value">{formatNumber(list.items.length)}</div>
+                    <div className="rail-hero-label">
+                      {list.items.length === 1 ? 'item' : 'items'} in this list
+                    </div>
                   </div>
-                  <div className="rail-stat">
-                    <span>Avg. length</span>
-                    <span className="v">{avgLength.toFixed(1)}</span>
-                  </div>
-                  <div className="rail-stat">
-                    <span>Category</span>
-                    <span className="v">{list.category}</span>
-                  </div>
-                  <div className="rail-stat">
-                    <span>Size</span>
-                    <span className="v">{bytesToKb(list.items)} KB</span>
-                  </div>
-                  <div className="rail-stat">
-                    <span>Slug</span>
-                    <span className="v">{list.slug}</span>
+                  <div className="rail-stats-grid">
+                    <div className="rail-stat">
+                      <span className="lbl">AVG LENGTH</span>
+                      <span className="v">{avgLength.toFixed(1)}</span>
+                    </div>
+                    <div className="rail-stat">
+                      <span className="lbl">SIZE</span>
+                      <span className="v">{bytesToKb(list.items)} KB</span>
+                    </div>
                   </div>
                 </div>
 
