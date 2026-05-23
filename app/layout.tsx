@@ -116,18 +116,74 @@ export default async function RootLayout({
     },
   };
 
+  // Speculation Rules: tells Chromium browsers to prerender list / skill
+  // detail pages on hover (~200ms hold). Click → instant nav, no flash.
+  // Safari + Firefox ignore the script and fall back to Next's in-viewport
+  // prefetch (~50-100ms click → display). Browsers cap concurrent prerenders
+  // and skip when Save-Data is on, so we don't need a manual budget.
+  const speculationRules = {
+    prerender: [
+      {
+        source: 'document',
+        where: {
+          and: [
+            {
+              href_matches: [
+                '/list/*',
+                '/skills/*',
+              ],
+            },
+          ],
+        },
+        eagerness: 'moderate',
+      },
+    ],
+  }
+
   return (
     <html lang="en">
       <head>
         <link rel="canonical" href={BASE_URL} />
         <meta name="theme-color" content="#0B0B0B" />
         <meta name="msapplication-TileColor" content="#0B0B0B" />
+
+        {/* Avatar service used by skill detail pages — warm the connection
+            during initial load so the first avatar fetch skips DNS + TLS. */}
+        <link rel="dns-prefetch" href="https://api.dicebear.com" />
+        <link rel="preconnect" href="https://api.dicebear.com" crossOrigin="anonymous" />
+
+        {/* Critical font weights. Regular + Medium cover ~95% of glyphs on
+            every page. Preloading saves the first-paint blocking fetch. */}
+        <link
+          rel="preload"
+          href="/fonts/geist/Geist-Regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/geist/Geist-Medium.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+
+        {/* The palette's search index is ~670 KB. Browser fetches it during
+            idle so the first ⌘K open is instant instead of waiting for a
+            cold request. */}
+        <link rel="prefetch" href="/search-index.json" as="fetch" crossOrigin="anonymous" />
+
         <script
           // Pre-paint theme resolver. Runs before React hydration to avoid
           // a flash of light theme when the user prefers dark.
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var m=localStorage.getItem('lists.theme');var eff;if(m==='dark'||m==='light'){eff=m;}else{eff=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(eff==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();`,
           }}
+        />
+        <script
+          type="speculationrules"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(speculationRules) }}
         />
         <script
           type="application/ld+json"
