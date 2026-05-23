@@ -1,12 +1,12 @@
 /**
  * Per-IP + global rate limiting for AI endpoints, backed by Workers KV.
  *
- * Two kinds:
- *   - "llm"   for any Llama-grade call (generate / skill / augment)
- *   - "embed" for the much cheaper bge embedding (semantic search)
+ * Only "llm"-grade calls (generate / skill / augment) — semantic search was
+ * removed since Vectorize storage of the bge-base-en index exceeded the
+ * Workers Free tier cap.
  *
  * Hard ceilings are deliberately well below the Workers AI 10K-neurons-per-day
- * free-tier limit so a botted run still can't push our account into paid
+ * free-tier limit so a botted run still can't push the account into paid
  * territory. Anyone who hits the daily cap gets a 429 with Retry-After and a
  * friendly JSON error.
  *
@@ -30,20 +30,12 @@ export interface LimitKind {
   label?: string
 }
 
-/** Llama-grade generators. Each call ≈ 100–250 neurons. */
+/** Llama-grade generators. Each call ≈ 100–170 neurons. */
 export const LLM_LIMIT: LimitKind = {
   bucket: 'llm',
   globalMax: 120,
   ipMax: 6,
   label: 'AI generation',
-}
-
-/** Embedding queries. Each call ≈ 10–40 neurons. Used per palette keystroke. */
-export const EMBED_LIMIT: LimitKind = {
-  bucket: 'embed',
-  globalMax: 800,
-  ipMax: 40,
-  label: 'semantic search',
 }
 
 function clientIp(request: Request): string {

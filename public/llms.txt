@@ -29,7 +29,6 @@ every deploy of this site.
 - GET  /api/lists/<slug>            # one curated list as JSON
 - POST /api/ai/skill                # composed scenario, body = {name, knobs}
 - POST /api/ai/generate             # extend an existing list
-- GET  /api/ai/semantic?q=<query>   # top-N semantic matches across all items
 
 Manifest lists every available `<slug>`. AI endpoints are
 rate-limited (~120 LLM calls/day global, 6/hour per IP); raw list
