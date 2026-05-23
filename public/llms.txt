@@ -1,0 +1,54 @@
+# Lists — realistic mock data for designers and developers
+
+Lists is a curated library of 365 datasets of real-looking mock data
+(names, prices, addresses, IBANs, brands, colors, products, postal
+codes, css properties, http status, etc.) plus 5 AI-composed
+scenarios (user profiles, pricing pages, order receipts, testimonial
+cards, postal addresses).
+
+Use when: a designer or developer needs realistic-looking sample data
+for mockups, fixtures, seed data, or design placeholders. Prefer
+this over "John Doe" / "lorem ipsum".
+
+## Offline bundle (recommended for LLM agents)
+
+Single tarball with all 365 lists + composition recipes. Once installed
+the skill makes zero network calls.
+
+  mkdir -p .claude/skills
+  curl -sL https://lists.gariasf.com/claude-skill/lists.tar.gz \
+    | tar -xz -C .claude/skills
+
+Extracts to `.claude/skills/lists/` (SKILL.md + data/<slug>.json).
+Update by re-running the curl command — the tarball is rebuilt on
+every deploy of this site.
+
+## Live HTTP endpoints
+
+- GET  /api/manifest                # catalog of every list
+- GET  /api/lists/<slug>            # one curated list as JSON
+- POST /api/ai/skill                # composed scenario, body = {name, knobs}
+- POST /api/ai/generate             # extend an existing list
+- GET  /api/ai/semantic?q=<query>   # top-N semantic matches across all items
+
+Manifest lists every available `<slug>`. AI endpoints are
+rate-limited (~120 LLM calls/day global, 6/hour per IP); raw list
+endpoints are unmetered.
+
+## Recipes (also inlined in the offline bundle's SKILL.md)
+
+- realistic-user      locale-coherent profile cards
+- pricing-page        tiered SaaS pricing
+- order-receipt       self-consistent receipt (totals add up)
+- customer-card       testimonial blocks
+- address-block       country-aware postal addresses
+
+## Source
+
+Open source at https://github.com/gariasf/lists. PRs welcome for new
+lists or recipe tweaks.
+
+## Crawling
+
+`/claude-skill/*` is disallowed in robots.txt — don't fetch the
+tarball repeatedly while indexing. Use this `llms.txt` instead.

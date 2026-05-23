@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "prebuild": "tsx scripts/build-search-index.ts",
-    "build": "next build && node scripts/build-claude-skill.mjs",
+    "build": "next build && node scripts/build-claude-skill.mjs && node scripts/build-sitemap.mjs",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && node scripts/build-claude-skill.mjs",
+    "export": "next build && node scripts/build-claude-skill.mjs && node scripts/build-sitemap.mjs",
     "build:claude-skill": "node scripts/build-claude-skill.mjs",
+    "build:sitemap": "node scripts/build-sitemap.mjs",
     "build:index": "tsx scripts/build-search-index.ts",
     "build:semantic": "tsx scripts/build-vectorize-index.ts"
   },
