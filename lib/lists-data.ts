@@ -216,6 +216,20 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'booksisbn', name: 'ISBN Numbers', category: 'entertainment', upstream: { file: 'booksisbn.txt' } },
   { slug: 'events', name: 'Events', category: 'entertainment', upstream: { file: 'events.txt' } },
 
+  // Entertainment (local additions + modernized)
+  { slug: 'movies-modern', name: 'Movies (modern)', category: 'entertainment', local: { file: 'movies-modern.txt', format: 'txt' } },
+  { slug: 'tv-shows-modern', name: 'TV Shows (modern)', category: 'entertainment', local: { file: 'tv-shows-modern.txt', format: 'txt' } },
+  { slug: 'streaming-services', name: 'Streaming Services', category: 'entertainment', local: { file: 'streaming-services.txt', format: 'txt' } },
+  { slug: 'podcasts', name: 'Podcasts', category: 'entertainment', local: { file: 'podcasts.txt', format: 'txt' } },
+  { slug: 'video-games', name: 'Video Games', category: 'entertainment', local: { file: 'video-games.txt', format: 'txt' } },
+  { slug: 'game-studios', name: 'Game Studios', category: 'entertainment', local: { file: 'game-studios.txt', format: 'txt' } },
+  { slug: 'anime-titles', name: 'Anime Titles', category: 'entertainment', local: { file: 'anime-titles.txt', format: 'txt' } },
+  { slug: 'manga-titles', name: 'Manga Titles', category: 'entertainment', local: { file: 'manga-titles.txt', format: 'txt' } },
+  { slug: 'music-artists-modern', name: 'Music Artists (modern)', category: 'entertainment', local: { file: 'music-artists-modern.txt', format: 'txt' } },
+  { slug: 'music-songs-modern', name: 'Songs (modern)', category: 'entertainment', local: { file: 'music-songs-modern.txt', format: 'txt' } },
+  { slug: 'books-modern', name: 'Book Titles (modern)', category: 'entertainment', local: { file: 'books-modern.txt', format: 'txt' } },
+  { slug: 'music-genres', name: 'Music Genres', category: 'entertainment', local: { file: 'music-genres.txt', format: 'txt' } },
+
   // Sports
   { slug: 'articlessports-en', name: 'Sports Articles', category: 'sports', upstream: { file: 'articlessports-en.txt' } },
   { slug: 'headlinessports-en', name: 'Sports Headlines', category: 'sports', upstream: { file: 'headlinessports-en.txt' } },
