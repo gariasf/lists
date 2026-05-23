@@ -1,20 +1,13 @@
-import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import FilterableLists from '@/components/FilterableLists'
-import Footer from '@/components/Footer'
+import { Suspense } from 'react'
+import BrowseShell from '@/components/BrowseShell'
 import { getAllLists } from '@/lib/lists'
 
 export default async function Home() {
   const lists = await getAllLists()
 
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <FilterableLists lists={lists} />
-      </main>
-      <Footer />
-    </>
+    <Suspense fallback={null}>
+      <BrowseShell lists={lists} />
+    </Suspense>
   )
 }

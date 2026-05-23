@@ -93,8 +93,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="canonical" href={BASE_URL} />
-        <meta name="theme-color" content="#2979ff" />
-        <meta name="msapplication-TileColor" content="#2979ff" />
+        <meta name="theme-color" content="#0B0B0B" />
+        <meta name="msapplication-TileColor" content="#0B0B0B" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

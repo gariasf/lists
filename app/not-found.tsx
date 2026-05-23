@@ -1,21 +1,28 @@
 import Link from 'next/link'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function NotFound() {
   return (
-    <>
-      <Header />
-      <main className="list-page" style={{ textAlign: 'center', paddingTop: '4rem' }}>
-        <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>List Not Found</h1>
-        <p style={{ color: '#666', marginBottom: '2rem' }}>
-          The list you&apos;re looking for doesn&apos;t exist.
-        </p>
-        <Link href="/" className="btn btn-primary">
-          Back to Home
-        </Link>
-      </main>
-      <Footer />
-    </>
+    <main
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: 16,
+        padding: 32,
+        textAlign: 'center',
+      }}
+    >
+      <h1 style={{ fontSize: 28, fontWeight: 500, letterSpacing: '-0.012em' }}>
+        List not found
+      </h1>
+      <p style={{ color: 'var(--text-secondary)', fontSize: 14 }}>
+        The list you&apos;re looking for doesn&apos;t exist.
+      </p>
+      <Link href="/" className="btn btn-primary">
+        Back to all lists
+      </Link>
+    </main>
   )
 }
