@@ -22,6 +22,7 @@ import {
   External,
   More,
   Layers,
+  Sparkles,
   CATEGORY_ICONS,
 } from '@/components/icons'
 
@@ -240,8 +241,13 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
             All lists
             <span className="count">{sidebarCategories[0]?.count ?? allLists.length}</span>
           </Link>
+          <Link href="/skills" className="ls-side-link">
+            <Sparkles />
+            Skills
+            <span className="count">{5}</span>
+          </Link>
 
-          <div className="ls-side-label">Categories</div>
+          <div className="ls-side-label">By category</div>
           {sidebarCategories
             .filter((c) => c.id !== 'all')
             .map((c) => {

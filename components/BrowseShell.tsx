@@ -18,6 +18,7 @@ import {
   Copy,
   Check,
   ChevronR,
+  Sparkles,
   CATEGORY_ICONS,
 } from '@/components/icons'
 
@@ -243,8 +244,13 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
             All lists
             <span className="count">{counts.all}</span>
           </button>
+          <Link href="/skills" className="ls-side-link">
+            <Sparkles />
+            Skills
+            <span className="count">{5}</span>
+          </Link>
 
-          <div className="ls-side-label">Categories</div>
+          <div className="ls-side-label">By category</div>
           {categoriesWithCount
             .filter((c) => c.id !== 'all')
             .map((c) => {
