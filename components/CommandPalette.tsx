@@ -12,6 +12,7 @@ import { useRouter } from 'next/navigation'
 import fuzzysort from 'fuzzysort'
 import { usePalette } from '@/lib/palette-context'
 import { loadSearchIndex, type LoadedIndex } from '@/lib/search-index'
+import { waitForPath } from '@/components/TLink'
 import {
   ArrowRight,
   CATEGORY_ICONS,
@@ -238,8 +239,9 @@ export default function CommandPalette() {
       }
       const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
       if (doc.startViewTransition && !reduced) {
-        doc.startViewTransition(() => {
+        doc.startViewTransition(async () => {
           router.push(href)
+          await waitForPath(href, 1500)
         })
       } else {
         router.push(href)

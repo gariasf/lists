@@ -5,10 +5,6 @@ import { useRouter } from 'next/navigation'
 import type { ComponentProps, MouseEvent } from 'react'
 
 type LinkProps = ComponentProps<typeof Link>
-type TLinkProps = LinkProps & {
-  morphSelector?: string
-  morphName?: string
-}
 
 function shouldBypass(e: MouseEvent<HTMLAnchorElement>): boolean {
   if (e.defaultPrevented) return true
@@ -27,7 +23,7 @@ function normalizePath(p: string): string {
   return noQuery.endsWith('/') ? noQuery : noQuery + '/'
 }
 
-function waitForPath(target: string, timeoutMs: number): Promise<void> {
+export function waitForPath(target: string, timeoutMs: number): Promise<void> {
   return new Promise((resolve) => {
     const goal = normalizePath(target)
     const start = performance.now()
@@ -53,13 +49,7 @@ function waitForPath(target: string, timeoutMs: number): Promise<void> {
   })
 }
 
-export default function TLink({
-  morphSelector,
-  morphName,
-  onClick,
-  href,
-  ...rest
-}: TLinkProps) {
+export default function TLink({ onClick, href, ...rest }: LinkProps) {
   const router = useRouter()
 
   const handle = (e: MouseEvent<HTMLAnchorElement>) => {
@@ -74,19 +64,6 @@ export default function TLink({
       typeof href === 'string'
         ? href
         : (href as { pathname?: string }).pathname ?? '/'
-
-    if (morphSelector && morphName) {
-      document
-        .querySelectorAll<HTMLElement>(morphSelector)
-        .forEach((el) => {
-          el.style.viewTransitionName = ''
-        })
-      const el = e.currentTarget.querySelector<HTMLElement>(morphSelector)
-      if (el) {
-        el.style.viewTransitionName = morphName
-        void el.offsetHeight
-      }
-    }
 
     document.startViewTransition(async () => {
       router.push(target)

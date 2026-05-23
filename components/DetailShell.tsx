@@ -362,12 +362,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                 <div className="ls-detail-card">
                   <div className="ls-detail-head">
                     <div className="ls-detail-title-row">
-                      <h1
-                        className="ls-detail-title"
-                        style={{ viewTransitionName: `t-${list.slug}` }}
-                      >
-                        {list.name}
-                      </h1>
+                      <h1 className="ls-detail-title">{list.name}</h1>
                       <div className="ls-detail-actions">
                         <button
                           type="button"
@@ -649,12 +644,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
         </div>
 
         <div className="m-detail-head">
-          <h1
-            className="m-detail-title"
-            style={{ viewTransitionName: `t-${list.slug}` }}
-          >
-            {list.name}
-          </h1>
+          <h1 className="m-detail-title">{list.name}</h1>
           <div className="m-detail-meta">
             <span className="pill">
               <CategoryIcon />

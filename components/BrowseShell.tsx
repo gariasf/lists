@@ -88,12 +88,7 @@ function PreviewCard({ list, onCopyAll }: { list: ListItem; onCopyAll: (list: Li
   }
 
   return (
-    <Link
-      href={`/list/${list.slug}/`}
-      className="ls-card"
-      morphSelector=".ls-card-title"
-      morphName={`t-${list.slug}`}
-    >
+    <Link href={`/list/${list.slug}/`} className="ls-card">
       <div className="ls-card-head">
         <span className="ls-card-icon">
           <ListIcon list={list} />
@@ -135,12 +130,7 @@ function MobileRow({ list }: { list: ListItem }) {
   const isHex = list.slug === HEX_SLUG
   const preview = list.items.slice(0, 3).join(',  ')
   return (
-    <Link
-      href={`/list/${list.slug}/`}
-      className="m-row"
-      morphSelector=".m-row-title"
-      morphName={`t-${list.slug}`}
-    >
+    <Link href={`/list/${list.slug}/`} className="m-row">
       <div className="m-row-top">
         <span className="m-row-icon">
           <ListIcon list={list} />

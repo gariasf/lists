@@ -720,10 +720,10 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   color: var(--color-success);
 }
 
-/* View transitions */
+/* View transitions — clean root crossfade only. No named morphs. */
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation-duration: 220ms;
+  animation-duration: 280ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -743,18 +743,9 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   to { opacity: 1; }
 }
 
-/* Named-element morph (list-card title → detail title): tune for "intentional"
-   feel — slower than the root crossfade, snappy easing. */
-::view-transition-group(*) {
-  animation-duration: 650ms;
-  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-}
-
 @media (prefers-reduced-motion: reduce) {
   ::view-transition-old(root),
-  ::view-transition-new(root),
-  ::view-transition-group(*),
-  ::view-transition-image-pair(*) {
+  ::view-transition-new(root) {
     animation: none !important;
   }
 }
