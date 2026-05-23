@@ -2062,7 +2062,7 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   box-shadow: var(--shadow-border-xs);
   font-size: 13px;
   line-height: 1.4;
-  margin: 0 0 8px;
+  margin: 0 0 20px;
   animation: onboarding-tip-in 280ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
@@ -2130,7 +2130,7 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 }
 
 .onboarding-tip.m-tip {
-  margin: 0 0 12px;
+  margin: 0 0 18px;
 }
 
 /* Mobile shell: skill detail (knobs + result) */
