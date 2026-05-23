@@ -80,6 +80,27 @@ function tooManyResponse(retryAfter: number, message: string): Response {
   )
 }
 
+/** Reject the request early if the body claims to be larger than what any
+ * legitimate caller would send. Doesn't catch chunked encoding without a
+ * Content-Length header, but stops the common attack of pushing a 50 MB
+ * JSON blob to burn parser CPU + memory. */
+const MAX_BODY_BYTES = 8 * 1024
+
+function bodyTooLarge(): Response {
+  return new Response(
+    JSON.stringify({
+      error: `Request body too large (max ${MAX_BODY_BYTES} bytes).`,
+    }),
+    {
+      status: 413,
+      headers: {
+        'content-type': 'application/json',
+        'cache-control': 'no-store',
+      },
+    },
+  )
+}
+
 /**
  * Throws a 429 Response if the caller is over either the global or per-IP
  * budget. Otherwise increments both counters and returns null.
@@ -89,6 +110,14 @@ export async function checkRateLimit(
   request: Request,
   kind: LimitKind,
 ): Promise<Response | null> {
+  const declaredLength = parseInt(
+    request.headers.get('content-length') ?? '0',
+    10,
+  )
+  if (Number.isFinite(declaredLength) && declaredLength > MAX_BODY_BYTES) {
+    return bodyTooLarge()
+  }
+
   const ip = clientIp(request)
   const gKey = dayKey(kind.bucket)
   const iKey = hourKey(kind.bucket, ip)
