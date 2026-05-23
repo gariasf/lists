@@ -235,6 +235,27 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'headlinessports-en', name: 'Sports Headlines', category: 'sports', upstream: { file: 'headlinessports-en.txt' } },
   { slug: 'durationmarathon', name: 'Marathon Times', category: 'sports', upstream: { file: 'durationmarathon.txt' } },
 
+  // Sports (local additions)
+  { slug: 'nfl-teams', name: 'NFL Teams', category: 'sports', local: { file: 'nfl-teams.txt', format: 'txt' } },
+  { slug: 'nba-teams', name: 'NBA Teams', category: 'sports', local: { file: 'nba-teams.txt', format: 'txt' } },
+  { slug: 'mlb-teams', name: 'MLB Teams', category: 'sports', local: { file: 'mlb-teams.txt', format: 'txt' } },
+  { slug: 'nhl-teams', name: 'NHL Teams', category: 'sports', local: { file: 'nhl-teams.txt', format: 'txt' } },
+  { slug: 'mls-teams', name: 'MLS Teams', category: 'sports', local: { file: 'mls-teams.txt', format: 'txt' } },
+  { slug: 'wnba-teams', name: 'WNBA Teams', category: 'sports', local: { file: 'wnba-teams.txt', format: 'txt' } },
+  { slug: 'nwsl-teams', name: 'NWSL Teams', category: 'sports', local: { file: 'nwsl-teams.txt', format: 'txt' } },
+  { slug: 'premier-league-teams', name: 'Premier League Teams', category: 'sports', local: { file: 'premier-league-teams.txt', format: 'txt' } },
+  { slug: 'laliga-teams', name: 'La Liga Teams', category: 'sports', local: { file: 'laliga-teams.txt', format: 'txt' } },
+  { slug: 'bundesliga-teams', name: 'Bundesliga Teams', category: 'sports', local: { file: 'bundesliga-teams.txt', format: 'txt' } },
+  { slug: 'seriea-teams', name: 'Serie A Teams', category: 'sports', local: { file: 'seriea-teams.txt', format: 'txt' } },
+  { slug: 'ligue1-teams', name: 'Ligue 1 Teams', category: 'sports', local: { file: 'ligue1-teams.txt', format: 'txt' } },
+  { slug: 'f1-teams-2025', name: 'F1 Teams (2025)', category: 'sports', local: { file: 'f1-teams-2025.txt', format: 'txt' } },
+  { slug: 'f1-drivers-2025', name: 'F1 Drivers (2025)', category: 'sports', local: { file: 'f1-drivers-2025.txt', format: 'txt' } },
+  { slug: 'athletes-current', name: 'Athletes (current)', category: 'sports', local: { file: 'athletes-current.txt', format: 'txt' } },
+  { slug: 'tennis-atp', name: 'Tennis Players (ATP)', category: 'sports', local: { file: 'tennis-atp.txt', format: 'txt' } },
+  { slug: 'tennis-wta', name: 'Tennis Players (WTA)', category: 'sports', local: { file: 'tennis-wta.txt', format: 'txt' } },
+  { slug: 'olympic-sports', name: 'Olympic Sports', category: 'sports', local: { file: 'olympic-sports.txt', format: 'txt' } },
+  { slug: 'sports-brands', name: 'Sports Brands', category: 'sports', local: { file: 'sports-brands.txt', format: 'txt' } },
+
   // Tech
   { slug: 'devicesphones', name: 'Phone Models', category: 'tech', upstream: { file: 'devicesphones.txt' } },
   { slug: 'deviceslaptops', name: 'Laptop Models', category: 'tech', upstream: { file: 'deviceslaptops.txt' } },
