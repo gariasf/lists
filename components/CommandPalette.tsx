@@ -78,6 +78,29 @@ function parseRandomCommand(query: string): { count: number; rest: string } | nu
   return null
 }
 
+function parseGenCommand(query: string): { count: number; prompt: string } | null {
+  const trimmed = query.trim()
+  // "gen <prompt>" / "generate <prompt>" / "make <prompt>" / "create <prompt>"
+  const m = /^(?:gen|generate|make|create|ai)\s+(.+)$/i.exec(trimmed)
+  if (!m) return null
+  const rest = m[1].trim()
+  // Allow "gen 20 X" / "make 5 X"
+  const m2 = /^(\d+)\s+(.+)$/.exec(rest)
+  if (m2) {
+    const n = parseInt(m2[1], 10)
+    if (n > 0 && n <= 50) return { count: n, prompt: m2[2] }
+  }
+  return { count: 10, prompt: rest }
+}
+
+const LIST_MATCH_THRESHOLD = -1000
+
+interface GenResult {
+  prompt: string
+  items: string[]
+  ts: number
+}
+
 export default function CommandPalette() {
   const {
     catalog,
@@ -94,6 +117,9 @@ export default function CommandPalette() {
   const [selected, setSelected] = useState(0)
   const [index, setIndex] = useState<LoadedIndex | null>(null)
   const [toast, setToast] = useState<string | null>(null)
+  const [generating, setGenerating] = useState(false)
+  const [generated, setGenerated] = useState<GenResult | null>(null)
+  const [genError, setGenError] = useState<string | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const listRef = useRef<HTMLDivElement>(null)
 
@@ -101,6 +127,9 @@ export default function CommandPalette() {
     if (!open) return
     setQuery('')
     setSelected(0)
+    setGenerating(false)
+    setGenError(null)
+    setGenerated(null)
     requestAnimationFrame(() => inputRef.current?.focus())
     if (!index) loadSearchIndex().then(setIndex)
   }, [open, index])
@@ -130,6 +159,34 @@ export default function CommandPalette() {
       router.push(`/list/${slug}/`)
     },
     [pushRecent, closePalette, router],
+  )
+
+  const runGenerate = useCallback(
+    async (prompt: string, count: number, listSlug?: string) => {
+      if (!prompt) return
+      setGenerating(true)
+      setGenError(null)
+      try {
+        const res = await fetch('/api/ai/generate', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ prompt, count, listSlug }),
+        })
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({})) as { error?: string }
+          setGenError(err.error ?? `Generation failed (${res.status})`)
+          return
+        }
+        const data = (await res.json()) as { items: string[]; prompt: string }
+        setGenerated({ prompt, items: data.items, ts: Date.now() })
+      } catch (err) {
+        console.error('generate failed', err)
+        setGenError('Network error')
+      } finally {
+        setGenerating(false)
+      }
+    },
+    [],
   )
 
   const randomFromSlug = useCallback(
@@ -177,8 +234,39 @@ export default function CommandPalette() {
 
     // Resolve a query into the best-matching list (for random / N actions).
     const resolveList = (s: string) => {
-      const r = fuzzysort.go(s, catalog, { key: 'name', limit: 1, threshold: -10000 })
+      const r = fuzzysort.go(s, catalog, { key: 'name', limit: 1, threshold: LIST_MATCH_THRESHOLD })
       return r[0]?.obj
+    }
+
+    // Always show previously-generated items at the top while palette is open.
+    if (generated && generated.items.length > 0) {
+      const rows: Row[] = generated.items.map((value, i) => ({
+        key: `gen-${generated.ts}-${i}`,
+        icon: <Sparkles />,
+        title: value,
+        subtitle: `Generated`,
+        trailing: <Copy />,
+        onActivate: () => copyText(value, `Copied "${value}"`),
+        group: 'Generated',
+      }))
+      // Bulk copy as the first row of the group
+      rows.unshift({
+        key: `gen-${generated.ts}-all`,
+        iconBg: 'var(--color-black)',
+        iconColor: '#fff',
+        icon: <Sparkles />,
+        title: `Copy all ${generated.items.length} generated items`,
+        subtitle: `"${generated.prompt}"`,
+        trailing: <Copy />,
+        onActivate: () => {
+          copyText(
+            generated.items.join('\n'),
+            `Copied ${generated.items.length} generated items`,
+          )
+        },
+        group: 'Generated',
+      })
+      built.push({ label: 'Generated', rows })
     }
 
     if (q.length === 0) {
@@ -225,10 +313,41 @@ export default function CommandPalette() {
     }
 
     // Non-empty query
+    // 0) explicit "gen <X>" prefix: ONLY show gen at top, suppress everything else
+    const genCmd = parseGenCommand(q)
+    if (genCmd) {
+      built.push({
+        label: 'AI',
+        rows: [
+          {
+            key: 'gen-explicit',
+            iconBg: 'var(--color-black)',
+            iconColor: '#fff',
+            icon: generating ? <Sparkles /> : <Sparkles />,
+            title: generating
+              ? `Generating ${genCmd.count}…`
+              : `Generate ${genCmd.count} items with AI`,
+            subtitle: `"${genCmd.prompt}"`,
+            trailing: generating ? null : <ArrowRight />,
+            onActivate: () => {
+              if (!generating) runGenerate(genCmd.prompt, genCmd.count)
+            },
+            group: 'AI',
+          },
+        ],
+      })
+      return built
+    }
+
     // 1) random / count action(s)
     const cmd = parseRandomCommand(q)
     if (cmd) {
-      const target = resolveList(cmd.rest)
+      const matches = fuzzysort.go(cmd.rest, catalog, {
+        key: 'name',
+        limit: 1,
+        threshold: LIST_MATCH_THRESHOLD,
+      })
+      const target = matches[0]?.obj
       if (target) {
         built.push({
           label: 'Action',
@@ -310,6 +429,28 @@ export default function CommandPalette() {
       }
     }
 
+    // 4) Fallback "Generate with AI" offer when query is meaningful
+    if (q.length >= 3) {
+      built.push({
+        label: 'Or with AI',
+        rows: [
+          {
+            key: 'gen-offer',
+            icon: <Sparkles />,
+            title: generating
+              ? `Generating…`
+              : `Generate 10 items with AI`,
+            subtitle: `"${q}"`,
+            trailing: generating ? null : <ArrowRight />,
+            onActivate: () => {
+              if (!generating) runGenerate(q, 10)
+            },
+            group: 'AI',
+          },
+        ],
+      })
+    }
+
     return built
   }, [
     query,
@@ -317,6 +458,9 @@ export default function CommandPalette() {
     pinned,
     recent,
     index,
+    generated,
+    generating,
+    runGenerate,
     goToList,
     randomFromSlug,
     copyText,
