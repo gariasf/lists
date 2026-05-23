@@ -21,6 +21,21 @@ yarn-error.log*
 
 # Local env files
 .env*.local
+.dev.vars
+.dev.vars.local
+
+# Local debugging artifacts (Playwright screenshots, dev server logs)
+.playwright-mcp/
+dev.log
+*-after.png
+*-before.png
+vt-*.png
+skill-mobile.png
+skill-run-after.png
+skills-after.png
+skills-cta.png
+browse-*.png
+og-*.png
 
 # Vercel
 .vercel
