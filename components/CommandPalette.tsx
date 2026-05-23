@@ -493,6 +493,14 @@ export default function CommandPalette() {
     row?.scrollIntoView({ block: 'nearest' })
   }, [selected, open])
 
+  // When a new generation lands, jump back to the top so the new "Generated"
+  // group is visible regardless of where the user was scrolled.
+  useEffect(() => {
+    if (!generated) return
+    listRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
+    setSelected(0)
+  }, [generated?.ts])
+
   // Global keyboard.
   useEffect(() => {
     if (!open) return

@@ -1,11 +1,12 @@
 'use client'
 
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import type { ListItem } from '@/lib/types'
 import { CATEGORIES } from '@/lib/types'
 import { usePalette } from '@/lib/palette-context'
 import { useTheme } from '@/lib/use-theme'
+import { useAugment } from '@/lib/use-augment'
 import {
   Search,
   Logo,
@@ -101,8 +102,11 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
   const [toast, setToast] = useState<string | null>(null)
   const [query, setQuery] = useState('')
   const [format, setFormat] = useState<Format>('list')
+  const [augmenting, setAugmenting] = useState(false)
+  const [augmentError, setAugmentError] = useState<string | null>(null)
   const searchRef = useRef<HTMLInputElement>(null)
   const { openPalette, pushRecent } = usePalette()
+  const { extras, append, removeAt, clear } = useAugment(list.slug)
   const { mode: themeMode, cycleMode: cycleTheme } = useTheme()
   const themeIcon =
     themeMode === 'system' ? <Monitor /> : themeMode === 'dark' ? <Moon /> : <Sun />
@@ -129,11 +133,16 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
     return () => window.removeEventListener('keydown', onKey)
   }, [openPalette])
 
+  const combinedItems = useMemo(
+    () => [...list.items, ...extras],
+    [list.items, extras],
+  )
+
   const filteredItems = useMemo(() => {
     const q = query.trim().toLowerCase()
-    if (q === '') return list.items
-    return list.items.filter((item) => item.toLowerCase().includes(q))
-  }, [list.items, query])
+    if (q === '') return combinedItems
+    return combinedItems.filter((item) => item.toLowerCase().includes(q))
+  }, [combinedItems, query])
 
   const handleCopyItem = async (item: string, index: number) => {
     try {
@@ -148,8 +157,10 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
   }
 
   const formattedPayload = useMemo(() => {
-    const items = list.items
-    const structured = list.structured
+    const items = combinedItems
+    // Structured exports use original structured payload only (extras
+    // are plain strings; we don't know their structured shape).
+    const structured = extras.length === 0 ? list.structured : undefined
     switch (format) {
       case 'json':
         return toJSON(items, structured)
@@ -160,7 +171,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
       default:
         return items.join('\n')
     }
-  }, [format, list.items, list.structured, list.slug])
+  }, [format, combinedItems, list.structured, list.slug, extras.length])
 
   const handleCopyAll = async () => {
     try {
@@ -168,8 +179,8 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
       setCopiedAll(true)
       const label =
         format === 'list'
-          ? `Copied all ${list.items.length} items`
-          : `Copied ${list.items.length} items as ${format.toUpperCase()}`
+          ? `Copied all ${combinedItems.length} items`
+          : `Copied ${combinedItems.length} items as ${format.toUpperCase()}`
       setToast(label)
       setTimeout(() => setCopiedAll(false), 1400)
       setTimeout(() => setToast(null), 1800)
@@ -177,6 +188,41 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
       console.error('Copy failed:', err)
     }
   }
+
+  const augment = useCallback(
+    async (count: number) => {
+      setAugmenting(true)
+      setAugmentError(null)
+      try {
+        const res = await fetch('/api/ai/generate', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({
+            prompt: `more items matching the existing list "${list.name}"`,
+            count,
+            listSlug: list.slug,
+          }),
+        })
+        if (!res.ok) {
+          const err = (await res.json().catch(() => ({}))) as { error?: string }
+          setAugmentError(err.error ?? `Failed (${res.status})`)
+          return
+        }
+        const data = (await res.json()) as { items: string[] }
+        if (data.items?.length) {
+          append(data.items)
+          setToast(`Added ${data.items.length} new items`)
+          setTimeout(() => setToast(null), 1800)
+        }
+      } catch (err) {
+        console.error('augment failed', err)
+        setAugmentError('Network error')
+      } finally {
+        setAugmenting(false)
+      }
+    },
+    [list.slug, list.name, append],
+  )
 
   const handleDownload = (forceFormat?: Format) => {
     const exts: Record<Format, { ext: string; mime: string }> = {
@@ -187,14 +233,15 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
     }
     const fmt = forceFormat ?? format
     const { ext, mime } = exts[fmt]
+    const structured = extras.length === 0 ? list.structured : undefined
     const body =
       fmt === 'json'
-        ? toJSON(list.items, list.structured)
+        ? toJSON(combinedItems, structured)
         : fmt === 'csv'
-          ? toCSV(list.items, list.structured)
+          ? toCSV(combinedItems, structured)
           : fmt === 'ts'
-            ? toTS(list.slug, list.items, list.structured)
-            : list.items.join('\n')
+            ? toTS(list.slug, combinedItems, structured)
+            : combinedItems.join('\n')
     const blob = new Blob([body], { type: mime })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
@@ -219,9 +266,9 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
 
   const isHex = list.slug === HEX_SLUG
   const avgLength =
-    list.items.length === 0
+    combinedItems.length === 0
       ? 0
-      : list.items.reduce((sum, item) => sum + item.length, 0) / list.items.length
+      : combinedItems.reduce((sum, item) => sum + item.length, 0) / combinedItems.length
 
   return (
     <>
@@ -320,6 +367,16 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                         <button
                           type="button"
                           className="btn btn-secondary"
+                          onClick={() => augment(10)}
+                          disabled={augmenting}
+                          title="Generate more items in the same style with AI"
+                        >
+                          <Sparkles />
+                          {augmenting ? 'Generating…' : 'Add with AI'}
+                        </button>
+                        <button
+                          type="button"
+                          className="btn btn-secondary"
                           onClick={() => handleDownload()}
                           title={`Download .${format === 'list' ? 'txt' : format}`}
                         >
@@ -338,6 +395,11 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                     </div>
                     <div className="ls-detail-meta-row">
                       <span className="pill">{list.items.length} items</span>
+                      {extras.length > 0 && (
+                        <span className="pill pill-accent" title="Locally added via AI">
+                          + {extras.length} yours
+                        </span>
+                      )}
                       {list.structured && <span className="pill">structured</span>}
                       {query && (
                         <span className="pill">
@@ -345,6 +407,11 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                         </span>
                       )}
                     </div>
+                    {augmentError && (
+                      <div className="skill-error">
+                        <strong>Generation failed.</strong> {augmentError}
+                      </div>
+                    )}
                   </div>
 
                   <div className="ls-detail-tabs">
@@ -418,22 +485,66 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                       </div>
                     </div>
                   ) : (
-                    <ul className="ls-detail-list">
-                      {filteredItems.map((item, i) => (
-                        <li
-                          key={`${item}-${i}`}
-                          className={`ls-detail-item${copiedIndex === i ? ' copied' : ''}`}
-                          title={item}
-                          onClick={() => handleCopyItem(item, i)}
-                        >
-                          <span className="idx">{String(i + 1).padStart(2, '0')}</span>
-                          <span className="v">{item}</span>
-                          <span className="copy-btn">
-                            {copiedIndex === i ? <Check /> : <Copy />}
+                    <>
+                      <ul className="ls-detail-list">
+                        {filteredItems.map((item, i) => {
+                          const extraOffset = combinedItems.indexOf(item)
+                          const isExtra = extraOffset >= list.items.length
+                          const extraIdx = isExtra ? extraOffset - list.items.length : -1
+                          return (
+                            <li
+                              key={`${item}-${i}`}
+                              className={`ls-detail-item${copiedIndex === i ? ' copied' : ''}${isExtra ? ' is-extra' : ''}`}
+                              title={item}
+                              onClick={() => handleCopyItem(item, i)}
+                            >
+                              <span className="idx">{String(i + 1).padStart(2, '0')}</span>
+                              <span className="v">{item}</span>
+                              {isExtra && (
+                                <span
+                                  className="extra-badge"
+                                  title="Locally added via AI"
+                                >
+                                  AI
+                                </span>
+                              )}
+                              {isExtra ? (
+                                <button
+                                  type="button"
+                                  className="copy-btn extra-remove"
+                                  title="Remove this addition"
+                                  onClick={(e) => {
+                                    e.stopPropagation()
+                                    removeAt(extraIdx)
+                                  }}
+                                >
+                                  ×
+                                </button>
+                              ) : (
+                                <span className="copy-btn">
+                                  {copiedIndex === i ? <Check /> : <Copy />}
+                                </span>
+                              )}
+                            </li>
+                          )
+                        })}
+                      </ul>
+                      {extras.length > 0 && !query && (
+                        <div className="ls-detail-extras-foot">
+                          <span className="ls-detail-extras-note">
+                            {extras.length} item{extras.length === 1 ? '' : 's'} added
+                            locally · stored in this browser
                           </span>
-                        </li>
-                      ))}
-                    </ul>
+                          <button
+                            type="button"
+                            className="btn btn-ghost"
+                            onClick={clear}
+                          >
+                            Clear additions
+                          </button>
+                        </div>
+                      )}
+                    </>
                   )}
                 </div>
               </div>
@@ -441,9 +552,12 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
               <div>
                 <div className="rail-card rail-card-hero">
                   <div className="rail-hero">
-                    <div className="rail-hero-value">{formatNumber(list.items.length)}</div>
+                    <div className="rail-hero-value">{formatNumber(combinedItems.length)}</div>
                     <div className="rail-hero-label">
-                      {list.items.length === 1 ? 'item' : 'items'} in this list
+                      {combinedItems.length === 1 ? 'item' : 'items'}
+                      {extras.length > 0 && (
+                        <> · {extras.length} from AI</>
+                      )}
                     </div>
                   </div>
                   <div className="rail-stats-grid">
@@ -453,7 +567,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                     </div>
                     <div className="rail-stat">
                       <span className="lbl">SIZE</span>
-                      <span className="v">{bytesToKb(list.items)} KB</span>
+                      <span className="v">{bytesToKb(combinedItems)} KB</span>
                     </div>
                   </div>
                 </div>
