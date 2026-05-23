@@ -951,6 +951,22 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   color: var(--text-primary);
 }
 
+.cmd-row-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cmd-row-score {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-subdued);
+  background: var(--bg-surface-inset);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
 .cmd-row mark {
   background: rgba(254, 240, 138, 0.85);
   color: var(--text-primary);

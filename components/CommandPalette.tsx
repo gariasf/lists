@@ -101,6 +101,13 @@ interface GenResult {
   ts: number
 }
 
+interface SemanticMatch {
+  score: number
+  value: string
+  slug: string
+  list: string
+}
+
 export default function CommandPalette() {
   const {
     catalog,
@@ -120,8 +127,13 @@ export default function CommandPalette() {
   const [generating, setGenerating] = useState(false)
   const [generated, setGenerated] = useState<GenResult | null>(null)
   const [genError, setGenError] = useState<string | null>(null)
+  const [semanticMatches, setSemanticMatches] = useState<SemanticMatch[]>([])
+  const [semanticQuery, setSemanticQuery] = useState('')
+  const [semanticLoading, setSemanticLoading] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
   const listRef = useRef<HTMLDivElement>(null)
+  const semanticAbortRef = useRef<AbortController | null>(null)
+  const semanticDebounceRef = useRef<number | null>(null)
 
   useEffect(() => {
     if (!open) return
@@ -130,9 +142,73 @@ export default function CommandPalette() {
     setGenerating(false)
     setGenError(null)
     setGenerated(null)
+    setSemanticMatches([])
+    setSemanticQuery('')
+    setSemanticLoading(false)
     requestAnimationFrame(() => inputRef.current?.focus())
     if (!index) loadSearchIndex().then(setIndex)
   }, [open, index])
+
+  // Debounced semantic search.
+  useEffect(() => {
+    if (!open) return
+    const q = query.trim()
+
+    if (semanticDebounceRef.current) {
+      window.clearTimeout(semanticDebounceRef.current)
+      semanticDebounceRef.current = null
+    }
+    if (semanticAbortRef.current) {
+      semanticAbortRef.current.abort()
+      semanticAbortRef.current = null
+    }
+
+    if (q.length < 3 || parseGenCommand(q) || parseRandomCommand(q)) {
+      setSemanticMatches([])
+      setSemanticQuery('')
+      setSemanticLoading(false)
+      return
+    }
+
+    semanticDebounceRef.current = window.setTimeout(async () => {
+      const controller = new AbortController()
+      semanticAbortRef.current = controller
+      setSemanticLoading(true)
+      try {
+        const res = await fetch('/api/ai/semantic', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ query: q, limit: 8 }),
+          signal: controller.signal,
+        })
+        if (!res.ok) {
+          setSemanticMatches([])
+          return
+        }
+        const data = (await res.json()) as { matches: SemanticMatch[] }
+        // Drop low-confidence hits to keep the section honest.
+        const filtered = (data.matches ?? []).filter((m) => m.score >= 0.55)
+        setSemanticMatches(filtered)
+        setSemanticQuery(q)
+      } catch (err) {
+        if ((err as Error).name !== 'AbortError') {
+          setSemanticMatches([])
+        }
+      } finally {
+        if (semanticAbortRef.current === controller) {
+          setSemanticLoading(false)
+          semanticAbortRef.current = null
+        }
+      }
+    }, 220)
+
+    return () => {
+      if (semanticDebounceRef.current) {
+        window.clearTimeout(semanticDebounceRef.current)
+        semanticDebounceRef.current = null
+      }
+    }
+  }, [open, query])
 
   const showToast = useCallback((msg: string) => {
     setToast(msg)
@@ -429,6 +505,35 @@ export default function CommandPalette() {
       }
     }
 
+    // 3.5) Semantic matches (Vectorize, debounced)
+    if (semanticQuery === q && semanticMatches.length > 0) {
+      const catalogBySlugSemantic = catalogBySlug
+      const rows: Row[] = semanticMatches.map((m, i) => {
+        const listEntry = catalogBySlugSemantic.get(m.slug)
+        const cat = listEntry?.category ?? 'all'
+        const Icon = CATEGORY_ICONS[cat] ?? Layers
+        return {
+          key: `sem-${i}-${m.slug}-${m.value}`,
+          icon: <Icon />,
+          title: m.value,
+          subtitle: (
+            <span className="cmd-row-meta">
+              <span>in {m.list}</span>
+              <span className="cmd-row-score">{Math.round(m.score * 100)}%</span>
+            </span>
+          ),
+          trailing: <Copy />,
+          onActivate: () => {
+            copyText(m.value, `Copied "${m.value}"`)
+            pushRecent(m.slug)
+            closePalette()
+          },
+          group: 'Semantic',
+        }
+      })
+      built.push({ label: 'Similar in meaning', rows })
+    }
+
     // 4) Fallback "Generate with AI" offer when query is meaningful
     if (q.length >= 3) {
       built.push({
@@ -460,6 +565,8 @@ export default function CommandPalette() {
     index,
     generated,
     generating,
+    semanticMatches,
+    semanticQuery,
     runGenerate,
     goToList,
     randomFromSlug,
@@ -656,9 +763,11 @@ export default function CommandPalette() {
             </span>
           </div>
           <div className="cmd-foot-status">
-            {index
-              ? `${index.items.length.toLocaleString()} items indexed`
-              : 'Loading index…'}
+            {semanticLoading
+              ? 'Searching semantically…'
+              : index
+                ? `${index.items.length.toLocaleString()} items indexed`
+                : 'Loading index…'}
           </div>
         </div>
       </div>

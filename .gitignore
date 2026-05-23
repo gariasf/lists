@@ -8,6 +8,9 @@
 # Generated at build time
 /public/search-index.json
 
+# Vectorize NDJSON dumps
+/.vectorize
+
 # Production
 /build
 

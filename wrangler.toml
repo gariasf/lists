@@ -5,3 +5,7 @@ pages_build_output_dir = "./out"
 
 [ai]
 binding = "AI"
+
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "lists-items"
