@@ -172,6 +172,20 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'clothes-en', name: 'Clothing Items', category: 'shopping', upstream: { file: 'clothes-en.txt' } },
   { slug: 'gifts-en', name: 'Gift Ideas', category: 'shopping', upstream: { file: 'gifts-en.txt' } },
 
+  // Shopping (local additions)
+  { slug: 'product-skus', name: 'Product SKUs', category: 'shopping', local: { file: 'product-skus.txt', format: 'txt' } },
+  { slug: 'tracking-ups', name: 'Tracking Numbers (UPS)', category: 'shopping', local: { file: 'tracking-ups.txt', format: 'txt' } },
+  { slug: 'tracking-fedex', name: 'Tracking Numbers (FedEx)', category: 'shopping', local: { file: 'tracking-fedex.txt', format: 'txt' } },
+  { slug: 'tracking-dhl', name: 'Tracking Numbers (DHL)', category: 'shopping', local: { file: 'tracking-dhl.txt', format: 'txt' } },
+  { slug: 'tracking-usps', name: 'Tracking Numbers (USPS)', category: 'shopping', local: { file: 'tracking-usps.txt', format: 'txt' } },
+  { slug: 'order-numbers', name: 'Order Numbers', category: 'shopping', local: { file: 'order-numbers.txt', format: 'txt' } },
+  { slug: 'brands-fashion', name: 'Brands (fashion)', category: 'shopping', local: { file: 'brands-fashion.txt', format: 'txt' } },
+  { slug: 'brands-beauty', name: 'Brands (beauty)', category: 'shopping', local: { file: 'brands-beauty.txt', format: 'txt' } },
+  { slug: 'brands-tech', name: 'Brands (tech)', category: 'shopping', local: { file: 'brands-tech.txt', format: 'txt' } },
+  { slug: 'brands-food', name: 'Brands (food & drink)', category: 'shopping', local: { file: 'brands-food.txt', format: 'txt' } },
+  { slug: 'brands-furniture', name: 'Brands (furniture)', category: 'shopping', local: { file: 'brands-furniture.txt', format: 'txt' } },
+  { slug: 'product-names-modern', name: 'Product Names (modern)', category: 'shopping', local: { file: 'product-names-modern.txt', format: 'txt' } },
+
   // Food
   { slug: 'food-en', name: 'Food Items', category: 'food', upstream: { file: 'food-en.txt' } },
   { slug: 'fruits-en', name: 'Fruits', category: 'food', upstream: { file: 'fruits-en.txt' } },

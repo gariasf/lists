@@ -1,0 +1,108 @@
+Coca-Cola
+Pepsi
+Dr Pepper
+Mountain Dew
+Sprite
+Fanta
+Schweppes
+San Pellegrino
+LaCroix
+Spindrift
+Liquid Death
+Topo Chico
+Perrier
+Evian
+Fiji
+Smartwater
+Aquafina
+Dasani
+Poland Spring
+Polar Seltzer
+Bubly
+Olipop
+Poppi
+Recess
+Whisps
+Cure
+Health-Ade Kombucha
+GT's Living Foods
+Kevita
+Soylent
+Huel
+Athletic Greens
+AG1
+Beyond Meat
+Impossible Foods
+Just Egg
+Oatly
+Califia Farms
+Silk
+Almond Breeze
+Ripple
+Lavva
+Chobani
+Fage
+Stonyfield
+Siggi's
+Dannon
+Yoplait
+Halo Top
+Ben & Jerry's
+Häagen-Dazs
+Magnum
+Talenti
+Van Leeuwen
+Tillamook
+Breyers
+Trader Joe's
+Whole Foods Market
+Aldi
+Lidl
+Costco
+Sam's Club
+Kroger
+Publix
+Wegmans
+H-E-B
+Sprouts
+Erewhon
+Bristol Farms
+Foxtrot
+Daily Provisions
+Joe & The Juice
+Kreation Kafe
+Cava
+Sweetgreen
+Chipotle
+Shake Shack
+In-N-Out
+Five Guys
+Whataburger
+Chick-fil-A
+Popeyes
+Raising Cane's
+KFC
+McDonald's
+Burger King
+Wendy's
+Subway
+Starbucks
+Blue Bottle
+La Colombe
+Stumptown
+Verve Coffee
+Intelligentsia
+Counter Culture
+Onyx
+Sightglass
+Ritual Coffee
+Philz Coffee
+Dunkin'
+Tim Hortons
+Costa Coffee
+Peet's Coffee
+Lavazza
+illy
+Nespresso
+Keurig
+Folgers
