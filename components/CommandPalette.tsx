@@ -276,7 +276,7 @@ export default function CommandPalette() {
         trailing: <Copy />,
         onActivate: () => {
           copyText(
-            generated.items.join('\n'),
+            generated.items.join(', '),
             `Copied ${generated.items.length} generated items`,
           )
         },
