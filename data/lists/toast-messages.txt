@@ -1,0 +1,100 @@
+Saved
+Saved automatically
+All changes saved
+Draft saved
+Link copied to clipboard
+Copied
+Copied to clipboard
+Project created
+Workspace created
+Invite sent
+Invites sent (3)
+Member added
+Member removed
+Role updated
+Permissions updated
+Setting saved
+Profile updated
+Avatar updated
+Password updated
+Email verified
+Account confirmed
+Sign-in successful
+Signed out
+Two-factor enabled
+Two-factor disabled
+Backup created
+Restore complete
+Sync complete
+Upload complete
+Download complete
+Deleted
+Deleted permanently
+Restored from trash
+Archived
+Unarchived
+Item duplicated
+Marked as done
+Marked as in progress
+Reopened
+Moved to "Backlog"
+Reordered
+Renamed
+Published
+Unpublished
+Visibility set to public
+Visibility set to private
+Shared with team
+Comment added
+Comment resolved
+Reaction added
+Subscribed
+Unsubscribed
+Notifications muted
+Notifications unmuted
+Plan upgraded to Pro
+Plan downgraded
+Cancellation scheduled for May 31
+Subscription resumed
+Payment successful
+Card added
+Default card updated
+Invoice downloaded
+Receipt sent to your email
+Refund issued
+Coupon applied
+Promo code applied
+Theme set to Dark
+Theme set to Light
+Language set to English
+Time zone updated
+Calendar connected
+Calendar disconnected
+Slack workspace connected
+GitHub repo connected
+Webhook saved
+API key generated
+API key revoked
+Integration installed
+Integration removed
+Feedback sent
+Bug report submitted
+Vote counted
+Reaction sent
+Booking confirmed
+Reservation canceled
+Order placed
+Order canceled
+Cart cleared
+Item added to cart
+Item removed from cart
+Wishlist updated
+Address saved
+Address removed
+Profile photo updated
+Cover photo updated
+Story posted
+Story deleted
+Reminder set
+Reminder cleared
+Onboarding complete — welcome aboard

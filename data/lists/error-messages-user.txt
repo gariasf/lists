@@ -1,0 +1,49 @@
+Something went wrong. Please try again.
+We couldn't load that. Refresh to try again.
+You're offline. Reconnect to keep working.
+Connection lost. We'll keep your work safe until you're back.
+That took too long to load. Try again or refresh.
+We couldn't reach our servers. Try again in a moment.
+This page doesn't exist anymore.
+You don't have access to this page.
+Sign in to continue.
+Your session expired. Please sign in again.
+Your password doesn't match. Try again.
+We didn't recognize that email or password.
+That email is already in use.
+Use a stronger password — at least 12 characters.
+That username is taken. Try a different one.
+Please confirm your email to continue.
+The verification link expired. Request a new one.
+That code is incorrect. Check and try again.
+The file is too large. Max size is 25 MB.
+Unsupported file format. Try a PNG, JPG, or PDF.
+Upload failed. Check your connection and retry.
+We couldn't save your changes. Please try again.
+This name is already in use within this workspace.
+Required field. Please fill it in to continue.
+Please enter a valid email address.
+Please enter a valid phone number.
+Your card was declined. Contact your bank or try a different card.
+Your card has expired. Add a new one to continue.
+Your subscription is paused. Resume it to use this feature.
+You've hit the plan limit. Upgrade to keep going.
+Free trial ended. Upgrade to keep working.
+This feature isn't available on your plan.
+Permission denied. Ask your workspace admin for access.
+You can't delete the last admin. Promote someone else first.
+That item couldn't be moved here.
+Two-factor code is wrong or expired. Try again.
+Backup codes are required to disable 2FA.
+This invite has expired. Ask for a new one.
+This link has expired.
+We couldn't find what you were looking for.
+No matches for that search.
+Sync failed. We'll retry in the background.
+Couldn't reach the integration. Reconnect and try again.
+Webhook delivery failed.
+Rate limit reached. Try again in a minute.
+Service is experiencing issues. Check our status page.
+A scheduled maintenance is underway. We'll be back shortly.
+Couldn't generate the report. Try a narrower date range.
+That date range is too long. Pick a shorter window.

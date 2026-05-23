@@ -1,0 +1,91 @@
+New message from Alex
+@you in #design-crit
+Sara mentioned you in a comment
+Your invite to Linear is ready
+Jamie requested your review on PR #482
+2 new replies in your thread
+Liam shared a file with you
+Your weekly digest is ready
+Stripe payment of $129.00 was successful
+Your invoice for May is available
+Card ending in 4242 was charged
+Bank deposit received: $2,400.00
+New follower: @priya
+Diego liked your post
+Aria started following you
+Your story is trending in your network
+3 new applicants for "Senior PM"
+Interview with Casey at 2:30 PM
+Reminder: 1:1 with Morgan in 10 minutes
+Standup starts in 5 minutes
+Daily summary ready for Tuesday
+Today's tasks are due in 3 hours
+Mentioned in "Q3 Roadmap" doc
+Your draft was auto-saved
+Document shared with Engineering
+Edit suggestion from Yusuf
+Comment resolved by Mei
+New version of the design file
+Figma file has unsaved changes
+Project "Atlas" reached 80% progress
+Sprint 14 closes tomorrow
+Deploy to production succeeded
+Build failed on main
+CI passed: ready to merge
+Pull request approved by 2 reviewers
+Merge conflict on feature/auth
+Incident SEV-2 acknowledged
+On-call shift starts in 30 minutes
+Alarm: latency p95 over threshold
+Service "billing-api" recovered
+Backup completed successfully
+Storage at 87% capacity
+Update available: v12.4
+Software update ready to install
+Calendar event in 15 minutes
+Meeting reminder: All-Hands
+Out of office: Riley is back Monday
+Vacation request approved
+Time off requires approval
+Performance review form due Friday
+Survey: How was your last meeting?
+Birthday today: Wish Camille
+Anniversary: 3 years at the company today
+Welcome to the workspace
+You've joined "Marketing"
+Account created successfully
+Your password was changed
+Sign-in from a new device
+Two-factor authentication enabled
+Backup codes generated
+Security alert: review recent activity
+Suspicious login attempt blocked
+Your trial ends in 7 days
+Upgrade to Pro to unlock this feature
+Limit reached: 100 of 100 messages
+Renewal coming up in 14 days
+Payment method expiring soon
+Subscription renewed for another year
+Refund of $24.00 processed
+Discount applied: 20% off
+Order confirmed: #A1029384
+Order shipped: arrives Wednesday
+Out for delivery
+Package delivered to front door
+Return label ready
+Refund initiated
+Booking confirmed for Friday at 7 PM
+Reservation reminder for tomorrow
+Your flight check-in opens in 1 hour
+Boarding starts at gate B12
+Ride arriving in 3 minutes
+Driver Carlos is here
+Order on its way: 14 min away
+Order arrived at the kitchen
+Table is ready for the Patel party
+Workout reminder
+30-minute run logged
+You hit your step goal
+Sleep summary for last night
+Heart rate spike detected
+Weekly mindfulness streak: 7 days

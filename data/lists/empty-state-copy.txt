@@ -1,0 +1,49 @@
+No messages yet. New ones will land here.
+Nothing here yet. Create your first project to get started.
+You're all caught up. Nice work.
+Your inbox is quiet — enjoy the calm.
+No results match your search. Try a different keyword.
+No comments on this thread yet. Be the first to add one.
+Nothing in your trash. Items you delete will appear here.
+No drafts saved. Start writing — we'll save as you go.
+You haven't followed anyone yet. Find someone interesting.
+No notifications. We'll ping you when something happens.
+No teams to show. Create one or ask to be invited.
+No tasks due today. Add one or take it easy.
+You're not part of any workspaces yet.
+No starred items. Star something to find it faster later.
+No invoices yet. They'll appear after your first payment.
+No transactions found in this period.
+No customers yet. Add one from the People tab.
+No deals in your pipeline. Try adding one to start.
+Your library is empty. Upload a file to begin.
+No documents shared with you. When someone shares, you'll see it here.
+No favorites yet. Tap the heart on anything to save it here.
+You haven't logged any activity. Get moving and check back.
+No friends here yet. Invite some to make this place feel like home.
+Nothing in your cart. Browse to find something you love.
+Your wishlist is empty. Save items to come back to.
+No upcoming events. Schedule one or join a public event.
+No orders yet. Check back after your first purchase.
+You haven't created any boards. Create one and start pinning.
+No photos here. Take or upload one to get started.
+No data to show. Once data lands, charts will appear here.
+No bugs reported. We hope it stays that way.
+No integrations installed. Connect a tool to get started.
+No API keys yet. Generate one to start making requests.
+No webhooks configured. Add one to receive event payloads.
+No alerts firing. All your services look healthy.
+No deploys recorded. Ship something to see this come alive.
+No incidents. Long may it last.
+No errors in the last 24 hours.
+No reviews yet. Be the first to share what you think.
+No replies in this thread.
+No songs in this playlist. Add a few to start listening.
+No videos uploaded. Drop one to get started.
+You haven't published any posts. Write your first one to begin.
+Your followers list is empty for now.
+No bookmarks saved. Save a page to come back to it.
+No recipes in this folder. Add one from the Discover tab.
+No goals set. Create a goal to start tracking progress.
+No habits today. Add one to keep your streak going.
+No notes here. Capture an idea — we'll save it as you type.

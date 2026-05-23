@@ -126,6 +126,14 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'phone-au_au', name: 'Phone Numbers (Australian)', category: 'communication', local: { file: 'phone-au_AU.txt', format: 'txt' } },
   { slug: 'phone-br_br', name: 'Phone Numbers (Brazilian)', category: 'communication', local: { file: 'phone-br_BR.txt', format: 'txt' } },
   { slug: 'phone-mx_mx', name: 'Phone Numbers (Mexican)', category: 'communication', local: { file: 'phone-mx_MX.txt', format: 'txt' } },
+  { slug: 'notification-titles', name: 'Notification Titles', category: 'communication', local: { file: 'notification-titles.txt', format: 'txt' } },
+  { slug: 'toast-messages', name: 'Toast Messages', category: 'communication', local: { file: 'toast-messages.txt', format: 'txt' } },
+  { slug: 'empty-state-copy', name: 'Empty State Copy', category: 'communication', local: { file: 'empty-state-copy.txt', format: 'txt' } },
+  { slug: 'loading-messages', name: 'Loading Messages', category: 'communication', local: { file: 'loading-messages.txt', format: 'txt' } },
+  { slug: 'error-messages-user', name: 'Error Messages', category: 'communication', local: { file: 'error-messages-user.txt', format: 'txt' } },
+  { slug: 'cta-button-copy', name: 'CTA Button Copy', category: 'communication', local: { file: 'cta-button-copy.txt', format: 'txt' } },
+  { slug: 'email-signatures', name: 'Email Signatures', category: 'communication', local: { file: 'email-signatures.txt', format: 'txt' } },
+  { slug: 'push-notifications', name: 'Push Notifications', category: 'communication', local: { file: 'push-notifications.txt', format: 'txt' } },
 
   // Finance
   { slug: 'creditcardnumber', name: 'Credit Card Numbers', category: 'finance', upstream: { file: 'creditcardnumber.txt' } },
