@@ -1,0 +1,44 @@
+Objective: Grow weekly active users to 1M
+Key Result: Increase D7 retention from 22% to 35%
+Key Result: Launch invite-friends flow with k-factor > 0.4
+Key Result: Reduce time-to-aha from 5 min to under 90 sec
+Objective: Become the default tool for product teams
+Key Result: Ship 4 enterprise features (SSO, SAML, audit log, RBAC)
+Key Result: Land 30 logos with > 100 seats
+Key Result: Cut median TTFV to under 1 day across new workspaces
+Objective: Reach $50M ARR by year-end
+Key Result: Close 8 deals > $500K ACV
+Key Result: Lift net retention from 108% to 120%
+Key Result: Open a London office staffed with 6 AEs
+Objective: Make the product 10× faster
+Key Result: Reduce p95 page load from 2.3s to 600ms
+Key Result: Cut cold start latency to under 100ms
+Key Result: Move 95% of writes off the legacy queue
+Objective: Earn the trust of security teams
+Key Result: Pass SOC 2 Type II audit with zero exceptions
+Key Result: Ship customer-managed encryption keys
+Key Result: Publish a public security and trust portal
+Objective: Build the best support experience in our category
+Key Result: Lift CSAT from 87 to 95
+Key Result: Reduce first-response time to under 5 min during business hours
+Key Result: Deflect 40% of tickets with self-serve answers
+Objective: Make hiring a competitive advantage
+Key Result: Hire 14 senior ICs with > 80% offer accept rate
+Key Result: Cut median time-to-close from 32 days to 18 days
+Key Result: Maintain 0 regrettable attrition this quarter
+Objective: Ship a delightful mobile app
+Key Result: Launch on iOS and Android in Q3
+Key Result: Reach 4.7+ store rating with > 1,000 reviews
+Key Result: 50% of weekly actives use mobile at least once a week
+Objective: Reduce infra spend by 30% without losing reliability
+Key Result: Migrate 80% of workloads to spot instances
+Key Result: Cut cold storage by archiving objects > 90 days old
+Key Result: Hold p99 latency flat at < 350ms while cutting node count by 40%
+Objective: Ship an AI feature customers love
+Key Result: Achieve > 60% weekly usage among free users who tried it
+Key Result: Hit 30% conversion to paid for AI-engaged accounts
+Key Result: Bring inference cost per active user under $0.50/month
+Objective: Make our brand show up everywhere our buyers do
+Key Result: Reach 150K organic LinkedIn followers
+Key Result: Land 8 podcast features with > 10K listens each
+Key Result: Grow newsletter to 80K subscribers

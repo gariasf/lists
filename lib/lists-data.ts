@@ -100,6 +100,17 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'dunsnumber-en_us', name: 'DUNS Numbers', category: 'business', upstream: { file: 'dunsnumber-en_US.txt' } },
   { slug: 'ein-en_us', name: 'EIN Numbers', category: 'business', upstream: { file: 'ein-en_US.txt' } },
 
+  // Business (local additions)
+  { slug: 'companies-modern', name: 'Companies (modern)', category: 'business', local: { file: 'companies-modern.txt', format: 'txt' } },
+  { slug: 'ai-companies', name: 'AI Companies', category: 'business', local: { file: 'ai-companies.txt', format: 'txt' } },
+  { slug: 'vc-firms', name: 'VC Firms', category: 'business', local: { file: 'vc-firms.txt', format: 'txt' } },
+  { slug: 'slack-channels', name: 'Slack Channels', category: 'business', local: { file: 'slack-channels.txt', format: 'txt' } },
+  { slug: 'meeting-titles', name: 'Meeting Titles', category: 'business', local: { file: 'meeting-titles.txt', format: 'txt' } },
+  { slug: 'departments', name: 'Departments', category: 'business', local: { file: 'departments.txt', format: 'txt' } },
+  { slug: 'pricing-tiers', name: 'Pricing Tiers', category: 'business', local: { file: 'pricing-tiers.txt', format: 'txt' } },
+  { slug: 'product-taglines', name: 'Product Taglines', category: 'business', local: { file: 'product-taglines.txt', format: 'txt' } },
+  { slug: 'okrs', name: 'OKRs', category: 'business', local: { file: 'okrs.txt', format: 'txt' } },
+
   // Communication
   { slug: 'emailaddresses', name: 'Email Addresses', category: 'communication', upstream: { file: 'emailaddresses.txt' } },
   { slug: 'emailsubjects-en', name: 'Email Subjects', category: 'communication', upstream: { file: 'emailsubjects-en.txt' } },

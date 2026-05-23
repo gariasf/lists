@@ -1,0 +1,105 @@
+1:1
+Weekly 1:1
+Skip-level 1:1
+Standup
+Daily Standup
+Eng Standup
+Design Standup
+Product Standup
+Sprint Planning
+Sprint Review
+Sprint Retro
+Backlog Refinement
+Roadmap Review
+Kickoff
+Project Kickoff
+Brainstorm
+Whiteboarding Session
+Design Crit
+Design Review
+Code Review Sync
+Architecture Review
+Tech Talk
+Lunch & Learn
+All-Hands
+Town Hall
+AMA with the CEO
+Board Meeting
+Board Update
+Investor Update
+Customer Discovery
+Sales Sync
+Pipeline Review
+Forecast Review
+Pricing Discussion
+Onboarding 101
+New-Hire Welcome
+Buddy Coffee
+Coffee Chat
+Skip Coffee
+Office Hours
+Open Office Hours
+Bug Triage
+Incident Postmortem
+Incident Retro
+RCA Walkthrough
+Quarterly Planning
+OKR Planning
+OKR Check-in
+QBR
+Monthly Business Review
+Strategy Offsite
+Leadership Offsite
+Eng Offsite
+All-Co Offsite
+Holiday Party
+Happy Hour
+Team Dinner
+Welcome Drinks
+Demo Day
+Internal Demo
+Customer Demo
+Product Demo
+Investor Demo
+Pitch Practice
+Pitch Review
+Performance Review
+Mid-Year Review
+Annual Review
+Calibration
+Promo Committee
+Hiring Debrief
+Interview Debrief
+Phone Screen
+Onsite Loop
+Take-Home Review
+Reference Call
+Closing Call
+Offer Discussion
+Talent Forum
+Sourcing Sync
+Recruiter Sync
+Comp Review
+Salary Discussion
+Equity Review
+Roadmap Roadshow
+RFC Review
+Postmortem Review
+Launch Readiness
+Launch Sync
+Marketing Standup
+Brand Review
+Press Briefing
+PR Strategy
+Content Planning
+Editorial Sync
+Newsletter Review
+Webinar Planning
+Conference Prep
+Speaker Prep
+Customer Advisory Board
+User Research Sync
+Research Readout
+Insights Sharing
+Roadmap Workshop
+Discovery Workshop

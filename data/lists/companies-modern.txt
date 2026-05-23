@@ -1,0 +1,119 @@
+Apple
+Microsoft
+NVIDIA
+Alphabet
+Amazon
+Meta
+Tesla
+Berkshire Hathaway
+TSMC
+Eli Lilly
+Visa
+JPMorgan Chase
+Walmart
+Mastercard
+ExxonMobil
+UnitedHealth
+Johnson & Johnson
+Costco
+Procter & Gamble
+Oracle
+Home Depot
+Bank of America
+Netflix
+ASML
+Salesforce
+AbbVie
+Coca-Cola
+Toyota
+Chevron
+Adobe
+AMD
+PepsiCo
+Cisco
+Disney
+Accenture
+McDonald's
+Wells Fargo
+T-Mobile
+Linde
+ServiceNow
+Intuit
+American Express
+Goldman Sachs
+Caterpillar
+Verizon
+Pfizer
+IBM
+Qualcomm
+BlackRock
+Comcast
+Stripe
+Databricks
+Canva
+Snowflake
+Datadog
+Cloudflare
+Shopify
+Square
+Block
+Atlassian
+GitLab
+GitHub
+Vercel
+Figma
+Notion
+Linear
+Airtable
+Asana
+Slack
+Zoom
+Dropbox
+Box
+Twilio
+Sendgrid
+SendBird
+Calendly
+HubSpot
+Zendesk
+Intercom
+Mailchimp
+Klaviyo
+Webflow
+Framer
+Miro
+Mural
+Loom
+1Password
+Okta
+Auth0
+Cloudinary
+Postmark
+Plaid
+Ramp
+Brex
+Mercury
+Rippling
+Gusto
+Deel
+Carta
+Anthropic
+OpenAI
+Mistral AI
+Perplexity AI
+xAI
+Hugging Face
+Cohere
+Inflection AI
+Runway
+ElevenLabs
+Cursor
+Replit
+LangChain
+LlamaIndex
+Pinecone
+Weights & Biases
+Modal
+Together AI
+Anyscale
+Scale AI

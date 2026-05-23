@@ -1,0 +1,82 @@
+Anthropic
+OpenAI
+Google DeepMind
+Mistral AI
+Cohere
+xAI
+Perplexity AI
+Inflection AI
+Hugging Face
+Stability AI
+Runway
+ElevenLabs
+Midjourney
+Black Forest Labs
+Pika
+Ideogram
+Suno
+Udio
+Character.AI
+Replika
+Cursor
+Codeium
+Tabnine
+Replit
+Lovable
+Bolt
+v0
+Magic
+Poolside
+Cognition
+Sourcegraph
+LangChain
+LlamaIndex
+Haystack
+Pinecone
+Chroma
+Weaviate
+Qdrant
+Milvus
+Weights & Biases
+Hex
+Modal
+Together AI
+Anyscale
+Scale AI
+Snorkel AI
+Labelbox
+Surge AI
+Gradient
+Vellum
+Predibase
+Lambda
+CoreWeave
+Crusoe
+Fireworks AI
+Groq
+Cerebras
+SambaNova
+Recursion Pharmaceuticals
+DeepL
+Sakana AI
+Reka AI
+01.AI
+Moonshot AI
+Zhipu AI
+Baichuan AI
+Aleph Alpha
+Mistral
+Glean
+Harvey
+Hippocratic AI
+Cresta
+Lighthouse AI
+Tessl
+Pinata
+Synthesia
+Tome
+Beautiful.AI
+Jasper
+Writer
+Copy.ai
+Notion AI

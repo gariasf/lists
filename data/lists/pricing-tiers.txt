@@ -1,0 +1,50 @@
+Free
+Hobby
+Starter
+Basic
+Personal
+Plus
+Standard
+Pro
+Premium
+Professional
+Team
+Business
+Growth
+Scale
+Enterprise
+Custom
+Lite
+Essentials
+Advanced
+Pro Trial
+Pro Annual
+Pro Monthly
+Team Annual
+Team Monthly
+Solo
+Indie
+Studio
+Agency
+Education
+Student
+Nonprofit
+Open Source
+Beta
+Early Access
+Founder Plan
+Lifetime
+Pay-as-you-go
+Usage-Based
+On-Demand
+Self-Hosted
+Cloud
+Cloud Pro
+Cloud Enterprise
+Dedicated
+Sovereign
+Government
+Public Sector
+Healthcare
+Financial Services
+HIPAA Edition
