@@ -71,6 +71,25 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'gpscoordinates', name: 'GPS Coordinates', category: 'location', upstream: { file: 'gpscoordinates.txt' } },
   { slug: 'hotels', name: 'Hotels', category: 'location', upstream: { file: 'hotels.txt' } },
 
+  // Location (local additions)
+  { slug: 'country-codes', name: 'Country Codes', category: 'location', local: { file: 'country-codes.json', format: 'json', valueKey: 'name' } },
+  { slug: 'timezones-iana', name: 'Timezones (IANA)', category: 'location', local: { file: 'timezones-iana.txt', format: 'txt' } },
+  { slug: 'states-us', name: 'US States', category: 'location', local: { file: 'states-us.txt', format: 'txt' } },
+  { slug: 'states-ca', name: 'Canadian Provinces', category: 'location', local: { file: 'states-ca.txt', format: 'txt' } },
+  { slug: 'states-mx', name: 'Mexican States', category: 'location', local: { file: 'states-mx.txt', format: 'txt' } },
+  { slug: 'states-au', name: 'Australian States', category: 'location', local: { file: 'states-au.txt', format: 'txt' } },
+  { slug: 'states-br', name: 'Brazilian States', category: 'location', local: { file: 'states-br.txt', format: 'txt' } },
+  { slug: 'states-in', name: 'Indian States', category: 'location', local: { file: 'states-in.txt', format: 'txt' } },
+  { slug: 'postal-zip-us', name: 'ZIP Codes (US)', category: 'location', local: { file: 'postal-zip-us.txt', format: 'txt' } },
+  { slug: 'postal-uk', name: 'Postcodes (UK)', category: 'location', local: { file: 'postal-uk.txt', format: 'txt' } },
+  { slug: 'postal-de', name: 'Postal Codes (German)', category: 'location', local: { file: 'postal-de.txt', format: 'txt' } },
+  { slug: 'postal-fr', name: 'Postal Codes (French)', category: 'location', local: { file: 'postal-fr.txt', format: 'txt' } },
+  { slug: 'postal-jp', name: 'Postal Codes (Japanese)', category: 'location', local: { file: 'postal-jp.txt', format: 'txt' } },
+  { slug: 'postal-br', name: 'Postal Codes (Brazil)', category: 'location', local: { file: 'postal-br.txt', format: 'txt' } },
+  { slug: 'postal-in', name: 'Postal Codes (Indian PIN)', category: 'location', local: { file: 'postal-in.txt', format: 'txt' } },
+  { slug: 'postal-ca', name: 'Postal Codes (Canada)', category: 'location', local: { file: 'postal-ca.txt', format: 'txt' } },
+  { slug: 'postal-au', name: 'Postal Codes (Australia)', category: 'location', local: { file: 'postal-au.txt', format: 'txt' } },
+
   // Business
   { slug: 'companies', name: 'Companies', category: 'business', upstream: { file: 'companies.txt' } },
   { slug: 'companiesfake', name: 'Fake Companies', category: 'business', upstream: { file: 'companiesfake.txt' } },
@@ -87,6 +106,15 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'phone-en_us', name: 'Phone Numbers (US)', category: 'communication', upstream: { file: 'phone-en_US.txt' } },
   { slug: 'phone-en_gb', name: 'Phone Numbers (UK)', category: 'communication', upstream: { file: 'phone-en_GB.txt' } },
   { slug: 'languages', name: 'Languages', category: 'communication', upstream: { file: 'languages.txt' } },
+
+  // Communication (local additions — more phone locales)
+  { slug: 'phone-de_de', name: 'Phone Numbers (German)', category: 'communication', local: { file: 'phone-de_DE.txt', format: 'txt' } },
+  { slug: 'phone-fr_fr', name: 'Phone Numbers (French)', category: 'communication', local: { file: 'phone-fr_FR.txt', format: 'txt' } },
+  { slug: 'phone-jp_jp', name: 'Phone Numbers (Japanese)', category: 'communication', local: { file: 'phone-jp_JP.txt', format: 'txt' } },
+  { slug: 'phone-in_in', name: 'Phone Numbers (Indian)', category: 'communication', local: { file: 'phone-in_IN.txt', format: 'txt' } },
+  { slug: 'phone-au_au', name: 'Phone Numbers (Australian)', category: 'communication', local: { file: 'phone-au_AU.txt', format: 'txt' } },
+  { slug: 'phone-br_br', name: 'Phone Numbers (Brazilian)', category: 'communication', local: { file: 'phone-br_BR.txt', format: 'txt' } },
+  { slug: 'phone-mx_mx', name: 'Phone Numbers (Mexican)', category: 'communication', local: { file: 'phone-mx_MX.txt', format: 'txt' } },
 
   // Finance
   { slug: 'creditcardnumber', name: 'Credit Card Numbers', category: 'finance', upstream: { file: 'creditcardnumber.txt' } },
