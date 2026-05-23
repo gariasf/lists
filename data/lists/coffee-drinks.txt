@@ -1,0 +1,104 @@
+Espresso
+Doppio
+Ristretto
+Lungo
+Macchiato
+Espresso Macchiato
+Cortado
+Gibraltar
+Piccolo
+Cappuccino
+Wet Cappuccino
+Dry Cappuccino
+Latte
+Caffè Latte
+Flat White
+Magic
+Latte Macchiato
+Café au Lait
+Mocha
+Caffè Mocha
+White Mocha
+Americano
+Long Black
+Red Eye
+Black Eye
+Dead Eye
+Drip Coffee
+Filter Coffee
+Pour-Over
+Chemex
+V60
+Kalita Wave
+AeroPress
+Siphon Coffee
+Vacuum Pot
+Cold Brew
+Nitro Cold Brew
+Iced Coffee
+Iced Latte
+Iced Americano
+Iced Macchiato
+Iced Mocha
+Iced Flat White
+Frappé
+Greek Frappé
+Frappuccino
+Affogato
+Vienna Coffee
+Café Bombón
+Espresso Romano
+Espresso con Panna
+Café Cubano
+Cortadito
+Carajillo
+Café de Olla
+Café Touba
+Turkish Coffee
+Greek Coffee
+Vietnamese Coffee
+Egg Coffee
+Coconut Coffee
+Bulletproof Coffee
+Dalgona Coffee
+Tonic Coffee
+Espresso Tonic
+Yuanyang
+Mazagran
+Café Brûlot
+Irish Coffee
+French Coffee
+Spanish Coffee
+Café Liégeois
+Affogato al Caffè
+Decaf Espresso
+Decaf Drip
+Decaf Latte
+Half-Caf Latte
+Iced Oat Latte
+Oat Cappuccino
+Almond Milk Latte
+Soy Latte
+Coconut Latte
+Lavender Latte
+Vanilla Latte
+Caramel Latte
+Hazelnut Latte
+Pumpkin Spice Latte
+Maple Latte
+Brown Sugar Latte
+Honey Latte
+Cinnamon Latte
+Mocha Latte
+Cinnamon Dolce Latte
+White Chocolate Mocha
+Salted Caramel Mocha
+Iced Brown Sugar Oatmilk Shaken Espresso
+Shaken Espresso
+Cortado con Hielo
+Sparkling Cold Brew
+Coffee Soda
+Slow Bar Drip
+Hand-Drip Single Origin
+Single Origin Espresso
+Geisha Pour-Over

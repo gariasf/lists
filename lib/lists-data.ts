@@ -190,6 +190,22 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'food-en', name: 'Food Items', category: 'food', upstream: { file: 'food-en.txt' } },
   { slug: 'fruits-en', name: 'Fruits', category: 'food', upstream: { file: 'fruits-en.txt' } },
 
+  // Food (local additions)
+  { slug: 'restaurants-modern', name: 'Restaurants (modern)', category: 'food', local: { file: 'restaurants-modern.txt', format: 'txt' } },
+  { slug: 'cuisines', name: 'Cuisines', category: 'food', local: { file: 'cuisines.txt', format: 'txt' } },
+  { slug: 'cocktails', name: 'Cocktails', category: 'food', local: { file: 'cocktails.txt', format: 'txt' } },
+  { slug: 'wines', name: 'Wines', category: 'food', local: { file: 'wines.txt', format: 'txt' } },
+  { slug: 'beers-craft', name: 'Beers (craft styles)', category: 'food', local: { file: 'beers-craft.txt', format: 'txt' } },
+  { slug: 'coffee-drinks', name: 'Coffee Drinks', category: 'food', local: { file: 'coffee-drinks.txt', format: 'txt' } },
+  { slug: 'teas', name: 'Teas', category: 'food', local: { file: 'teas.txt', format: 'txt' } },
+  { slug: 'ingredients', name: 'Ingredients', category: 'food', local: { file: 'ingredients.txt', format: 'txt' } },
+  { slug: 'allergens', name: 'Allergens', category: 'food', local: { file: 'allergens.txt', format: 'txt' } },
+  { slug: 'cheeses', name: 'Cheeses', category: 'food', local: { file: 'cheeses.txt', format: 'txt' } },
+  { slug: 'pizza-toppings', name: 'Pizza Toppings', category: 'food', local: { file: 'pizza-toppings.txt', format: 'txt' } },
+  { slug: 'vegetables', name: 'Vegetables', category: 'food', local: { file: 'vegetables.txt', format: 'txt' } },
+  { slug: 'spices', name: 'Spices', category: 'food', local: { file: 'spices.txt', format: 'txt' } },
+  { slug: 'desserts', name: 'Desserts', category: 'food', local: { file: 'desserts.txt', format: 'txt' } },
+
   // Entertainment
   { slug: 'movies', name: 'Movies', category: 'entertainment', upstream: { file: 'movies.txt' } },
   { slug: 'musicartists', name: 'Music Artists', category: 'entertainment', upstream: { file: 'musicartists.txt' } },

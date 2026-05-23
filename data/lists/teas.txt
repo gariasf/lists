@@ -1,0 +1,109 @@
+Black Tea
+English Breakfast
+Irish Breakfast
+Scottish Breakfast
+Earl Grey
+Lady Grey
+Earl Grey Crème
+Assam
+Darjeeling
+Darjeeling First Flush
+Ceylon
+Keemun
+Lapsang Souchong
+Yunnan
+Dianhong
+Golden Monkey
+Russian Caravan
+Masala Chai
+Karak Chai
+Bombay Chai
+Green Tea
+Sencha
+Bancha
+Gyokuro
+Genmaicha
+Hojicha
+Kukicha
+Matcha
+Ceremonial Matcha
+Long Jing
+Bi Luo Chun
+Mao Feng
+Jasmine Green
+Dragonwell
+White Tea
+Silver Needle
+Bai Mu Dan
+Shou Mei
+Gong Mei
+Oolong
+Tieguanyin
+Dong Ding
+Da Hong Pao
+Oriental Beauty
+Phoenix Dancong
+Wuyi Oolong
+Milk Oolong
+Light Oolong
+Dark Oolong
+Pu-erh
+Sheng Pu-erh
+Shou Pu-erh
+Aged Pu-erh
+Liu Bao
+Hei Cha
+Yellow Tea
+Junshan Yinzhen
+Huoshan Huangya
+Herbal Tea
+Tisane
+Chamomile
+Peppermint
+Spearmint
+Lemon Balm
+Rooibos
+Honeybush
+Hibiscus
+Lemongrass
+Ginger
+Tulsi
+Holy Basil
+Fennel
+Anise
+Lavender
+Rose Petal
+Yerba Mate
+Yerba Buena
+Matcha Latte
+Hojicha Latte
+Chai Latte
+London Fog
+Genmaicha Latte
+Turmeric Tea
+Golden Milk
+Iced Matcha
+Iced Green
+Cold Brew Tea
+Bubble Tea
+Boba Milk Tea
+Taro Milk Tea
+Matcha Milk Tea
+Thai Iced Tea
+Vietnamese Iced Tea
+Moroccan Mint Tea
+Russian Zavarka
+Spanish Manzanilla
+Yuja Tea
+Yuzu Tea
+Barley Tea
+Mugicha
+Buckwheat Tea
+Sobacha
+Wheatgrass Tea
+Ginger Lemon Tea
+Cinnamon Tea
+Cardamom Tea
+Saffron Tea
+Tulsi Holy Basil
+Ashwagandha Tea
