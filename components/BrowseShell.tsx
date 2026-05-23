@@ -6,10 +6,12 @@ import { useSearchParams } from 'next/navigation'
 import type { ListItem, Category } from '@/lib/types'
 import { CATEGORIES } from '@/lib/types'
 import { usePalette } from '@/lib/palette-context'
+import { useTheme } from '@/lib/use-theme'
 import {
   Search,
   Logo,
   Github,
+  Monitor,
   Moon,
   Sun,
   Layers,
@@ -161,15 +163,17 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
   const [activeCategory, setActiveCategory] = useState<Category>(initialCategory)
   const [query, setQuery] = useState('')
   const [toast, setToast] = useState<string | null>(null)
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
   const searchRef = useRef<HTMLInputElement>(null)
   const { openPalette } = usePalette()
-
-  useEffect(() => {
-    const root = document.documentElement
-    if (theme === 'dark') root.setAttribute('data-theme', 'dark')
-    else root.removeAttribute('data-theme')
-  }, [theme])
+  const { mode: themeMode, cycleMode: cycleTheme } = useTheme()
+  const themeIcon =
+    themeMode === 'system' ? <Monitor /> : themeMode === 'dark' ? <Moon /> : <Sun />
+  const themeLabel =
+    themeMode === 'system'
+      ? 'System theme (click for light)'
+      : themeMode === 'light'
+        ? 'Light theme (click for dark)'
+        : 'Dark theme (click for system)'
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -286,10 +290,11 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
             <button
               type="button"
               className="ls-icon-btn ghost"
-              onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
-              aria-label="Toggle theme"
+              onClick={cycleTheme}
+              aria-label={themeLabel}
+              title={themeLabel}
             >
-              {theme === 'dark' ? <Sun /> : <Moon />}
+              {themeIcon}
             </button>
           </div>
 
@@ -361,11 +366,12 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
             </a>
             <button
               type="button"
-              className="ls-icon-btn"
-              onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
-              aria-label="Toggle theme"
+              className="ls-icon-btn ghost"
+              onClick={cycleTheme}
+              aria-label={themeLabel}
+              title={themeLabel}
             >
-              {theme === 'dark' ? <Sun /> : <Moon />}
+              {themeIcon}
             </button>
           </div>
         </div>

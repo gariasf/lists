@@ -106,6 +106,13 @@ export default async function RootLayout({
         <meta name="theme-color" content="#0B0B0B" />
         <meta name="msapplication-TileColor" content="#0B0B0B" />
         <script
+          // Pre-paint theme resolver. Runs before React hydration to avoid
+          // a flash of light theme when the user prefers dark.
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var m=localStorage.getItem('lists.theme');var eff;if(m==='dark'||m==='light'){eff=m;}else{eff=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(eff==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();`,
+          }}
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />

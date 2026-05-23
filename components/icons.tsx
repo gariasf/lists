@@ -202,6 +202,13 @@ export const Sun = makeIcon(
   </>
 )
 
+export const Monitor = makeIcon(
+  <>
+    <rect x="3" y="4" width="18" height="12" rx="2" />
+    <path d="M8 20h8M12 16v4" />
+  </>
+)
+
 export const Sparkles = makeIcon(
   <>
     <path d="M12 3 13.9 8.1 19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z" />
