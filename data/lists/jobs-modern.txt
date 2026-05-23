@@ -1,0 +1,113 @@
+Staff Software Engineer
+Principal Engineer
+Distinguished Engineer
+Senior Staff Engineer
+Senior Software Engineer
+Software Engineer II
+Software Engineer III
+Engineering Manager
+Senior Engineering Manager
+Director of Engineering
+VP of Engineering
+Chief Technology Officer
+Head of Engineering
+Head of Platform
+Site Reliability Engineer
+Platform Engineer
+Infrastructure Engineer
+DevOps Engineer
+Cloud Engineer
+Security Engineer
+Application Security Engineer
+Trust & Safety Engineer
+Compliance Engineer
+Data Engineer
+Analytics Engineer
+Data Scientist
+Senior Data Scientist
+Machine Learning Engineer
+AI/ML Engineer
+Applied Scientist
+Research Scientist
+Research Engineer
+Prompt Engineer
+LLM Engineer
+Foundation Model Engineer
+Forward Deployed Engineer
+Solutions Architect
+Solutions Engineer
+Customer Success Engineer
+Developer Advocate
+Developer Relations Engineer
+Head of Developer Relations
+Technical Writer
+Documentation Engineer
+Frontend Engineer
+Backend Engineer
+Full-Stack Engineer
+Mobile Engineer
+iOS Engineer
+Android Engineer
+Embedded Engineer
+Firmware Engineer
+Hardware Engineer
+Robotics Engineer
+QA Engineer
+Test Engineer
+Release Engineer
+Build Engineer
+Tooling Engineer
+Design Engineer
+Product Engineer
+Growth Engineer
+Marketing Engineer
+Product Designer
+Senior Product Designer
+Staff Product Designer
+Design Manager
+Head of Design
+VP of Design
+Chief Design Officer
+Brand Designer
+Motion Designer
+Illustrator
+UX Researcher
+UX Writer
+Content Designer
+Service Designer
+Design Technologist
+Design Systems Lead
+Product Manager
+Senior Product Manager
+Group Product Manager
+Director of Product
+VP of Product
+Chief Product Officer
+Technical Program Manager
+Program Manager
+Project Manager
+Chief of Staff
+Chief Operating Officer
+Chief Executive Officer
+Chief Financial Officer
+Chief Marketing Officer
+Chief People Officer
+Chief AI Officer
+Head of Operations
+Head of People
+Head of Talent
+Head of Marketing
+Head of Sales
+Account Executive
+Solutions Consultant
+Customer Success Manager
+Community Manager
+Communications Lead
+PR Manager
+Open Source Maintainer
+Founder
+Co-Founder
+Entrepreneur in Residence
+Investor
+Venture Partner
+General Partner

@@ -232,12 +232,30 @@ export const Eye = makeIcon(
 
 export const Logo = makeIcon(<path d="M5 7h14M5 12h14M5 17h9" />)
 
+export const Car = makeIcon(
+  <>
+    <path d="M5 17h14" />
+    <path d="M5 17v-5l2-5h10l2 5v5" />
+    <circle cx="7.5" cy="17.5" r="1.5" />
+    <circle cx="16.5" cy="17.5" r="1.5" />
+    <path d="M7 12h10" />
+  </>
+)
+
+export const Leaf = makeIcon(
+  <>
+    <path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 9-10 2 6 2 12 0 17z" />
+    <path d="M2 21c2-3 6-7 10-9" />
+  </>
+)
+
 import type { ComponentType } from 'react'
 
 export const CATEGORY_ICONS: Record<string, ComponentType<IconProps>> = {
   all: Layers,
   business: Briefcase,
   communication: Message,
+  culture: Sparkles,
   design: Palette,
   education: Cap,
   entertainment: Film,
@@ -246,10 +264,12 @@ export const CATEGORY_ICONS: Record<string, ComponentType<IconProps>> = {
   health: Heart,
   identity: User,
   location: Map,
+  nature: Leaf,
   numbers: Hash,
   shopping: Cart,
   sports: Trophy,
   tech: Cpu,
   text: Type,
   time: Clock,
+  transport: Car,
 }

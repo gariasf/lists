@@ -679,6 +679,23 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   color: var(--color-success);
 }
 
+/* Code preview block (JSON/CSV/TS output) */
+.code-block {
+  margin: 0;
+  padding: 16px 20px 22px;
+  background: var(--bg-container-inset);
+  border-top: 1px solid var(--border-tertiary);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--text-primary);
+  white-space: pre;
+  overflow-x: auto;
+  max-height: 520px;
+}
+
+.code-block code { font-family: inherit; }
+
 /* Right rail */
 .rail-card {
   background: var(--bg-container);

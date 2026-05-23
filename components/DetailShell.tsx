@@ -31,6 +31,8 @@ interface DetailShellProps {
 
 const HEX_SLUG = 'colorshex'
 
+type Format = 'list' | 'json' | 'csv' | 'ts'
+
 function formatNumber(n: number) {
   return n.toLocaleString()
 }
@@ -40,12 +42,63 @@ function bytesToKb(items: string[]) {
   return (total / 1024).toFixed(1)
 }
 
+function csvEscape(value: unknown): string {
+  const s = value == null ? '' : String(value)
+  return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
+}
+
+function toCSV(items: string[], structured?: Record<string, unknown>[]): string {
+  if (structured && structured.length > 0) {
+    const keys = Array.from(
+      new Set(structured.flatMap((row) => Object.keys(row))),
+    )
+    const header = keys.map(csvEscape).join(',')
+    const rows = structured.map((row) =>
+      keys.map((k) => csvEscape(row[k])).join(','),
+    )
+    return [header, ...rows].join('\n')
+  }
+  return ['value', ...items.map((v) => csvEscape(v))].join('\n')
+}
+
+function slugToCamel(slug: string): string {
+  return slug
+    .split(/[-_]/)
+    .filter(Boolean)
+    .map((part, i) =>
+      i === 0
+        ? part.toLowerCase()
+        : part[0].toUpperCase() + part.slice(1).toLowerCase(),
+    )
+    .join('')
+}
+
+function toTS(
+  slug: string,
+  items: string[],
+  structured?: Record<string, unknown>[],
+): string {
+  const name = slugToCamel(slug) || 'list'
+  if (structured && structured.length > 0) {
+    return `export const ${name} = ${JSON.stringify(structured, null, 2)} as const\n`
+  }
+  return `export const ${name}: string[] = ${JSON.stringify(items, null, 2)}\n`
+}
+
+function toJSON(
+  items: string[],
+  structured?: Record<string, unknown>[],
+): string {
+  return JSON.stringify(structured ?? items, null, 2)
+}
+
 export default function DetailShell({ list, relatedLists, allLists }: DetailShellProps) {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null)
   const [copiedAll, setCopiedAll] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
   const [query, setQuery] = useState('')
+  const [format, setFormat] = useState<Format>('list')
   const searchRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
@@ -84,11 +137,30 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
     }
   }
 
+  const formattedPayload = useMemo(() => {
+    const items = list.items
+    const structured = list.structured
+    switch (format) {
+      case 'json':
+        return toJSON(items, structured)
+      case 'csv':
+        return toCSV(items, structured)
+      case 'ts':
+        return toTS(list.slug, items, structured)
+      default:
+        return items.join('\n')
+    }
+  }, [format, list.items, list.structured, list.slug])
+
   const handleCopyAll = async () => {
     try {
-      await navigator.clipboard.writeText(list.items.join('\n'))
+      await navigator.clipboard.writeText(formattedPayload)
       setCopiedAll(true)
-      setToast(`Copied all ${list.items.length} items`)
+      const label =
+        format === 'list'
+          ? `Copied all ${list.items.length} items`
+          : `Copied ${list.items.length} items as ${format.toUpperCase()}`
+      setToast(label)
       setTimeout(() => setCopiedAll(false), 1400)
       setTimeout(() => setToast(null), 1800)
     } catch (err) {
@@ -97,13 +169,18 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
   }
 
   const handleDownload = () => {
-    const blob = new Blob([JSON.stringify(list.items, null, 2)], {
-      type: 'application/json',
-    })
+    const exts: Record<Format, { ext: string; mime: string }> = {
+      list: { ext: 'txt', mime: 'text/plain' },
+      json: { ext: 'json', mime: 'application/json' },
+      csv: { ext: 'csv', mime: 'text/csv' },
+      ts: { ext: 'ts', mime: 'text/plain' },
+    }
+    const { ext, mime } = exts[format]
+    const blob = new Blob([formattedPayload], { type: mime })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = `${list.slug}.json`
+    a.download = `${list.slug}.${ext}`
     document.body.appendChild(a)
     a.click()
     document.body.removeChild(a)
@@ -111,7 +188,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
   }
 
   const handleOpenJson = () => {
-    const blob = new Blob([JSON.stringify(list.items, null, 2)], {
+    const blob = new Blob([toJSON(list.items, list.structured)], {
       type: 'application/json',
     })
     const url = URL.createObjectURL(blob)
@@ -255,15 +332,36 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                         {category?.label}
                       </span>
                       <span className="pill">{list.items.length} items</span>
+                      {list.structured && <span className="pill">structured</span>}
                       {query && (
                         <span className="pill">
                           {filteredItems.length} match{filteredItems.length === 1 ? '' : 'es'}
                         </span>
                       )}
+                      <div style={{ marginLeft: 'auto' }}>
+                        <div className="fmt-tabs" role="tablist" aria-label="Output format">
+                          {(['list', 'json', 'csv', 'ts'] as const).map((f) => (
+                            <button
+                              key={f}
+                              type="button"
+                              role="tab"
+                              aria-selected={format === f}
+                              className={format === f ? 'on' : ''}
+                              onClick={() => setFormat(f)}
+                            >
+                              {f === 'ts' ? 'TS' : f === 'csv' ? 'CSV' : f === 'json' ? 'JSON' : 'List'}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  {filteredItems.length === 0 ? (
+                  {format !== 'list' ? (
+                    <pre className="code-block" aria-label={`${format.toUpperCase()} output`}>
+                      <code>{formattedPayload}</code>
+                    </pre>
+                  ) : filteredItems.length === 0 ? (
                     <div style={{ padding: '24px', color: 'var(--text-secondary)', fontSize: 13 }}>
                       No items match &ldquo;{query}&rdquo;.
                     </div>
