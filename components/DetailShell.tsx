@@ -460,7 +460,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                 <div className="rail-card dark">
                   <div className="rail-eyebrow">Tip</div>
                   <div className="tip-body">
-                    Press <kbd>⌘K</kbd> to search inside this list, or click any value to copy it.
+                    Click any value to copy it. Use the search above to filter this list, or press <kbd>⌘K</kbd> to jump anywhere.
                   </div>
                 </div>
               </div>
