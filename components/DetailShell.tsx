@@ -403,6 +403,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                         <li
                           key={`${item}-${i}`}
                           className={`ls-detail-item${copiedIndex === i ? ' copied' : ''}`}
+                          title={item}
                           onClick={() => handleCopyItem(item, i)}
                         >
                           <span className="idx">{String(i + 1).padStart(2, '0')}</span>
