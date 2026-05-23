@@ -153,217 +153,276 @@ export default function SkillRun({ skill, allLists }: Props) {
 
   const SkillIcon = SKILL_ICONS[skill.icon] ?? Sparkles
 
-  return (
-    <div className="ls-app d-only">
-      <aside className="ls-sidebar">
-        <Link href="/" className="ls-brand">
-          <span className="ls-brand-mark">
-            <Logo />
-          </span>
-          <span className="ls-brand-name">Lists</span>
-        </Link>
-
-        <div className="ls-side-label">Browse</div>
-        <Link href="/" className="ls-side-link">
-          <Layers />
-          All lists
-          <span className="count">{allLists.length}</span>
-        </Link>
-        <Link href="/skills" className="ls-side-link">
-          <Sparkles />
-          Skills
-        </Link>
-
-        <div className="ls-side-label">This skill</div>
-        <div className="ls-side-link active" style={{ cursor: 'default' }}>
-          <SkillIcon />
-          {skill.name}
-        </div>
-      </aside>
-
-      <div className="ls-main">
-        <div className="ls-topbar">
-          <button
-            type="button"
-            className="ls-search"
-            onClick={openPalette}
-            aria-label="Open command palette"
-          >
-            <Search />
-            <span>Search lists, items, or AI…</span>
-            <span className="ls-search-kbd">⌘K</span>
-          </button>
-          <div className="ls-spacer" />
-          <a
-            href="https://github.com/gariasf/lists"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ls-icon-btn"
-            aria-label="GitHub"
-          >
-            <Github />
-          </a>
-          <button
-            type="button"
-            className="ls-icon-btn ghost"
-            onClick={cycleTheme}
-            aria-label={themeLabel}
-            title={themeLabel}
-          >
-            {themeIcon}
-          </button>
-        </div>
-
-        <div className="ls-content">
-          <div className="crumb">
-            <Link href="/">All lists</Link>
-            <ChevronR />
-            <Link href="/skills">Skills</Link>
-            <ChevronR />
-            <span className="current">{skill.name}</span>
-          </div>
-
-          <div className="skill-detail">
-            <div className="skill-detail-head">
-              <h1 className="ls-detail-title">{skill.name}</h1>
-              <p className="skill-detail-desc">{skill.description}</p>
-            </div>
-
-            <div className="skill-knobs">
-              {skill.knobs.map((knob) => (
-                <label key={knob.name} className="skill-knob">
-                  <span className="skill-knob-label">{knob.label}</span>
-                  {knob.type === 'select' && knob.options ? (
-                    <select
-                      value={String(knobs[knob.name] ?? knob.default)}
-                      onChange={(e) =>
-                        setKnobs((k) => ({ ...k, [knob.name]: e.target.value }))
-                      }
-                    >
-                      {knob.options.map((o) => (
-                        <option key={o.value} value={o.value}>
-                          {o.label}
-                        </option>
-                      ))}
-                    </select>
-                  ) : knob.type === 'number' ? (
-                    <input
-                      type="number"
-                      min={knob.min}
-                      max={knob.max}
-                      value={Number(knobs[knob.name] ?? knob.default)}
-                      onChange={(e) =>
-                        setKnobs((k) => ({
-                          ...k,
-                          [knob.name]: Number(e.target.value),
-                        }))
-                      }
-                    />
-                  ) : (
-                    <input
-                      type="text"
-                      placeholder={knob.placeholder}
-                      value={String(knobs[knob.name] ?? knob.default)}
-                      onChange={(e) =>
-                        setKnobs((k) => ({ ...k, [knob.name]: e.target.value }))
-                      }
-                    />
-                  )}
-                </label>
+  const knobsBlock = (
+    <div className="skill-knobs">
+      {skill.knobs.map((knob) => (
+        <label key={knob.name} className="skill-knob">
+          <span className="skill-knob-label">{knob.label}</span>
+          {knob.type === 'select' && knob.options ? (
+            <select
+              value={String(knobs[knob.name] ?? knob.default)}
+              onChange={(e) =>
+                setKnobs((k) => ({ ...k, [knob.name]: e.target.value }))
+              }
+            >
+              {knob.options.map((o) => (
+                <option key={o.value} value={o.value}>
+                  {o.label}
+                </option>
               ))}
+            </select>
+          ) : knob.type === 'number' ? (
+            <input
+              type="number"
+              min={knob.min}
+              max={knob.max}
+              value={Number(knobs[knob.name] ?? knob.default)}
+              onChange={(e) =>
+                setKnobs((k) => ({
+                  ...k,
+                  [knob.name]: Number(e.target.value),
+                }))
+              }
+            />
+          ) : (
+            <input
+              type="text"
+              placeholder={knob.placeholder}
+              value={String(knobs[knob.name] ?? knob.default)}
+              onChange={(e) =>
+                setKnobs((k) => ({ ...k, [knob.name]: e.target.value }))
+              }
+            />
+          )}
+        </label>
+      ))}
 
-              <button
-                type="button"
-                className="btn btn-primary btn-lg"
-                onClick={run}
-                disabled={running}
-              >
-                <Sparkles />
-                {running ? 'Generating…' : 'Generate'}
-              </button>
-            </div>
+      <button
+        type="button"
+        className="btn btn-primary btn-lg"
+        onClick={run}
+        disabled={running}
+      >
+        <Sparkles />
+        {running ? 'Generating…' : 'Generate'}
+      </button>
+    </div>
+  )
 
-            {error && (
-              <div className="skill-error">
-                <strong>Something went wrong.</strong> {error}
-              </div>
-            )}
+  const errorBlock = error ? (
+    <div className="skill-error">
+      <strong>Something went wrong.</strong> {error}
+    </div>
+  ) : null
 
-            {result != null && (
-              <div className="skill-result">
-                <div className="skill-result-head">
-                  <div className="fmt-tabs">
-                    <button
-                      type="button"
-                      className={view === 'preview' ? 'on' : ''}
-                      onClick={() => setView('preview')}
-                    >
-                      Preview
-                    </button>
-                    <button
-                      type="button"
-                      className={view === 'json' ? 'on' : ''}
-                      onClick={() => setView('json')}
-                    >
-                      JSON
-                    </button>
-                    <button
-                      type="button"
-                      className={view === 'csv' ? 'on' : ''}
-                      onClick={() => setView('csv')}
-                    >
-                      CSV
-                    </button>
-                  </div>
-                  <div className="skill-result-actions">
-                    <button
-                      type="button"
-                      className="btn btn-secondary"
-                      onClick={handleDownload}
-                    >
-                      <Download />
-                      Download
-                    </button>
-                    <button
-                      type="button"
-                      className="btn btn-primary"
-                      onClick={handleCopy}
-                    >
-                      {copied ? <Check /> : <Copy />}
-                      {copied ? 'Copied' : 'Copy'}
-                    </button>
-                  </div>
-                </div>
-
-                {view === 'preview' ? (
-                  <SkillPreview skill={skill} result={result} />
-                ) : (
-                  <pre className="code-block">
-                    <code>
-                      {view === 'csv'
-                        ? toCSV(result)
-                        : JSON.stringify(result, null, 2)}
-                    </code>
-                  </pre>
-                )}
-              </div>
-            )}
+  const resultBlock =
+    result != null ? (
+      <div className="skill-result">
+        <div className="skill-result-head">
+          <div className="fmt-tabs">
+            <button
+              type="button"
+              className={view === 'preview' ? 'on' : ''}
+              onClick={() => setView('preview')}
+            >
+              Preview
+            </button>
+            <button
+              type="button"
+              className={view === 'json' ? 'on' : ''}
+              onClick={() => setView('json')}
+            >
+              JSON
+            </button>
+            <button
+              type="button"
+              className={view === 'csv' ? 'on' : ''}
+              onClick={() => setView('csv')}
+            >
+              CSV
+            </button>
+          </div>
+          <div className="skill-result-actions">
+            <button
+              type="button"
+              className="btn btn-secondary"
+              onClick={handleDownload}
+            >
+              <Download />
+              Download
+            </button>
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={handleCopy}
+            >
+              {copied ? <Check /> : <Copy />}
+              {copied ? 'Copied' : 'Copy'}
+            </button>
           </div>
         </div>
 
-        <div className="ls-bottombar">
-          <span>
-            <span className="kbd">⌘K</span>Search
-          </span>
-          <span>
-            <span className="kbd">Esc</span>Back
-          </span>
-          <div style={{ marginLeft: 'auto' }}>
-            Powered by Workers AI · Llama 3.1
+        {view === 'preview' ? (
+          <SkillPreview skill={skill} result={result} />
+        ) : (
+          <pre className="code-block">
+            <code>
+              {view === 'csv'
+                ? toCSV(result)
+                : JSON.stringify(result, null, 2)}
+            </code>
+          </pre>
+        )}
+      </div>
+    ) : null
+
+  return (
+    <>
+      <div className="ls-app d-only">
+        <aside className="ls-sidebar">
+          <Link href="/" className="ls-brand">
+            <span className="ls-brand-mark">
+              <Logo />
+            </span>
+            <span className="ls-brand-name">Lists</span>
+          </Link>
+
+          <div className="ls-side-label">Browse</div>
+          <Link href="/" className="ls-side-link">
+            <Layers />
+            All lists
+            <span className="count">{allLists.length}</span>
+          </Link>
+          <Link href="/skills" className="ls-side-link">
+            <Sparkles />
+            Skills
+          </Link>
+
+          <div className="ls-side-label">This skill</div>
+          <div className="ls-side-link active" style={{ cursor: 'default' }}>
+            <SkillIcon />
+            {skill.name}
+          </div>
+        </aside>
+
+        <div className="ls-main">
+          <div className="ls-topbar">
+            <button
+              type="button"
+              className="ls-search"
+              onClick={openPalette}
+              aria-label="Open command palette"
+            >
+              <Search />
+              <span>Search lists, items, or AI…</span>
+              <span className="ls-search-kbd">⌘K</span>
+            </button>
+            <div className="ls-spacer" />
+            <a
+              href="https://github.com/gariasf/lists"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ls-icon-btn"
+              aria-label="GitHub"
+            >
+              <Github />
+            </a>
+            <button
+              type="button"
+              className="ls-icon-btn ghost"
+              onClick={cycleTheme}
+              aria-label={themeLabel}
+              title={themeLabel}
+            >
+              {themeIcon}
+            </button>
+          </div>
+
+          <div className="ls-content">
+            <div className="crumb">
+              <Link href="/">All lists</Link>
+              <ChevronR />
+              <Link href="/skills">Skills</Link>
+              <ChevronR />
+              <span className="current">{skill.name}</span>
+            </div>
+
+            <div className="skill-detail">
+              <div className="skill-detail-head">
+                <h1 className="ls-detail-title">{skill.name}</h1>
+                <p className="skill-detail-desc">{skill.description}</p>
+              </div>
+
+              {knobsBlock}
+              {errorBlock}
+              {resultBlock}
+            </div>
+          </div>
+
+          <div className="ls-bottombar">
+            <span>
+              <span className="kbd">⌘K</span>Search
+            </span>
+            <span>
+              <span className="kbd">Esc</span>Back
+            </span>
+            <div style={{ marginLeft: 'auto' }}>
+              Powered by Workers AI · Llama 3.1
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <div className="m-frame m-only">
+        <div className="m-nav">
+          <Link href="/" className="brand">
+            <span className="brand-mark">
+              <Logo />
+            </span>
+            <span className="brand-name">Lists</span>
+          </Link>
+          <div className="right">
+            <a
+              href="https://github.com/gariasf/lists"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ls-icon-btn"
+              aria-label="GitHub"
+            >
+              <Github />
+            </a>
+            <button
+              type="button"
+              className="ls-icon-btn ghost"
+              onClick={cycleTheme}
+              aria-label={themeLabel}
+              title={themeLabel}
+            >
+              {themeIcon}
+            </button>
+          </div>
+        </div>
+
+        <div className="crumb m-crumb">
+          <Link href="/">All</Link>
+          <ChevronR />
+          <Link href="/skills">Skills</Link>
+          <ChevronR />
+          <span className="current">{skill.name}</span>
+        </div>
+
+        <div className="m-hero">
+          <h1>{skill.name}</h1>
+          <p>{skill.description}</p>
+        </div>
+
+        <div className="m-skill-body">
+          {knobsBlock}
+          {errorBlock}
+          {resultBlock}
+        </div>
+      </div>
+    </>
   )
 }
 

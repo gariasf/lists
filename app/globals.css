@@ -2132,3 +2132,85 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 .onboarding-tip.m-tip {
   margin: 0 0 12px;
 }
+
+/* Mobile shell: skill detail (knobs + result) */
+.m-skill-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0 16px 24px;
+}
+
+.m-crumb {
+  padding: 8px 16px 4px;
+  font-size: 12px;
+}
+
+.m-skill-body .skill-knobs {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  padding: 14px 16px;
+}
+
+.m-skill-body .skill-knob {
+  width: 100%;
+}
+
+.m-skill-body .skill-knob input,
+.m-skill-body .skill-knob select {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 12px;
+}
+
+.m-skill-body .skill-knob input[type="number"] {
+  width: 100%;
+}
+
+.m-skill-body .skill-knobs .btn {
+  margin-left: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.m-skill-body .skill-result {
+  padding: 12px 14px 14px;
+}
+
+.m-skill-body .skill-result-head {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.m-skill-body .skill-result-actions {
+  justify-content: flex-end;
+}
+
+.m-skill-body .skill-preview-row {
+  grid-template-columns: 1fr;
+  padding: 10px 12px;
+  gap: 8px 0;
+}
+
+.m-skill-body .skill-preview-avatar {
+  position: static;
+  align-self: flex-start;
+}
+
+.m-skill-body .skill-preview-record {
+  grid-template-columns: 1fr;
+  padding: 10px 12px;
+}
+
+.m-skill-body .skill-preview-record-row .skill-preview-label {
+  align-self: start;
+  margin-top: 4px;
+}
+
+.m-skill-body .code-block {
+  font-size: 11px;
+  padding: 10px 12px;
+  overflow-x: auto;
+}
