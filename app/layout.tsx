@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { PaletteProvider } from "@/lib/palette-context";
+import CommandPalette from "@/components/CommandPalette";
+import { getAllLists } from "@/lib/lists";
 
 const BASE_URL = "https://lists.gariasf.com";
 
@@ -68,11 +71,18 @@ export const metadata: Metadata = {
   category: "design tools",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const lists = await getAllLists();
+  const catalog = lists.map((l) => ({
+    slug: l.slug,
+    name: l.name,
+    category: l.category,
+  }));
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -100,7 +110,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <PaletteProvider catalog={catalog}>
+          {children}
+          <CommandPalette />
+        </PaletteProvider>
+      </body>
     </html>
   );
 }

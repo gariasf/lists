@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import type { ListItem } from '@/lib/types'
 import { CATEGORIES } from '@/lib/types'
+import { usePalette } from '@/lib/palette-context'
 import {
   Search,
   Logo,
@@ -100,6 +101,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
   const [query, setQuery] = useState('')
   const [format, setFormat] = useState<Format>('list')
   const searchRef = useRef<HTMLInputElement>(null)
+  const { openPalette, pushRecent } = usePalette()
 
   useEffect(() => {
     const root = document.documentElement
@@ -108,16 +110,20 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
   }, [theme])
 
   useEffect(() => {
+    pushRecent(list.slug)
+  }, [list.slug, pushRecent])
+
+  useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault()
-        searchRef.current?.focus()
+        openPalette()
       }
       if (e.key === 'Escape') searchRef.current?.blur()
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [])
+  }, [openPalette])
 
   const filteredItems = useMemo(() => {
     const q = query.trim().toLowerCase()

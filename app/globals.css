@@ -679,6 +679,228 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   color: var(--color-success);
 }
 
+/* Command palette */
+.cmd-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(11, 11, 11, 0.22);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12vh 16px 16px;
+  animation: cmd-fade-in 120ms ease-out;
+}
+
+@keyframes cmd-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.cmd-panel {
+  width: min(640px, 100%);
+  background: var(--bg-container);
+  border-radius: 14px;
+  box-shadow:
+    0 24px 60px rgba(11, 11, 11, 0.18),
+    0 0 0 1px rgba(11, 11, 11, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh;
+  animation: cmd-pop 160ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cmd-pop {
+  from { opacity: 0; transform: translateY(-8px) scale(0.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.cmd-input-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-tertiary);
+  font-size: 15px;
+}
+
+.cmd-input-row > svg {
+  width: 17px;
+  height: 17px;
+  color: var(--text-secondary);
+  flex: 0 0 17px;
+}
+
+.cmd-input-row input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--text-primary);
+  min-width: 0;
+}
+
+.cmd-input-row input::placeholder {
+  color: var(--text-subdued);
+}
+
+.cmd-esc {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-subdued);
+  background: var(--bg-surface-inset);
+  padding: 2px 7px;
+  border-radius: 4px;
+  flex: 0 0 auto;
+}
+
+.cmd-scroll {
+  overflow-y: auto;
+  flex: 1;
+  padding: 6px 0 8px;
+}
+
+.cmd-empty {
+  padding: 28px 18px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.cmd-group-label {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 500;
+  color: var(--text-subdued);
+  padding: 14px 18px 6px;
+}
+
+.cmd-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 18px;
+  font-size: 13.5px;
+  cursor: pointer;
+  user-select: none;
+  border: 0;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+}
+
+.cmd-row .ic {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: var(--bg-surface-inset);
+  color: var(--text-secondary);
+  display: grid;
+  place-items: center;
+  flex: 0 0 24px;
+}
+
+.cmd-row .ic svg {
+  width: 13px;
+  height: 13px;
+}
+
+.cmd-row .body {
+  flex: 1;
+  min-width: 0;
+}
+
+.cmd-row .t {
+  font-weight: 500;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cmd-row .sub {
+  color: var(--text-subdued);
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.cmd-row .arr {
+  color: var(--text-subdued);
+  flex: 0 0 auto;
+}
+
+.cmd-row .arr svg {
+  width: 13px;
+  height: 13px;
+}
+
+.cmd-row .pin {
+  flex: 0 0 auto;
+  color: var(--text-subdued);
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: 0;
+}
+
+.cmd-row .pin svg {
+  width: 13px;
+  height: 13px;
+}
+
+.cmd-row .pin:hover {
+  color: var(--text-primary);
+  background: var(--bg-container);
+}
+
+.cmd-row .pin.on {
+  color: var(--color-black);
+}
+
+.cmd-row.on {
+  background: var(--bg-surface-inset);
+}
+
+.cmd-row.on .arr {
+  color: var(--text-primary);
+}
+
+.cmd-row mark {
+  background: rgba(254, 240, 138, 0.85);
+  color: var(--text-primary);
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.cmd-foot {
+  padding: 10px 18px;
+  border-top: 1px solid var(--border-tertiary);
+  display: flex;
+  gap: 18px;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  background: var(--bg-surface-inset);
+  flex-wrap: wrap;
+}
+
+.cmd-foot .k {
+  font-family: var(--font-mono);
+  background: var(--bg-container);
+  padding: 1px 6px;
+  border-radius: 4px;
+  box-shadow: var(--shadow-border-xs);
+  margin-right: 6px;
+}
+
 /* Code preview block (JSON/CSV/TS output) */
 .code-block {
   margin: 0;

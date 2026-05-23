@@ -5,6 +5,9 @@
 /.next/
 /out/
 
+# Generated at build time
+/public/search-index.json
+
 # Production
 /build
 

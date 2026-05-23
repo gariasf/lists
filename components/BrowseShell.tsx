@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import type { ListItem, Category } from '@/lib/types'
 import { CATEGORIES } from '@/lib/types'
+import { usePalette } from '@/lib/palette-context'
 import {
   Search,
   Logo,
@@ -163,6 +164,7 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
   const [toast, setToast] = useState<string | null>(null)
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
   const searchRef = useRef<HTMLInputElement>(null)
+  const { openPalette } = usePalette()
 
   useEffect(() => {
     const root = document.documentElement
@@ -174,12 +176,12 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
     const onKey = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault()
-        searchRef.current?.focus()
+        openPalette()
       }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [])
+  }, [openPalette])
 
   const counts = useMemo(() => {
     const map: Record<string, number> = { all: lists.length }
