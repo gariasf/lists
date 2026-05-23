@@ -746,7 +746,7 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 /* Named-element morph (list-card title → detail title): tune for "intentional"
    feel — slower than the root crossfade, snappy easing. */
 ::view-transition-group(*) {
-  animation-duration: 380ms;
+  animation-duration: 650ms;
   animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 

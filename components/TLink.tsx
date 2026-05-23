@@ -22,6 +22,37 @@ function prefersReducedMotion(): boolean {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
 }
 
+function normalizePath(p: string): string {
+  const noQuery = p.split('?')[0].split('#')[0]
+  return noQuery.endsWith('/') ? noQuery : noQuery + '/'
+}
+
+function waitForPath(target: string, timeoutMs: number): Promise<void> {
+  return new Promise((resolve) => {
+    const goal = normalizePath(target)
+    const start = performance.now()
+    let done = false
+    const finish = () => {
+      if (done) return
+      done = true
+      resolve()
+    }
+    const tick = () => {
+      if (done) return
+      if (normalizePath(window.location.pathname) === goal) {
+        setTimeout(finish, 32)
+        return
+      }
+      if (performance.now() - start > timeoutMs) {
+        finish()
+        return
+      }
+      setTimeout(tick, 16)
+    }
+    tick()
+  })
+}
+
 export default function TLink({
   morphSelector,
   morphName,
@@ -51,11 +82,15 @@ export default function TLink({
           el.style.viewTransitionName = ''
         })
       const el = e.currentTarget.querySelector<HTMLElement>(morphSelector)
-      if (el) el.style.viewTransitionName = morphName
+      if (el) {
+        el.style.viewTransitionName = morphName
+        void el.offsetHeight
+      }
     }
 
-    document.startViewTransition(() => {
+    document.startViewTransition(async () => {
       router.push(target)
+      await waitForPath(target, 1500)
     })
   }
 
