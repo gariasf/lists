@@ -19,6 +19,7 @@ import {
   Check,
   ChevronR,
   Sparkles,
+  X,
   CATEGORY_ICONS,
 } from '@/components/icons'
 
@@ -164,6 +165,7 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
   const [activeCategory, setActiveCategory] = useState<Category>(initialCategory)
   const [query, setQuery] = useState('')
   const [toast, setToast] = useState<string | null>(null)
+  const [showTip, setShowTip] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
   const { openPalette } = usePalette()
   const { mode: themeMode, cycleMode: cycleTheme } = useTheme()
@@ -181,11 +183,29 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault()
         openPalette()
+        if (showTip) dismissTip()
       }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [openPalette])
+  }, [openPalette, showTip])
+
+  useEffect(() => {
+    try {
+      if (localStorage.getItem('lists.onboarded') !== '1') setShowTip(true)
+    } catch {
+      /* localStorage unavailable */
+    }
+  }, [])
+
+  const dismissTip = () => {
+    setShowTip(false)
+    try {
+      localStorage.setItem('lists.onboarded', '1')
+    } catch {
+      /* ignore */
+    }
+  }
 
   const counts = useMemo(() => {
     const map: Record<string, number> = { all: lists.length }
@@ -316,6 +336,27 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
               </div>
             </div>
 
+            {showTip && (
+              <div className="onboarding-tip" role="status">
+                <span className="onboarding-tip-icon">
+                  <Sparkles />
+                </span>
+                <div className="onboarding-tip-body">
+                  <strong>New here?</strong> Press{' '}
+                  <span className="kbd">⌘K</span> to fuzzy-search lists, jump
+                  to an item, or generate fresh mock data with AI.
+                </div>
+                <button
+                  type="button"
+                  onClick={dismissTip}
+                  aria-label="Dismiss tip"
+                  className="onboarding-tip-close"
+                >
+                  <X />
+                </button>
+              </div>
+            )}
+
             {filtered.length === 0 ? (
               <div className="ls-empty">
                 <p>No lists match that filter.</p>
@@ -390,6 +431,26 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
           </h1>
           <p>{lists.length} lists. Tap to open, tap copy to grab the whole set.</p>
         </div>
+
+        {showTip && (
+          <div className="onboarding-tip m-tip" role="status">
+            <span className="onboarding-tip-icon">
+              <Sparkles />
+            </span>
+            <div className="onboarding-tip-body">
+              <strong>Tip:</strong> Hit the search bar to filter — or open a
+              list and tap any value to copy it.
+            </div>
+            <button
+              type="button"
+              onClick={dismissTip}
+              aria-label="Dismiss tip"
+              className="onboarding-tip-close"
+            >
+              <X />
+            </button>
+          </div>
+        )}
 
         <label className="m-search">
           <Search />
