@@ -39,7 +39,7 @@ const SKILL_ICONS: Record<string, React.ComponentType> = {
 }
 
 const SKILL_INSTALL_CMD =
-  'mkdir -p .claude/skills/lists && curl -sL https://lists.gariasf.com/claude-skill/SKILL.md -o .claude/skills/lists/SKILL.md'
+  'mkdir -p .claude/skills && curl -sL https://lists.gariasf.com/claude-skill/lists.tar.gz | tar -xz -C .claude/skills'
 const MCP_INSTALL_CMD = 'claude mcp add lists https://lists.gariasf.com/mcp'
 
 export default function SkillsShell({ allLists }: { allLists: CatalogEntry[] }) {
@@ -211,21 +211,21 @@ export default function SkillsShell({ allLists }: { allLists: CatalogEntry[] }) 
               </div>
               <div className="claude-cta-grid">
                 <div className="claude-cta-card">
-                  <h3>Install as a Skill</h3>
+                  <h3>Install as a Skill (local, offline)</h3>
                   <p>
-                    Save SKILL.md into{' '}
-                    <code>.claude/skills/lists/</code> in your repo.
-                    Claude picks it up automatically.
+                    Bundled tarball: all 365 lists + composition recipes.
+                    Unpacks into <code>.claude/skills/lists/</code>.
+                    Zero network calls after install.
                   </p>
                   <pre>{SKILL_INSTALL_CMD}</pre>
                   <div className="claude-cta-actions">
                     <a
                       className="btn btn-primary"
-                      href="/claude-skill/SKILL.md"
-                      download="SKILL.md"
+                      href="/claude-skill/lists.tar.gz"
+                      download="lists.tar.gz"
                     >
                       <Download />
-                      Download SKILL.md
+                      Download bundle (~585 KB)
                     </a>
                     <button
                       type="button"
@@ -238,10 +238,11 @@ export default function SkillsShell({ allLists }: { allLists: CatalogEntry[] }) 
                   </div>
                 </div>
                 <div className="claude-cta-card">
-                  <h3>Or wire up via MCP</h3>
+                  <h3>Or wire up via MCP (remote)</h3>
                   <p>
-                    Already running MCP servers? Register Lists with one
-                    line. Endpoint:{' '}
+                    Hits this site over the network. Useful if you want
+                    fresh data + the AI generators rather than the local
+                    bundle. Endpoint:{' '}
                     <code>https://lists.gariasf.com/mcp</code>.
                   </p>
                   <pre>{MCP_INSTALL_CMD}</pre>
