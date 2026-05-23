@@ -143,6 +143,19 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'iban', name: 'IBAN Numbers', category: 'finance', upstream: { file: 'iban.txt' } },
   { slug: 'bitcoinaddresses', name: 'Bitcoin Addresses', category: 'finance', upstream: { file: 'bitcoinaddresses.txt' } },
 
+  // Finance (local additions)
+  { slug: 'stock-tickers-sp100', name: 'Stock Tickers (S&P 100)', category: 'finance', local: { file: 'stock-tickers-sp100.txt', format: 'txt' } },
+  { slug: 'stock-tickers-nasdaq100', name: 'Stock Tickers (Nasdaq 100)', category: 'finance', local: { file: 'stock-tickers-nasdaq100.txt', format: 'txt' } },
+  { slug: 'crypto-tickers', name: 'Crypto Tickers', category: 'finance', local: { file: 'crypto-tickers.txt', format: 'txt' } },
+  { slug: 'swift-bic', name: 'SWIFT / BIC Codes', category: 'finance', local: { file: 'swift-bic.txt', format: 'txt' } },
+  { slug: 'routing-numbers-us', name: 'Routing Numbers (US)', category: 'finance', local: { file: 'routing-numbers-us.txt', format: 'txt' } },
+  { slug: 'vat-ids-eu', name: 'VAT IDs (EU)', category: 'finance', local: { file: 'vat-ids-eu.txt', format: 'txt' } },
+  { slug: 'payment-methods-modern', name: 'Payment Methods', category: 'finance', local: { file: 'payment-methods-modern.txt', format: 'txt' } },
+  { slug: 'iban-by-country', name: 'IBAN by Country', category: 'finance', local: { file: 'iban-by-country.json', format: 'json', valueKey: 'example' } },
+  { slug: 'discount-codes', name: 'Discount Codes', category: 'finance', local: { file: 'discount-codes.txt', format: 'txt' } },
+  { slug: 'invoice-numbers', name: 'Invoice Numbers', category: 'finance', local: { file: 'invoice-numbers.txt', format: 'txt' } },
+  { slug: 'subscription-prices', name: 'Subscription Prices', category: 'finance', local: { file: 'subscription-prices.txt', format: 'txt' } },
+
   // Shopping
   { slug: 'prices0to99-dollar', name: 'Prices $0-99', category: 'shopping', upstream: { file: 'prices0to99-dollar.txt' } },
   { slug: 'prices0to099-dollar', name: 'Prices $0.00-0.99', category: 'shopping', upstream: { file: 'prices0to099-dollar.txt' } },
