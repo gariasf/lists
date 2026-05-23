@@ -9,3 +9,7 @@ binding = "AI"
 [[vectorize]]
 binding = "VECTORIZE"
 index_name = "lists-items"
+
+[[kv_namespaces]]
+binding = "RATELIMIT"
+id = "0f53da9b1408408d868bb42df55d4570"

@@ -15,7 +15,9 @@
  *   { "mcpServers": { "lists": { "url": "https://lists.gariasf.com/mcp" } } }
  */
 
-interface Env {
+import { checkRateLimit, LLM_LIMIT, type RateLimitEnv } from './_lib/ratelimit'
+
+interface Env extends RateLimitEnv {
   AI: {
     run: (
       model: string,
@@ -217,6 +219,7 @@ async function callTool(
   args: Record<string, unknown>,
   env: Env,
   origin: string,
+  request: Request,
 ): Promise<unknown> {
   switch (name) {
     case 'lists_manifest': {
@@ -269,6 +272,19 @@ async function callTool(
     }
 
     case 'lists_generate': {
+      const limited = await checkRateLimit(env, request, LLM_LIMIT)
+      if (limited) {
+        const body = (await limited.clone().json().catch(() => ({}))) as { error?: string }
+        return {
+          content: [
+            {
+              type: 'text',
+              text: body.error ?? 'Rate limit reached. Try again later.',
+            },
+          ],
+          isError: true,
+        }
+      }
       const prompt = String(args.prompt ?? '').trim()
       if (!prompt) return toolText('prompt is required')
       const count = Math.min(50, Math.max(1, Number(args.count ?? 10)))
@@ -340,6 +356,7 @@ async function handleRpc(
   req: JsonRpcRequest,
   env: Env,
   origin: string,
+  request: Request,
 ): Promise<JsonRpcResponse | null> {
   const id = req.id ?? null
 
@@ -364,7 +381,7 @@ async function handleRpc(
         const name = String(params.name ?? '')
         const args = (params.arguments ?? {}) as Record<string, unknown>
         try {
-          const result = await callTool(name, args, env, origin)
+          const result = await callTool(name, args, env, origin, request)
           return rpcResult(id, result)
         } catch (err) {
           return rpcResult(id, {
@@ -408,7 +425,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     // Batched requests
     const responses: JsonRpcResponse[] = []
     for (const req of body as JsonRpcRequest[]) {
-      const r = await handleRpc(req, env, origin)
+      const r = await handleRpc(req, env, origin, request)
       if (r) responses.push(r)
     }
     return new Response(JSON.stringify(responses), {
@@ -419,7 +436,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     })
   }
 
-  const response = await handleRpc(body as JsonRpcRequest, env, origin)
+  const response = await handleRpc(body as JsonRpcRequest, env, origin, request)
   if (!response) return new Response(null, { status: 204 })
 
   return new Response(JSON.stringify(response), {

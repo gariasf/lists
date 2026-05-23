@@ -27,7 +27,9 @@ interface VectorizeBinding {
   }>
 }
 
-interface Env {
+import { checkRateLimit, EMBED_LIMIT, type RateLimitEnv } from '../../_lib/ratelimit'
+
+interface Env extends RateLimitEnv {
   AI: {
     run: (
       model: string,
@@ -58,6 +60,10 @@ function jsonResponse(body: unknown, status = 200): Response {
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {
   const { request, env } = context
+
+  const limited = await checkRateLimit(env, request, EMBED_LIMIT)
+  if (limited) return limited
+
   let body: Body
   try {
     body = (await request.json()) as Body

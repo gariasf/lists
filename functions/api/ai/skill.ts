@@ -8,7 +8,9 @@
  * (e.g. deterministic avatar URLs that don't depend on LLM accuracy).
  */
 
-interface Env {
+import { checkRateLimit, LLM_LIMIT, type RateLimitEnv } from '../../_lib/ratelimit'
+
+interface Env extends RateLimitEnv {
   AI: {
     run: (
       model: string,
@@ -213,6 +215,10 @@ const SKILLS: Record<string, SkillSpec> = {
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {
   const { request, env } = context
+
+  const limited = await checkRateLimit(env, request, LLM_LIMIT)
+  if (limited) return limited
+
   let body: Body
   try {
     body = (await request.json()) as Body

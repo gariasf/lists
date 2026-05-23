@@ -249,8 +249,10 @@ export default function CommandPalette() {
           body: JSON.stringify({ prompt, count, listSlug }),
         })
         if (!res.ok) {
-          const err = await res.json().catch(() => ({})) as { error?: string }
-          setGenError(err.error ?? `Generation failed (${res.status})`)
+          const err = (await res.json().catch(() => ({}))) as { error?: string }
+          const msg = err.error ?? `Generation failed (${res.status})`
+          setGenError(msg)
+          showToast(msg)
           return
         }
         const data = (await res.json()) as { items: string[]; prompt: string }
@@ -258,11 +260,12 @@ export default function CommandPalette() {
       } catch (err) {
         console.error('generate failed', err)
         setGenError('Network error')
+        showToast('Network error')
       } finally {
         setGenerating(false)
       }
     },
-    [],
+    [showToast],
   )
 
   const randomFromSlug = useCallback(
