@@ -1635,3 +1635,119 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
     0 6px 14px -3px rgba(0, 0, 0, 0.5),
     0 0 0 1px rgba(255, 255, 255, 0.08);
 }
+
+/* Skills page */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px 20px 20px;
+  background: var(--bg-container);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-border-xs);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 180ms ease-out, transform 180ms ease-out;
+}
+
+.skill-card:hover {
+  box-shadow:
+    0 6px 12px -3px rgba(11, 11, 11, 0.08),
+    0 0 0 1px rgba(11, 11, 11, 0.06);
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] .skill-card:hover {
+  box-shadow:
+    0 6px 14px -3px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.skill-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.skill-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--bg-surface-inset);
+  color: var(--text-primary);
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 1px var(--border-tertiary);
+}
+
+.skill-card-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.skill-card-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.skill-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.skill-card-tagline {
+  font-size: 12px;
+  color: var(--text-subdued);
+  margin-top: 3px;
+  line-height: 1.35;
+}
+
+.skill-card-head > svg:last-child {
+  flex-shrink: 0;
+  color: var(--text-subdued);
+  width: 14px;
+  height: 14px;
+  margin-top: 6px;
+}
+
+.skill-card-desc {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.skill-card-example {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-subdued);
+  padding: 8px 10px;
+  background: var(--bg-surface-inset);
+  border-radius: var(--radius-lg);
+  letter-spacing: -0.005em;
+  line-height: 1.5;
+  box-shadow: inset 0 0 0 1px var(--border-tertiary);
+}
+
+@media (max-width: 720px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .skill-card {
+    padding: 14px 16px 16px;
+  }
+}

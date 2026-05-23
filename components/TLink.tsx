@@ -5,6 +5,10 @@ import { useRouter } from 'next/navigation'
 import type { ComponentProps, MouseEvent } from 'react'
 
 type LinkProps = ComponentProps<typeof Link>
+type TLinkProps = LinkProps & {
+  morphSelector?: string
+  morphName?: string
+}
 
 function shouldBypass(e: MouseEvent<HTMLAnchorElement>): boolean {
   if (e.defaultPrevented) return true
@@ -18,18 +22,14 @@ function prefersReducedMotion(): boolean {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
 }
 
-/**
- * Link wrapper that runs the navigation inside document.startViewTransition()
- * when the browser supports it. Otherwise falls back to Next's regular
- * client-side navigation — no perceived difference for the user.
- *
- * - Modifier-clicks (cmd/ctrl/shift/alt) and middle-clicks bypass the
- *   transition so "open in new tab" still works.
- * - prefers-reduced-motion users get a vanilla cut.
- */
-export default function TLink(props: LinkProps) {
+export default function TLink({
+  morphSelector,
+  morphName,
+  onClick,
+  href,
+  ...rest
+}: TLinkProps) {
   const router = useRouter()
-  const { onClick, href, ...rest } = props
 
   const handle = (e: MouseEvent<HTMLAnchorElement>) => {
     onClick?.(e)
@@ -40,7 +40,20 @@ export default function TLink(props: LinkProps) {
 
     e.preventDefault()
     const target =
-      typeof href === 'string' ? href : (href as { pathname?: string }).pathname ?? '/'
+      typeof href === 'string'
+        ? href
+        : (href as { pathname?: string }).pathname ?? '/'
+
+    if (morphSelector && morphName) {
+      document
+        .querySelectorAll<HTMLElement>(morphSelector)
+        .forEach((el) => {
+          el.style.viewTransitionName = ''
+        })
+      const el = e.currentTarget.querySelector<HTMLElement>(morphSelector)
+      if (el) el.style.viewTransitionName = morphName
+    }
+
     document.startViewTransition(() => {
       router.push(target)
     })

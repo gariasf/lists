@@ -88,18 +88,18 @@ function PreviewCard({ list, onCopyAll }: { list: ListItem; onCopyAll: (list: Li
   }
 
   return (
-    <Link href={`/list/${list.slug}/`} className="ls-card">
+    <Link
+      href={`/list/${list.slug}/`}
+      className="ls-card"
+      morphSelector=".ls-card-title"
+      morphName={`t-${list.slug}`}
+    >
       <div className="ls-card-head">
         <span className="ls-card-icon">
           <ListIcon list={list} />
         </span>
         <div style={{ flex: 1, minWidth: 0 }}>
-          <h2
-            className="ls-card-title"
-            style={{ viewTransitionName: `t-${list.slug}` }}
-          >
-            {list.name}
-          </h2>
+          <h2 className="ls-card-title">{list.name}</h2>
           <div className="ls-card-sub">
             {list.items.length} items{isHex ? ' · hex' : ''}
           </div>
@@ -135,18 +135,18 @@ function MobileRow({ list }: { list: ListItem }) {
   const isHex = list.slug === HEX_SLUG
   const preview = list.items.slice(0, 3).join(',  ')
   return (
-    <Link href={`/list/${list.slug}/`} className="m-row">
+    <Link
+      href={`/list/${list.slug}/`}
+      className="m-row"
+      morphSelector=".m-row-title"
+      morphName={`t-${list.slug}`}
+    >
       <div className="m-row-top">
         <span className="m-row-icon">
           <ListIcon list={list} />
         </span>
         <div style={{ flex: 1, minWidth: 0 }}>
-          <div
-            className="m-row-title"
-            style={{ viewTransitionName: `t-${list.slug}` }}
-          >
-            {list.name}
-          </div>
+          <div className="m-row-title">{list.name}</div>
           <div className="m-row-sub">{list.items.length} items</div>
         </div>
         <span className="m-row-chev">
