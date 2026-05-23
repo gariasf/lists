@@ -1,0 +1,167 @@
+git init
+git clone
+git status
+git add
+git add .
+git add -p
+git commit
+git commit -m
+git commit --amend
+git commit --amend --no-edit
+git restore
+git restore --staged
+git reset
+git reset HEAD
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+git revert
+git revert HEAD
+git rm
+git mv
+git log
+git log --oneline
+git log --graph --oneline --decorate --all
+git log --stat
+git log --since
+git log --grep
+git log --author
+git log -p
+git log --follow
+git show
+git diff
+git diff --staged
+git diff --cached
+git diff HEAD
+git diff main..feature
+git diff --stat
+git branch
+git branch -a
+git branch -d
+git branch -D
+git branch --merged
+git branch --no-merged
+git checkout
+git checkout -b
+git checkout main
+git switch
+git switch -c
+git switch -
+git merge
+git merge --no-ff
+git merge --squash
+git merge --abort
+git rebase
+git rebase main
+git rebase --onto
+git rebase --continue
+git rebase --abort
+git rebase --skip
+git cherry-pick
+git cherry-pick --continue
+git cherry-pick --abort
+git stash
+git stash push
+git stash pop
+git stash apply
+git stash list
+git stash drop
+git stash clear
+git stash show
+git tag
+git tag -a v1.0.0
+git tag -l
+git tag --sort
+git push origin tags
+git fetch
+git fetch --all
+git fetch --prune
+git pull
+git pull --rebase
+git pull --ff-only
+git push
+git push -u origin main
+git push --force-with-lease
+git push --tags
+git remote
+git remote add
+git remote remove
+git remote rename
+git remote -v
+git remote set-url
+git config
+git config --global
+git config --list
+git config user.email
+git config user.name
+git config core.editor
+git config core.autocrlf
+git config pull.rebase
+git submodule
+git submodule add
+git submodule init
+git submodule update
+git submodule update --init --recursive
+git submodule deinit
+git worktree add
+git worktree list
+git worktree remove
+git bisect start
+git bisect good
+git bisect bad
+git bisect reset
+git blame
+git blame -L
+git annotate
+git reflog
+git reflog show
+git reflog expire
+git fsck
+git gc
+git gc --aggressive
+git clean -n
+git clean -fd
+git clean -fdx
+git archive
+git bundle create
+git bundle verify
+git format-patch
+git apply
+git am
+git request-pull
+git describe
+git describe --tags
+git shortlog -sn
+git ls-files
+git ls-tree
+git rev-parse HEAD
+git rev-parse --abbrev-ref HEAD
+git symbolic-ref HEAD
+git hash-object
+git cat-file -p
+git update-ref
+git mktree
+git update-index
+git filter-repo
+git filter-branch
+git mailsplit
+git mailinfo
+git for-each-ref
+git pack-refs --all
+gh pr create
+gh pr view
+gh pr checkout
+gh pr merge
+gh pr review
+gh issue create
+gh issue view
+gh issue close
+gh repo create
+gh repo clone
+gh repo fork
+gh auth login
+gh release create
+gh workflow list
+gh run watch
+glab mr create
+lazygit
+tig

@@ -1,0 +1,272 @@
+VS Code
+Cursor
+Zed
+Sublime Text
+Vim
+Neovim
+Helix
+LunarVim
+LazyVim
+Emacs
+Doom Emacs
+Spacemacs
+JetBrains IntelliJ IDEA
+JetBrains WebStorm
+JetBrains PyCharm
+JetBrains GoLand
+JetBrains Rider
+JetBrains RubyMine
+JetBrains PhpStorm
+JetBrains DataGrip
+JetBrains CLion
+JetBrains AppCode
+JetBrains Aqua
+JetBrains Fleet
+JetBrains Junie
+Android Studio
+Xcode
+Visual Studio
+Visual Studio for Mac
+RStudio
+Positron
+Notepad++
+Eclipse
+NetBeans
+TextMate
+BBEdit
+Atom (legacy)
+Brackets (legacy)
+Light Table (legacy)
+Onivim 2
+Lapce
+Pulsar
+Bun
+Deno
+Node.js
+nvm
+fnm
+volta
+asdf
+mise
+pnpm
+npm
+yarn
+yarn berry
+ni
+turbo
+turborepo
+nx
+lerna
+moon
+rush
+changesets
+release-please
+semantic-release
+prettier
+eslint
+biome
+oxlint
+ruff
+black
+isort
+mypy
+pyright
+pylint
+flake8
+clang-tidy
+clang-format
+rustfmt
+rust-clippy
+gofmt
+goimports
+golangci-lint
+shellcheck
+shfmt
+markdownlint
+hadolint
+yamllint
+swiftlint
+ktlint
+detekt
+docker
+docker compose
+docker buildx
+podman
+containerd
+nerdctl
+kubectl
+helm
+kustomize
+k9s
+lens
+kubectx
+kubens
+minikube
+kind
+k3d
+k3s
+microk8s
+talos
+flux
+argo cd
+spinnaker
+crossplane
+karpenter
+istio
+linkerd
+cilium
+consul
+nomad
+vault
+boundary
+packer
+terraform
+opentofu
+pulumi
+ansible
+chef
+puppet
+salt
+cdk
+cdk8s
+sst
+serverless framework
+zappa
+git
+git-lfs
+git-extras
+git-flow
+gitkraken
+sourcetree
+tower
+fork
+sublime merge
+github desktop
+gh cli
+glab
+lazygit
+tig
+hub
+direnv
+dotenv-vault
+1password cli
+op
+aws cli
+azure cli
+gcloud cli
+flyctl
+heroku cli
+vercel cli
+netlify cli
+railway cli
+wrangler
+firebase cli
+supabase cli
+neon cli
+ngrok
+cloudflared
+localtunnel
+httpie
+curl
+wget
+xh
+postman
+insomnia
+hoppscotch
+bruno
+yaak
+nock
+mock service worker (MSW)
+stripe cli
+charles proxy
+proxyman
+mitmproxy
+wireshark
+tcpdump
+nmap
+nikto
+burp suite
+zaproxy
+sqlmap
+metasploit
+beaver
+trivy
+syft
+grype
+cosign
+sigstore
+gitleaks
+trufflehog
+sops
+age
+dependabot
+renovate
+mend
+snyk
+sonarcloud
+codeclimate
+codecov
+coveralls
+jenkins
+github actions
+circleci
+travis ci
+buildkite
+gitlab ci
+azure pipelines
+drone ci
+woodpecker
+earthly
+buildkit
+nix
+guix
+homebrew
+scoop
+chocolatey
+winget
+apt
+dnf
+zypper
+pacman
+xbps
+emerge
+flatpak
+snap
+appimage
+mas
+ohmyzsh
+prezto
+zinit
+zim
+oh-my-bash
+starship
+powerlevel10k
+spaceship
+pure
+robbyrussell
+fzf
+ripgrep
+fd
+bat
+exa
+eza
+zoxide
+mcfly
+atuin
+broot
+delta
+difftastic
+git-delta
+jq
+yq
+xq
+fx
+gron
+miller
+csvkit
+visidata
+nushell
+elvish
+oil shell
+xonsh
+murex

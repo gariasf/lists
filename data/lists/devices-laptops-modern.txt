@@ -1,0 +1,102 @@
+MacBook Pro 16" (M4 Pro)
+MacBook Pro 16" (M4 Max)
+MacBook Pro 14" (M4)
+MacBook Pro 14" (M4 Pro)
+MacBook Pro 14" (M4 Max)
+MacBook Air 15" (M4)
+MacBook Air 13" (M4)
+MacBook Air 13" (M3)
+Mac Studio (M4 Max)
+Mac Studio (M2 Ultra)
+Mac mini (M4)
+Mac mini (M4 Pro)
+iMac (M4)
+Mac Pro (M2 Ultra)
+Dell XPS 13 (9350)
+Dell XPS 14
+Dell XPS 16
+Dell Pro 14
+Dell Pro 16
+Dell Pro Max 14
+Dell Pro Max 16
+Dell Pro Max 18
+Dell Latitude 9450
+Dell Latitude 7450
+Dell Precision 5690
+Dell Precision 7780
+HP Spectre x360 14
+HP OmniBook X
+HP OmniBook Ultra
+HP EliteBook 1040 G11
+HP ZBook Studio G11
+HP ZBook Power 16 G11
+HP Omen Transcend 14
+Lenovo ThinkPad X1 Carbon Gen 13
+Lenovo ThinkPad X1 Yoga Gen 9
+Lenovo ThinkPad T14 Gen 5
+Lenovo ThinkPad P16
+Lenovo ThinkPad Z13
+Lenovo Yoga 9i (Gen 9)
+Lenovo Yoga Pro 9i
+Lenovo Yoga Slim 7x
+Lenovo Legion Pro 7i
+Lenovo Legion 5i
+Lenovo LOQ 15
+Asus ZenBook S 14
+Asus ZenBook S 16
+Asus ProArt P16
+Asus ProArt PX13
+Asus ROG Zephyrus G14
+Asus ROG Zephyrus G16
+Asus ROG Strix Scar 18
+Asus TUF Gaming A15
+Asus Vivobook Pro 16
+Acer Swift Edge 16
+Acer Swift Go 14
+Acer Predator Helios Neo 16
+Acer Predator Helios 18
+Acer Predator Triton 17 X
+Acer Aspire 5
+Microsoft Surface Laptop 7
+Microsoft Surface Pro 11
+Microsoft Surface Pro 10 for Business
+Microsoft Surface Laptop Studio 2
+Microsoft Surface Laptop Go 3
+Razer Blade 14
+Razer Blade 16
+Razer Blade 18
+MSI Titan 18 HX
+MSI Raider GE78 HX
+MSI Stealth 16 AI
+MSI Prestige 14 AI Evo
+MSI Cyborg 15
+Framework Laptop 13
+Framework Laptop 16
+Samsung Galaxy Book4 Pro
+Samsung Galaxy Book4 Ultra
+Samsung Galaxy Book4 Edge
+Huawei MateBook X Pro
+Huawei MateBook 14
+Honor MagicBook Pro 16
+Honor MagicBook 14
+Xiaomi Mi NoteBook Pro
+Vaio SX14
+Vaio Z
+LG Gram 17
+LG Gram Pro 17
+Tuxedo InfinityBook Pro 14
+System76 Lemur Pro
+System76 Pangolin
+System76 Thelio Spark
+StarLabs StarBook
+Purism Librem 14
+Fujitsu Lifebook U9
+Panasonic Toughbook 55
+Panasonic Let's Note FV4
+Chromebook Plus
+Acer Chromebook Plus 516 GE
+HP Chromebook Plus x360
+Lenovo Chromebook Duet
+ASUS Chromebook CX3402
+Pixel Slate
+Google Pixelbook Go

@@ -269,6 +269,27 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'articlestech-en', name: 'Tech Articles', category: 'tech', upstream: { file: 'articlestech-en.txt' } },
   { slug: 'headlinestech-en', name: 'Tech Headlines', category: 'tech', upstream: { file: 'headlinestech-en.txt' } },
 
+  // Tech (local additions + modernized)
+  { slug: 'devices-phones-modern', name: 'Phone Models (modern)', category: 'tech', local: { file: 'devices-phones-modern.txt', format: 'txt' } },
+  { slug: 'devices-laptops-modern', name: 'Laptop Models (modern)', category: 'tech', local: { file: 'devices-laptops-modern.txt', format: 'txt' } },
+  { slug: 'devices-tablets-modern', name: 'Tablet Models (modern)', category: 'tech', local: { file: 'devices-tablets-modern.txt', format: 'txt' } },
+  { slug: 'operating-systems', name: 'Operating Systems', category: 'tech', local: { file: 'operating-systems.txt', format: 'txt' } },
+  { slug: 'os-versions', name: 'OS Versions', category: 'tech', local: { file: 'os-versions.txt', format: 'txt' } },
+  { slug: 'browsers', name: 'Web Browsers', category: 'tech', local: { file: 'browsers.txt', format: 'txt' } },
+  { slug: 'linux-distros', name: 'Linux Distros', category: 'tech', local: { file: 'linux-distros.txt', format: 'txt' } },
+  { slug: 'programming-languages', name: 'Programming Languages', category: 'tech', local: { file: 'programming-languages.txt', format: 'txt' } },
+  { slug: 'frameworks-frontend', name: 'Frameworks (frontend)', category: 'tech', local: { file: 'frameworks-frontend.txt', format: 'txt' } },
+  { slug: 'frameworks-backend', name: 'Frameworks (backend)', category: 'tech', local: { file: 'frameworks-backend.txt', format: 'txt' } },
+  { slug: 'databases', name: 'Databases', category: 'tech', local: { file: 'databases.txt', format: 'txt' } },
+  { slug: 'cloud-services', name: 'Cloud Services', category: 'tech', local: { file: 'cloud-services.txt', format: 'txt' } },
+  { slug: 'dev-tools', name: 'Dev Tools', category: 'tech', local: { file: 'dev-tools.txt', format: 'txt' } },
+  { slug: 'ai-models', name: 'AI Models', category: 'tech', local: { file: 'ai-models.txt', format: 'txt' } },
+  { slug: 'npm-packages-top', name: 'NPM Packages (top)', category: 'tech', local: { file: 'npm-packages-top.txt', format: 'txt' } },
+  { slug: 'http-status-codes', name: 'HTTP Status Codes', category: 'tech', local: { file: 'http-status-codes.json', format: 'json', valueKey: 'message' } },
+  { slug: 'http-methods', name: 'HTTP Methods', category: 'tech', local: { file: 'http-methods.txt', format: 'txt' } },
+  { slug: 'git-commands', name: 'Git Commands', category: 'tech', local: { file: 'git-commands.txt', format: 'txt' } },
+  { slug: 'docker-images', name: 'Docker Images', category: 'tech', local: { file: 'docker-images.txt', format: 'txt' } },
+
   // Design
   { slug: 'colors-en', name: 'Color Names', category: 'design', upstream: { file: 'colors-en.txt' } },
   { slug: 'colorshex', name: 'Hex Colors', category: 'design', upstream: { file: 'colorshex.txt' } },

@@ -1,0 +1,193 @@
+AWS EC2
+AWS Lambda
+AWS Fargate
+AWS ECS
+AWS EKS
+AWS Batch
+AWS App Runner
+AWS Beanstalk
+AWS Lightsail
+AWS S3
+AWS S3 Glacier
+AWS EBS
+AWS EFS
+AWS FSx
+AWS RDS
+AWS Aurora
+AWS Aurora Serverless
+AWS DynamoDB
+AWS DocumentDB
+AWS ElastiCache
+AWS MemoryDB
+AWS Neptune
+AWS Redshift
+AWS Athena
+AWS Glue
+AWS EMR
+AWS Kinesis
+AWS MSK
+AWS SQS
+AWS SNS
+AWS EventBridge
+AWS Step Functions
+AWS CloudFront
+AWS Route 53
+AWS API Gateway
+AWS AppSync
+AWS Cognito
+AWS IAM
+AWS KMS
+AWS Secrets Manager
+AWS WAF
+AWS Shield
+AWS GuardDuty
+AWS Macie
+AWS CloudWatch
+AWS X-Ray
+AWS CloudTrail
+AWS Config
+AWS Systems Manager
+AWS Bedrock
+AWS SageMaker
+AWS Comprehend
+AWS Rekognition
+AWS Transcribe
+AWS Polly
+AWS Translate
+Google Cloud Storage
+Google Compute Engine
+Google App Engine
+Google Cloud Run
+Google Kubernetes Engine (GKE)
+Google Cloud Functions
+Google Cloud Build
+Google Artifact Registry
+Google Vertex AI
+Google AI Studio
+Google Gemini API
+Google BigQuery
+Google Cloud Spanner
+Google AlloyDB
+Google Cloud SQL
+Google Firestore
+Google Bigtable
+Google Memorystore
+Google Pub/Sub
+Google Cloud Tasks
+Google Cloud Scheduler
+Google IAM
+Google Cloud KMS
+Google Secret Manager
+Google Cloud DNS
+Google Cloud CDN
+Google Cloud Armor
+Google Cloud Operations
+Google Cloud Monitoring
+Google Cloud Logging
+Google Looker
+Google Looker Studio
+Google Workflows
+Azure Virtual Machines
+Azure Functions
+Azure App Service
+Azure Kubernetes Service
+Azure Container Apps
+Azure Container Instances
+Azure Blob Storage
+Azure Files
+Azure Disks
+Azure SQL Database
+Azure Cosmos DB
+Azure Cache for Redis
+Azure Service Bus
+Azure Event Grid
+Azure Event Hubs
+Azure Logic Apps
+Azure Functions Premium
+Azure Front Door
+Azure CDN
+Azure DNS
+Azure Active Directory
+Microsoft Entra ID
+Azure Key Vault
+Azure Monitor
+Azure Application Insights
+Azure DevOps
+Azure OpenAI Service
+Azure Machine Learning
+Cloudflare Workers
+Cloudflare Pages
+Cloudflare R2
+Cloudflare D1
+Cloudflare KV
+Cloudflare Durable Objects
+Cloudflare Hyperdrive
+Cloudflare Vectorize
+Cloudflare Stream
+Cloudflare Images
+Cloudflare Tunnel
+Cloudflare Zero Trust
+Cloudflare Access
+Cloudflare Gateway
+Cloudflare WAF
+Cloudflare DDoS Protection
+Vercel
+Vercel Pro
+Vercel Enterprise
+Vercel Functions
+Vercel Edge Functions
+Vercel Edge Config
+Vercel Postgres
+Vercel KV
+Vercel Blob
+Vercel Storage
+Vercel AI Gateway
+Vercel v0
+Netlify
+Netlify Edge Functions
+Netlify Background Functions
+Netlify Identity
+Netlify Forms
+Netlify Build
+Fly.io
+Fly Machines
+Fly Postgres
+Fly Volumes
+Render
+Render Web Services
+Render Postgres
+Render Redis
+Railway
+Railway Functions
+Railway Templates
+Heroku
+Heroku Postgres
+Heroku Redis
+Linode (Akamai)
+Akamai Cloud Computing
+DigitalOcean Droplets
+DigitalOcean App Platform
+DigitalOcean Spaces
+DigitalOcean Managed Databases
+DigitalOcean Kubernetes
+Hetzner Cloud
+OVHcloud
+Scaleway
+UpCloud
+Vultr
+Backblaze B2
+Wasabi
+Tigris
+Tigris Data
+Modal
+Modal Labs
+Replicate
+Together AI
+Anyscale
+Beam
+Coreweave
+Crusoe Cloud
+Lambda Labs
+Vast.ai
+RunPod
+Paperspace
