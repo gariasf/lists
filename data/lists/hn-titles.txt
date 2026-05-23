@@ -1,0 +1,102 @@
+Show HN: A faster, simpler alternative to X
+Ask HN: What are you working on this month?
+Show HN: I built a tool to manage my dotfiles
+Show HN: An offline-first note-taking app in Rust
+Ask HN: How do you stay focused these days?
+Show HN: SQLite, but for the browser
+Show HN: I rewrote it in Zig
+Show HN: I rewrote it in Rust
+Show HN: I rewrote it in Go
+Why we moved off Kubernetes
+Why we moved to Kubernetes
+Why we moved off the cloud
+Why we moved back to the cloud
+The case for Postgres as everything
+The case against microservices in 2025
+We migrated from Mongo to Postgres, here's what happened
+A close reading of the GPL
+A simple guide to becoming a senior engineer
+The 10-million-row CSV problem, revisited
+What I learned shipping a side project to 1k users
+What I learned shipping a side project to 100k users
+We built a $1M ARR business in our spare time
+Building a database in 200 lines of code
+A modern stack for indie developers
+The cost of context switching
+The cost of meetings
+Async-first work is overrated
+Async-first work changed my life
+The hidden complexity of "just use Postgres"
+A practical introduction to vector databases
+A practical guide to prompt engineering
+A practical guide to AI-assisted coding
+Show HN: A LLM that runs on my Mac mini
+Stop writing CRUD by hand
+Stop using REST for everything
+The lost art of the engineering blog post
+Show HN: My first hardware project — a USB key
+Show HN: A self-hosted alternative to Notion
+Show HN: A privacy-first analytics tool
+Show HN: I wrote a programming language for fun
+Show HN: I built a static-site generator (yes, another one)
+Show HN: A new approach to fuzzy search
+Show HN: I made a thing
+Show HN: We open-sourced our internal tool
+We benchmarked 14 vector DBs, here's what we found
+The state of frontend in 2026
+The state of CSS in 2026
+The state of databases in 2026
+The state of WebAssembly in 2026
+What 'cloud-native' means in 2026
+Why I left FAANG to join an early-stage startup
+Why I left an early-stage startup to join FAANG
+Why I left both to start my own thing
+Don't follow the news, follow the work
+Don't follow trends, follow signals
+A short history of build tools, 2010–2025
+A short history of CSS, 2010–2025
+A short history of databases, 2010–2025
+The death of stack ranking
+The return of the personal blog
+The return of the boring web
+The return of the IndieWeb
+Show HN: A search engine that respects your time
+Show HN: A markdown editor with a soul
+Show HN: I built it on a flight
+Show HN: I built it on a train
+Show HN: I built it during paternity leave
+Migrating from Lambda to Cloudflare Workers, a year later
+Migrating from Vercel to Cloudflare, a year later
+Migrating to Bun, three months in
+Why typed errors changed how I write Go
+Why typed errors changed how I write Rust
+Show HN: A type-safe SQL builder for $lang
+Ten lessons from a decade as a tech lead
+Ten lessons from a decade as an indie hacker
+The case for boring tech (still)
+The case against boring tech, now
+The unreasonable effectiveness of plain text
+The unreasonable effectiveness of a single binary
+The unreasonable effectiveness of Postgres
+Why your team doesn't ship
+Why your team ships too much
+What I wish I knew before founding a company
+What I wish I knew before joining a startup
+What I wish I knew before going remote
+Show HN: We rebuilt our editor in Rust
+Show HN: We rebuilt our backend in Go
+Show HN: We rebuilt our backend in Elixir
+Show HN: A self-hosted Slack alternative
+A new approach to caching at the edge
+We rewrote our search from scratch (here's why)
+Lessons from rebuilding our payment system
+Lessons from migrating 1M users to a new DB
+Lessons from a $0 → $10M ARR journey
+The architecture behind our latency cut
+How we cut our infra bill by 70%
+How we cut our pager volume by 80%
+A practical guide to incident response
+A practical guide to on-call hygiene
+A practical guide to post-mortems
+A practical guide to RFCs
+A practical guide to PR reviews

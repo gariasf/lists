@@ -1,0 +1,115 @@
+Harvard University
+Stanford University
+Massachusetts Institute of Technology
+University of Cambridge
+University of Oxford
+California Institute of Technology
+Princeton University
+Yale University
+Columbia University
+University of Chicago
+ETH Zurich
+EPFL
+University of Pennsylvania
+Cornell University
+Johns Hopkins University
+Duke University
+University of Michigan
+University of California, Berkeley
+UCLA
+University of Toronto
+University of British Columbia
+McGill University
+University of Edinburgh
+King's College London
+Imperial College London
+University College London
+London School of Economics
+University of Manchester
+University of Bristol
+University of Warwick
+Tsinghua University
+Peking University
+Fudan University
+Shanghai Jiao Tong University
+Zhejiang University
+University of Hong Kong
+Chinese University of Hong Kong
+HKUST
+National University of Singapore
+Nanyang Technological University
+Seoul National University
+KAIST
+Yonsei University
+Korea University
+University of Tokyo
+Kyoto University
+Osaka University
+Waseda University
+Keio University
+Indian Institute of Technology Bombay
+Indian Institute of Technology Delhi
+Indian Institute of Technology Madras
+Indian Institute of Technology Kanpur
+Indian Institute of Science
+IIM Ahmedabad
+University of Melbourne
+Australian National University
+University of Sydney
+Monash University
+University of New South Wales
+University of Queensland
+Heidelberg University
+LMU Munich
+Technical University of Munich
+Humboldt University Berlin
+Free University Berlin
+RWTH Aachen
+KU Leuven
+Delft University of Technology
+University of Amsterdam
+Sorbonne University
+Sciences Po
+École Normale Supérieure
+HEC Paris
+INSEAD
+Bocconi University
+Politecnico di Milano
+University of Bologna
+Sapienza University of Rome
+Universidad de Barcelona
+Universidad Autónoma de Madrid
+Universidad Complutense de Madrid
+IE University
+Universidad de Buenos Aires
+UNAM
+ITESM
+Universidad de Chile
+Pontificia Universidad Católica de Chile
+University of São Paulo
+PUC-Rio
+Lund University
+Stockholm University
+Karolinska Institute
+KTH Royal Institute of Technology
+Aalto University
+University of Copenhagen
+University of Oslo
+Norwegian University of Science and Technology
+University of Helsinki
+University of Tartu
+Trinity College Dublin
+University of Galway
+Tel Aviv University
+Hebrew University of Jerusalem
+American University of Beirut
+King Abdullah University of Science and Technology
+United Arab Emirates University
+Cairo University
+University of Cape Town
+University of the Witwatersrand
+Stellenbosch University
+University of Lagos
+University of Ghana
+University of Auckland
+Victoria University of Wellington

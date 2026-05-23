@@ -1,0 +1,124 @@
+head
+skull
+forehead
+temple
+crown
+scalp
+hair
+eyebrow
+eyelid
+eyelash
+eye
+iris
+pupil
+sclera
+cornea
+ear
+earlobe
+nose
+nostril
+bridge of nose
+cheek
+cheekbone
+mouth
+lips
+upper lip
+lower lip
+teeth
+gums
+tongue
+chin
+jaw
+neck
+throat
+adam's apple
+nape
+shoulder
+collarbone
+chest
+breastbone
+ribs
+upper back
+mid-back
+lower back
+armpit
+upper arm
+elbow
+forearm
+wrist
+hand
+palm
+back of hand
+thumb
+index finger
+middle finger
+ring finger
+pinky finger
+fingernail
+knuckle
+abdomen
+waist
+belly button
+hip
+pelvis
+groin
+buttocks
+tailbone
+thigh
+knee
+kneecap
+shin
+calf
+ankle
+heel
+foot
+arch
+toes
+big toe
+sole
+toenail
+brain
+spinal cord
+heart
+lungs
+trachea
+diaphragm
+liver
+gallbladder
+pancreas
+stomach
+small intestine
+large intestine
+colon
+rectum
+kidney
+bladder
+ureter
+urethra
+spleen
+thymus
+thyroid
+adrenal gland
+appendix
+ovary
+fallopian tube
+uterus
+cervix
+testes
+prostate
+vas deferens
+nipple
+areola
+biceps
+triceps
+deltoid
+quadriceps
+hamstring
+glutes
+abs
+obliques
+trapezius
+latissimus dorsi
+pectoral
+calf muscle
+soleus

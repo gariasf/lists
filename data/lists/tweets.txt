@@ -1,0 +1,88 @@
+just shipped a thing
+big day. tiny commit
+no thoughts, just vibes
+unfollow if you don't agree
+hot take: simpler is better
+deleted, but you saw it
+woke up at 4 to ship this
+new branch, who dis
+the standup was a missed Slack message
+prod is down, send help
+deploy went fine, surprisingly
+"works on my machine" energy today
+mood: refactoring at midnight
+who designed this prompt, an enemy?
+when in doubt, rm -rf node_modules
+typescript is just JavaScript wearing a tie
+prompt-engineering is just google for the AI age
+the only good naming is no naming
+you can't refactor your way out of bad incentives
+shipping > strategizing
+make it work, make it right, then make it pretty
+read the docs (ourselves, please)
+3 days into the migration and I have feelings
+my favorite kind of meeting is the one that's an email
+"actually it's a feature"
+this PR is ready (it is not)
+"approved with comments"
+LGTM 🚀
+ship it Friday afternoon, fix it Monday morning
+the queue is empty and I am suspicious
+docs were updated 4 years ago, must be correct
+"this is technically possible"
+mid-sprint refactor, what could go wrong
+spent the morning naming a function
+the bug was the test
+the bug was the spec
+the bug was the user
+new tab energy
+incognito for the homies
+deleting the tab and pretending I never saw it
+turning off Slack notifications, see you in a month
+on call this week. wish me luck
+post-incident, pre-sleep
+the on-call person did not appreciate the 3am ping
+your meeting could've been a Loom
+your Loom could've been a doc
+your doc could've been a Slack message
+your Slack message could've been a delete
+finally back from PTO and zero unread
+the inbox is winning
+launched a side project nobody asked for
+launched a side project everybody asked for
+shipped my first PR in this repo today 🎉
+hit 10k MRR this month
+just signed our first enterprise customer
+giving talks at $bigconf this week, say hi
+new role: $bigco. excited
+new role: stealth startup
+hot taking: AI is just autocomplete with vibes
+hot taking: AI is the new electricity
+hot taking: TypeScript saved my marriage
+hot taking: monorepos are a personality trait
+no one is more shocked than me that this works
+the prototype shipped to production. nobody said anything
+deleted 500 lines and the tests still pass. great day
+broke prod, owned up in the channel, fixed in 10
+weekly reminder to back up your dotfiles
+weekly reminder that DNS is the answer
+weekly reminder to drink water and rebase
+fav keyboard shortcut: alt-tab
+keyboard cleanups are the new sourdough
+my keymap is louder than my opinions
+new keyboard incoming, will be unbearable for two weeks
+the keyboard is louder than the meeting
+my home row is a war crime
+RSI says hi
+let's give Friday a 6/10
+let's give this quarter a B+
+how is it already May
+how is it already Q3
+spring sprint cleaning is real
+fall offsite plotting begins
+took the train just to think
+turned off iMessage and went on a walk
+bought a kindle, may finish a book in 2026
+finally tried to learn rust again
+finally tried to learn cooking again
+finally tried to learn pacing meetings again

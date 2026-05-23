@@ -1,0 +1,88 @@
+CS50: Introduction to Computer Science
+CS50: Introduction to Python
+CS50: Web Programming with Python and JavaScript
+Machine Learning by Andrew Ng
+Deep Learning Specialization
+Practical Deep Learning for Coders
+Stanford CS231n: Deep Learning for Computer Vision
+Stanford CS224n: NLP with Deep Learning
+MIT 6.006 Introduction to Algorithms
+MIT 6.S081 Operating Systems Engineering
+CMU 15-445 Database Systems
+CMU 15-721 Advanced Database Systems
+Coursera Google Data Analytics Certificate
+Coursera Google Project Management Certificate
+Coursera Google UX Design Certificate
+Coursera IBM Data Science Certificate
+Coursera Meta Front-End Developer Certificate
+Coursera Meta Back-End Developer Certificate
+Coursera AWS Cloud Practitioner Certificate
+edX HarvardX CS50x
+edX MITx Mathematics for Computer Science
+edX MITx Probability
+edX BerkeleyX CS169x Software Engineering
+Udemy Complete Python Bootcamp
+Udemy The Web Developer Bootcamp 2025
+Udemy Master the Coding Interview
+Udemy SwiftUI Masterclass
+Udemy AWS Certified Solutions Architect
+Udemy Docker & Kubernetes: The Practical Guide
+Udemy Microservices with Node.js & React
+Udemy Modern React with Redux
+Udemy Vue — The Complete Guide
+Udemy Tailwind CSS From Scratch
+Udemy The Ultimate React Course
+Udemy Rust Crash Course
+Frontend Masters: JavaScript: The Hard Parts
+Frontend Masters: React for Beginners
+Frontend Masters: Advanced React Patterns
+Frontend Masters: Mastering Chrome DevTools
+Frontend Masters: Functional JavaScript First Steps
+Egghead: Just Enough Functional Programming
+Egghead: Build a React App with the Hooks API
+Pluralsight Path: AWS Certified Developer Associate
+Pluralsight Path: .NET Microservices
+LinkedIn Learning: Excel Essential Training
+LinkedIn Learning: Python Essential Training
+LinkedIn Learning: Strategic Planning Foundations
+Khan Academy: Algebra 1
+Khan Academy: Calculus 1
+Khan Academy: Statistics & Probability
+DataCamp: Data Scientist with Python
+DataCamp: Data Engineer Career Track
+fast.ai: Practical Deep Learning for Coders
+DeepLearning.AI: AI for Everyone
+DeepLearning.AI: Generative AI for Everyone
+DeepLearning.AI: LangChain for LLM Application Development
+DeepLearning.AI: ChatGPT Prompt Engineering for Developers
+DeepLearning.AI: Building Systems with the ChatGPT API
+DeepLearning.AI: Functions, Tools and Agents with LangChain
+Hugging Face: NLP Course
+Hugging Face: Audio Course
+Hugging Face: Computer Vision Course
+Hugging Face: RL Course
+Hugging Face: Agent Course
+Andrej Karpathy: Neural Networks: Zero to Hero
+Andrej Karpathy: Let's build GPT from scratch
+3Blue1Brown: Essence of Linear Algebra
+3Blue1Brown: Essence of Calculus
+StatQuest: Statistics Fundamentals
+The Net Ninja: JavaScript Tutorials
+The Net Ninja: React Tutorials
+Beau Carnes: freeCodeCamp Curriculum
+Wes Bos: JavaScript30
+Kent C. Dodds: Epic React
+Kent C. Dodds: Epic Web
+Total TypeScript: Essentials
+Total TypeScript: Type-Level TypeScript
+Frontend Masters: TypeScript Fundamentals
+Build Your Own Database from Scratch
+Build Your Own Redis in Rust
+Build Your Own Lisp
+Build Your Own Web Framework in Python
+Real Python: The Full Course
+Coursera CS: Programming Languages — A
+Coursera Algorithms: Part I (Princeton)
+Coursera Algorithms: Part II (Princeton)
+Coursera Cryptography I (Stanford)
+Coursera Game Theory (Stanford)

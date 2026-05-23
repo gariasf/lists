@@ -1,0 +1,50 @@
+15 min
+20 min
+25 min
+30 min
+45 min
+50 min
+60 min
+75 min
+90 min
+2 h
+3 h
+4 h
+all day
+half day
+1 hour
+1.5 hours
+2 hours
+2.5 hours
+3 hours
+5 minutes
+10 minutes
+15 minutes
+20 minutes
+25 minutes
+30 minutes
+45 minutes
+50 minutes
+1 hour 15 minutes
+1 hour 30 minutes
+1 hour 45 minutes
+2 hours
+4 hours
+6 hours
+8 hours
+Half-day workshop
+Full-day workshop
+Two-day offsite
+Three-day offsite
+1-on-1 (30 min)
+Standup (15 min)
+Standup (10 min)
+Retrospective (60 min)
+Sprint planning (90 min)
+Demo (45 min)
+All-hands (60 min)
+Board meeting (120 min)
+Quick sync (15 min)
+Deep dive (90 min)
+Coffee chat (30 min)
+Office hours (60 min)

@@ -1,0 +1,129 @@
+Earth
+Mars
+Luna
+Venus
+Mercury
+Jupiter
+Saturn
+Uranus
+Neptune
+Pluto
+Proxima b
+Kepler-22b
+Kepler-186f
+Kepler-452b
+TRAPPIST-1e
+TRAPPIST-1f
+TRAPPIST-1g
+Trantor
+Terminus
+Foundation Prime
+Helicon
+Arrakis
+Caladan
+Giedi Prime
+Salusa Secundus
+Kaitain
+Ix
+Tleilax
+Tatooine
+Dagobah
+Hoth
+Endor
+Coruscant
+Naboo
+Kashyyyk
+Geonosis
+Mustafar
+Mandalore
+Concord Dawn
+Lothal
+Atollon
+Eadu
+Jedha
+Scarif
+Crait
+Cantonica
+D'Qar
+Jakku
+Pasaana
+Kijimi
+Kef Bir
+Exegol
+Ahch-To
+Felucia
+Ryloth
+Yavin IV
+Bespin
+Korriban
+Tython
+Ach-To
+Vulcan
+Romulus
+Cardassia
+Bajor
+Q'onoS
+Andoria
+Risa
+Trill
+Ferenginar
+Betazed
+Talos IV
+Bryt 117
+Pandora
+Wakanda
+Krypton
+New Genesis
+Apokolips
+Themyscira
+Rann
+Thanagar
+Daxam
+Tamaran
+Mongo
+Cybertron
+Earth-616
+Earth-1610
+Earth-65
+Asgard
+Niflheim
+Sakaar
+Xandar
+Halla
+Ego
+Ravager Outpost
+Knowhere
+Titan
+Vormir
+Morag
+Contraxia
+Sovereign
+Hala
+Galador
+Kobol
+Caprica
+Sagittaron
+Aerilon
+Picon
+Tauron
+Virgon
+Gemenon
+Scorpia
+Aquaria
+Reach
+Sanghelios
+Te
+Heran
+Doisac
+High Charity
+Installation 04
+Installation 05
+Halo Array
+Earth-1
+Apollo
+Aeon
+Atlas
+Helios
+Solitude Station
+Rapture
+New Eden

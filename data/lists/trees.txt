@@ -1,0 +1,134 @@
+Oak
+White Oak
+Red Oak
+Live Oak
+Bur Oak
+Pin Oak
+Cork Oak
+Cedar
+Eastern Red Cedar
+Western Red Cedar
+Atlas Cedar
+Lebanon Cedar
+Pine
+White Pine
+Scots Pine
+Lodgepole Pine
+Loblolly Pine
+Bristlecone Pine
+Ponderosa Pine
+Norfolk Island Pine
+Fir
+Douglas Fir
+Balsam Fir
+Fraser Fir
+Noble Fir
+White Fir
+Spruce
+Blue Spruce
+Norway Spruce
+Sitka Spruce
+Engelmann Spruce
+Hemlock
+Eastern Hemlock
+Western Hemlock
+Larch
+Tamarack
+Redwood
+Coast Redwood
+Giant Sequoia
+Bald Cypress
+Pond Cypress
+Cypress (Italian)
+Juniper
+Yew
+Pacific Yew
+Maple
+Sugar Maple
+Red Maple
+Silver Maple
+Norway Maple
+Japanese Maple
+Bigleaf Maple
+Boxelder
+Birch
+White Birch
+Paper Birch
+Silver Birch
+River Birch
+Yellow Birch
+Beech
+European Beech
+American Beech
+Copper Beech
+Chestnut
+American Chestnut
+Sweet Chestnut
+Horse Chestnut
+Buckeye
+Walnut
+Black Walnut
+English Walnut
+Pecan
+Hickory
+Shagbark Hickory
+Mockernut Hickory
+Elm
+American Elm
+Cedar Elm
+Slippery Elm
+Chinese Elm
+Hackberry
+Sweetgum
+American Sweetgum
+Black Tupelo
+Sourwood
+Hawthorn
+Dogwood
+Flowering Dogwood
+Kousa Dogwood
+Magnolia
+Southern Magnolia
+Star Magnolia
+Saucer Magnolia
+Cherry
+Yoshino Cherry
+Kwanzan Cherry
+Black Cherry
+Apple
+Crabapple
+Pear
+Bradford Pear
+Plum
+Apricot
+Almond
+Olive
+Eucalyptus
+Acacia
+Mimosa
+Jacaranda
+Bottlebrush
+Bauhinia (Hong Kong Orchid)
+Mango
+Avocado
+Lychee
+Banyan
+Bodhi
+Baobab
+Mahogany
+Teak
+Rosewood
+Sandalwood
+Mountain Ash
+European Mountain Ash
+Sycamore
+American Sycamore
+London Plane
+Tulip Tree
+Black Locust
+Honey Locust
+Catalpa
+Persimmon
+Pawpaw
+Quince
+Pomegranate

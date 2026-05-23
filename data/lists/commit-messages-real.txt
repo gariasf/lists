@@ -1,0 +1,106 @@
+feat: add SSO sign-in flow
+feat(auth): support passkeys
+feat: implement workspace switcher
+feat(billing): add usage-based pricing
+feat(api): add rate limiting middleware
+feat(ui): add dark mode toggle
+feat(search): switch to MeiliSearch
+feat: add CSV export
+feat(onboarding): add empty-state CTA
+feat(import): support Airtable CSVs
+feat(notifications): batch digest emails
+fix: prevent double-submit on form
+fix(api): handle empty body
+fix: off-by-one in pagination
+fix(ui): button alignment on Safari
+fix(date): handle daylight savings edge case
+fix(stripe): retry on rate limit
+fix: stop reloading on tab focus
+fix: avoid uncaught promise in worker
+fix(auth): clear stale session on logout
+fix: undefined check in formatter
+chore: bump deps
+chore(deps): update next to 15.6
+chore: regenerate types
+chore: tweak eslint config
+chore: rename internal helper
+chore(ci): cache pnpm store
+refactor: extract repository pattern
+refactor(api): split routes by domain
+refactor: replace switch with map
+refactor(ui): move components to packages/ui
+docs: update README
+docs: add ADR-0042 caching policy
+docs(api): document new endpoints
+docs: clarify env vars
+test: add coverage for plan limits
+test(api): mock stripe webhooks
+test: fix flaky retry test
+perf: memoize expensive selector
+perf(db): add covering index
+perf: batch database writes
+ci: switch to pnpm
+ci: add typecheck step
+ci(deploy): run smoke tests post-deploy
+build: bump node to 22
+build: switch to bun
+revert: previous commit broke prod
+revert "feat: experimental flag"
+hotfix: ship rollback for prod regression
+WIP: spike on new schema
+spike: try alternate diffing algo
+infra: add k8s rollout strategy
+ops: bump alert threshold
+db: migration 0042 add column
+db: backfill soft-deleted rows
+docs: ADR on RPC vs REST
+chore: silence noisy log
+ui: tweak spacing on settings page
+feat: rough out new pricing page
+fix: small typo
+fix typo
+typo
+oops
+oh
+sorry
+final final v2
+revert revert
+init
+initial commit
+add license
+add gitignore
+remove gitignore
+prepare release v2.4.0
+release v2.4.0
+publish v2.4.0
+chore: changeset
+chore: changesets
+chore: release v1.0.0
+chore: bump to v1.0.0-beta.1
+deps: lockfile bump
+deps: dedupe
+deps: prune unused
+add tests
+fix tests
+green
+make CI green
+quiet CI
+fix lint
+fix prettier
+deal with TS error
+small cleanups
+remove dead code
+remove TODO
+address review comments
+address review
+final review pass
+ready for review
+not ready for review (but pushing)
+DO NOT MERGE: testing CI
+DO NOT MERGE
+let's see if this works
+trying again
+should be it
+this should fix it
+this should really fix it
+really really should fix it

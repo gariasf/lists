@@ -1,0 +1,102 @@
+What is this product?
+How do I get started?
+How much does it cost?
+Is there a free plan?
+Is there a free trial?
+How long is the free trial?
+Do I need a credit card to start?
+Can I cancel anytime?
+Will I get a refund?
+What payment methods do you accept?
+Do you offer annual billing?
+Do you offer monthly billing?
+How do I update my payment method?
+How do I download an invoice?
+How does the trial work?
+What happens when my trial ends?
+Can I switch plans later?
+What happens if I downgrade?
+Is there a non-profit discount?
+Is there a student discount?
+Do you have an education plan?
+Can I get a custom enterprise plan?
+How do I contact sales?
+What's your refund policy?
+Do you have a money-back guarantee?
+Where can I see my usage?
+How are seats counted?
+Can I add seats later?
+Can I invite teammates?
+How do invitations work?
+Can I remove a teammate?
+Can I change someone's role?
+What roles are available?
+What permissions can each role do?
+Can I have multiple workspaces?
+How do I switch between workspaces?
+Can I export my data?
+Where is my data stored?
+Is my data encrypted?
+Is the connection secure (HTTPS)?
+Are you GDPR-compliant?
+Are you HIPAA-compliant?
+Are you SOC 2 certified?
+How do I delete my account?
+How do I delete a single record?
+What happens when I delete data?
+How long do you retain backups?
+Do you sell my data?
+Can I bring my own model (BYOM)?
+Can I bring my own database?
+Can I self-host?
+Do you offer an on-prem version?
+Where can I find your status page?
+What do I do when something is down?
+How do I report a bug?
+Where do I file feature requests?
+How do I contact support?
+What are your support hours?
+Do you offer phone support?
+Do you offer dedicated support?
+Is there an SLA?
+How do I integrate with Slack?
+How do I integrate with GitHub?
+Do you have a public API?
+Do you have client libraries?
+Where are your docs?
+Where are your changelogs?
+How often do you ship updates?
+Do you have a roadmap?
+Where can I see what's coming next?
+Do you have a community?
+Do you have a Discord?
+Do you have a Slack community?
+Can I use this on mobile?
+Is there an iOS app?
+Is there an Android app?
+Is there a desktop app?
+Does the web app work offline?
+Why is the app slow today?
+Can I use this on a Chromebook?
+What browsers do you support?
+What languages do you support?
+Can I change the interface language?
+What time zones are supported?
+Is there a dark mode?
+Is there a light mode?
+Can I customize keyboard shortcuts?
+Can I use a screen reader with this?
+Are you WCAG-compliant?
+What accessibility features do you offer?
+How do I report an accessibility issue?
+Can I sponsor the project?
+How can I contribute?
+Is the source code open?
+What license is the code under?
+Where can I see your team?
+Are you hiring?
+How do I apply?
+How do I refer a friend?
+Where can I see press coverage?
+Do you have a media kit?
+How do I cite you?

@@ -1,0 +1,48 @@
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+Q1 2025
+Q2 2025
+Q3 2025
+Q4 2025
+Q1 2026
+Q2 2026
+Q3 2026
+Q4 2026
+H1 2024
+H2 2024
+H1 2025
+H2 2025
+H1 2026
+H2 2026
+FY2024
+FY2025
+FY2026
+FY24
+FY25
+FY26
+Q1
+Q2
+Q3
+Q4
+First Quarter
+Second Quarter
+Third Quarter
+Fourth Quarter
+Quarter 1
+Quarter 2
+Quarter 3
+Quarter 4
+1Q25
+2Q25
+3Q25
+4Q25
+Q1 FY25
+Q2 FY25
+Q3 FY25
+Q4 FY25
+Q1 (Jan-Mar)
+Q2 (Apr-Jun)
+Q3 (Jul-Sep)
+Q4 (Oct-Dec)

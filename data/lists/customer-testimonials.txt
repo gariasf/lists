@@ -1,0 +1,30 @@
+"Saved our team at least 10 hours a week." — Sara P., Eng Lead at Acme
+"The single best tool we've added to our stack this year." — Marco V., CTO at Pivotal
+"It's the first product where my whole team actually agrees on which one to use." — Aiko T., Head of Design
+"Onboarded the team in 15 minutes, no training needed." — Diego R., Director of Ops
+"We replaced four tools with this one." — Priya N., VP Engineering
+"Our customers can finally self-serve." — Felix B., Founder
+"Looks great. Works even better." — Elena K., Product Designer
+"Honestly, this is the kind of thing I'd build myself if I had the time." — Liam J., Staff Engineer
+"It just works. That used to be normal; now it's rare." — Hana M., Engineering Manager
+"The pricing is fair, the support is fast, the product is sharp." — Tomás A., Indie hacker
+"We tried five alternatives. Came back here. Twice." — Rita S., COO
+"I'd pay 3× more before I'd switch back." — Anders B., Solo founder
+"It made my Mondays bearable." — Casey L., PM
+"We shipped a new product in 4 weeks instead of 4 months." — Joon S., Tech lead
+"The kind of software that respects your time." — Mei C., Designer
+"You can feel that the team using it every day built it." — Owen R., Software engineer
+"It made the migration we'd been delaying for 2 years feel doable." — Carolina F., Director of Engineering
+"Our incident response time dropped by 60%." — Jaden M., SRE
+"This is what the spreadsheet wanted to be when it grew up." — Ahmed Y., Data lead
+"Sales cycle for our enterprise tier dropped from 6 months to 3 weeks." — Naoki H., AE
+"My favorite kind of product: opinionated where it should be, flexible where it matters." — Bea M., CEO
+"The onboarding flow felt like a love letter." — Lia P., UX lead
+"We finally have a single source of truth across product, eng, and ops." — Karim N., Chief of Staff
+"I recommend it to everyone, including my parents." — Mira R., Engineer
+"Switched from a $25/seat tool to this. Better, and a third the price." — Sven O., Founder
+"We were skeptical of the AI features. Now we use them every day." — Luna P., PM
+"Customer support replied in 7 minutes, on a Saturday. Wild." — Toni V., Founder
+"The kind of tool you don't realize you needed until you have it." — Sara M., CEO
+"Helped us land our biggest enterprise customer." — Dieter L., Head of Sales
+"We refer at least one customer a week to you. Keep going." — Imani B., Customer Lead

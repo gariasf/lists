@@ -1,0 +1,181 @@
+Tesla Model S
+Tesla Model 3
+Tesla Model X
+Tesla Model Y
+Tesla Cybertruck
+Tesla Roadster (next gen)
+Rivian R1T
+Rivian R1S
+Rivian R2
+Rivian R3
+Rivian R3X
+Lucid Air
+Lucid Air Sapphire
+Lucid Gravity
+Lucid Earth
+Polestar 2
+Polestar 3
+Polestar 4
+Polestar 5
+Polestar 6
+Ford F-150 Lightning
+Ford Mustang Mach-E
+Ford E-Transit
+Chevrolet Bolt EV
+Chevrolet Bolt EUV
+Chevrolet Blazer EV
+Chevrolet Equinox EV
+Chevrolet Silverado EV
+GMC Hummer EV
+GMC Sierra EV
+Cadillac LYRIQ
+Cadillac CELESTIQ
+Volvo EX30
+Volvo EX40
+Volvo EX90
+Volvo EM90
+BMW iX
+BMW iX1
+BMW iX3
+BMW i4
+BMW i5
+BMW i7
+BMW iX5 Hydrogen
+Mercedes-Benz EQS
+Mercedes-Benz EQE
+Mercedes-Benz EQS SUV
+Mercedes-Benz EQE SUV
+Mercedes-Benz EQA
+Mercedes-Benz EQB
+Mercedes-Benz EQT
+Audi Q4 e-tron
+Audi Q6 e-tron
+Audi Q8 e-tron
+Audi A6 e-tron
+Audi e-tron GT
+Porsche Taycan
+Porsche Macan Electric
+Volkswagen ID.3
+Volkswagen ID.4
+Volkswagen ID.5
+Volkswagen ID.7
+Volkswagen ID.Buzz
+Skoda Enyaq
+Cupra Born
+Cupra Tavascan
+SEAT Mii Electric
+Hyundai Ioniq 5
+Hyundai Ioniq 5 N
+Hyundai Ioniq 6
+Hyundai Kona Electric
+Hyundai Inster
+Kia EV3
+Kia EV6
+Kia EV6 GT
+Kia EV9
+Kia EV5
+Kia Niro EV
+Genesis GV60
+Genesis Electrified G80
+Genesis Electrified GV70
+Renault 5 E-Tech
+Renault Megane E-Tech
+Renault Scenic E-Tech
+Renault Zoe
+Peugeot e-208
+Peugeot e-2008
+Peugeot e-3008
+Peugeot e-5008
+Citroen e-C3
+Citroen e-C4
+Citroen ë-Berlingo
+Vauxhall Astra Electric
+Vauxhall Corsa Electric
+Opel Mokka-e
+Fiat 500e
+Fiat 600e
+Fiat Topolino
+Alfa Romeo Junior Elettrica
+Lancia Ypsilon Elettrica
+DS 3 E-Tense
+DS 4 E-Tense
+Smart #1
+Smart #3
+Smart #5
+BYD Atto 3
+BYD Dolphin
+BYD Seal
+BYD Seal U
+BYD Han
+BYD Tang
+BYD Sealion 7
+BYD Sealion 6
+BYD Yangwang U8
+BYD Yangwang U9
+NIO ET5
+NIO ET7
+NIO ET9
+NIO ES6
+NIO ES7
+NIO ES8
+NIO EC6
+NIO EC7
+XPeng P5
+XPeng P7
+XPeng G3
+XPeng G6
+XPeng G9
+XPeng X9
+Li Auto L6
+Li Auto L7
+Li Auto L8
+Li Auto L9
+Li Auto Mega
+Zeekr 001
+Zeekr 007
+Zeekr 009
+Zeekr X
+Avatr 11
+Avatr 12
+Avatr 07
+Aito M5
+Aito M7
+Aito M9
+Luxeed S7
+Luxeed R7
+IM L7
+IM LS6
+IM LS7
+IM Onvo L60
+Geely Galaxy E5
+Smart #1 Brabus
+ORA Funky Cat
+ORA Ballet Cat
+Toyota bZ4X
+Toyota bZ3
+Subaru Solterra
+Subaru Trailseeker
+Lexus RZ
+Lexus LBX Morizo
+Mazda MX-30
+Mazda EZ-6
+Honda Prologue
+Honda 0 Series Saloon
+Honda 0 Series SUV
+Acura ZDX
+Nissan Ariya
+Nissan Leaf
+Nissan Sakura
+Mini Cooper E
+Mini Aceman
+Mini Countryman Electric
+Jaguar I-PACE
+Land Rover Range Rover Electric
+Range Rover Velar Electric
+Bentley EV
+Rolls-Royce Spectre
+McLaren Artura EV
+Aston Martin Vanquish EV
+Maserati GranTurismo Folgore
+Maserati Grecale Folgore
+Maserati MC20 Folgore

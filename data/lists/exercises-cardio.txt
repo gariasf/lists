@@ -1,0 +1,102 @@
+Walking
+Brisk walking
+Hiking
+Trail running
+Easy run
+Tempo run
+Long run
+Interval run
+Fartlek
+800m repeats
+400m repeats
+200m sprints
+60m sprints
+Hill sprints
+Marathon training run
+Half-marathon training run
+5K race
+10K race
+Half-marathon
+Marathon
+Ultra marathon
+Trail marathon
+Cycling
+Road cycling
+Mountain biking
+Gravel cycling
+Indoor cycling
+Spin class
+Zwift session
+Peloton class
+Stationary bike
+Recumbent bike
+Air bike (Assault bike)
+Echo bike
+Bike sprint intervals
+Bike Z2 endurance
+Swimming
+Freestyle swim
+Backstroke
+Breaststroke
+Butterfly
+Open water swim
+Lap swim
+Swim intervals
+Sprint swim
+Cool-down swim
+Pool walking
+Aqua aerobics
+Rowing
+Rowing erg 2K
+Rowing erg 5K
+Rowing intervals
+SkiErg
+Ski erg intervals
+Stair climber
+Stairmaster
+Stair sprints
+Stadium stairs
+Sled push
+Sled pull
+Battle ropes
+Boxing
+Boxing pad work
+Kickboxing
+Muay Thai pad work
+Shadowboxing
+Jump rope
+Double-unders
+Jump squats
+Jumping lunges
+Box jumps
+Burpees
+Bear crawl
+Mountain climbers
+Skater jumps
+Power skips
+Tuck jumps
+HIIT
+Tabata
+EMOM (every minute on the minute)
+AMRAP
+CrossFit metcon
+Hot yoga flow
+Vinyasa flow
+Power yoga
+Pilates reformer
+Mat Pilates
+Dance cardio
+Zumba
+Aerobics class
+Step aerobics
+Barre class
+Rebounder (mini-trampoline)
+Surfing
+Paddleboarding
+Kayaking
+Canoeing
+Cross-country skiing
+Roller skating
+Inline skating
+Ice skating
+Skateboarding

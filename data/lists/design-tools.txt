@@ -1,0 +1,150 @@
+Figma
+FigJam
+Figma Slides
+Figma Sites
+Framer
+Framer Sites
+Penpot
+Sketch
+Adobe XD
+Adobe Photoshop
+Adobe Illustrator
+Adobe InDesign
+Adobe After Effects
+Adobe Premiere Pro
+Adobe Lightroom
+Adobe Lightroom Classic
+Adobe Substance 3D Painter
+Adobe Substance 3D Designer
+Adobe Substance 3D Sampler
+Adobe Substance 3D Stager
+Adobe Animate
+Adobe Audition
+Adobe Express
+Affinity Designer
+Affinity Photo
+Affinity Publisher
+Procreate
+Procreate Dreams
+Procreate Pocket
+Concepts
+Linea Sketch
+Vectornator
+Linearity Curve
+Linearity Move
+Linearity Loop
+Pixelmator Pro
+Pixelmator
+Flying Meat Acorn
+Acorn
+RapidWeaver
+DaVinci Resolve
+DaVinci Resolve Studio
+Final Cut Pro
+Logic Pro
+Capture One
+Capture One Express
+DxO PhotoLab
+ON1 Photo RAW
+Luminar Neo
+Skylum Luminar
+Topaz Photo AI
+Topaz Video AI
+Topaz Sharpen AI
+CodePen
+Pencil Project
+Balsamiq Wireframes
+Whimsical
+Miro
+Mural
+Lucidchart
+Lucidspark
+Excalidraw
+tldraw
+Witeboard
+Notion Canvas
+Eraser
+Eraser.io
+PlantUML
+Mermaid
+draw.io
+Diagrams.net
+Quill
+DiagrammeR
+Spline
+Vectary
+Blender
+Cinema 4D
+Maya
+3ds Max
+Houdini
+ZBrush
+ZBrush 2024
+Modo
+Substance Painter
+Marmoset Toolbag
+KeyShot
+Octane Render
+Redshift Render
+Twinmotion
+Lumion
+Unreal Engine
+Unity
+Godot
+Defold
+Construct 3
+GDevelop
+Pixel Studio
+Aseprite
+PyxelEdit
+LibreSprite
+Tiled
+GIMP
+Krita
+Inkscape
+Blender
+Penpot
+PaintTool SAI
+Clip Studio Paint
+Storyboard Pro
+TVPaint
+Toon Boom Harmony
+Moho
+OpenToonz
+Pencil2D
+Glyphs
+FontLab
+Fontself
+RoboFont
+Fonts Forge
+Typesetter
+Typesettings
+Calligraphr
+Birdfont
+WeTransfer
+Dropbox
+Frame.io
+Pixieset
+Format
+Squarespace
+Wix Studio
+Webflow
+Webflow Designer
+Builder.io
+Plasmic
+TeleportHQ
+Storyblok
+Sanity Studio
+Contentful
+DatoCMS
+ButterCMS
+Notion Sites
+Cargo
+Carrd
+Tilda
+Readymag
+Editor X
+Wix
+WordPress
+Elementor
+Divi

@@ -1,0 +1,70 @@
+High School Diploma
+GED
+Associate's Degree
+A.A.
+A.S.
+A.A.S.
+Bachelor's Degree
+B.A.
+B.S.
+B.Sc.
+B.B.A.
+B.F.A.
+B.Eng.
+B.E.
+B.Tech.
+B.Arch.
+B.Ed.
+B.Mus.
+B.S.N.
+Master's Degree
+M.A.
+M.S.
+M.Sc.
+M.B.A.
+M.F.A.
+M.Eng.
+M.Tech.
+M.Arch.
+M.Ed.
+M.Mus.
+M.S.W.
+M.P.H.
+M.P.A.
+M.P.P.
+M.Sc. in Computer Science
+M.Sc. in Data Science
+Master of Laws (LL.M.)
+Doctorate
+Ph.D.
+Ph.D. in Computer Science
+Doctor of Medicine (M.D.)
+M.D.-Ph.D.
+Doctor of Dental Surgery (D.D.S.)
+Doctor of Veterinary Medicine (D.V.M.)
+Doctor of Pharmacy (Pharm.D.)
+Doctor of Nursing Practice (D.N.P.)
+Doctor of Physical Therapy (D.P.T.)
+Doctor of Education (Ed.D.)
+Juris Doctor (J.D.)
+S.J.D.
+Doctor of Psychology (Psy.D.)
+Doctor of Engineering (D.Eng.)
+D.Sc.
+D.B.A.
+D.Phil.
+Diploma
+Postgraduate Diploma
+Graduate Certificate
+Professional Certificate
+Executive M.B.A.
+Mini-M.B.A.
+Bootcamp Certificate
+Nanodegree
+MicroMasters
+Specialization
+Honours Degree
+Joint Degree
+Dual Degree
+Double Major
+Minor

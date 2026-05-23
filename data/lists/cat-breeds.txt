@@ -1,0 +1,91 @@
+Maine Coon
+Ragdoll
+British Shorthair
+British Longhair
+American Shorthair
+American Longhair
+Persian
+Himalayan
+Exotic Shorthair
+Siamese
+Oriental Shorthair
+Oriental Longhair
+Balinese
+Tonkinese
+Russian Blue
+Russian White
+Nebelung
+Korat
+Burmese
+Bombay
+Singapura
+Egyptian Mau
+Abyssinian
+Somali
+Ocicat
+Bengal
+Savannah
+Toyger
+Cheetoh
+Pixiebob
+Maine Coon Polydactyl
+Norwegian Forest Cat
+Siberian
+Neva Masquerade
+Turkish Angora
+Turkish Van
+Sphynx
+Donskoy
+Peterbald
+Bambino
+Devon Rex
+Cornish Rex
+Selkirk Rex
+LaPerm
+American Curl
+American Wirehair
+Scottish Fold
+Scottish Straight
+Highland Fold
+Highland Straight
+Munchkin
+Minskin
+Lykoi
+Khao Manee
+Burmilla
+Chartreux
+Manx
+Cymric
+Japanese Bobtail
+Kurilian Bobtail
+Mekong Bobtail
+American Bobtail
+Pixie-Bob
+Tennessee Rex
+Snowshoe
+Birman
+Sacred Birman
+Ragamuffin
+Chausie
+Serengeti
+Sokoke
+Australian Mist
+Ceylon Cat
+Chantilly-Tiffany
+Foldex
+Asian Semi-Longhair
+Aphrodite Giant
+Owyhee Bob
+Tonquinese
+Mixed breed
+Domestic Shorthair
+Domestic Longhair
+Tabby
+Mackerel Tabby
+Classic Tabby
+Spotted Tabby
+Ticked Tabby
+Tortoiseshell
+Calico
+Dilute Calico
+Tuxedo

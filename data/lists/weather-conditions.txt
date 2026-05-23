@@ -1,0 +1,106 @@
+Sunny
+Mostly sunny
+Partly sunny
+Partly cloudy
+Mostly cloudy
+Cloudy
+Overcast
+Hazy
+Foggy
+Misty
+Drizzle
+Light rain
+Rain
+Heavy rain
+Showers
+Thunderstorms
+Severe thunderstorms
+Hail
+Sleet
+Freezing rain
+Wintry mix
+Snow
+Light snow
+Heavy snow
+Blizzard
+Snow squalls
+Snow showers
+Flurries
+Sandstorm
+Dust storm
+Smoke
+Wildfire smoke
+Volcanic ash
+Tornado
+Tornado warning
+Tornado watch
+Hurricane
+Typhoon
+Cyclone
+Tropical storm
+Tropical depression
+Storm surge
+Heat advisory
+Heat wave
+Extreme heat warning
+Cold wave
+Cold snap
+Wind chill warning
+Frost advisory
+Freeze warning
+Hard freeze
+Black ice
+Ice storm
+Windy
+Breezy
+Calm
+Gusty
+Squall
+Microburst
+Downburst
+Derecho
+Hail core
+Rainbow
+Double rainbow
+Aurora borealis
+Aurora australis
+Northern lights
+Crepuscular rays
+Sun halo
+Sun dog
+Sun pillar
+Moon halo
+Lightning
+Cloud-to-ground lightning
+Sheet lightning
+Heat lightning
+Volcanic lightning
+Thunder
+King tide
+High tide
+Low tide
+Rip current
+Rough surf
+Beach hazards
+Air quality alert
+Smog
+PM2.5 spike
+Ozone alert
+UV advisory
+High UV index
+Pollen alert
+Mold spike
+Avalanche warning
+Mudslide warning
+Flash flood warning
+River flood warning
+Coastal flood warning
+Drought
+Severe drought
+Exceptional drought
+La Niña
+El Niño
+Polar vortex
+Bomb cyclone
+Atmospheric river
+Pineapple Express

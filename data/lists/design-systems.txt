@@ -1,0 +1,113 @@
+Material Design 3
+Material You
+Apple Human Interface Guidelines
+Apple Liquid Glass
+Microsoft Fluent 2
+Fluent UI
+Carbon Design System
+IBM Carbon
+Atlassian Design System
+Salesforce Lightning Design System
+Polaris (Shopify)
+Polaris Web
+Polaris React
+Spectrum (Adobe)
+Adobe Spectrum
+Lyft Design System (LDS)
+Airbnb Design Language System (DLS)
+Pinterest Gestalt
+Uber Base Web
+Uber Style Guide
+GitHub Primer
+Primer React
+Primer ViewComponents
+Mailchimp Style Guide
+Audi UI
+Audi MaaS Design
+USWDS
+USWDS 3
+GOV.UK Design System
+NHS Digital Service Manual
+Canada.ca Design System
+Lonely Planet Rizzo
+Helsinki Design System
+SAP Fiori
+SAP Horizon
+SAP Web Components
+Workday Canvas
+Atlaskit
+Pajamas (GitLab)
+GitLab Pajamas
+Sprinklr Sansa
+HashiCorp Design System
+Asana Reaction
+Hubble (Bloomberg)
+WeWork Plasma
+Zendesk Garden
+Atlassian Atlaskit
+Yelp Cookbook
+Etsy
+Instagram Igloo
+LinkedIn Hue
+Dropbox Atlas
+Dropbox UI Toolkit
+Slack Slinky
+Slack Slate
+Box UI Elements
+Mozilla Protocol
+Mozilla Photon
+Firefox Photon
+Wikimedia Codex
+Vercel Geist
+Geist
+Geist UI
+Linear Design
+Notion Design
+Framer Design
+Stripe Design
+Shopify Polaris
+Twilio Paste
+Paste
+Twilio Twilio.com
+Cloudflare Cloudflare Design
+Pinterest Gestalt Mobile
+Microsoft Fabric
+Reactjs.org
+Atlassian Marketplace
+Element UI
+Element Plus
+Ant Design
+Ant Design Mobile
+Ant Design Pro
+Naive UI
+Vuetify
+PrimeNG
+PrimeReact
+PrimeVue
+Quasar
+Onsen UI
+Ionic Framework
+Chakra UI
+Chakra UI Pro
+Park UI
+HeroUI
+NextUI
+Geist UI
+TailGrids
+Tailwind UI
+Tailwind Plus
+Daisy UI
+Flowbite
+Preline UI
+Mantine
+RebassUI
+Theme UI
+Magic UI
+Park UI
+Joy UI
+Saas UI
+Tremor
+Aceternity UI
+Animata UI
+ShadCN UI
+Penpot Design System

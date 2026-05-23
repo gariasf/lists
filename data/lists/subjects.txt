@@ -1,0 +1,121 @@
+Algebra
+Geometry
+Trigonometry
+Pre-Calculus
+Calculus
+Calculus I
+Calculus II
+Calculus III
+Linear Algebra
+Differential Equations
+Discrete Mathematics
+Statistics
+Probability
+Number Theory
+Real Analysis
+Complex Analysis
+Topology
+Set Theory
+Logic
+Physics
+Mechanics
+Thermodynamics
+Electromagnetism
+Optics
+Quantum Mechanics
+Relativity
+Astrophysics
+Astronomy
+Cosmology
+Chemistry
+Organic Chemistry
+Inorganic Chemistry
+Physical Chemistry
+Analytical Chemistry
+Biochemistry
+Biology
+Cell Biology
+Molecular Biology
+Genetics
+Microbiology
+Ecology
+Evolution
+Botany
+Zoology
+Anatomy
+Physiology
+Neuroscience
+Geology
+Earth Science
+Environmental Science
+Oceanography
+Meteorology
+Computer Science
+Algorithms
+Data Structures
+Operating Systems
+Computer Networks
+Databases
+Distributed Systems
+Compilers
+Programming Languages
+Software Engineering
+Artificial Intelligence
+Machine Learning
+Deep Learning
+Natural Language Processing
+Computer Vision
+Robotics
+Cryptography
+Cybersecurity
+Information Theory
+Theory of Computation
+Engineering
+Civil Engineering
+Mechanical Engineering
+Electrical Engineering
+Chemical Engineering
+Aerospace Engineering
+Materials Science
+Industrial Engineering
+Economics
+Microeconomics
+Macroeconomics
+Behavioral Economics
+Finance
+Accounting
+Marketing
+Management
+Operations Management
+Psychology
+Cognitive Psychology
+Developmental Psychology
+Social Psychology
+Sociology
+Anthropology
+History
+World History
+Art History
+Philosophy
+Ethics
+Logic
+Literature
+English
+Creative Writing
+Linguistics
+Music Theory
+Composition
+Performance
+Art
+Studio Art
+Drawing
+Painting
+Sculpture
+Theater
+Film
+Photography
+Education
+Law
+Political Science
+International Relations
+Public Administration

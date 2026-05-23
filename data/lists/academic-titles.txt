@@ -1,0 +1,60 @@
+Adjunct Professor
+Adjunct Instructor
+Lecturer
+Senior Lecturer
+Principal Lecturer
+Assistant Professor
+Associate Professor
+Professor
+Full Professor
+Emeritus Professor
+Distinguished Professor
+University Professor
+Visiting Professor
+Visiting Scholar
+Postdoctoral Researcher
+Postdoctoral Fellow
+Research Fellow
+Senior Research Fellow
+Research Associate
+Research Scientist
+Senior Research Scientist
+Principal Research Scientist
+Chief Scientist
+Dean
+Associate Dean
+Vice Dean
+Provost
+Vice Provost
+Chancellor
+Vice Chancellor
+President
+Vice President
+Department Chair
+Department Head
+Director of Graduate Studies
+Director of Undergraduate Studies
+Program Director
+Lab Director
+Research Director
+Library Dean
+University Librarian
+Trustee
+Regent
+Fellow of the Royal Society (FRS)
+Fellow of the American Academy of Arts and Sciences
+Member of the National Academy of Sciences
+Member of the National Academy of Engineering
+Member of the National Academy of Medicine
+ACM Fellow
+IEEE Fellow
+Turing Award Laureate
+Fields Medalist
+Nobel Laureate
+MacArthur Fellow
+Sloan Research Fellow
+Pulitzer Prize Winner
+Wolf Prize Laureate
+Abel Prize Laureate
+Lasker Award Winner
+Howard Hughes Medical Institute Investigator

@@ -1,0 +1,50 @@
+"Software is eating the world." — Marc Andreessen
+"Move fast and break things." — Mark Zuckerberg
+"Premature optimization is the root of all evil." — Donald Knuth
+"There are only two hard things in Computer Science: cache invalidation and naming things." — Phil Karlton
+"Talk is cheap. Show me the code." — Linus Torvalds
+"The best way to predict the future is to invent it." — Alan Kay
+"Walking on water and developing software from a specification are easy if both are frozen." — Edward V. Berard
+"The most damaging phrase in the language is: 'It's always been done that way.'" — Grace Hopper
+"Computers are useless. They can only give you answers." — Pablo Picasso
+"It's hardware that makes a machine fast. It's software that makes a fast machine slow." — Craig Bruce
+"The function of good software is to make the complex appear to be simple." — Grady Booch
+"Programs must be written for people to read, and only incidentally for machines to execute." — Hal Abelson
+"Any sufficiently advanced technology is indistinguishable from magic." — Arthur C. Clarke
+"The Internet is the first thing that humanity has built that humanity doesn't understand." — Eric Schmidt
+"The best error message is the one that never shows up." — Thomas Fuchs
+"Bad programmers worry about the code. Good programmers worry about data structures and their relationships." — Linus Torvalds
+"Make it work, make it right, make it fast." — Kent Beck
+"Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it." — Edsger W. Dijkstra
+"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live." — John Woods
+"Software and cathedrals are much the same — first we build them, then we pray." — Sam Redwine
+"The cheapest, fastest, and most reliable components are those that aren't there." — Gordon Bell
+"Without requirements or design, programming is the art of adding bugs to an empty text file." — Louis Srygley
+"The best thing about a boolean is even if you are wrong, you are only off by a bit." — Anonymous
+"Deleted code is debugged code." — Jeff Sickel
+"In theory, theory and practice are the same. In practice, they are not." — Yogi Berra
+"There are only two kinds of programming languages: those people always bitch about and those nobody uses." — Bjarne Stroustrup
+"Java is to JavaScript what car is to carpet." — Chris Heilmann
+"Debugging is twice as hard as writing the code in the first place." — Brian Kernighan
+"It's not a bug — it's an undocumented feature." — Anonymous
+"Hardware: the parts of a computer that can be kicked." — Jeff Pesis
+"If we want users to like our software, we should design it to behave like a likable person." — Alan Cooper
+"Innovation distinguishes between a leader and a follower." — Steve Jobs
+"Get your data structures correct first, and the rest of the program will write itself." — David Jones
+"The best way to learn to code is by writing code." — Linus Torvalds
+"To iterate is human, to recurse divine." — L. Peter Deutsch
+"There are two ways of constructing a software design: one is to make it so simple that there are obviously no deficiencies; the other is to make it so complicated that there are no obvious deficiencies." — C. A. R. Hoare
+"Programming is the art of telling another human what one wants the computer to do." — Donald Knuth
+"Code is like humor. When you have to explain it, it's bad." — Cory House
+"You can't have great software without a great team, and most software teams behave like dysfunctional families." — Jim McCarthy
+"First, solve the problem. Then, write the code." — John Johnson
+"Experience is the name everyone gives to their mistakes." — Oscar Wilde
+"Software is a great combination between artistry and engineering." — Bill Gates
+"Your most unhappy customers are your greatest source of learning." — Bill Gates
+"Be passionate and bold. Always keep learning. You stop doing useful things if you don't learn." — Satya Nadella
+"The greatest danger for most of us is not that our aim is too high and we miss it, but that it is too low and we reach it." — Michelangelo
+"You can never solve a problem on the level on which it was created." — Albert Einstein
+"Done is better than perfect." — Sheryl Sandberg
+"Stay hungry. Stay foolish." — Steve Jobs
+"Build something 100 people love, not something 1 million people kind of like." — Brian Chesky
+"The only way to do great work is to love what you do." — Steve Jobs

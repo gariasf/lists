@@ -1,0 +1,117 @@
+Basil
+Sweet Basil
+Thai Basil
+Holy Basil (Tulsi)
+Lemon Basil
+Purple Basil
+Genovese Basil
+Mint
+Spearmint
+Peppermint
+Chocolate Mint
+Apple Mint
+Pineapple Mint
+Catnip
+Parsley
+Flat-leaf Parsley
+Curly Parsley
+Italian Parsley
+Cilantro
+Coriander
+Culantro
+Dill
+Dill Weed
+Tarragon
+French Tarragon
+Russian Tarragon
+Mexican Tarragon
+Chervil
+Sage
+Common Sage
+Pineapple Sage
+Purple Sage
+Rosemary
+Tuscan Blue Rosemary
+Prostrate Rosemary
+Thyme
+English Thyme
+Lemon Thyme
+Creeping Thyme
+Oregano
+Greek Oregano
+Italian Oregano
+Mexican Oregano
+Marjoram
+Sweet Marjoram
+Pot Marjoram
+Lavender
+English Lavender
+Lemongrass
+Lemon Verbena
+Lemon Balm
+Bee Balm
+Bay Leaf
+Bay Laurel
+Curry Leaf
+Kaffir Lime Leaf
+Makrut Lime Leaf
+Vietnamese Cilantro (Rau Răm)
+Mitsuba
+Shiso
+Green Shiso
+Red Shiso
+Wild Garlic (Ramps)
+Chives
+Garlic Chives
+Sorrel
+French Sorrel
+Watercress
+Nasturtium
+Borage
+Hyssop
+Anise Hyssop
+Anise
+Caraway
+Cumin (leaves)
+Fennel
+Bronze Fennel
+Florence Fennel
+Lovage
+Stevia
+Pandan
+Galangal (leaves)
+Turmeric (leaves)
+Lemon Eucalyptus
+Lemon Grass
+Lemon Mint
+Lemon Myrtle
+Eucalyptus
+Wormwood
+Mugwort
+Yarrow
+Chamomile
+Roman Chamomile
+German Chamomile
+Echinacea
+St. John's Wort
+Calendula
+Comfrey
+Burdock
+Plantain
+Mullein
+Marshmallow Root
+Nettle
+Stinging Nettle
+Goldenrod
+Goldenseal
+Valerian
+Ashwagandha
+Ginseng
+Gotu Kola
+Rhodiola
+Schisandra
+Reishi (medicinal mushroom)
+Skullcap
+Passionflower
+Damiana
+Mucuna pruriens

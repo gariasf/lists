@@ -1,0 +1,132 @@
+Labrador Retriever
+Golden Retriever
+French Bulldog
+German Shepherd
+Bulldog
+Poodle
+Standard Poodle
+Miniature Poodle
+Toy Poodle
+Goldendoodle
+Labradoodle
+Bernedoodle
+Cockapoo
+Cavapoo
+Sheepadoodle
+Aussiedoodle
+Beagle
+Rottweiler
+German Shorthaired Pointer
+Dachshund
+Yorkshire Terrier
+Boxer
+Cavalier King Charles Spaniel
+Siberian Husky
+Alaskan Malamute
+Border Collie
+Australian Shepherd
+Australian Cattle Dog
+Great Dane
+Doberman Pinscher
+Pembroke Welsh Corgi
+Cardigan Welsh Corgi
+Miniature Schnauzer
+Standard Schnauzer
+Giant Schnauzer
+Shih Tzu
+Boston Terrier
+Bichon Frise
+Havanese
+Maltese
+Pomeranian
+Pug
+Shiba Inu
+Akita
+Samoyed
+Newfoundland
+Saint Bernard
+Bernese Mountain Dog
+Greater Swiss Mountain Dog
+Mastiff
+Cane Corso
+Bullmastiff
+Tibetan Mastiff
+Anatolian Shepherd
+Great Pyrenees
+Belgian Malinois
+Belgian Tervuren
+Belgian Sheepdog
+Dutch Shepherd
+Old English Sheepdog
+Shetland Sheepdog
+Collie
+Rough Collie
+Smooth Collie
+Bearded Collie
+Australian Kelpie
+Australian Stumpy Tail Cattle Dog
+Vizsla
+Wirehaired Vizsla
+Weimaraner
+Rhodesian Ridgeback
+Whippet
+Italian Greyhound
+Greyhound
+Saluki
+Borzoi
+Afghan Hound
+Bloodhound
+Basset Hound
+Coonhound (Treeing Walker)
+Coonhound (Bluetick)
+Coonhound (Redbone)
+Norwegian Elkhound
+Finnish Spitz
+Karelian Bear Dog
+Brittany
+English Setter
+Irish Setter
+Gordon Setter
+Pointer
+Chesapeake Bay Retriever
+Nova Scotia Duck Tolling Retriever
+Field Spaniel
+American Cocker Spaniel
+English Cocker Spaniel
+Springer Spaniel (English)
+Springer Spaniel (Welsh)
+Cocker Spaniel
+American Eskimo Dog
+Schipperke
+Keeshond
+Chinese Crested
+Chinese Shar-Pei
+Chow Chow
+Tibetan Spaniel
+Lhasa Apso
+Pekingese
+Papillon
+Bulldog (American)
+Pit Bull Terrier
+American Staffordshire Terrier
+Staffordshire Bull Terrier
+Bull Terrier
+Miniature Bull Terrier
+Jack Russell Terrier
+Parson Russell Terrier
+Russell Terrier
+Rat Terrier
+Toy Fox Terrier
+Cairn Terrier
+West Highland White Terrier
+Scottish Terrier
+Skye Terrier
+Australian Terrier
+Norfolk Terrier
+Norwich Terrier
+Wire Fox Terrier
+Smooth Fox Terrier
+Tibetan Terrier
+Lagotto Romagnolo
+Spinone Italiano
+Bracco Italiano

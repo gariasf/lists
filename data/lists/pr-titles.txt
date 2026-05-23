@@ -1,0 +1,106 @@
+[feat] add SSO sign-in flow
+[fix] handle empty payload in webhook
+[refactor] split monolithic route file
+[perf] batch DB writes in queue worker
+[docs] update onboarding guide
+[test] cover plan limits edge cases
+[chore] bump dependencies
+[hotfix] revert broken release
+[infra] add staging cluster
+[deps] migrate to pnpm 10
+[db] migration 0042: add `archived_at`
+[ui] new dashboard empty state
+feat: workspace switcher (closes #1342)
+fix: timezone bug in scheduled emails
+refactor: extract billing module
+docs: ADR-0042 caching policy
+test: stabilize retry test
+chore: rename internal `Foo` to `Bar`
+perf: memoize expensive selector
+ci: cache pnpm store
+build: bump node to 22
+RFC: pricing model change
+RFC: new auth flow
+proposal: split client into separate package
+proposal: lift design tokens to root
+spike: try Bun for the worker
+spike: explore Postgres LISTEN/NOTIFY
+draft: alternative caching layer
+draft: split frontend monorepo
+WIP: new billing layer (please review architecture only)
+WIP: prototype, do not merge
+release: v2.4.0
+release: v2.4.0-rc.1
+release: v3.0.0 (breaking)
+release: v3.0.0 (no breaking changes)
+chore(release): publish v1.12.3
+chore: changesets for release
+chore: bump to v0.1.0-beta.3
+deprecation: remove legacy /v1 endpoints
+breaking: drop Node 18 support
+breaking: rename `userId` → `user_id` across API
+breaking: remove `Result.unwrap` from public API
+fix(security): patch SSRF in /import
+fix(security): rotate leaked test key
+fix(a11y): add aria labels to nav
+fix(a11y): focus trap in modals
+feat(a11y): keyboard navigation for grid
+feat: dark mode (system + manual)
+feat: new pricing page (with table)
+feat(api): pagination with cursor
+feat(api): expose `lastSeenAt` on user
+feat(api): new bulk import endpoint
+feat(notifications): batch digest emails
+feat(billing): annual plans
+feat(billing): proration on plan change
+feat(billing): support usage-based metering
+fix(billing): off-by-one in invoice total
+fix(billing): handle decline retries gracefully
+feat(search): switch to MeiliSearch
+feat(search): faceted filters
+feat(search): synonyms
+fix(search): unicode normalization
+fix(import): handle BOM in CSV
+fix(import): trim whitespace in headers
+feat(import): preview before commit
+feat(ui): new command palette
+feat(ui): redesigned settings page
+feat(ui): mobile dashboard
+feat(ui): collaborative cursors
+feat: vector search over docs
+feat(integrations): Slack
+feat(integrations): GitHub
+feat(integrations): Linear
+feat(integrations): Notion
+fix(integrations): Slack OAuth refresh
+fix(integrations): handle revoked GitHub tokens
+ops: tighten alerting thresholds
+ops: add p99 latency dashboard
+ops: page on quota exhaustion
+ops: rotate KMS keys
+ops: improve cold start time
+test(e2e): cover signup → first list flow
+test(e2e): cover billing change flow
+test(unit): exhaustive cron expression cases
+test(integration): payments webhook delivery
+chore: remove dead code in legacy module
+chore: silence noisy log in worker
+chore: pin internal Docker base image
+chore: clean up TODO trail
+refactor: drop `any` from public API surface
+refactor: invert dependency in service layer
+refactor: replace classes with closures
+refactor: extract HTTP client
+refactor: collapse 3 hooks into 1
+docs: README polish + screenshots
+docs: contributing guide
+docs(api): new examples for /imports
+docs: explain database migration policy
+ci: shard tests across 4 workers
+ci: enforce changeset for non-chore PRs
+ci: add typecheck step
+build: produce minimal Docker image
+build: tree-shake unused locales
+revert: feat/experimental-flag
+revert: my own previous PR
+internal: rename Project A → Project B in code

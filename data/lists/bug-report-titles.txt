@@ -1,0 +1,102 @@
+Login page hangs on Safari
+Sign-up button does nothing on slow networks
+Password reset email never arrives
+Two-factor codes occasionally rejected
+Magic link expired immediately
+Workspace switcher disappears after refresh
+Sidebar collapses on smaller screens
+Dark mode flickers on first paint
+Theme stuck on dark after logout
+Date picker shows wrong month in Safari
+Time zone of "Asia/Tokyo" rendered as "UTC"
+Daylight savings off-by-one on scheduled emails
+Reports CSV cuts off at row 10,000
+Search returns zero results for any query with apostrophe
+Search ignores accents on French names
+Long names overflow the user menu
+Avatar fallback shows wrong initial
+Empty state shows when items exist
+Items list doesn't refresh after delete
+Invoices missing for last month
+Payment receipts have wrong totals
+Refunds not reflected in dashboard
+Tax not applied for EU customers
+Stripe webhook events delivered twice
+PayPal checkout redirects to wrong URL
+Apple Pay button missing on Safari iOS 18
+Subscription downgrade preserves Pro features
+Trial banner persists after upgrade
+"Resume trial" button does nothing
+PDF export missing the last page
+Image upload fails for files over 5 MB
+Drag-and-drop reorders items to the wrong index
+Keyboard shortcut ⌘K opens twice
+Esc doesn't close modals consistently
+Tab order is broken in settings
+Screen reader doesn't announce status pills
+Slow network causes infinite spinner
+Network errors show generic message
+Login redirect loops on first sign-in
+SSO with Okta fails after token rotation
+SAML metadata parse error
+GitHub OAuth scope changed without notice
+Slack notification posts to wrong channel
+Slack mentions resolve to wrong user
+Push notifications silent on Android 15
+Push notifications duplicated on iOS 18
+Notification mute settings reset on app restart
+App crashes when offline
+App opens, then immediately closes
+App crashes scrolling fast through long list
+WebSocket disconnects every 2 minutes
+Real-time updates lag 30s behind
+Cursor positions overlap in collaborative edit
+Editing the same field shows stale value
+Optimistic update reverts on save
+Long-press menu missing on iPad
+Right-click menu missing items
+Context menu items reordered randomly
+List rows duplicate when scrolling
+Filter "is empty" returns false negatives
+Filter "contains" case-sensitive when toggled off
+Sort by date sorts as string
+Sort by name ignores diacritics
+Bulk action affects unselected rows
+Bulk delete needs double-confirm
+Permissions: viewer can edit some fields
+Permissions: admin demotion doesn't revoke API tokens
+API keys leak in server logs
+Audit log missing recent events
+Webhook payload truncated at 64KB
+Search highlights wrong phrase
+Onboarding tour skips step 3
+Tour resets on every refresh
+Welcome video doesn't autoplay
+Help center search returns 404
+Live chat widget covers important controls
+Live chat widget overlaps the keyboard on mobile
+Memory leak after 30 minutes of use
+CPU spikes on long-running dashboards
+Battery drains fast with background sync on
+GPU fan spins up with charts open
+Crash report includes user PII
+PII visible in error overlays
+Localization: untranslated strings on settings page
+Localization: pluralization broken in Russian
+RTL layout breaks header alignment
+Date input ignores locale-specific format
+Currency formatting wrong for INR
+Phone format wrong for JP numbers
+Tax form fields missing for Mexico
+Address autocomplete missing for Australia
+Pagination breaks past page 100
+"Load more" loads same items
+Bulk import skips header row sometimes
+Export CSV uses semicolon in Excel
+Excel opens CSV with garbled UTF-8
+Print stylesheet missing for invoices
+Print cuts off the right column
+Sharing link 404s for some recipients
+"Copy link" copies the wrong URL
+QR code scanner doesn't open camera
+QR code returns wrong URL

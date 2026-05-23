@@ -1,0 +1,79 @@
+1 — Broadway–Seventh Avenue Local
+2 — Seventh Avenue Express
+3 — Seventh Avenue Express
+4 — Lexington Avenue Express
+5 — Lexington Avenue Express
+6 — Lexington Avenue Local
+6 Express
+7 — Flushing Local
+7 Express
+A — Eighth Avenue Express
+B — Sixth Avenue Express
+C — Eighth Avenue Local
+D — Sixth Avenue Express
+E — Eighth Avenue Local
+F — Sixth Avenue Local
+F Express
+G — Brooklyn–Queens Crosstown
+J — Nassau Street Local
+L — Canarsie Local
+M — Sixth Avenue Local
+N — Broadway Express
+Q — Broadway Express
+R — Broadway Local
+S — Shuttle (42 St)
+S — Franklin Avenue Shuttle
+S — Rockaway Park Shuttle
+W — Broadway Local
+Z — Nassau Street Express
+SIR — Staten Island Railway
+PATH WTC–Newark
+PATH HOB–WTC
+PATH JSQ–33rd
+PATH HOB–33rd
+LIRR Babylon Branch
+LIRR Far Rockaway Branch
+LIRR Hempstead Branch
+LIRR Long Beach Branch
+LIRR Montauk Branch
+LIRR Oyster Bay Branch
+LIRR Port Jefferson Branch
+LIRR Port Washington Branch
+LIRR Ronkonkoma Branch
+LIRR West Hempstead Branch
+Metro-North Harlem Line
+Metro-North Hudson Line
+Metro-North New Haven Line
+Metro-North Pascack Valley Line
+Metro-North Port Jervis Line
+M1 — Madison/Fifth Av Bus
+M2 — Fifth/Madison Av Bus
+M3 — Fifth/Madison Av Bus
+M4 — Fifth/Madison Av Bus
+M5 — Fifth/South Ferry Bus
+M9 — East/West Village Bus
+M14 SBS
+M15 SBS
+M23 SBS
+M34 SBS
+M42 — Crosstown
+M50 — Crosstown
+M57 — Crosstown
+M60 SBS — LaGuardia
+B1 — Bay Ridge Bus
+B11 — Bay Ridge/Eastern Pkwy
+B41 — Flatbush Av Bus
+B44 SBS
+B46 SBS
+Bx12 SBS
+Bx41 SBS
+Q44 SBS
+Q70 SBS — LaGuardia
+S79 SBS
+NYC Ferry — East River
+NYC Ferry — Astoria
+NYC Ferry — South Brooklyn
+NYC Ferry — Rockaway
+NYC Ferry — Soundview
+NYC Ferry — St. George
+Staten Island Ferry — St. George–Whitehall
