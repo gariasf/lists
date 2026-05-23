@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Link from '@/components/TLink'
 import type { CatalogEntry } from '@/lib/palette-context'
 import { usePalette } from '@/lib/palette-context'
@@ -24,6 +24,9 @@ import {
   Map,
   Message,
   User,
+  Copy,
+  Check,
+  Download,
 } from '@/components/icons'
 
 const SKILL_ICONS: Record<string, React.ComponentType> = {
@@ -35,9 +38,24 @@ const SKILL_ICONS: Record<string, React.ComponentType> = {
   sparkles: Sparkles,
 }
 
+const SKILL_INSTALL_CMD =
+  'mkdir -p .claude/skills/lists && curl -sL https://lists.gariasf.com/claude-skill/SKILL.md -o .claude/skills/lists/SKILL.md'
+const MCP_INSTALL_CMD = 'claude mcp add lists https://lists.gariasf.com/mcp'
+
 export default function SkillsShell({ allLists }: { allLists: CatalogEntry[] }) {
   const { openPalette } = usePalette()
   const { mode: themeMode, cycleMode: cycleTheme } = useTheme()
+  const [copied, setCopied] = useState<string | null>(null)
+
+  const copyText = async (text: string, key: string) => {
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopied(key)
+      setTimeout(() => setCopied(null), 1500)
+    } catch {
+      // ignore
+    }
+  }
   const themeIcon =
     themeMode === 'system' ? <Monitor /> : themeMode === 'dark' ? <Moon /> : <Sun />
   const themeLabel =
@@ -177,6 +195,68 @@ export default function SkillsShell({ allLists }: { allLists: CatalogEntry[] }) 
                   </Link>
                 )
               })}
+            </div>
+
+            <div className="claude-cta">
+              <div className="claude-cta-head">
+                <div className="claude-cta-eyebrow">Use with Claude Code</div>
+                <div className="claude-cta-title">
+                  Generate from any project
+                </div>
+                <p className="claude-cta-desc">
+                  Drop a single SKILL.md into your project to give Claude
+                  access to all 365 lists and 5 generators. Or wire the
+                  MCP server up with one CLI command.
+                </p>
+              </div>
+              <div className="claude-cta-grid">
+                <div className="claude-cta-card">
+                  <h3>Install as a Skill</h3>
+                  <p>
+                    Save SKILL.md into{' '}
+                    <code>.claude/skills/lists/</code> in your repo.
+                    Claude picks it up automatically.
+                  </p>
+                  <pre>{SKILL_INSTALL_CMD}</pre>
+                  <div className="claude-cta-actions">
+                    <a
+                      className="btn btn-primary"
+                      href="/claude-skill/SKILL.md"
+                      download="SKILL.md"
+                    >
+                      <Download />
+                      Download SKILL.md
+                    </a>
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      onClick={() => copyText(SKILL_INSTALL_CMD, 'skill')}
+                    >
+                      {copied === 'skill' ? <Check /> : <Copy />}
+                      {copied === 'skill' ? 'Copied' : 'Copy command'}
+                    </button>
+                  </div>
+                </div>
+                <div className="claude-cta-card">
+                  <h3>Or wire up via MCP</h3>
+                  <p>
+                    Already running MCP servers? Register Lists with one
+                    line. Endpoint:{' '}
+                    <code>https://lists.gariasf.com/mcp</code>.
+                  </p>
+                  <pre>{MCP_INSTALL_CMD}</pre>
+                  <div className="claude-cta-actions">
+                    <button
+                      type="button"
+                      className="btn btn-primary"
+                      onClick={() => copyText(MCP_INSTALL_CMD, 'mcp')}
+                    >
+                      {copied === 'mcp' ? <Check /> : <Copy />}
+                      {copied === 'mcp' ? 'Copied' : 'Copy command'}
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 

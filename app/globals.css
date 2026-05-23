@@ -1742,3 +1742,311 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
     padding: 14px 16px 16px;
   }
 }
+
+/* Skill run (detail) page */
+.skill-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skill-detail-head {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 2px;
+}
+
+.skill-detail-desc {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin: 0;
+  max-width: 720px;
+}
+
+.skill-knobs {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  padding: 16px 18px;
+  background: var(--bg-container);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-border-xs);
+  flex-wrap: wrap;
+}
+
+.skill-knob {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.skill-knob-label {
+  font-size: 11px;
+  color: var(--text-subdued);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.skill-knob input,
+.skill-knob select {
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  background: var(--bg-surface);
+  padding: 7px 10px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-border-xs);
+  border: none;
+  outline: none;
+  min-width: 0;
+  transition: box-shadow 120ms ease;
+}
+
+.skill-knob input:focus,
+.skill-knob select:focus {
+  box-shadow: var(--shadow-border-sm), 0 0 0 3px rgba(11, 11, 11, 0.06);
+}
+
+[data-theme="dark"] .skill-knob input:focus,
+[data-theme="dark"] .skill-knob select:focus {
+  box-shadow: var(--shadow-border-sm), 0 0 0 3px rgba(255, 255, 255, 0.08);
+}
+
+.skill-knob input[type="number"] {
+  width: 86px;
+  font-variant-numeric: tabular-nums;
+}
+
+.skill-knob select {
+  padding-right: 28px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><path d='M1.5 3.5 5 7l3.5-3.5' stroke='%23737373' stroke-width='1.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  cursor: pointer;
+}
+
+.skill-knobs .btn {
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.skill-error {
+  padding: 12px 14px;
+  border-radius: var(--radius-lg);
+  background: rgba(228, 90, 78, 0.08);
+  color: #b13a2a;
+  font-size: 13px;
+  box-shadow: inset 0 0 0 1px rgba(228, 90, 78, 0.18);
+}
+
+[data-theme="dark"] .skill-error {
+  background: rgba(228, 90, 78, 0.18);
+  color: #f5a99a;
+  box-shadow: inset 0 0 0 1px rgba(228, 90, 78, 0.28);
+}
+
+.skill-result {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--bg-container);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-border-xs);
+  padding: 14px 16px 16px;
+}
+
+.skill-result-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skill-result-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.skill-preview-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-preview-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px 18px;
+  align-items: start;
+  padding: 12px 14px;
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-border-xs);
+  position: relative;
+}
+
+.skill-preview-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.skill-preview-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-subdued);
+  font-weight: 500;
+}
+
+.skill-preview-value {
+  font-size: 13px;
+  color: var(--text-primary);
+  font-weight: 500;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
+}
+
+.skill-preview-value .dim {
+  color: var(--text-subdued);
+}
+
+.skill-preview-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--bg-surface-inset);
+  box-shadow: inset 0 0 0 1px var(--border-tertiary);
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+
+.skill-preview-record {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) 2fr;
+  gap: 6px 18px;
+  padding: 14px 16px;
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-border-xs);
+}
+
+.skill-preview-record-row {
+  display: contents;
+}
+
+.skill-preview-record-row .skill-preview-label {
+  align-self: center;
+}
+
+.skill-preview-list {
+  margin: 0;
+  padding-left: 16px;
+  list-style: disc;
+  font-size: 13px;
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Use-with-Claude panel on Skills index */
+.claude-cta {
+  margin-top: 24px;
+  padding: 20px 22px 22px;
+  background: var(--bg-container);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-border-xs);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.claude-cta-head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.claude-cta-eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  color: var(--text-subdued);
+}
+
+.claude-cta-title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.claude-cta-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+  max-width: 720px;
+}
+
+.claude-cta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.claude-cta-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 16px;
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-border-xs);
+}
+
+.claude-cta-card h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.claude-cta-card p {
+  font-size: 12px;
+  color: var(--text-subdued);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.claude-cta-card pre {
+  margin: 0;
+  padding: 10px 12px;
+  background: var(--bg-surface-inset);
+  border-radius: var(--radius-md);
+  box-shadow: inset 0 0 0 1px var(--border-tertiary);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  word-break: break-all;
+  letter-spacing: -0.005em;
+}
+
+.claude-cta-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
