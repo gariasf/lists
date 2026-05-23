@@ -173,15 +173,24 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
     }
   }
 
-  const handleDownload = () => {
+  const handleDownload = (forceFormat?: Format) => {
     const exts: Record<Format, { ext: string; mime: string }> = {
       list: { ext: 'txt', mime: 'text/plain' },
       json: { ext: 'json', mime: 'application/json' },
       csv: { ext: 'csv', mime: 'text/csv' },
       ts: { ext: 'ts', mime: 'text/plain' },
     }
-    const { ext, mime } = exts[format]
-    const blob = new Blob([formattedPayload], { type: mime })
+    const fmt = forceFormat ?? format
+    const { ext, mime } = exts[fmt]
+    const body =
+      fmt === 'json'
+        ? toJSON(list.items, list.structured)
+        : fmt === 'csv'
+          ? toCSV(list.items, list.structured)
+          : fmt === 'ts'
+            ? toTS(list.slug, list.items, list.structured)
+            : list.items.join('\n')
+    const blob = new Blob([body], { type: mime })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
@@ -300,7 +309,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                         <button
                           type="button"
                           className="btn btn-secondary"
-                          onClick={handleDownload}
+                          onClick={() => handleDownload()}
                           title={`Download .${format === 'list' ? 'txt' : format}`}
                         >
                           <Download />
@@ -525,7 +534,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
             {copiedAll ? <Check /> : <Copy />}
             {copiedAll ? 'Copied' : 'Copy all'}
           </button>
-          <button type="button" className="btn btn-secondary" onClick={handleDownload}>
+          <button type="button" className="btn btn-secondary" onClick={() => handleDownload('json')}>
             <Download />
             Download JSON
           </button>
