@@ -1,0 +1,15 @@
+# Offline skill bundle. Same URL, content regenerated each deploy.
+# Browser caches for 1h (worst-case staleness = next deploy);
+# shared CDN holds 1 day. Edge already serves >99% of requests
+# from cache on Pages, but this nails it down explicitly.
+/claude-skill/*
+  Cache-Control: public, max-age=3600, s-maxage=86400
+  X-Robots-Tag: noindex
+  Cross-Origin-Resource-Policy: same-origin
+
+# Static API JSON outputs. Cache modestly; rebuilds with each deploy.
+/api/lists/*
+  Cache-Control: public, max-age=3600, s-maxage=86400
+
+/api/manifest
+  Cache-Control: public, max-age=3600, s-maxage=86400

@@ -60,6 +60,7 @@ Disallow: /
 # Default rule for other bots
 User-agent: *
 Allow: /
+Disallow: /claude-skill/
 
 # Sitemap
 Sitemap: https://lists.gariasf.com/sitemap.xml
