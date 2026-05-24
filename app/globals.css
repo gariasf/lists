@@ -1056,7 +1056,6 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   color: var(--text-primary);
   white-space: pre;
   overflow-x: auto;
-  max-height: 520px;
 }
 
 .code-block code { font-family: inherit; }
