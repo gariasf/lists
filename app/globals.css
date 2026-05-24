@@ -1499,6 +1499,13 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   text-align: left;
   cursor: pointer;
   color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.m-item:active,
+.m-item:focus-visible {
+  background: transparent;
+  outline: none;
 }
 
 .m-item:first-child { border-top: 0; }
@@ -1507,6 +1514,100 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 .m-item .cp { color: var(--text-subdued); }
 .m-item .cp svg { width: 14px; height: 14px; }
 .m-item.copied .cp { color: var(--color-success); }
+
+/* Mobile bottom sheet for detail-page overflow actions */
+.m-sheet-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 11, 11, 0.32);
+  z-index: 2000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: m-overlay-in 220ms ease-out both;
+  -webkit-tap-highlight-color: transparent;
+}
+
+[data-theme="dark"] .m-sheet-overlay {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.m-sheet {
+  width: 100%;
+  max-width: 520px;
+  background: var(--bg-container);
+  border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
+  padding: 10px 10px max(14px, env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  box-shadow: 0 -8px 32px rgba(11, 11, 11, 0.14);
+  animation: m-sheet-in 320ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.m-sheet-grip {
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--border-secondary);
+  margin: 4px auto 10px;
+}
+
+.m-sheet-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  color: var(--text-subdued);
+  padding: 4px 14px 6px;
+}
+
+.m-sheet-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 14px;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: 15px;
+  color: var(--text-primary);
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 120ms ease;
+}
+
+.m-sheet-row:active {
+  background: var(--bg-surface-inset);
+}
+
+.m-sheet-row svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--text-secondary);
+}
+
+.m-sheet-cancel {
+  margin-top: 6px;
+  justify-content: center;
+  color: var(--text-secondary);
+  background: var(--bg-surface-inset);
+  font-weight: 600;
+}
+
+@keyframes m-overlay-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes m-sheet-in {
+  from { transform: translateY(100%); }
+  to { transform: none; }
+}
 
 /* Floating toast (mobile + desktop) */
 .toast {

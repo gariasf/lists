@@ -104,6 +104,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
   const [format, setFormat] = useState<Format>('list')
   const [augmenting, setAugmenting] = useState(false)
   const [augmentError, setAugmentError] = useState<string | null>(null)
+  const [showMobileMenu, setShowMobileMenu] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
   const { openPalette, pushRecent } = usePalette()
   const { extras, append, removeAt, clear } = useAugment(list.slug)
@@ -120,6 +121,20 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
   useEffect(() => {
     pushRecent(list.slug)
   }, [list.slug, pushRecent])
+
+  useEffect(() => {
+    if (!showMobileMenu) return
+    const prev = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setShowMobileMenu(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => {
+      document.body.style.overflow = prev
+      window.removeEventListener('keydown', onKey)
+    }
+  }, [showMobileMenu])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -636,7 +651,8 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
             <button
               type="button"
               className="ls-icon-btn"
-              aria-label="More"
+              aria-label="More actions"
+              onClick={() => setShowMobileMenu(true)}
             >
               <More />
             </button>
@@ -707,6 +723,74 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
               ))}
         </div>
       </div>
+
+      {showMobileMenu && (
+        <div
+          className="m-sheet-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Detail actions"
+          onClick={() => setShowMobileMenu(false)}
+        >
+          <div className="m-sheet" onClick={(e) => e.stopPropagation()}>
+            <div className="m-sheet-grip" aria-hidden="true" />
+            <div className="m-sheet-title">Download</div>
+            {(['list', 'json', 'csv', 'ts'] as const).map((fmt) => {
+              const label =
+                fmt === 'list' ? 'Plain text (.txt)'
+                  : fmt === 'json' ? 'JSON (.json)'
+                    : fmt === 'csv' ? 'CSV (.csv)'
+                      : 'TypeScript (.ts)'
+              return (
+                <button
+                  key={fmt}
+                  type="button"
+                  className="m-sheet-row"
+                  onClick={() => {
+                    handleDownload(fmt)
+                    setShowMobileMenu(false)
+                  }}
+                >
+                  <Download />
+                  <span>{label}</span>
+                </button>
+              )
+            })}
+            <button
+              type="button"
+              className="m-sheet-row"
+              onClick={async () => {
+                setShowMobileMenu(false)
+                try {
+                  if (typeof navigator.share === 'function') {
+                    await navigator.share({
+                      url: window.location.href,
+                      title: list.name,
+                      text: `${list.items.length} ${list.name.toLowerCase()} — realistic mock data`,
+                    })
+                  } else {
+                    await navigator.clipboard.writeText(window.location.href)
+                    setToast('Link copied')
+                    setTimeout(() => setToast(null), 1800)
+                  }
+                } catch {
+                  /* user cancelled share */
+                }
+              }}
+            >
+              <External />
+              <span>Share this list</span>
+            </button>
+            <button
+              type="button"
+              className="m-sheet-row m-sheet-cancel"
+              onClick={() => setShowMobileMenu(false)}
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
 
       <div className={`toast${toast ? ' show' : ''}`} role="status" aria-live="polite">
         <Check />
