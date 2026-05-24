@@ -218,6 +218,12 @@ export const Sparkles = makeIcon(
 
 export const Plus = makeIcon(<path d="M12 5v14M5 12h14" />)
 export const X = makeIcon(<path d="M18 6 6 18M6 6l12 12" />)
+export const Phone = makeIcon(
+  <>
+    <rect x="7" y="2" width="10" height="20" rx="2.5" ry="2.5" />
+    <path d="M11 18h2" />
+  </>,
+)
 
 export const Filter = makeIcon(
   <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />

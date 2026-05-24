@@ -1,6 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { Drawer } from 'vaul'
 import Link from '@/components/TLink'
 import type { ListItem } from '@/lib/types'
 import { CATEGORIES } from '@/lib/types'
@@ -14,6 +15,7 @@ import {
   Monitor,
   Moon,
   Sun,
+  Phone,
   Copy,
   Check,
   Download,
@@ -21,8 +23,8 @@ import {
   ChevronR,
   ArrowUpRight,
   External,
-  More,
   Layers,
+
   Sparkles,
   CATEGORY_ICONS,
 } from '@/components/icons'
@@ -111,6 +113,8 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
   const { mode: themeMode, cycleMode: cycleTheme } = useTheme()
   const themeIcon =
     themeMode === 'system' ? <Monitor /> : themeMode === 'dark' ? <Moon /> : <Sun />
+  const mobileThemeIcon =
+    themeMode === 'system' ? <Phone /> : themeMode === 'dark' ? <Moon /> : <Sun />
   const themeLabel =
     themeMode === 'system'
       ? 'System theme (click for light)'
@@ -121,20 +125,6 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
   useEffect(() => {
     pushRecent(list.slug)
   }, [list.slug, pushRecent])
-
-  useEffect(() => {
-    if (!showMobileMenu) return
-    const prev = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setShowMobileMenu(false)
-    }
-    window.addEventListener('keydown', onKey)
-    return () => {
-      document.body.style.overflow = prev
-      window.removeEventListener('keydown', onKey)
-    }
-  }, [showMobileMenu])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -646,15 +636,24 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
               className="ls-icon-btn"
               aria-label="GitHub"
             >
-              <External />
+              <Github />
             </a>
             <button
               type="button"
+              className="ls-icon-btn ghost"
+              onClick={cycleTheme}
+              aria-label={themeLabel}
+              title={themeLabel}
+            >
+              {mobileThemeIcon}
+            </button>
+            <button
+              type="button"
               className="ls-icon-btn"
-              aria-label="More actions"
+              aria-label="Download formats"
               onClick={() => setShowMobileMenu(true)}
             >
-              <More />
+              <Download />
             </button>
           </div>
         </div>
@@ -724,17 +723,12 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
         </div>
       </div>
 
-      {showMobileMenu && (
-        <div
-          className="m-sheet-overlay"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Detail actions"
-          onClick={() => setShowMobileMenu(false)}
-        >
-          <div className="m-sheet" onClick={(e) => e.stopPropagation()}>
+      <Drawer.Root open={showMobileMenu} onOpenChange={setShowMobileMenu}>
+        <Drawer.Portal>
+          <Drawer.Overlay className="m-sheet-overlay" />
+          <Drawer.Content className="m-sheet" aria-describedby={undefined}>
             <div className="m-sheet-grip" aria-hidden="true" />
-            <div className="m-sheet-title">Download</div>
+            <Drawer.Title className="m-sheet-title">Download</Drawer.Title>
             {(['list', 'json', 'csv', 'ts'] as const).map((fmt) => {
               const label =
                 fmt === 'list' ? 'Plain text (.txt)'
@@ -788,9 +782,9 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
             >
               Cancel
             </button>
-          </div>
-        </div>
-      )}
+          </Drawer.Content>
+        </Drawer.Portal>
+      </Drawer.Root>
 
       <div className={`toast${toast ? ' show' : ''}`} role="status" aria-live="polite">
         <Check />

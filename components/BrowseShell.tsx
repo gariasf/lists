@@ -14,6 +14,7 @@ import {
   Monitor,
   Moon,
   Sun,
+  Phone,
   Layers,
   Copy,
   Check,
@@ -171,6 +172,8 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
   const { mode: themeMode, cycleMode: cycleTheme } = useTheme()
   const themeIcon =
     themeMode === 'system' ? <Monitor /> : themeMode === 'dark' ? <Moon /> : <Sun />
+  const mobileThemeIcon =
+    themeMode === 'system' ? <Phone /> : themeMode === 'dark' ? <Moon /> : <Sun />
   const themeLabel =
     themeMode === 'system'
       ? 'System theme (click for light)'
@@ -418,7 +421,7 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
               aria-label={themeLabel}
               title={themeLabel}
             >
-              {themeIcon}
+              {mobileThemeIcon}
             </button>
           </div>
         </div>
