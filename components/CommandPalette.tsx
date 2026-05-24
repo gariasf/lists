@@ -9,6 +9,7 @@ import {
   type ReactNode,
 } from 'react'
 import { useRouter } from 'next/navigation'
+import { toast } from 'sonner'
 import fuzzysort from 'fuzzysort'
 import { usePalette } from '@/lib/palette-context'
 import { loadSearchIndex, type LoadedIndex } from '@/lib/search-index'
@@ -117,7 +118,6 @@ export default function CommandPalette() {
   const [query, setQuery] = useState('')
   const [selected, setSelected] = useState(0)
   const [index, setIndex] = useState<LoadedIndex | null>(null)
-  const [toast, setToast] = useState<string | null>(null)
   const [generating, setGenerating] = useState(false)
   const [generated, setGenerated] = useState<GenResult | null>(null)
   const [genError, setGenError] = useState<string | null>(null)
@@ -136,9 +136,7 @@ export default function CommandPalette() {
   }, [open, index])
 
   const showToast = useCallback((msg: string) => {
-    setToast(msg)
-    window.clearTimeout((showToast as any)._t)
-    ;(showToast as any)._t = window.setTimeout(() => setToast(null), 1700)
+    toast(msg)
   }, [])
 
   const copyText = useCallback(
@@ -677,15 +675,6 @@ export default function CommandPalette() {
               : 'Loading index…'}
           </div>
         </div>
-      </div>
-
-      <div
-        className={`toast${toast ? ' show' : ''}`}
-        role="status"
-        aria-live="polite"
-      >
-        <ArrowRight />
-        <span>{toast}</span>
       </div>
     </div>
   )

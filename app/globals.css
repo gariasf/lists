@@ -1605,33 +1605,37 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 
 
 /* Floating toast (mobile + desktop) */
-.toast {
-  position: fixed;
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%) translateY(40px);
-  background: var(--color-black);
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+/* Sonner toast container — light overrides on top of the default
+   theming. Sonner's --normal-bg / --normal-text / --normal-border
+   tokens drive the surface, so we just nudge the values to match
+   our paper-and-ink palette. */
+[data-sonner-toaster] {
+  --normal-bg: var(--color-black);
+  --normal-text: #ffffff;
+  --normal-border: rgba(255, 255, 255, 0.08);
+  --success-bg: var(--color-black);
+  --success-text: #ffffff;
+  --success-border: rgba(255, 255, 255, 0.08);
+  --error-bg: #b13a2a;
+  --error-text: #ffffff;
+  --error-border: rgba(255, 255, 255, 0.1);
+  font-family: var(--font-sans);
+}
+
+[data-sonner-toaster][data-theme="light"] [data-sonner-toast] {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 180ms ease, transform 180ms ease;
-  z-index: 1000;
 }
 
-.toast.show {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
+[data-sonner-toaster][data-theme="dark"] {
+  --normal-bg: #1f1f1f;
+  --normal-border: rgba(255, 255, 255, 0.08);
+  --success-bg: #1f1f1f;
+  --success-border: rgba(255, 255, 255, 0.08);
 }
 
-.toast svg { width: 14px; height: 14px; color: var(--color-green-400); }
+[data-sonner-toast] {
+  border-radius: var(--radius-lg);
+}
 
 /* Responsive — collapse desktop shell into single column under 900px */
 @media (max-width: 900px) {

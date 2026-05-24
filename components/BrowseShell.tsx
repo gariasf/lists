@@ -1,6 +1,7 @@
 'use client'
 
 import { useMemo, useState, useEffect, useRef } from 'react'
+import { toast } from 'sonner'
 import Link from '@/components/TLink'
 import { useSearchParams } from 'next/navigation'
 import type { ListItem, Category } from '@/lib/types'
@@ -165,7 +166,6 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
   })()
   const [activeCategory, setActiveCategory] = useState<Category>(initialCategory)
   const [query, setQuery] = useState('')
-  const [toast, setToast] = useState<string | null>(null)
   const [showTip, setShowTip] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
   const { openPalette } = usePalette()
@@ -233,8 +233,9 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
   const handleCopyAll = async (list: ListItem) => {
     try {
       await navigator.clipboard.writeText(list.items.join('\n'))
-      setToast(`${list.name} copied (${list.items.length} items)`)
-      setTimeout(() => setToast(null), 1800)
+      toast.success(`${list.name} copied`, {
+        description: `${list.items.length} items on the clipboard.`,
+      })
     } catch (err) {
       console.error('Copy failed:', err)
     }
@@ -493,11 +494,6 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
             filtered.map((list) => <MobileRow key={list.slug} list={list} />)
           )}
         </div>
-      </div>
-
-      <div className={`toast${toast ? ' show' : ''}`} role="status" aria-live="polite">
-        <Check />
-        <span>{toast}</span>
       </div>
     </>
   )

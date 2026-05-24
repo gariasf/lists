@@ -1,6 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { toast } from 'sonner'
 import { Drawer } from 'vaul'
 import Link from '@/components/TLink'
 import type { ListItem } from '@/lib/types'
@@ -101,7 +102,6 @@ function toJSON(
 export default function DetailShell({ list, relatedLists, allLists }: DetailShellProps) {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null)
   const [copiedAll, setCopiedAll] = useState(false)
-  const [toast, setToast] = useState<string | null>(null)
   const [query, setQuery] = useState('')
   const [format, setFormat] = useState<Format>('list')
   const [augmenting, setAugmenting] = useState(false)
@@ -153,9 +153,8 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
     try {
       await navigator.clipboard.writeText(item)
       setCopiedIndex(index)
-      setToast(`"${item}" copied`)
+      toast(`"${item}" copied`)
       setTimeout(() => setCopiedIndex(null), 1400)
-      setTimeout(() => setToast(null), 1600)
     } catch (err) {
       console.error('Copy failed:', err)
     }
@@ -186,9 +185,8 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
         format === 'list'
           ? `Copied all ${combinedItems.length} items`
           : `Copied ${combinedItems.length} items as ${format.toUpperCase()}`
-      setToast(label)
+      toast.success(label)
       setTimeout(() => setCopiedAll(false), 1400)
-      setTimeout(() => setToast(null), 1800)
     } catch (err) {
       console.error('Copy failed:', err)
     }
@@ -216,8 +214,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
         const data = (await res.json()) as { items: string[] }
         if (data.items?.length) {
           append(data.items)
-          setToast(`Added ${data.items.length} new items`)
-          setTimeout(() => setToast(null), 1800)
+          toast.success(`Added ${data.items.length} new items`)
         }
       } catch (err) {
         console.error('augment failed', err)
@@ -764,8 +761,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                     })
                   } else {
                     await navigator.clipboard.writeText(window.location.href)
-                    setToast('Link copied')
-                    setTimeout(() => setToast(null), 1800)
+                    toast('Link copied')
                   }
                 } catch {
                   /* user cancelled share */
@@ -785,11 +781,6 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
           </Drawer.Content>
         </Drawer.Portal>
       </Drawer.Root>
-
-      <div className={`toast${toast ? ' show' : ''}`} role="status" aria-live="polite">
-        <Check />
-        <span>{toast}</span>
-      </div>
     </>
   )
 }

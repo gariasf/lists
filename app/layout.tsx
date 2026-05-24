@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { PaletteProvider } from "@/lib/palette-context";
 import CommandPalette from "@/components/CommandPalette";
+import ToasterClient from "@/components/ToasterClient";
 import { getAllLists } from "@/lib/lists";
 
 const BASE_URL = "https://lists.gariasf.com";
@@ -199,6 +200,7 @@ export default async function RootLayout({
           {children}
           <CommandPalette />
         </PaletteProvider>
+        <ToasterClient />
       </body>
     </html>
   );
