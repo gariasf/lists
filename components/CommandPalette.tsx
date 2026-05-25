@@ -136,7 +136,14 @@ export default function CommandPalette() {
   }, [open, index])
 
   const showToast = useCallback((msg: string) => {
-    toast(msg)
+    const looksLikeError = /\b(fail|failed|error|could not|empty|invalid)\b/i.test(
+      msg,
+    )
+    if (looksLikeError) {
+      toast.error(msg)
+    } else {
+      toast.success(msg)
+    }
   }, [])
 
   const copyText = useCallback(

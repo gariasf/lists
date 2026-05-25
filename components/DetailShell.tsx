@@ -153,7 +153,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
     try {
       await navigator.clipboard.writeText(item)
       setCopiedIndex(index)
-      toast(`"${item}" copied`)
+      toast.success(`"${item}" copied`)
       setTimeout(() => setCopiedIndex(null), 1400)
     } catch (err) {
       console.error('Copy failed:', err)
@@ -761,7 +761,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                     })
                   } else {
                     await navigator.clipboard.writeText(window.location.href)
-                    toast('Link copied')
+                    toast.success('Link copied')
                   }
                 } catch {
                   /* user cancelled share */

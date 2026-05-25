@@ -1605,10 +1605,9 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 
 
 /* Floating toast (mobile + desktop) */
-/* Sonner toast container — light overrides on top of the default
-   theming. Sonner's --normal-bg / --normal-text / --normal-border
-   tokens drive the surface, so we just nudge the values to match
-   our paper-and-ink palette. */
+/* Sonner toast — paper-and-ink pill. Matches the look of the old
+   hand-rolled toast (black surface, white text, white check inside
+   a soft disc) across both themes. */
 [data-sonner-toaster] {
   --normal-bg: var(--color-black);
   --normal-text: #ffffff;
@@ -1622,19 +1621,63 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   font-family: var(--font-sans);
 }
 
-[data-sonner-toaster][data-theme="light"] [data-sonner-toast] {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-}
-
+/* Same surface in light + dark — toast reads as ink overlay, not
+   a themed card. */
 [data-sonner-toaster][data-theme="dark"] {
-  --normal-bg: #1f1f1f;
+  --normal-bg: var(--color-black);
   --normal-border: rgba(255, 255, 255, 0.08);
-  --success-bg: #1f1f1f;
+  --success-bg: var(--color-black);
   --success-border: rgba(255, 255, 255, 0.08);
 }
 
 [data-sonner-toast] {
-  border-radius: var(--radius-lg);
+  border-radius: 999px !important;
+  padding: 10px 18px !important;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.22),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06) !important;
+  min-height: 0 !important;
+  align-items: center !important;
+}
+
+[data-sonner-toast] [data-content] {
+  gap: 2px !important;
+}
+
+[data-sonner-toast] [data-title] {
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+
+[data-sonner-toast] [data-description] {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Status icon — wrap default check in a small white disc so it
+   reads as a confirmation chip inside the black pill. */
+[data-sonner-toast] [data-icon] {
+  width: 18px !important;
+  height: 18px !important;
+  margin-right: 6px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 50%;
+  color: var(--color-black);
+}
+
+[data-sonner-toast] [data-icon] svg {
+  width: 11px !important;
+  height: 11px !important;
+}
+
+[data-sonner-toast][data-type="error"] [data-icon] {
+  background: #ffffff;
+  color: #b13a2a;
 }
 
 /* Responsive — collapse desktop shell into single column under 900px */
