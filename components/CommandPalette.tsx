@@ -184,6 +184,7 @@ export default function CommandPalette() {
       if (!prompt) return
       setGenerating(true)
       setGenError(null)
+      const toastId = toast.loading(`Generating ${count} items…`)
       try {
         const res = await fetch('/api/ai/generate', {
           method: 'POST',
@@ -194,20 +195,21 @@ export default function CommandPalette() {
           const err = (await res.json().catch(() => ({}))) as { error?: string }
           const msg = err.error ?? `Generation failed (${res.status})`
           setGenError(msg)
-          showToast(msg)
+          toast.error(msg, { id: toastId })
           return
         }
         const data = (await res.json()) as { items: string[]; prompt: string }
         setGenerated({ prompt, items: data.items, ts: Date.now() })
+        toast.success(`Generated ${data.items.length} items`, { id: toastId })
       } catch (err) {
         console.error('generate failed', err)
         setGenError('Network error')
-        showToast('Network error')
+        toast.error('Network error', { id: toastId })
       } finally {
         setGenerating(false)
       }
     },
-    [showToast],
+    [],
   )
 
   const randomFromSlug = useCallback(

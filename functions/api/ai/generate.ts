@@ -16,7 +16,9 @@ interface GenerateBody {
   listSlug?: string
 }
 
-const MAX_COUNT = 50
+// Hard server-side ceiling. UI requests max 10; everything above
+// this is clamped here so direct curl calls can't ask for 1,000.
+const MAX_COUNT = 20
 const DEFAULT_COUNT = 10
 const MODEL = '@cf/meta/llama-3.1-8b-instruct'
 

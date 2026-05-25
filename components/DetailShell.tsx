@@ -196,6 +196,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
     async (count: number) => {
       setAugmenting(true)
       setAugmentError(null)
+      const toastId = toast.loading(`Generating ${count} more…`)
       try {
         const res = await fetch('/api/ai/generate', {
           method: 'POST',
@@ -208,17 +209,22 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
         })
         if (!res.ok) {
           const err = (await res.json().catch(() => ({}))) as { error?: string }
-          setAugmentError(err.error ?? `Failed (${res.status})`)
+          const msg = err.error ?? `Failed (${res.status})`
+          setAugmentError(msg)
+          toast.error(msg, { id: toastId })
           return
         }
         const data = (await res.json()) as { items: string[] }
         if (data.items?.length) {
           append(data.items)
-          toast.success(`Added ${data.items.length} new items`)
+          toast.success(`Added ${data.items.length} new items`, { id: toastId })
+        } else {
+          toast.error('No items returned', { id: toastId })
         }
       } catch (err) {
         console.error('augment failed', err)
         setAugmentError('Network error')
+        toast.error('Network error', { id: toastId })
       } finally {
         setAugmenting(false)
       }

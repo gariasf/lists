@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
+import { toast } from 'sonner'
 import Link from '@/components/TLink'
 import type { CatalogEntry } from '@/lib/palette-context'
 import { usePalette } from '@/lib/palette-context'
@@ -103,6 +104,7 @@ export default function SkillRun({ skill, allLists }: Props) {
     setRunning(true)
     setError(null)
     setResult(null)
+    const toastId = toast.loading(`Generating ${skill.name.toLowerCase()}…`)
     try {
       const res = await fetch('/api/ai/skill', {
         method: 'POST',
@@ -111,14 +113,18 @@ export default function SkillRun({ skill, allLists }: Props) {
       })
       if (!res.ok) {
         const j = (await res.json().catch(() => ({}))) as { error?: string }
-        setError(j.error ?? `Failed (${res.status})`)
+        const msg = j.error ?? `Failed (${res.status})`
+        setError(msg)
+        toast.error(msg, { id: toastId })
         return
       }
       const data = (await res.json()) as SkillResponse
       setResult(data.payload)
+      toast.success(`${skill.name} ready`, { id: toastId })
     } catch (err) {
       setError('Network error')
       console.error(err)
+      toast.error('Network error', { id: toastId })
     } finally {
       setRunning(false)
     }
