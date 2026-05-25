@@ -4,20 +4,25 @@ import { Toaster } from 'sonner'
 import { useTheme } from '@/lib/use-theme'
 
 function CheckIcon() {
+  // Disc + check in one SVG so proportions are locked. Disc fills the
+  // full 18×18 box; check sits centered inside with tuned stroke.
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 16 16"
-      width={12}
-      height={12}
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2.5}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      viewBox="0 0 18 18"
+      width={18}
+      height={18}
       aria-hidden="true"
     >
-      <path d="M3.5 8.5 7 12l5.5-7" />
+      <circle cx="9" cy="9" r="9" fill="#ffffff" />
+      <path
+        d="M5 9.4 7.8 12.2 13 6.6"
+        fill="none"
+        stroke="#0b0b0b"
+        strokeWidth={1.8}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   )
 }
@@ -26,17 +31,20 @@ function CrossIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 16 16"
-      width={12}
-      height={12}
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2.5}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      viewBox="0 0 18 18"
+      width={18}
+      height={18}
       aria-hidden="true"
     >
-      <path d="M12 4 4 12M4 4l8 8" />
+      <circle cx="9" cy="9" r="9" fill="#ffffff" />
+      <path
+        d="M12.2 5.8 5.8 12.2M5.8 5.8l6.4 6.4"
+        fill="none"
+        stroke="#b13a2a"
+        strokeWidth={1.8}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   )
 }

@@ -1656,29 +1656,23 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Status icon — wrap default check in a small white disc so it
-   reads as a confirmation chip inside the black pill. */
+/* Status icon — disc + glyph rendered together in a single SVG.
+   No CSS-side disc backing; keeps proportions tight on retina. */
 [data-sonner-toast] [data-icon] {
   width: 18px !important;
   height: 18px !important;
   margin-right: 6px !important;
+  background: transparent;
+  border-radius: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
-  border-radius: 50%;
-  color: var(--color-black);
 }
 
 [data-sonner-toast] [data-icon] svg {
-  width: 12px !important;
-  height: 12px !important;
+  width: 18px !important;
+  height: 18px !important;
   display: block;
-}
-
-[data-sonner-toast][data-type="error"] [data-icon] {
-  background: #ffffff;
-  color: #b13a2a;
 }
 
 /* Responsive — collapse desktop shell into single column under 900px */
