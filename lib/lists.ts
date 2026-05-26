@@ -53,10 +53,12 @@ async function loadLocal(
     const raw = await fs.readFile(fullPath, 'utf8')
 
     if (source.format === 'txt') {
+      // Only treat `# ` (hash + space) as a comment marker. Bare `#`
+      // is legitimate content for hashtag / channel / order-id lists.
       const items = raw
         .split('\n')
         .map((l) => l.trim())
-        .filter((l) => l !== '' && !l.startsWith('#'))
+        .filter((l) => l !== '' && !l.startsWith('# '))
       itemsCache.set(cacheKey, items)
       return { items }
     }
