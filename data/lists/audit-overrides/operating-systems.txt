@@ -1,0 +1,127 @@
+macOS
+macOS Sonoma
+macOS Sequoia
+macOS Tahoe
+macOS Ventura
+macOS Monterey
+iOS
+iOS 18
+iOS 17
+iPadOS
+iPadOS 18
+iPadOS 17
+visionOS
+visionOS 2
+watchOS
+watchOS 11
+tvOS
+tvOS 18
+HomePod Software
+Windows
+Windows 11
+Windows 11 Pro
+Windows 11 Enterprise
+Windows 11 Home
+Windows 10
+Windows 10 Pro
+Windows 10 Enterprise
+Windows Server 2025
+Windows Server 2022
+Windows IoT
+Xbox OS
+Android
+Android 16
+Android 15
+Android 14
+Android 13
+Android 12
+ChromeOS
+ChromeOS Flex
+Wear OS
+Google TV
+Android TV
+Android Automotive
+Android Auto
+Android One
+HarmonyOS
+HarmonyOS 4
+HarmonyOS Next
+EMUI
+ColorOS
+MIUI
+HyperOS
+OxygenOS
+OneUI
+Realme UI
+Funtouch OS
+Smartisan OS
+KaiOS
+Tizen OS
+LineageOS
+GrapheneOS
+CalyxOS
+/e/OS
+LibremOS
+Ubuntu Touch
+postmarketOS
+PureOS
+Manjaro Mobile
+PinePhone OS
+Linux
+Ubuntu
+Ubuntu LTS
+Debian
+Debian Stable
+Fedora
+Fedora Silverblue
+Fedora Kinoite
+CentOS Stream
+Rocky Linux
+RHEL
+Red Hat Enterprise Linux
+openSUSE Leap
+openSUSE Tumbleweed
+SUSE Linux Enterprise
+Arch Linux
+EndeavourOS
+Manjaro
+Gentoo
+NixOS
+Pop!_OS
+Linux Mint
+Elementary OS
+Zorin OS
+Kali Linux
+Parrot OS
+Tails
+Qubes OS
+Alpine Linux
+Void Linux
+Slackware
+Bodhi Linux
+Solus
+Garuda Linux
+Endless OS
+BunsenLabs
+Damn Small Linux
+Puppy Linux
+FreeBSD
+OpenBSD
+NetBSD
+DragonFly BSD
+GhostBSD
+Haiku
+ReactOS
+Plan 9
+TempleOS
+Redox OS
+SerenityOS
+Chrome OS
+Bazzite
+Aurora
+Bluefin
+SteamOS
+Holo
+PixelExperience
+Fuchsia
+TizenOS

@@ -1,0 +1,44 @@
+HSBC
+JP Morgan Chase
+BNP Paribas
+Deutsche Bank
+Barclays
+Citigroup
+Mitsubishi UFJ FG
+NatWest Group
+Bank of America
+Goldman Sachs
+Morgan Stanley
+Agricultural Bank of China
+Bank of China
+China Construction Bank
+ICBC
+Banque Populaire CE
+Crédit Agricole
+Société Générale
+Unicredit Group
+Mizuho FG
+Sumitomo Mitsui
+ING Bank
+Santander
+Nordea
+UBS
+Standard Chartered
+Bank of New York Mellon
+State Street
+Wells Fargo
+Commerzbank
+Banco Bilbao Vizcaya Argentaria
+Lloyds Banking Group
+ABN Amro
+Rabobank
+ASN Bank
+de Volksbank
+Triodos Bank
+Van Lanschot
+Bunq
+RegioBank
+Argenta Group
+AXA Bank
+BAC
+BeoBank

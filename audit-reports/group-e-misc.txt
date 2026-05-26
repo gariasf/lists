@@ -1,0 +1,108 @@
+datesddmmy	63	29 February 1981	Feb 29 1981 invalid (1981 not leap year)	28 February 1981
+datesddmmy	83	31 September 1999	September has 30 days	30 September 1999
+datesddmmy	1	25 January 2005	values use DD Month YYYY but slug says DD/MM/YY	25/01/05
+datesddmmyslash-en	23	31/Feb/1979	February never has 31 days	28/Feb/1979
+datesddmmyslash-en	164	31/Sep/1986	September has 30 days	30/Sep/1986
+datesddmmyslash-en	192	31/Feb/1997	February never has 31 days	28/Feb/1997
+datesddmmyslash-en	197	29/Feb/1975	1975 not a leap year	28/Feb/1975
+datesddmmyslash-en	262	31/Apr/1984	April has 30 days	30/Apr/1984
+datesddmmyslash-en	279	31/Nov/2007	November has 30 days	30/Nov/2007
+datesddmmyslash-en	354	31/Nov/1989	November has 30 days	30/Nov/1989
+datesddmmyslash-en	408	31/Apr/1980	April has 30 days	30/Apr/1980
+datesddmmyslash-en	449	29/Feb/1998	1998 not a leap year	28/Feb/1998
+datesddmmyslash-en	457	31/Feb/1999	February never has 31 days	28/Feb/1999
+datesddmmyslash-en	1	13/Jul/2005	values use DD/Mon/YYYY but slug says DD/MM/YYYY	13/07/2005
+iso-timestamps-modern	44	2027-02-29T00:00:00Z	2027 not a leap year, Feb 29 invalid	2027-02-28T00:00:00Z
+cron-expressions	67	H/15 * * * *	Jenkins-specific hash syntax, not standard cron	*/15 * * * *
+holidays-us	3	Presidents' Day	duplicates Washington's Birthday (same federal holiday under two names)	DROP
+holidays-us	17	Columbus Day	duplicates Indigenous Peoples' Day (same date federal holiday)	DROP
+holidays-in	4	Mahatma Gandhi Jayanti	duplicate of Gandhi Jayanti (idx 3)	DROP
+holidays-in	6	Deepavali	duplicate of Diwali (alternate spelling)	DROP
+holidays-in	10	Bakrid	duplicate of Eid al-Adha (alternate Indian name)	DROP
+holidays-in	16	Krishna Janmashtami	duplicate of Janmashtami	DROP
+holidays-in	21	Vijayadashami	duplicate of Dussehra (same festival)	DROP
+holidays-in	47	Karva Chauth	duplicate of Karwa Chauth (idx 23, alternate spelling)	DROP
+holidays-in	38	Baisakhi	duplicate of Vaisakhi (alternate spelling)	DROP
+holidays-uk	22	Guy Fawkes Night	duplicate of Bonfire Night (same UK holiday)	DROP
+mythology-egyptian	2	Re	duplicate of Ra (variant transliteration)	DROP
+mythology-egyptian	19	Seth	duplicate of Set (variant spelling)	DROP
+mythology-egyptian	27	Djehuty	duplicate of Thoth (Egyptian native name)	DROP
+mythology-egyptian	40	Khepri	duplicate of Khepri at idx 4	DROP
+mythology-egyptian	11	Khnemu	duplicate of Khnum (variant spelling)	DROP
+mythology-egyptian	42	Apophis	duplicate of Apep (Greek vs Egyptian name)	DROP
+mythology-egyptian	58	Serket	duplicate of Selket (variant spelling)	DROP
+mythology-egyptian	97	Nefertum	duplicate of Nefertem (variant spelling)	DROP
+mythology-egyptian	101	Hapy	duplicate of Hapi (variant spelling)	DROP
+mythology-egyptian	108	Akhenaten	historical pharaoh, not mythology	DROP
+mythology-egyptian	109	Tutankhamun	historical pharaoh, not mythology	DROP
+mythology-egyptian	110	Cleopatra VII	historical figure, not mythology	DROP
+mythology-egyptian	111	Ramesses II	historical pharaoh, not mythology	DROP
+mythology-egyptian	112	Hatshepsut	historical pharaoh, not mythology	DROP
+mythology-egyptian	113	Nefertiti	historical queen, not mythology	DROP
+mythology-egyptian	87	Imhotep (architect)	explicit "(architect)" qualifier indicates historical, not myth	DROP
+mythology-hindu	90	Vishvakarman	duplicate of Vishvakarma (variant spelling)	DROP
+mythology-hindu	108	Vamana	duplicate of Vamana already at idx 101	DROP
+mythology-hindu	120	Ahilyabai Holkar (queen, often invoked)	historical queen with explicit qualifier, not myth	DROP
+mythology-norse	102	Beowulf	Anglo-Saxon epic hero, not Norse mythology	DROP
+mythology-norse	103	Grendel	Anglo-Saxon monster from Beowulf, not Norse	DROP
+mythology-greek	116	Sphinx (Greek)	the "(Greek)" qualifier leaks list-context into the value	Sphinx
+cuisines	138	Tex-Mex	duplicate of Tex-Mex at idx 20	DROP
+cuisines	139	Soul Food	duplicate of Soul Food at idx 102	DROP
+cocktails	53	Boulevardier	duplicate of Boulevardier at idx 4	DROP
+cocktails	64	Sazerac	duplicate of Sazerac at idx 6	DROP
+cocktails	72	Penicillin	duplicate of Penicillin at idx 8	DROP
+cocktails	94	Painkiller	duplicate of Painkiller at idx 44	DROP
+wines	83	Sancerre	duplicate of Sancerre at idx 75	DROP
+wines	120	Pet-Nat	duplicate of Pet-Nat at idx 74	DROP
+beers-craft	111	Doppelbock	duplicate of Doppelbock at idx 30	DROP
+beers-craft	112	Eisbock	duplicate of Eisbock at idx 32	DROP
+cheeses	107	Halloumi	duplicate of Halloumi at idx 82	DROP
+cheeses	108	Mascarpone	duplicate of Mascarpone at idx 27	DROP
+desserts	68	Pavlova	duplicate of Pavlova at idx 65	DROP
+flowers	89	Bougainvillea	duplicate of Bougainvillea at idx 66	DROP
+gemstones	98	Aquamarine	duplicate of Aquamarine at idx 10	DROP
+fruits-en	74	Solanum quitoense	scientific binomial, list uses common names only	Naranjilla
+fruits-en	16	Cucumber	commonly classified as a vegetable, not a fruit	DROP
+food-en	325	Brunoise	a knife cut, not a food item	DROP
+food-en	383	Bard	not a food item (likely placeholder leak)	DROP
+food-en	390	Cappuccino Latte	not a real drink; cappuccino and latte are distinct	Cappuccino
+vegetables	87	Pattypon squash	typo of Pattypan squash	Pattypan squash
+cat-breeds	89	Tonquinese	misspelling, not a real breed; Tonkinese already at idx 14	DROP
+cat-breeds	73	Pixie-Bob	duplicate of Pixiebob at idx 40 (hyphenation variant)	DROP
+fantasy-orc-names	83	Maglor	Tolkien Noldor elf name (son of Feanor), not an orc	Maghor
+fantasy-orc-names	53	Grimak	duplicate of Grimak at idx 50	DROP
+scifi-ship-names	109	Tantive IV	duplicate of Tantive IV at idx 13	DROP
+scifi-ship-names	31	Hermes-class	"-class" descriptor of same ship (Hermes at idx 30)	DROP
+scifi-ship-names	29	Megalophone	not a recognized sci-fi ship name (likely hallucinated)	Magrathea
+scifi-ship-names	28	Improbability Drive	the engine of Heart of Gold, not a ship	DROP
+scifi-ship-names	43	Black Pearl (sci-fi)	Black Pearl is a fantasy ship (Pirates of Caribbean)	DROP
+scifi-ship-names	37	Ramses II	historical pharaoh, not a sci-fi ship	Ramses (Sci-Fi)
+scifi-ship-names	113	Andor Fondor	Fondor is a Star Wars planet/shipyard, not a ship	DROP
+scifi-ship-names	118	Sky Marshall	Starship Troopers rank, not a ship name	Rodger Young
+scifi-planet-names	60	Ach-To	misspelling of Ahch-To, already at idx 53	DROP
+scifi-planet-names	72	Bryt 117	fabricated planet name (no known canon source)	Reach
+scifi-planet-names	116	Heran	not a recognized sci-fi planet name	Te
+subjects	101	Logic	duplicate of Logic at idx 19	DROP
+allergens	2	Dairy	duplicate of Milk (idx 1)	DROP
+allergens	16	Crustaceans	subset of Shellfish (idx 5)	DROP
+allergens	26	Soybeans	duplicate of Soy (idx 25)	DROP
+allergens	28	Sesame seeds	duplicate of Sesame (idx 27)	DROP
+allergens	30	Sulfur dioxide	duplicate of Sulfites (idx 29)	DROP
+allergens	34	Lupine	duplicate of Lupin (alternate spelling)	DROP
+allergens	36	Maize	duplicate of Corn (idx 35)	DROP
+allergens	46	Monosodium glutamate	duplicate of MSG (idx 45)	DROP
+medical-conditions	102	ADHD-Inattentive type	subtype, redundant with ADHD at idx 23	DROP
+medical-conditions	103	ADHD-Combined type	subtype, redundant with ADHD at idx 23	DROP
+diets	77	"Climatarian" / low-emissions diet	literal escaped double quotes in value look like placeholder leak	Climatarian
+exercises-strength	100	Romanian deadlift (single-leg)	overlaps Single-leg deadlift (idx 13) and Romanian deadlift (idx 15)	DROP
+fantasy-dwarf-names	100	Orin Stonefist	near-dup of Orin (idx 96); surname breaks single-name format	DROP
+fantasy-dwarf-names	38	Fimbul	near-dup of Fimbol/Fimbur (variant spellings idx 37, 39)	DROP
+fantasy-dwarf-names	112	Snorr	near-dup of Snorri (idx 111)	DROP
+meeting-durations	17	2 hours	duplicate of 2 hours at idx 31	DROP
+meeting-durations	8	75 min	overlaps "1 hour 15 minutes" at idx 28	DROP
+calendar-en	1	Meet Dr Jones	slug name says "Calendar Dates" but contents are event titles, not dates	rename slug Calendar Events
+hashtags-trending	0	(empty)	list is empty (count:0, items:[])	populate with real hashtags
+durationsong	17	0:12	12-second song below 1-min realistic floor	2:12
+durationsong	214	0:11	11-second song below 1-min realistic floor	1:11
+durationsong	316	0:10	10-second song below 1-min realistic floor	2:10
+DONE:105 findings across 36 files

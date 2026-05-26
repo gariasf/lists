@@ -1,0 +1,102 @@
+AA — American Airlines
+DL — Delta Air Lines
+UA — United Airlines
+WN — Southwest Airlines
+B6 — JetBlue Airways
+AS — Alaska Airlines
+NK — Spirit Airlines
+F9 — Frontier Airlines
+HA — Hawaiian Airlines
+AC — Air Canada
+WS — WestJet
+AM — Aeroméxico
+VB — VivaAerobús
+LA — LATAM Airlines
+AR — Aerolíneas Argentinas
+G3 — Gol
+AD — Azul
+AV — Avianca
+CM — Copa Airlines
+BA — British Airways
+VS — Virgin Atlantic
+EI — Aer Lingus
+AF — Air France
+KL — KLM
+LH — Lufthansa
+LX — SWISS
+OS — Austrian Airlines
+SN — Brussels Airlines
+SK — SAS
+DY — Norwegian Air
+AY — Finnair
+IB — Iberia
+TP — TAP Air Portugal
+AZ — ITA Airways
+LO — LOT Polish Airlines
+OK — Czech Airlines
+TK — Turkish Airlines
+A3 — Aegean Airlines
+SU — Aeroflot
+(use different airline)
+FR — Ryanair
+U2 — easyJet
+W6 — Wizz Air
+PC — Pegasus Airlines
+JU — Air Serbia
+AT — Royal Air Maroc
+MS — EgyptAir
+ET — Ethiopian Airlines
+KQ — Kenya Airways
+SA — South African Airways
+TU — Tunisair
+EK — Emirates
+EY — Etihad Airways
+QR — Qatar Airways
+SV — Saudia
+GF — Gulf Air
+WY — Oman Air
+KU — Kuwait Airways
+ME — Middle East Airlines
+RJ — Royal Jordanian
+EL — Ellinair
+LY — El Al
+6E — IndiGo
+AI — Air India
+UK — Vistara
+SG — SpiceJet
+QP — Akasa Air
+PK — Pakistan International Airlines
+BG — Biman Bangladesh
+UL — SriLankan Airlines
+NZ — Air New Zealand
+QF — Qantas
+VA — Virgin Australia
+JQ — Jetstar
+9C — Spring Airlines
+CA — Air China
+MU — China Eastern
+CZ — China Southern
+HU — Hainan Airlines
+CX — Cathay Pacific
+KA — Cathay Dragon
+GE — TransAsia Airways
+BR — EVA Air
+CI — China Airlines
+JL — Japan Airlines
+NH — All Nippon Airways (ANA)
+GK — Jetstar Japan
+MM — Peach Aviation
+7C — Jeju Air
+OZ — Asiana Airlines
+KE — Korean Air
+TG — Thai Airways
+PG — Bangkok Airways
+SQ — Singapore Airlines
+TR — Scoot
+MH — Malaysia Airlines
+GA — Garuda Indonesia
+QZ — AirAsia Indonesia
+PR — Philippine Airlines
+5J — Cebu Pacific
+VN — Vietnam Airlines
+VJ — VietJet Air

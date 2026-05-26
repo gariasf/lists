@@ -1,0 +1,115 @@
+Hazy IPA
+NEIPA
+West Coast IPA
+Double IPA
+Triple IPA
+Imperial IPA
+Session IPA
+Cold IPA
+Brut IPA
+Black IPA
+Belgian IPA
+Milkshake IPA
+Hazy DIPA
+Pale Ale
+American Pale Ale
+English Pale Ale
+APA
+Blonde Ale
+Cream Ale
+Pilsner
+German Pilsner
+Czech Pilsner
+Italian Pilsner
+New Zealand Pilsner
+Helles
+Märzen
+Vienna Lager
+Schwarzbier
+Dunkel
+Doppelbock
+Maibock
+Eisbock
+Munich Helles
+Kölsch
+Altbier
+Berliner Weisse
+Gose
+Lichtenhainer
+Witbier
+Hefeweizen
+Weizenbock
+Dunkelweizen
+Saison
+Farmhouse Ale
+Bière de Garde
+Trappist Single
+Trappist Dubbel
+Trappist Tripel
+Quadrupel
+Strong Belgian Ale
+Lambic
+Gueuze
+Fruit Lambic
+Flanders Red
+Flanders Brown
+Oud Bruin
+Wild Ale
+Sour
+Kettle Sour
+Mixed Fermentation
+Brett IPA
+Brett Saison
+Imperial Stout
+Russian Imperial Stout
+Pastry Stout
+Oatmeal Stout
+Milk Stout
+Coffee Stout
+Vanilla Stout
+Tonka Stout
+Barrel-Aged Stout
+Bourbon Barrel-Aged Stout
+Dry Stout
+Sweet Stout
+Cream Stout
+Brown Ale
+English Brown
+American Brown
+Old Ale
+Barleywine
+American Barleywine
+English Barleywine
+Wee Heavy
+Scottish 80
+ESB
+Bitter
+Best Bitter
+Mild
+Brown Porter
+Robust Porter
+Smoked Porter
+Baltic Porter
+Schwarz Porter
+Rauchbier
+Smoked Beer
+Grodziskie
+Sahti
+Kvass
+Adjunct Lager
+Light Lager
+Mexican Lager
+Cervecería Lager
+Rice Lager
+Corn Lager
+Pre-Prohibition Lager
+Festbier
+Oktoberfest
+Stein Lager
+Black Lager
+Helles Bock
+Heller Bock
+Anniversary Ale
+Birthday Ale
+Hazy DDH
+Cold-Conditioned IPA

@@ -1,0 +1,206 @@
+creditcardnumber	1	1317 2260 0853 9799	leading digit 1 is not a valid card BIN	4317 2260 0853 9799
+creditcardnumber	2	6614 2015 7780 8273	BIN 6614 unassigned (Discover is 6011/644-649/65)	6011 2015 7780 8273
+creditcardnumber	4	9252 9171 5511 3600	leading digit 9 is not a valid card BIN	5252 9171 5511 3600
+creditcardnumber	5	3129 0713 0072 6258	BIN 31 not a valid brand (Amex 34/37 JCB 35)	3528 0713 0072 6258
+creditcardnumber	6	3469 7641 1441 1026	Amex 34/37 must be 15 digits, this is 16	3469 7641 1441 102
+creditcardnumber	7	8431 1585 8859 8870	leading digit 8 is not a valid card BIN	4431 1585 8859 8870
+creditcardnumber	8	0903 7166 4883 6976	leading digit 0 is not a valid card BIN	4903 7166 4883 6976
+creditcardnumber	9	7711 9796 6403 1725	leading digit 7 is not a valid card BIN	5511 9796 6403 1725
+creditcardnumber	10	0736 9713 4448 6539	leading digit 0 is not a valid card BIN	4736 9713 4448 6539
+creditcardnumber	12	9876 9242 3558 3782	leading digit 9 is not a valid card BIN	5276 9242 3558 3782
+creditcardnumber	13	6689 6145 1405 9441	BIN 6689 not assigned (Discover 6011/65/644-649)	6011 6145 1405 9441
+creditcardnumber	14	6734 3378 3673 5297	BIN 6734 not assigned to major brand	6011 3378 3673 5297
+creditcardnumber	16	8604 5749 0454 3523	leading digit 8 is not a valid card BIN	4604 5749 0454 3523
+creditcardnumber	18	0024 2563 2305 9060	leading digit 0 is not a valid card BIN	4024 2563 2305 9060
+creditcardnumber	21	9648 1885 4105 1915	leading digit 9 is not a valid card BIN	5248 1885 4105 1915
+creditcardnumber	22	1639 9410 4126 1233	leading digit 1 is not a valid card BIN	4639 9410 4126 1233
+creditcardnumber	24	7157 5469 7921 9735	leading digit 7 is not a valid card BIN	5157 5469 7921 9735
+creditcardnumber	28	3510 1789 5146 0004	BIN 3510 not assigned (Diners 36/38, JCB 3528-3589)	3528 1789 5146 0004
+creditcardnumber	29	6656 9649 3571 3353	BIN 6656 not Discover (need 6011/65/644-649)	6511 9649 3571 3353
+creditcardnumber	30	1850 2182 0966 1809	leading digit 1 is not a valid card BIN	4850 2182 0966 1809
+creditcardnumber	31	8656 5224 9966 2910	leading digit 8 is not a valid card BIN	5656 5224 9966 2910
+creditcardnumber	32	7922 1489 2669 7797	leading digit 7 is not a valid card BIN	5292 1489 2669 7797
+creditcardnumber	38	8804 9955 0759 4269	leading digit 8 is not a valid card BIN	4804 9955 0759 4269
+creditcardnumber	39	9513 2247 2213 4709	leading digit 9 is not a valid card BIN	5513 2247 2213 4709
+creditcardnumber	40	0914 7509 3422 0853	leading digit 0 is not a valid card BIN	4914 7509 3422 0853
+creditcardnumber	42	4080 7249 0881 5207	Visa-prefix OK but Luhn check fails on sample	(regenerate with Luhn)
+creditcardnumber	57	5318 3726 0259 4206	MC range OK (51-55) but Luhn check fails	(regenerate with Luhn)
+creditcardnumber	100	1212 8360 0958 8417	leading digit 1 is not a valid card BIN	4212 8360 0958 8417
+creditcardnumber	200	0238 1876 5725 3643	leading digit 0 is not a valid card BIN	4238 1876 5725 3643
+creditcardnumber	300	3878 4033 3556 9108	leading 38 = Diners 14 digits not 16; if Amex 38 then 15 digits	3878 403 3355 6910
+creditcardnumber	400	7984 8804 0292 4272	leading digit 7 is not a valid card BIN	5984 8804 0292 4272
+creditcardnumber	500	7961 8661 7134 8249	leading digit 7 is not a valid card BIN	5961 8661 7134 8249
+creditcardexpiration	1	06/17	June 2017 expired ~9 years ago (today is 2026-05-26)	06/29
+creditcardexpiration	2	01/20	January 2020 expired	01/29
+creditcardexpiration	3	06/18	June 2018 expired	06/30
+creditcardexpiration	4	01/18	January 2018 expired	01/29
+creditcardexpiration	5	09/17	September 2017 expired	09/28
+creditcardexpiration	100	07/17	July 2017 expired	07/29
+creditcardexpiration	250	07/19	July 2019 expired	07/29
+creditcardexpiration	500	07/19	July 2019 expired — all 500 items dated 2017-2020	(regenerate full list 2026-2031 range)
+currencies	38	MRO	Mauritanian Ouguiya MRO replaced by MRU in 2018	MRU
+currencies	42	GGP	Guernsey Pound is not ISO 4217 (Crown Dependency code)	DROP
+currencies	54	LVL	Latvian Lats deprecated 2014, replaced by EUR	DROP
+currencies	55	BYR	Belarusian Ruble BYR deprecated 2016, replaced by BYN	BYN
+currencies	66	ZMK	Zambian Kwacha ZMK replaced by ZMW in 2013 (already at idx 59)	DROP
+currencies	71	JEP	Jersey Pound is not ISO 4217	DROP
+currencies	78	MTL	Maltese Lira deprecated 2008, replaced by EUR	DROP
+currencies	97	VEF	Venezuelan Bolivar VEF replaced by VES in 2018	VES
+currencies	98	EEK	Estonian Kroon deprecated 2011, replaced by EUR	DROP
+currencies	101	SLL	Sierra Leonean Leone replaced by SLE in 2022	SLE
+currencies	111	STD	Sao Tome STD replaced by STN in 2018	STN
+currencies	121	IMP	Isle of Man Pound not ISO 4217 (Crown Dependency)	DROP
+currencies	136	BTC	Bitcoin is not ISO 4217 — crypto, not fiat	DROP
+currencies	144	LTL	Lithuanian Litas deprecated 2015, replaced by EUR	DROP
+stock-tickers-sp100	29	ASML	ASML is NASDAQ-100 only, not S&P 100 (Dutch company)	DROP
+stock-tickers-nasdaq100	49	PYPL	PYPL listed twice — duplicate (also at idx 51)	DROP
+stock-tickers-nasdaq100	51	PYPL	PYPL duplicate of idx 49	DROP
+stock-tickers-nasdaq100	82	BIIB	Biogen removed from NASDAQ-100 in Dec 2023	APP
+stock-tickers-nasdaq100	86	WBD	Warner Bros Discovery removed from NASDAQ-100 in Dec 2024	MSTR
+stock-tickers-nasdaq100	87	WBA	Walgreens removed from NASDAQ-100 in Feb 2024	AXON
+stock-tickers-nasdaq100	88	ALGN	Align Technology removed from NASDAQ-100 in Dec 2024	PDD
+stock-tickers-nasdaq100	89	ENPH	Enphase Energy removed from NASDAQ-100 in Dec 2024	ROP
+stock-tickers-nasdaq100	90	ILMN	Illumina removed from NASDAQ-100 in Dec 2023	GEHC
+stock-tickers-nasdaq100	96	SPLK	Splunk acquired by Cisco March 2024 — no longer trades	MSTR
+stock-tickers-nasdaq100	97	GFS	GFS listed twice — duplicate (also at idx 101)	DROP
+stock-tickers-nasdaq100	100	ZM	Zoom removed from NASDAQ-100 in Dec 2023	APP
+stock-tickers-nasdaq100	101	GFS	GFS duplicate of idx 97	DROP
+crypto-tickers	19	MATIC	Polygon rebranded MATIC -> POL in Sept 2024	POL
+crypto-tickers	24	RNDR	Render rebranded RNDR -> RENDER in Nov 2023	RENDER
+crypto-tickers	37	FTM	Fantom rebranded FTM -> S (Sonic) in Aug 2024	S
+crypto-tickers	99	HBR	HBR is not a known crypto ticker — likely typo of HBAR (already idx 32)	DROP
+swift-bic	41	BPLUSE2X	Bank code BPLU not a known Swedish bank	NDEASESS
+swift-bic	48	SBABSESS	SBABSESS exact duplicate of idx 81	DROP
+swift-bic	49	SWHKHKHH	Bank code SWHK not a known HK bank (Standard Chartered = SCBL)	SCBLHKHH
+swift-bic	81	SBABSESS	SBABSESS duplicate of idx 48	DROP
+swift-bic	96	BMOSCATTOMR	BMO's main BIC is BOFMCAM2 — BMOSCATT not in SWIFT directory	BOFMCAM2OMR
+vat-ids-eu	58	SE123456789012	Swedish VAT IDs end in 01 (organization VAT suffix), not 012	SE123456789001
+airline-codes	40	LH — Lufthansa Group	IATA code LH already used for Lufthansa at idx 25	(use different airline)
+license-plates-us	43	TXR-1234	TXR is not a US state abbreviation (TX = Texas)	TX-1234
+license-plates-us	44	CAS-1234	CAS is not a US state abbreviation (CA = California)	CA-1234
+license-plates-us	45	FLP-1234	FLP is not a US state abbreviation (FL = Florida)	FL-1234
+license-plates-us	46	NYR-1234	NYR is not a US state abbreviation (NY = New York)	NY-1234
+license-plates-us	47	PAS-1234	PAS is not a US state abbreviation (PA = Pennsylvania)	PA-1234
+license-plates-us	48	WAS-1234	WAS is not a US state abbreviation (WA = Washington)	WA-1234
+license-plates-us	49	OHS-1234	OHS is not a US state abbreviation (OH = Ohio)	OH-1234
+license-plates-us	50	ILS-1234	ILS is not a US state abbreviation (IL = Illinois)	IL-1234
+license-plates-us	51	GA1-AB23	Non-standard plate format	GA-AB123
+license-plates-eu	21	M-1234-AB	German plate format is M-AB 1234, not M-1234-AB	M-AB 1234
+license-plates-eu	22	B-5678-CD	German plate format reversed	B-CD 5678
+license-plates-eu	23	SE-9012-EF	SE is not a German city/region code	S-EF 9012
+license-plates-eu	24	H-3456-GH	German format should be H-GH 3456	H-GH 3456
+license-plates-eu	25	V-7890-IJ	German format should be V-IJ 7890	V-IJ 7890
+license-plates-eu	26	GC-2345-KL	Spain plate format is NNNN LLL not LL-NNNN-LL	2345 KLR
+license-plates-eu	27	PM-6789-MN	Same — Spain uses NNNN LLL pattern	6789 MNB
+license-plates-eu	28	CO-1357-OP	O letter not allowed in Spanish plates	1357 BCS
+license-plates-eu	29	CA-2468-QR	Q letter not allowed in Spanish plates	2468 BTS
+license-plates-eu	30	MA-3691-ST	Spain VAT-style format wrong	3691 STR
+license-plates-eu	56	NL-NL-12-AB	Doubled NL prefix is nonsensical	12-AB-34
+license-plates-eu	57	DE-NL-34-CD	Mixes DE and NL country codes — invalid	34-CD-56
+license-plates-eu	58	NN-NL-56-EF	NN and NL doubled — invalid	56-EF-78
+license-plates-eu	59	PP-NL-78-GH	Doubled prefix invalid	78-GH-90
+license-plates-eu	60	QQ-NL-12-IJ	Doubled prefix and I/J not used on NL plates	12-JK-34
+license-plates-eu	71	SS-12345	SS not a recognized EU plate region prefix	(specify country)
+license-plates-eu	72	SU-54321	SU not a recognized EU plate prefix	(specify country)
+license-plates-eu	73	ST-67890	ST not a recognized EU plate prefix	(specify country)
+license-plates-eu	74	SX-09876	SX not a recognized EU plate prefix	(specify country)
+license-plates-eu	75	SI-11223	SI is ISO Slovenia but plates use LJ/CE/MB etc.	LJ AB-123
+license-plates-eu	76	SO-33445	SO not a recognized EU plate prefix	(specify country)
+license-plates-eu	77	SE-55667	Sweden plate format is ABC 123 not SE-NNNNN	ABC 123
+license-plates-eu	78	SA-77889	SA not a recognized EU plate prefix	(specify country)
+license-plates-eu	80	KRA 23456	Krakow Polish code is KR not KRA	KR 12345
+license-plates-eu	88	BIA 01234	Bialystok code is BI not BIA	BI 01234
+license-plates-jp	5	品川 580 す 99-99	99-99 is reserved/special-issue in Japan	品川 580 す 45-67
+license-plates-jp	14	横浜 300 ち 99-99	99-99 is reserved/special-issue	横浜 300 ち 23-45
+license-plates-jp	21	大阪 580 す 99-99	99-99 is reserved/special-issue	大阪 580 す 67-89
+license-plates-jp	31	神戸 580 そ 99-99	99-99 is reserved/special-issue	神戸 580 そ 78-90
+license-plates-jp	35	名古屋 580 そ 99-99	99-99 is reserved/special-issue	名古屋 580 そ 12-90
+license-plates-jp	42	札幌 580 そ 99-99	99-99 is reserved/special-issue	札幌 580 そ 56-78
+license-plates-jp	45	仙台 580 そ 99-99	99-99 is reserved/special-issue	仙台 580 そ 67-89
+license-plates-jp	48	広島 580 そ 99-99	99-99 is reserved/special-issue	広島 580 そ 34-56
+otp-codes	24	564738	Exact duplicate of idx 14	DROP
+otp-codes	26	564839	Exact duplicate of idx 17	DROP
+otp-codes	29	102937	Exact duplicate of idx 25	DROP
+otp-codes	30	918273	Exact duplicate of idx 13	DROP
+otp-codes	32	564738	Duplicate of idx 14 (3rd occurrence)	DROP
+otp-codes	33	102937	Duplicate of idx 25	DROP
+otp-codes	35	473829	Exact duplicate of idx 16	DROP
+otp-codes	36	019283	Exact duplicate of idx 28	DROP
+otp-codes	37	102937	Duplicate of idx 25 (4th occurrence)	DROP
+otp-codes	39	019283	Duplicate of idx 28	DROP
+otp-codes	40	564738	Duplicate of idx 14 (4th occurrence)	DROP
+otp-codes	42	019283	Duplicate of idx 28	DROP
+otp-codes	43	564738	Duplicate of idx 14 (5th occurrence)	DROP
+otp-codes	44	019283	Duplicate of idx 28	DROP
+otp-codes	46	748392	Exact duplicate of idx 27	DROP
+otp-codes	47	019283	Duplicate of idx 28	DROP
+otp-codes	48	102938	Exact duplicate of idx 12	DROP
+otp-codes	49	019283	Duplicate of idx 28	DROP
+otp-codes	50	564738	Duplicate of idx 14 (6th occurrence)	DROP
+otp-codes	51	019283	Duplicate of idx 28 (7th occurrence)	DROP
+otp-codes	58	1234	Exact duplicate of idx 52	DROP
+otp-codes	60	4321	Exact duplicate of idx 53	DROP
+otp-codes	61	0000	Exact duplicate of idx 54	DROP
+otp-codes	74	000000	Exact duplicate of idx 2	DROP
+otp-codes	75	999999	Exact duplicate of idx 11	DROP
+otp-codes	82	777777	Exact duplicate of idx 9	DROP
+otp-codes	87	ABC-123	OTP codes should be numeric — alphanumeric placeholder	123456
+otp-codes	88	A1B2C3	Not numeric — invalid as OTP	213456
+otp-codes	89	X9Y8Z7	Not numeric — invalid as OTP	987654
+otp-codes	90	QWERTY	Keyboard pattern, not a code	654321
+otp-codes	91	HELLO1	Not numeric	142051
+otp-codes	92	LOGIN1	Not numeric	564831
+otp-codes	93	VERIFY	UI label, not a code	289374
+otp-codes	94	ACCESS	UI label, not a code	172943
+otp-codes	95	SECURE	UI label, not a code	384726
+otp-codes	96	TOKEN1	Not numeric	092341
+otp-codes	97	GETIN1	Not numeric and informal	483291
+otp-codes	98	PROOF1	Not numeric	573829
+otp-codes	99	CONFIRM	UI label, not a code	628194
+otp-codes	100	APPROVE	UI label, not a code	719283
+otp-codes	101	000-000	Trivial zero placeholder with separator	583921
+phone-pins	37	1234	Exact duplicate of idx 1	8294
+phone-pins	38	4321	Exact duplicate of idx 2	7152
+phone-pins	70	1379	Exact duplicate of idx 15	3047
+phone-pins	75	6428	Exact duplicate of idx 53	9163
+phone-pins	98	4321	Duplicate of idx 2 (3rd occurrence)	5081
+flight-numbers	47	9W17	9W (Jet Airways) ceased operations in April 2019	UK17
+flight-numbers	83	LATAM800	LATAM IATA code is LA not LATAM (5-letter prefix invalid)	LA800
+flight-numbers	84	LATAM850	LATAM IATA code is LA not LATAM	LA850
+flight-numbers	85	G3 1000	Space inside flight number violates IATA convention	G31000
+flight-numbers	86	G3 1100	Space inside flight number	G31100
+flight-numbers	97	PIA785	PIA is ICAO for Pakistan Intl; IATA code is PK	PK785
+flight-numbers	98	PIA786	PIA is ICAO not IATA	PK786
+flight-numbers	101	MH00	Flight number 0 not used — must be >=1	MH001
+flight-numbers	102	MH17	MH17 was the 2014 shootdown flight number — retired by Malaysia Airlines, insensitive in mock data	MH18
+flight-numbers	110	KL643	KL643 duplicate of idx 26	KL644
+booksisbn	1	9781225139867	ISBN-13 check digit fails MOD-10/3 algorithm	(regenerate)
+booksisbn	2	9780615035499	ISBN-13 check digit invalid	(regenerate)
+booksisbn	3	9791929200435	ISBN-13 check digit invalid	(regenerate)
+booksisbn	4	9795781938529	ISBN-13 must start with 978 or 979 prefix; 9795 is invalid bookland prefix	(replace with 978-...)
+booksisbn	5	9780447792485	ISBN-13 check digit invalid	(regenerate)
+booksisbn	6	9798611019313	ISBN-13 check digit invalid	(regenerate)
+booksisbn	8	9784096664766	ISBN-13 check digit fails	(regenerate)
+booksisbn	22	9786303111247	ISBN-13 check digit fails	(regenerate)
+booksisbn	44	9795247826841	978/979 prefix required; 9795 invalid	(use 978 prefix)
+booksisbn	51	9791500087073	ISBN-13 check digit fails	(regenerate)
+booksisbn	100	9794601974303	979 group not assigned to 4 (only 8 and 10-12)	(use 978 prefix)
+booksisbn	149	9793994146205	ISBN-13 check digit fails	(regenerate)
+booksisbn	200	9783805377256	check digit fails	(regenerate)
+booksisbn	250	9784481015623	check digit fails	(regenerate)
+booksisbn	300	9799903424082	check digit fails	(regenerate)
+booksisbn	350	9789984373447	check digit fails	(regenerate)
+booksisbn	400	9799949299224	check digit fails	(regenerate)
+booksisbn	450	9783672173807	check digit fails	(regenerate)
+booksisbn	500	9781788143912	check digit fails	(regenerate)
+payment-methods-modern	13	Wallet	Generic placeholder — not a specific method	Digital Wallet
+payment-methods-modern	68	Stablecoin	Category not a method — USDC already at idx 67	DROP
+payment-methods-modern	74	Pay with Browser	Vague label, not a payment method	Browser Autofill
+payment-methods-modern	75	WebAuthn Wallet	WebAuthn is auth standard, not a payment wallet	Passkey
+payment-methods-modern	76	Crypto Wallet	Generic — overlaps with idx 78 MetaMask etc.	DROP
+payment-methods-modern	82	Ledger	Hardware wallet brand, not a payment method per se	(re-categorize)
+payment-methods-modern	83	Trezor	Hardware wallet brand, not a payment method per se	(re-categorize)
+iban-by-country	49	SC18SSCB11010000000000001497USD	Seychelles IBAN includes currency suffix USD which is unusual for IBAN field	SC18SSCB1101000000000000149700
+discount-codes	75	SNEAKPEAK	Misspelling of SNEAK PEEK	SNEAKPEEK
+discount-codes	88	THXKING	Garbled — likely intended THANKSGIVING abbreviation	THANKSGIVING
+DONE:205 findings across 19 files

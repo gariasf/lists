@@ -1,0 +1,110 @@
+Cheddar
+Aged Cheddar
+Sharp Cheddar
+Mild Cheddar
+White Cheddar
+Smoked Cheddar
+Gruyère
+Comté
+Beaufort
+Raclette
+Emmental
+Swiss
+Jarlsberg
+Appenzeller
+Tilsit
+Edam
+Gouda
+Aged Gouda
+Smoked Gouda
+Mozzarella
+Fresh Mozzarella
+Buffalo Mozzarella
+Burrata
+Stracciatella
+Ricotta
+Ricotta Salata
+Mascarpone
+Provolone
+Provolone Dolce
+Provolone Piccante
+Scamorza
+Pecorino Romano
+Pecorino Sardo
+Pecorino Toscano
+Parmigiano Reggiano
+Grana Padano
+Asiago
+Asiago Pressato
+Asiago d'Allevo
+Taleggio
+Robiola
+Stracchino
+Crescenza
+Fontina
+Fontina Val d'Aosta
+Bel Paese
+Gorgonzola
+Gorgonzola Dolce
+Gorgonzola Piccante
+Cambozola
+Roquefort
+Stilton
+Blue Stilton
+Cabrales
+Valdeón
+Bleu d'Auvergne
+Fourme d'Ambert
+Brie
+Brie de Meaux
+Brie de Melun
+Camembert
+Camembert de Normandie
+Coulommiers
+Saint-André
+Saint-Marcellin
+Reblochon
+Mont d'Or
+Vacherin
+Munster
+Pont-l'Évêque
+Livarot
+Époisses
+Langres
+Maroilles
+Selles-sur-Cher
+Crottin de Chavignol
+Valençay
+Bûcheron
+Sainte-Maure
+Pouligny-Saint-Pierre
+Feta
+Halloumi
+Manouri
+Mizithra
+Kefalotyri
+Manchego
+Manchego Curado
+Mahón
+Tetilla
+Idiazábal
+Cabra al Vino
+Caciocavallo
+Bocconcini
+Queso Fresco
+Queso Blanco
+Queso Oaxaca
+Queso Cotija
+Cotija Añejo
+Paneer
+Cottage Cheese
+Cream Cheese
+Quark
+Skyr
+Labneh
+Ackawi
+Akkawi
+Crème Fraîche
+String Cheese
+Cheese Curds
+Camembert de Normandie AOP

@@ -1,0 +1,253 @@
+companies-modern	58	Square	Square rebranded to Block in 2021; Block listed at index 59 - duplicate entity	DROP
+vc-firms	27	Combinator Continuity Fund	garbled name (should be Y Combinator Continuity Fund)	Y Combinator Continuity Fund
+vc-firms	48	Index Ventures	duplicate of index 11	DROP
+vc-firms	57	Founder Friendly	not a real VC firm	DROP
+vc-firms	73	GV	duplicate of index 34	DROP
+vc-firms	74	ARCH	duplicate of Arch Venture Partners at index 70	DROP
+banks	8	Credit Suisse	acquired by UBS in 2023, no longer exists as separate bank	DROP
+banks	9	Royal Bank of Scotland	rebranded as NatWest Group in 2020	NatWest Group
+banks	34	Dexia Group	defunct - dissolved after 2008 crisis	DROP
+banks	38	BinckBank	defunct - merged into Saxo Bank 2019	DROP
+banks	39	SNS Bank	rebranded as de Volksbank in 2017	de Volksbank
+banks	42	Friesland Bank	defunct - acquired by Rabobank in 2012	DROP
+banks	44	Delta Lloyd	defunct as bank brand - acquired by NN Group 2017	DROP
+banks	47	ASLK	defunct - old Belgian bank name (became Fortis)	DROP
+banks	51	Dexia	duplicate of Dexia Group at index 34; defunct	DROP
+banks	52	Optima Bank	went bankrupt in 2016	DROP
+brands-beauty	48	Selena Gomez (Rare)	celebrity name not a brand; Rare Beauty already at index 1	DROP
+brands-beauty	49	Hailey Bieber (Rhode)	celebrity name not a brand; Rhode already at index 4	DROP
+brands-beauty	50	Selena Quintanilla	deceased singer, not a beauty brand	DROP
+brands-beauty	51	Tatcha	duplicate of index 18	DROP
+brands-beauty	94	Bobbi Brown Crushed Lip	specific product line, not a brand; Bobbi Brown at index 32	DROP
+brands-beauty	97	Then I Met You	duplicate of index 96	DROP
+brands-food	32	Athletic Greens	rebranded as AG1; AG1 already listed at index 33	DROP
+brands-furniture	24	Republic of Fritz Hansen	duplicate of Fritz Hansen at index 23	DROP
+brands-furniture	51	Floyd Steel Frame	product line not a brand; Floyd at index 29	DROP
+brands-furniture	52	Floor & Decor	flooring retailer not furniture brand	DROP
+brands-furniture	57	Pottery Barn Bed	product line not a brand; Pottery Barn at index 8	DROP
+brands-furniture	58	Saatva Classic	product line not a brand; Saatva at index 39	DROP
+brands-furniture	70	Target Threshold	sub-brand inside Target store	DROP
+brands-furniture	71	Target Studio McGee	collab line inside Target	DROP
+brands-furniture	74	Pottery Barn Teen	product line not a brand	DROP
+brands-furniture	75	Anthropologie Bedding	product line not a brand; Anthropologie Home at index 64	DROP
+brands-furniture	76	West Elm Workspace	product line; West Elm at index 5	DROP
+brands-furniture	77	West Elm Outdoor	product line not a brand	DROP
+brands-furniture	78	CB2 Tech	product line not a brand; CB2 at index 7	DROP
+brands-furniture	79	Hay J77	specific chair model not a brand; HAY at index 3	DROP
+brands-furniture	80	Hay Soft Edge	specific chair model not a brand	DROP
+brands-furniture	91	Karlsson	primarily clock/watch brand, not furniture	DROP
+brands-furniture	93	Vifa	audio/speaker brand, not furniture	DROP
+brands-furniture	105	Article Cigar	product (Article Cigar sofa) not a brand; Article at index 4	DROP
+brands-tech	16	Surface	Microsoft product line, not a brand	DROP
+brands-tech	17	Mac	Apple product line, not a brand	DROP
+brands-tech	18	iPad	Apple product line, not a brand	DROP
+brands-tech	19	iPhone	Apple product line, not a brand	DROP
+brands-tech	20	Pixel	Google product line, not a brand	DROP
+brands-tech	21	Galaxy	Samsung product line, not a brand	DROP
+brands-tech	33	Razer	duplicate of index 12	DROP
+brands-tech	38	Topre	keyboard switch technology, not a brand	DROP
+brands-tech	39	DROP	literal placeholder string "DROP" leaked into list	DROP
+brands-tech	43	Steam Deck	Valve product, not a brand	DROP
+brands-tech	44	ROG Ally	ASUS product, not a brand	DROP
+brands-tech	45	Legion Go	Lenovo product, not a brand	DROP
+brands-tech	49	Switch	Nintendo product, not a brand; Nintendo at index 48	DROP
+brands-tech	56	Bose QuietComfort	product line not a brand; Bose at index 52	DROP
+brands-tech	57	Sony WH-1000XM	specific product not a brand; Sony at index 5	DROP
+brands-tech	58	Apple AirPods	product line not a brand; Apple at index 1	DROP
+brands-tech	83	Sony Alpha	product line not a brand	DROP
+brands-tech	84	Sony FX	cinema camera line not a brand	DROP
+brands-tech	89	Shure SM7B	specific microphone product not a brand; Shure at index 62	DROP
+brands-tech	91	Stream Deck	Elgato product, not a brand; Elgato at index 90	DROP
+brands-tech	95	ASUS ProArt	product line not a brand; ASUS at index 10	DROP
+brands-tech	97	LG UltraFine	product line not a brand; LG at index 6	DROP
+brands-tech	98	Apple Studio Display	product not a brand	DROP
+brands-tech	99	Pro Display XDR	Apple product, not a brand	DROP
+brands-tech	100	Samsung Odyssey	product line not a brand; Samsung at index 2	DROP
+brands-tech	101	Dell UltraSharp	product line not a brand; Dell at index 7	DROP
+restaurants-modern	47	République	duplicate with Republique at index 57	DROP
+restaurants-modern	72	Nokona Sushi	not a recognized restaurant - looks hallucinated	DROP
+restaurants-modern	78	Inua	closed permanently in 2019	DROP
+restaurants-modern	86	Restaurante Frenchie	duplicate of Frenchie at index 87	DROP
+streaming-services	3	Max	HBO Max rebranded back to HBO Max in 2025	HBO Max
+streaming-services	4	HBO Max	duplicate of Max at index 3	DROP
+streaming-services	19	Funimation	defunct - merged into Crunchyroll 2024	DROP
+streaming-services	44	Tou.tv	duplicate of ICI Tou.TV at index 45	DROP
+streaming-services	47	Wow	duplicate (also at index 58 as WOW)	DROP
+streaming-services	58	WOW	duplicate of Wow at index 47	DROP
+streaming-services	61	Sky Q	platform/device branding not a service	DROP
+streaming-services	63	Salto	defunct - shut down March 2023	DROP
+streaming-services	79	Star+	merged into Disney+ in 2024	DROP
+streaming-services	82	ContenidoOriginal	not a real streaming service - generic Spanish phrase	DROP
+streaming-services	84	Apple TV	device/duplicate of Apple TV+ at index 6	DROP
+streaming-services	92	Audible Plus	tier of Audible at index 91, not separate service	DROP
+streaming-services	93	Audible Premium Plus	tier of Audible at index 91, not separate service	DROP
+streaming-services	100	Crunchyroll Hime	not a service - Hime is the Crunchyroll mascot	DROP
+game-studios	22	Sega Sammy	parent holding company not studio; Sega at index 21	DROP
+game-studios	23	Yakuza Studio	informal name for Ryu Ga Gotoku Studio at index 24	DROP
+game-studios	36	NetEase Worlds	not a known studio - possibly hallucinated	DROP
+game-studios	58	Tango Gameworks	duplicate of index 45	DROP
+game-studios	67	Halo Studios	new name for 343 Industries at index 66 - same entity	DROP
+game-studios	113	Annapurna Pictures	film studio not game studio; Annapurna Interactive at index 112	DROP
+game-studios	114	Sucker Punch	duplicate of Sucker Punch Productions at index 7	DROP
+game-studios	139	Indie Picks	not a studio name - generic category	DROP
+podcasts	8	Hard Fork	ok original entry; duplicate at index 79	Hard Fork
+podcasts	24	Diary of a CEO	duplicate with The Diary of a CEO at index 56	DROP
+podcasts	28	Conan O'Brien Needs a Friend	original ok; duplicate at index 99	Conan O'Brien Needs a Friend
+podcasts	49	The Hidden Curriculum	not a notable podcast	DROP
+podcasts	73	Decoder Ring	original ok; duplicate at index 110	Decoder Ring
+podcasts	79	Hard Fork	duplicate of index 8	DROP
+podcasts	80	Reply All Goodbye	final episode title, not a podcast	DROP
+podcasts	81	Reply All Plus	not a real podcast	DROP
+podcasts	87	Smartless	duplicate of index 27	DROP
+podcasts	89	Las Cuturistas	typo of Las Culturistas at index 85	DROP
+podcasts	90	Las Cuturistas with Matt and Bowen	typo + redundant version of Las Culturistas	DROP
+podcasts	98	Conan	informal nickname; Conan O'Brien Needs a Friend at index 99	DROP
+podcasts	99	Conan O'Brien Needs a Friend	duplicate of index 28	DROP
+podcasts	110	Decoder Ring	duplicate of index 73	DROP
+mlb-teams	20	Oakland Athletics	team relocated to Sacramento for 2025; officially "Athletics"	Athletics
+tennis-atp	62	Yannick Sinner Jr.	hallucinated player; Jannik Sinner already at index 1	DROP
+tennis-wta	54	Jasmine Paolini	duplicate of index 4	DROP
+tennis-wta	59	Cori Gauff	same person as Coco Gauff at index 3	DROP
+tennis-wta	60	Sloane Stephens	duplicate of index 30	DROP
+tennis-wta	61	Sloane	duplicate (just first name) of Sloane Stephens	DROP
+olympic-sports	27	Futsal	not an Olympic sport - not in Olympic program	DROP
+olympic-sports	31	Karate	dropped after Tokyo 2020; not in Paris 2024 or LA 2028	DROP
+olympic-sports	40	Skateboarding Park	event not a separate sport; Skateboarding at index 39	DROP
+olympic-sports	41	Skateboarding Street	event not a separate sport	DROP
+athletes-current	26	Sue Bird	retired 2022	DROP
+athletes-current	27	Diana Taurasi	retired after 2024 WNBA season	DROP
+athletes-current	41	Aaron Donald	retired March 2024	DROP
+athletes-current	73	Toni Kroos	retired after Euro 2024	DROP
+athletes-current	88	Alex Morgan	retired September 2024	DROP
+athletes-current	89	Megan Rapinoe	retired November 2023	DROP
+athletes-current	90	Sarina Wiegman	coach not athlete	DROP
+athletes-current	91	Emma Hayes	coach not athlete	DROP
+athletes-current	125	Allyson Felix	retired 2022	DROP
+athletes-current	140	Suni Lee	duplicate of Sunisa Lee at index 139	DROP
+carbrands	8	Brooke	obscure kit car maker; probably not a recognized brand	DROP
+carbrands	10	Caerham	misspelling of Caterham	Caterham
+carbrands	11	Humer	misspelling of Hummer	Hummer
+carbrands	13	Saab	defunct as car maker since 2012	DROP
+carbrands	22	MB Roadcars	not a recognized car brand	DROP
+carbrands	25	Gumpert	bankrupt; reorganized as Apollo	DROP
+carbrands	37	Saturn	defunct since 2010	DROP
+carbrands	39	Spyker	bankrupt - no longer operating	DROP
+carbrands	41	NIE	not a car brand - garbled token	DROP
+carbrands	46	Holden	defunct since 2020	DROP
+carbrands	49	Vauxhal	misspelling of Vauxhall	Vauxhall
+carbrands	62	Invicta	defunct - no longer producing	DROP
+carbrands	66	Unique	not a car brand	DROP
+carbrands	67	Bristol	defunct UK car brand	DROP
+carbrands	77	LandRover	formatting wrong - should be Land Rover	Land Rover
+carbrands	81	Corvette	Chevrolet model not historically a separate brand	DROP
+ev-models	6	Tesla Roadster (next gen)	announced 2017, never delivered	DROP
+ev-models	15	Lucid Earth	not a real Lucid model - hallucinated	DROP
+ev-models	66	SEAT Mii Electric	discontinued in 2021	DROP
+ev-models	175	Bentley EV	not a model name - Bentley first EV not yet launched	DROP
+ev-models	177	McLaren Artura EV	Artura is hybrid PHEV not full EV	DROP
+ev-models	178	Aston Martin Vanquish EV	new Vanquish is V12 ICE not EV	DROP
+motorcycle-brands	38	Brammo	acquired by Polaris in 2015; doesn't make bikes	DROP
+motorcycle-brands	44	Ola S1	model name not a brand; Ola Electric at index 42	DROP
+motorcycle-brands	46	TVS iQube	model name not a brand; TVS Motor at index 16	DROP
+motorcycle-brands	47	Rev'It	motorcycle gear/apparel brand not motorcycle maker	DROP
+motorcycle-brands	48	Alta Motors	shut down in 2018	DROP
+motorcycle-brands	50	Vespa Elettrica	model line not a brand; Vespa at index 22	DROP
+motorcycle-brands	52	Janus Motorcycles	duplicate of Janus at index 61	DROP
+motorcycle-brands	62	Vincent Black Shadow	specific model not a brand; Vincent at index 55	DROP
+bike-brands	49	Bianchi Aria	model not a brand; Bianchi at index 6	DROP
+bike-brands	51	Cervélo R5	model not a brand; Cervélo at index 5	DROP
+bike-brands	52	Cervélo S5	model not a brand	DROP
+bike-brands	53	Pinarello Dogma	model not a brand; Pinarello at index 7	DROP
+bike-brands	54	Pinarello Prince	model not a brand	DROP
+bike-brands	55	Trek Madone	model not a brand; Trek at index 1	DROP
+bike-brands	56	Trek Émonda	model not a brand	DROP
+bike-brands	57	Trek Domane	model not a brand	DROP
+bike-brands	58	Trek Fuel EX	model not a brand	DROP
+bike-brands	59	Trek Top Fuel	model not a brand	DROP
+bike-brands	60	Specialized Tarmac	model not a brand; Specialized at index 2	DROP
+bike-brands	61	Specialized Roubaix	model not a brand	DROP
+bike-brands	62	Specialized Stumpjumper	model not a brand	DROP
+bike-brands	63	Specialized Enduro	model not a brand	DROP
+bike-brands	64	Specialized Diverge	model not a brand	DROP
+bike-brands	65	Cervélo Caledonia	model not a brand	DROP
+bike-brands	66	Cervélo Áspero	model not a brand	DROP
+bike-brands	67	Argon 18 Sum	model not a brand; Argon 18 at index 20	DROP
+bike-brands	68	Canyon Endurace	model not a brand; Canyon at index 16	DROP
+bike-brands	69	Canyon Aeroad	model not a brand	DROP
+bike-brands	70	Canyon Ultimate	model not a brand	DROP
+bike-brands	71	Canyon Lux	model not a brand	DROP
+bike-brands	72	Cube Litening	model not a brand; Cube at index 17	DROP
+bike-brands	73	Cube AMS	model not a brand	DROP
+bike-brands	74	Wilier Filante	model not a brand; Wilier at index 19	DROP
+bike-brands	75	Wilier Zero SLR	model not a brand	DROP
+bike-brands	76	Look 795	model not a brand; Look at index 11	DROP
+bike-brands	77	Look 695	model not a brand	DROP
+bike-brands	78	Stromer ST5	model not a brand; Stromer at index 41	DROP
+bike-brands	79	Riese & Müller Charger4	model not a brand; Riese & Müller at index 40	DROP
+bike-brands	80	VanMoof S5	model not a brand	DROP
+bike-brands	81	VanMoof A5	model not a brand	DROP
+bike-brands	83	Cowboy Cruiser	model not a brand; Cowboy at index 82	DROP
+bike-brands	84	Lectric XP	model not a brand	DROP
+bike-brands	85	Rad Power RadCity	model not a brand	DROP
+bike-brands	86	Rad Power RadRunner	model not a brand	DROP
+bike-brands	87	Aventon Soltera	model not a brand	DROP
+bike-brands	88	Aventon Level	model not a brand	DROP
+bike-brands	89	Aventon Pace	model not a brand	DROP
+bike-brands	90	Specialized Turbo Vado	model not a brand	DROP
+bike-brands	91	Specialized Turbo Como	model not a brand	DROP
+cruise-ships	48	Princess Sun	wrong order - Princess ships use "X Princess" format	Sun Princess
+cruise-ships	49	Princess Star	wrong order - should be Star Princess	Star Princess
+cruise-ships	50	Princess Sphere	not a real Princess ship - Sphere is class name not ship name	DROP
+transit-lines-london	32	National Rail	brand not a specific line	DROP
+fitness-apps	21	Centr by Chris Hemsworth	duplicate with Centr at index 86	DROP
+fitness-apps	24	Glo	duplicate with Glo Yoga at index 26	DROP
+fitness-apps	36	Breathwork+	not a recognized fitness app	DROP
+fitness-apps	50	HumanOS	not a notable fitness app	DROP
+fitness-apps	76	Steezy	duplicate of Steezy Studio at index 77	DROP
+fitness-apps	84	Kayla Itsines Sweat	duplicate of Sweat at index 83	DROP
+fitness-apps	85	Kayla	duplicate (just first name) of Kayla Itsines	DROP
+fitness-apps	88	EvolveAI	not a notable fitness app	DROP
+fitness-apps	92	HEVY Coach	feature inside Hevy at index 12, not separate app	DROP
+fitness-apps	94	Smart Watch Workout	not a real app - generic phrase	DROP
+fitness-apps	95	Apple Watch Workout	default Apple feature, not a separate app	DROP
+fitness-apps	96	Apple Watch Mindful Minutes	default Apple feature, not a separate app	DROP
+fitness-apps	97	Wearable Coach	not a real app	DROP
+fitness-apps	98	Whoop Coach	feature inside Whoop app at index 3	DROP
+hotels	26	The Mirage	closed July 2024 for Hard Rock conversion	DROP
+hotels	27	Monte Carlo Resort and Casino	rebranded as Park MGM in 2018	Park MGM
+hotels	36	Bally's Las Vegas	rebranded as Horseshoe Las Vegas in 2022	Horseshoe Las Vegas
+hotels	45	Stratosphere Las Vegas	rebranded as The STRAT in 2019	The STRAT
+hotels	57	Riviera	demolished 2016	DROP
+hotels	77	SLS Las Vegas	rebranded as Sahara Las Vegas in 2021	Sahara Las Vegas
+hotels	78	Hotel Pennsylvania	demolished in 2023	DROP
+hotels	99	Tropicana Las Vegas	closed April 2024, demolished October 2024	DROP
+hotels	106	Revel Atlantic City	closed 2014; reopened as Ocean Casino Resort	Ocean Casino Resort
+hotels	113	Marriott Wardman Park	closed permanently in 2020	DROP
+hotels	122	Yacht Club	too generic; likely means Disney's Yacht Club Resort	Disney's Yacht Club Resort
+hotels	123	Beach Club	too generic; likely means Disney's Beach Club Resort	Disney's Beach Club Resort
+hotels	149	Roosevelt Hotel	NYC Roosevelt Hotel closed in 2020 (now migrant center)	DROP
+hospitals	77	Beijing Union Medical College Hospital	duplicate of Peking Union Medical College Hospital at index 76 (same hospital)	DROP
+video-games	25	Tears of the Kingdom	duplicate of The Legend of Zelda: Tears of the Kingdom at index 4	DROP
+video-games	98	Alan Wake II	duplicate of Alan Wake 2 at index 97 (II = 2)	DROP
+video-games	110	Forza Motorsport	duplicate of index 50	DROP
+video-games	111	Death Stranding 2	duplicate of Death Stranding 2: On the Beach at index 37	DROP
+movies-modern	26	Dune: Part Three	2026 release; not yet released - not "modern" yet	DROP
+movies-modern	76	The Banshees of Inisherin	duplicate of index 54	DROP
+movies-modern	111	Past Lives	duplicate of index 7	DROP
+movies-modern	114	Civil War	duplicate of index 30	DROP
+movies-modern	115	Hit Man	duplicate of index 32	DROP
+tv-shows-modern	63	Industry	duplicate of index 34	DROP
+tv-shows-modern	105	Beef	duplicate of index 27	DROP
+tv-shows-modern	106	Beef Season 2	Beef Season 2 not yet aired (greenlit but unreleased)	DROP
+music-artists-modern	48	Phoebe Bridgers	duplicate of index 16	DROP
+music-artists-modern	52	Hozier	duplicate of index 49	DROP
+music-artists-modern	102	Sleep Token	duplicate of index 98	DROP
+music-artists-modern	113	Phoebe Bridgers	duplicate of index 16	DROP
+music-artists-modern	122	Hozier	duplicate of index 49	DROP
+music-artists-modern	123	Burna Burna	typo of Burna Boy at index 124	DROP
+music-artists-modern	130	Tyla	duplicate of index 10	DROP
+music-artists-modern	157	Bizarrap	duplicate of index 151	DROP
+music-artists-modern	158	Bizarrap Music Sessions	song series by Bizarrap, not separate artist	DROP
+
+TRUNCATED:29 more bike-brands model-not-a-brand findings unverified
+DONE:250 findings across 29 files

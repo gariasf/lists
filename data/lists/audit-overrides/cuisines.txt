@@ -1,0 +1,138 @@
+Italian
+French
+Spanish
+Portuguese
+Greek
+Turkish
+Lebanese
+Israeli
+Egyptian
+Moroccan
+Tunisian
+Ethiopian
+Nigerian
+Ghanaian
+South African
+American
+Southern
+Cajun
+Creole
+Tex-Mex
+Mexican
+Oaxacan
+Yucatecan
+Cuban
+Puerto Rican
+Dominican
+Colombian
+Venezuelan
+Peruvian
+Brazilian
+Argentine
+Chilean
+Japanese
+Sushi
+Ramen
+Izakaya
+Yakitori
+Korean
+Korean BBQ
+Chinese
+Cantonese
+Sichuan
+Shanghainese
+Dim Sum
+Hot Pot
+Taiwanese
+Hong Kong
+Thai
+Vietnamese
+Pho
+Bánh Mì
+Lao
+Cambodian
+Indonesian
+Malaysian
+Filipino
+Singaporean
+Burmese
+Indian
+North Indian
+South Indian
+Punjabi
+Bengali
+Goan
+Kerala
+Hyderabadi
+Pakistani
+Sri Lankan
+Nepalese
+Tibetan
+Mongolian
+Russian
+Ukrainian
+Polish
+Hungarian
+Czech
+Austrian
+German
+Bavarian
+Swiss
+Dutch
+Belgian
+Scandinavian
+Nordic
+Danish
+Swedish
+Norwegian
+Icelandic
+Finnish
+Irish
+British
+Scottish
+Welsh
+Pizza
+Burgers
+Sandwiches
+Steakhouse
+Seafood
+Oyster Bar
+BBQ
+Smokehouse
+Soul Food
+Gastropub
+Bistro
+Brasserie
+Trattoria
+Pizzeria
+Tapas
+Pintxo Bar
+Sushi Bar
+Omakase
+Yakiniku
+Diner
+Bakery
+Pâtisserie
+Boulangerie
+Café
+Coffee Shop
+Tea House
+Vegan
+Vegetarian
+Plant-Based
+Gluten-Free
+Kosher
+Halal
+Fusion
+Modern American
+New Nordic
+Pan-Asian
+Pan-Latin
+Mediterranean
+Middle Eastern
+Levantine
+Caribbean
+West African
+East African
+North African
+Hawaiian

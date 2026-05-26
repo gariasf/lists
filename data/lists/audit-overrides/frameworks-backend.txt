@@ -1,0 +1,157 @@
+Node.js
+Deno
+Bun
+Express
+Fastify
+Koa
+Nest.js
+Hono
+Hapi
+Restify
+Adonis.js
+LoopBack
+Sails.js
+Total.js
+Meteor
+Feathers
+RedwoodJS
+Blitz
+SvelteKit
+Nuxt
+Next.js
+Astro
+Encore
+TRPC
+Drogon
+Fiber
+Hertz
+H3
+H4
+Iris
+Echo
+Gin
+Beego
+Buffalo
+GoFrame
+Revel
+Spring Boot
+Spring WebFlux
+Quarkus
+Micronaut
+Helidon
+Vert.x
+Play Framework
+Spark Java
+Dropwizard
+Jersey
+Apache CXF
+Akka
+Akka HTTP
+Pekko
+ZIO Http
+Ktor
+Vapor
+Hummingbird
+Perfect
+Kitura
+Smoke
+Django
+Django REST framework
+Flask
+FastAPI
+Starlette
+Sanic
+Tornado
+Falcon
+Bottle
+Pyramid
+Quart
+Litestar
+BlackSheep
+Apache Tornado
+Pony
+Eve
+Web2py
+Esmerald
+Strawberry
+Ariadne
+Graphene
+Strawberry GraphQL
+Apollo Server
+GraphQL Yoga
+Mercurius
+PostGraphile
+Hasura
+Prisma
+Drizzle
+Kysely
+TypeORM
+Sequelize
+Mongoose
+Knex
+MikroORM
+Bookshelf
+Objection.js
+DBOS
+Cloudflare Workers
+Cloudflare Pages Functions
+Vercel Functions
+Vercel Edge Functions
+AWS Lambda
+Lambda@Edge
+Google Cloud Functions
+Cloud Run
+Azure Functions
+Fly.io Machines
+Railway
+Render
+Heroku
+Deno Deploy
+Bun Runtime
+Workerd
+Fermyon Spin
+Wasmer
+Wasmtime
+Trillium
+Salvo
+Axum
+Actix Web
+Rocket
+Warp
+Tide
+Poem
+Loco
+Sycamore
+Yew
+Leptos
+Dioxus
+Tauri
+ASP.NET Core
+.NET 9
+.NET MAUI
+Blazor
+Razor Pages
+Carter
+Ocelot
+gRPC for .NET
+Ruby on Rails
+Sinatra
+Hanami
+Lotus
+Roda
+Padrino
+Rage
+Goliath
+Slim
+Lumen
+Hyperf
+Phalcon
+CodeIgniter
+Yii
+Mojolicious
+Dancer
+Catalyst
+Cro
+Crystal Kemal
+Lucky
+Genie

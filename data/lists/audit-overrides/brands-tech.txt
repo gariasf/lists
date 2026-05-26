@@ -1,0 +1,89 @@
+Apple
+Samsung
+Google
+Microsoft
+Sony
+LG
+Dell
+HP
+Lenovo
+ASUS
+Acer
+Razer
+MSI
+Alienware
+Framework
+OnePlus
+Xiaomi
+Oppo
+Vivo
+Realme
+Nothing
+Motorola
+Nokia
+Anker
+Belkin
+Logitech
+Keychron
+Das Keyboard
+HHKB
+Realforce
+Glorious
+Mountain
+8BitDo
+PlayStation
+Xbox
+Nintendo
+Meta Quest
+Valve Index
+Bose
+Sonos
+JBL
+Bang & Olufsen
+Beats by Dre
+Sennheiser
+Audio-Technica
+Shure
+Focal
+KEF
+Klipsch
+Harman Kardon
+Marshall
+Yamaha
+Denon
+Panasonic
+Canon
+Nikon
+Fujifilm
+Leica
+Hasselblad
+Olympus
+GoPro
+DJI
+Insta360
+Sigma
+Tamron
+Zeiss
+RED Camera
+Blackmagic
+Atomos
+Rode
+Elgato
+Wacom
+Huion
+Xencelabs
+Eizo
+ViewSonic
+BenQ
+Philips Hue
+Nanoleaf
+LIFX
+Ring
+Nest
+Arlo
+Eufy
+SimpliSafe
+Ecobee
+TP-Link Tapo
+Aqara
+SwitchBot

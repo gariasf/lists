@@ -1,0 +1,80 @@
+Visa
+Mastercard
+American Express
+Discover
+JCB
+Diners Club
+UnionPay
+Maestro
+Visa Electron
+Apple Pay
+Google Pay
+Samsung Pay
+Digital Wallet
+Garmin Pay
+Fitbit Pay
+PayPal
+Venmo
+Cash App
+Zelle
+Wise
+Revolut
+N26
+Monzo
+Starling
+Chime
+Klarna
+Afterpay
+Affirm
+Zip
+Sezzle
+Splitit
+PayPal Pay in 4
+Apple Pay Later
+ACH
+SEPA Direct Debit
+Wire Transfer
+BACS
+Faster Payments
+Pix
+Boleto
+iDEAL
+Bancontact
+Giropay
+EPS
+P24
+Sofort
+Multibanco
+MyBank
+GrabPay
+PayNow
+PromptPay
+LinePay
+WeChat Pay
+Alipay
+UPI
+RuPay
+Paytm
+PhonePe
+GooglePay India
+NETS
+PayLah
+TrueMoney
+Cryptocurrency
+Bitcoin
+Ethereum
+USDC
+Stablecoin
+Stripe Link
+Stripe ACH
+Plaid-linked Bank
+Gift Card
+Loyalty Points
+Browser Autofill
+Passkey
+Crypto Wallet
+MetaMask
+Coinbase Wallet
+Phantom
+Trust Wallet
+(re-categorize)

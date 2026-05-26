@@ -1,0 +1,149 @@
+Inter
+Inter Tight
+Geist
+Geist Mono
+IBM Plex Sans
+IBM Plex Serif
+IBM Plex Mono
+JetBrains Mono
+Söhne
+Söhne Mono
+Söhne Breit
+Söhne Schmal
+Söhne Buch
+Onest
+Onest Variable
+Manrope
+Outfit
+Sora
+Plus Jakarta Sans
+Public Sans
+Space Grotesk
+Space Mono
+Work Sans
+DM Sans
+DM Mono
+DM Serif Display
+DM Serif Text
+Helvetica
+Helvetica Now
+Helvetica Now Display
+Helvetica Now Text
+Helvetica Now Variable
+Akzidenz-Grotesk
+Founders Grotesk
+Suisse Int'l
+Suisse Mono
+Suisse Works
+GT America
+GT Walsheim
+GT Sectra
+GT Maru
+GT Pressura
+Migra
+Migra Italic
+Inter Display
+Roobert
+Roobert Mono
+Editorial New
+Reckless Neue
+Apoc
+ABC Diatype
+ABC Whyte
+ABC Favorit
+Söhne Lyon
+Lyon Text
+Aktiv Grotesk
+Söhne Mager
+Inter Variable
+Söhne Variable
+Söhne Mono Variable
+Atlas Grotesk
+Atlas Typewriter
+Graphik
+Graphik Variable
+Graphik Compact
+Tiempos
+Tiempos Text
+Tiempos Headline
+ARS Maquette
+National 2
+Untitled Sans
+Untitled Serif
+Cardinal
+Spectral
+Source Sans 3
+Source Serif 4
+Source Code Pro
+Noto Sans
+Noto Serif
+Noto Sans JP
+Noto Sans KR
+Noto Sans SC
+Noto Sans Arabic
+Noto Naskh Arabic
+Lora
+Merriweather
+Playfair Display
+Playfair Display SC
+Crimson Pro
+Cormorant Garamond
+EB Garamond
+Cardo
+Newsreader
+Fraunces
+Recoleta
+Charter
+Lyon Text Pro
+Source Han Sans
+M PLUS 1
+M PLUS Rounded 1c
+Roboto
+Roboto Mono
+Roboto Slab
+Roboto Flex
+Open Sans
+Lato
+Montserrat
+Poppins
+Karla
+Nunito
+Nunito Sans
+Quicksand
+Mulish
+Hind
+Rubik
+Be Vietnam Pro
+Instrument Sans
+Instrument Serif
+Cabinet Grotesk
+Satoshi
+Switzer
+Bricolage Grotesque
+Boldonse
+Mona Sans
+Hubot Sans
+JetBrains Mono Italic
+Cascadia Code
+Cascadia Mono
+Fira Code
+Fira Sans
+Fira Sans Compressed
+Fira Sans Condensed
+Monaspace Neon
+Monaspace Argon
+Monaspace Krypton
+Monaspace Radon
+Monaspace Xenon
+IBM Plex Mono Italic
+Departure Mono
+PolySans
+PolySans Median
+Untitled Sans Mono
+ABC Marfa
+ABC Mono
+Reckless
+Reckless Mono
+Migra Extralight
+Apparat
+Aspekta

@@ -1,0 +1,141 @@
+Figma to Code (Locofy)
+Locofy.ai
+Anima
+Builder.io
+TeleportHQ
+DevMode
+Iconify
+Iconify Color
+Material Symbols
+Phosphor Icons
+Lucide
+Heroicons
+Tabler Icons
+Feather Icons
+Unsplash
+Pexels
+Iconscout
+SVG Repo
+Mockuuups Studio
+Mockup Plugin
+Artboard Studio Mockups
+Vectary 3D
+Spline
+Rive
+Lottie Files
+LottieLab
+Jitter
+Embed
+Iconly Pro
+Streamline
+Iconjar
+ProtoPie Connect
+ProtoPie Studio
+Origami Studio
+Figmotion
+Figma Animate
+Wireframe Plugin
+Material Theme Builder
+Adobe Color Theme
+Coolors
+Color Hunt
+Khroma
+Realistic Shadows
+3D Shadow
+Auto Layout Wireframer
+LayoutGrid
+Pro Grids
+Master
+Master Components
+Variables to CSS
+Tokens Studio
+Style Dictionary
+Design Tokens
+Figma Tokens
+Variants Plugin
+Variant Switcher
+Component Inspector
+Inspector for Design
+Spotify Glyphs
+Brand Sounds
+Sound Sticker
+Charts
+Chart Plugin
+Datavizly
+Data Visualizer
+Figmify
+Mockup Generator
+Image Tracer
+Vector Magic
+Image to SVG
+Remove BG
+Background Eraser
+Smart Selector
+Find and Replace
+Find Replace
+Translator
+Google Translate
+TinyImage Compressor
+Image Optimizer
+Compressor
+Avatars
+Get Avatars
+Stipple
+Content Reel
+Lorem ipsum
+Filler
+Looper
+Wireframe
+Wireframe Kit
+Wires
+Webflow Sync
+Plant
+Plant Variables
+Notes
+Code Comments
+Marko
+Outline Builder
+Storybook Connect
+Storybook Sync
+Component Stocks
+Toolabs
+Stock
+Stock by Lummi
+Material Design Icons
+Tomorrow Bot
+A11y - Color Contrast Checker
+Able
+Color Blind Sim
+Figma to React
+Figma to Vue
+Figma to HTML
+Figma to Tailwind
+SuperNova
+Penpot Sync
+Zeplin
+Zeplin Connect
+Avocode
+Specflow
+Maze for Figma
+Useberry
+UsabilityHub
+PlaybookUX
+Userlytics
+Lookback
+Hotjar Connect
+FullStory
+LogRocket
+Sentry for Figma
+Slack for Figma
+Notion for Figma
+Linear for Figma
+Asana for Figma
+GitHub for Figma
+FigJam Templates
+Whiteboard Kit
+Mind Map
+Flowchart
+User Flow
+Brainstorm
+Sticky Notes
+Reactions

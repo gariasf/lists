@@ -6,6 +6,7 @@ import {
   LocalSource,
   UpstreamSource,
 } from './lists-data'
+import { AUDIT_OVERRIDES } from './audit-overrides'
 
 const GITHUB_RAW_BASE =
   'https://raw.githubusercontent.com/listsfordesign/Lists/master/Lists'
@@ -96,6 +97,24 @@ async function loadLocal(
 export async function getList(slug: string): Promise<ListItem | null> {
   const def = LIST_DEFINITIONS.find((d) => d.slug === slug)
   if (!def) return null
+
+  // Audit-pass override: full replacement from data/lists/audit-overrides/<slug>.txt.
+  // Bypasses upstream + any other local sources for the slug. See
+  // audit-reports/ for the parallel-expert findings that produced these.
+  if (AUDIT_OVERRIDES.has(def.slug)) {
+    const local = await loadLocal({
+      file: `audit-overrides/${def.slug}.txt`,
+      format: 'txt',
+    })
+    return {
+      slug: def.slug,
+      name: def.name,
+      category: def.category,
+      items: local.items,
+      structured: undefined,
+      format: 'txt',
+    }
+  }
 
   const upstreamItems = def.upstream ? await fetchUpstream(def.upstream) : []
   const local = def.local

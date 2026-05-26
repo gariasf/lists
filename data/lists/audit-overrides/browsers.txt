@@ -1,0 +1,79 @@
+Google Chrome
+Chrome Beta
+Chrome Dev
+Chrome Canary
+Apple Safari
+Safari Technology Preview
+Mozilla Firefox
+Firefox Beta
+Firefox Developer Edition
+Firefox Nightly
+Microsoft Edge
+Edge Beta
+Edge Dev
+Edge Canary
+Arc
+Arc Search
+Brave
+Brave Nightly
+Opera
+Opera GX
+Opera One
+Vivaldi
+DuckDuckGo Browser
+Tor Browser
+Tor Browser for Android
+Mullvad Browser
+Yandex Browser
+Samsung Internet
+UC Browser
+Puffin Browser
+Maxthon
+Pale Moon
+Waterfox
+LibreWolf
+Zen Browser
+Mercury Browser
+Beam
+Sigma OS
+Min
+Falkon
+Otter Browser
+Midori
+Surf
+Epic Privacy Browser
+Comodo Dragon
+Comodo IceDragon
+Avast Secure Browser
+AVG Secure Browser
+Norton Secure Browser
+Kiwi Browser
+Bromite
+Lemur
+Lynx
+w3m
+elinks
+Browsh
+Servo
+Roccat Dev
+Camino (legacy)
+Internet Explorer (legacy)
+Sleipnir
+Coast by Opera (legacy)
+SRWare Iron
+Sea Monkey
+Konqueror
+Webkit GTK
+WebViews
+Android System WebView
+WKWebView
+Capacitor WebView
+Cordova WebView
+Electron
+Tauri
+Wails
+Neutralino
+Sciter
+Awesomium
+QtWebEngine
+CEF (Chromium Embedded Framework)

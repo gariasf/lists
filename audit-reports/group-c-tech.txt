@@ -1,0 +1,302 @@
+devicesphones	1	Vivo Y66	2016 phone, not currently shipping	DROP
+devicesphones	2	iPhone 7 Plus	2016 phone, not currently shipping	DROP
+devicesphones	3	LG G6	2017 phone, LG exited mobile in 2021	DROP
+devicesphones	4	Xiaomi Redmi 4	2016 phone, not currently shipping	DROP
+devicesphones	5	Samsung Galaxy C7 Pro	2017 phone, discontinued	DROP
+devicesphones	6	Honor 8 Lite	2017 phone, discontinued	DROP
+devicesphones	7	Vivo V5s	2017 phone, discontinued	DROP
+devicesphones	8	Micromax Evok Power	obscure 2017 phone, discontinued	DROP
+devicesphones	11	Zopo Flash X Plus	2017 phone, Zopo defunct	DROP
+devicesphones	12	Tecno i7	2017 phone, discontinued	DROP
+devicesphones	14	Cat S60	2016 phone, discontinued	DROP
+devicesphones	16	Intex Aqua Crystal	2017 phone, Intex defunct in mobile	DROP
+devicesphones	19	Micromax Dual 5	2017 phone, duplicated at idx 27	DROP
+devicesphones	21	Samsung Galaxy C7 Pro	duplicate of idx 5	DROP
+devicesphones	24	Sony Xperia XZs	duplicate of idx 17	DROP
+devicesphones	27	Micromax Dual 5	duplicate of idx 19	DROP
+devicesphones	35	Intex Aqua Supreme+	2017 phone, discontinued	DROP
+devicesphones	40	HTC Desire 10 Pro	duplicate of idx 66	DROP
+devicesphones	43	Honor 6X	duplicate of idx 48	DROP
+devicesphones	48	Honor 6X	duplicate of idx 43	DROP
+devicesphones	53	HTC U Ultra	duplicate of idx 28	DROP
+devicesphones	55	ZTE Nubia Z11 and ZTE Nubia N1	malformed entry, two phones combined with "and"	ZTE Nubia Z11
+devicesphones	60	LG V20	duplicate of idx 54	DROP
+devicesphones	61	OnePlus 3T	duplicate of idx 57	DROP
+devicesphones	63	Lenovo K6 Power	duplicate of idx 59	DROP
+devicesphones	66	HTC Desire 10 Pro	duplicate of idx 40	DROP
+devicesphones	70	Vivo V5	duplicate of idx 67	DROP
+devicesphones	77	Lyf F1	duplicate of idx 56	DROP
+devicesphones	84	Honor 8	duplicate of idx 81	DROP
+devicesphones	86	Lenovo Z2 Plus	duplicate of idx 83	DROP
+devicesphones	91	Moto Z Play	duplicate of idx 75	DROP
+devicesphones	94	Asus ZenFone 3	duplicate of idx 92	DROP
+devicesphones	103	LG X screen	duplicate of idx 95	DROP
+devicesphones	111	Freedom 251	2016 controversial India phone, never shipped properly	DROP
+devicesphones	118	Yu Yunicorn	duplicate of idx 120	DROP
+devicesphones	120	Yu Yunicorn	duplicate of idx 118	DROP
+devicesphones	121	Sony Xperia X Dual	duplicate of idx 116	DROP
+devicesphones	124	HTC 10	duplicate of idx 109	DROP
+deviceslaptops	1	HP Stream 11-y006nf 11.6"	2016 laptop with locale SKU, discontinued	DROP
+deviceslaptops	2	Lenovo IdeaPad 110-15ACL 15.6"	2016 laptop, discontinued	DROP
+deviceslaptops	3	Asus EeeBook E202SA-FD0087T 11.6"	2016 laptop, discontinued	DROP
+deviceslaptops	5	Lenovo Ideapad 110-17ACL 17.3"	2016 laptop, duplicate of idx 39	DROP
+deviceslaptops	12	Lenovo Yoga 300-11IBR 11.6"	2016 laptop, discontinued	DROP
+deviceslaptops	24	Lenovo Yoga 510-14ISK 14''	duplicate of idx 8 (different quotes)	DROP
+deviceslaptops	39	Lenovo IdeaPad 110-17ACL 17.3"	duplicate of idx 5	DROP
+deviceslaptops	47	Lenovo Ideapad 110-17ACL 17.3"	duplicate of idx 5/39	DROP
+deviceslaptops	49	HP 14-AN009NF 14"	near-duplicate of idx 48 HP 14-an010nf (one char off, likely typo)	DROP
+deviceslaptops	62	X751SA TY156T Asus	malformed: brand at end, missing screen size	Asus X751SA-TY156T 17.3"
+deviceslaptops	70	Dell Latitude E6320 2,5Ghz	2011 laptop, ~14 years old, discontinued	DROP
+deviceslaptops	71	Lenovo Thinkpad T420	2011 laptop, ~14 years old, discontinued	DROP
+deviceslaptops	72	HP ProBook 6460B - 14"	2011 laptop, discontinued	DROP
+deviceslaptops	73	Dell Latitude E6230 - 12.5"	2012 laptop, duplicate at idx 76	DROP
+deviceslaptops	74	Dell Latitude E6430 - 14"	2012 laptop, duplicate at idx 77	DROP
+deviceslaptops	75	Dell Latitude E6420 - 14.1"	2011 laptop, duplicate at idx 78	DROP
+deviceslaptops	76	Dell Latitude E6230 - 12.5"	duplicate of idx 73	DROP
+deviceslaptops	77	Dell Latitude E6430 - 14"	duplicate of idx 74	DROP
+deviceslaptops	78	Dell Latitude E6420 - 14,1"	near-duplicate of idx 75 (comma vs period)	DROP
+devicestablets	1	Huawei Honor Play Pad 2 (9.6-inch) LTE	2017 tablet, discontinued	DROP
+devicestablets	2	Huawei Honor Play Pad 2 (8-inch) LTE	2017 tablet, discontinued	DROP
+devicestablets	3	Huawei Honor Play Pad 2 (9.6-inch)	duplicate of idx 1 (Wi-Fi variant)	DROP
+devicestablets	5	Huawei Honor Play Pad 2 (8-inch)	duplicate of idx 2 (Wi-Fi variant)	DROP
+devicestablets	6	Alcatel Alcatel Pixi 4 (7) WiFi	"Alcatel" duplicated in name	Alcatel Pixi 4 (7) WiFi
+devicestablets	11	Apple iPad (2017) Wi-Fi + Cellular	2017 tablet, very old	iPad (10th generation)
+devicestablets	12	Apple iPad (2017) Wi-Fi	2017 tablet, very old	iPad (10th generation) Wi-Fi
+devicestablets	18	Samsung Galaxy Book 12 (LTE)	2017 device, discontinued	DROP
+devicestablets	19	Samsung Galaxy Book 12 (Wi-Fi)	2017 device, discontinued	DROP
+devicestablets	20	Samsung Galaxy Book 10.6 (LTE)	2017 device, discontinued	DROP
+devicestablets	21	Samsung Galaxy Book 10.6 (Wi-Fi)	2017 device, discontinued	DROP
+devicestablets	22	Samsung Galaxy Tab S3 (LTE)	2017 tablet, discontinued	DROP
+devicestablets	23	Samsung Galaxy Tab S3 (Wi-Fi)	2017 tablet, discontinued	DROP
+devicestablets	24	Archos 101 Saphir	2017 tablet, Archos defunct in tablets	DROP
+fileformats	19	.bin	duplicate (also at idx 27)	DROP
+fileformats	30	.cgi	duplicate (also at idx 58)	DROP
+fileformats	41	.py	duplicate (also at idx 65)	DROP
+fileformats	93	.ico	duplicate of idx 50	DROP
+fileformats	17	.z	uncommon; usually .Z (uppercase, Unix compress)	.Z
+fileformats	22	.toast	Roxio Toast disk image, rarely used	DROP
+mimetype	2	application/x-troff-msvideo	non-IANA legacy hack alias for video/x-msvideo	video/x-msvideo
+mimetype	3	image/pjpeg	non-IANA Microsoft variant of image/jpeg	image/jpeg
+mimetype	7	audio/x-mpeg-3	non-IANA variant of audio/mpeg	audio/mpeg
+mimetype	8	video/avi	non-IANA; AVI is video/x-msvideo	video/x-msvideo
+mimetype	11	application/x-msexcel	non-IANA variant of application/vnd.ms-excel	application/vnd.ms-excel
+mimetype	13	application/x-mspowerpoint	non-IANA variant of application/vnd.ms-powerpoint	application/vnd.ms-powerpoint
+mimetype	17	video/msvideo	non-IANA variant of video/x-msvideo	video/x-msvideo
+mimetype	18	audio/mpeg3	non-IANA variant of audio/mpeg	audio/mpeg
+mimetype	21	application/mspowerpoint	non-IANA variant of application/vnd.ms-powerpoint	application/vnd.ms-powerpoint
+mimetype	29	image/x-tiff	non-IANA variant of image/tiff	image/tiff
+mimetype	31	application/excel	non-IANA variant of application/vnd.ms-excel	application/vnd.ms-excel
+mimetype	68	video/x-mpeg	non-IANA variant of video/mpeg	video/mpeg
+mimetype	73	application/x-excel	non-IANA variant of application/vnd.ms-excel	application/vnd.ms-excel
+mimetype	101	application/powerpoint	non-IANA variant of application/vnd.ms-powerpoint	application/vnd.ms-powerpoint
+mimetype	0	(list-wide)	500-entry list dominated by non-IANA legacy aliases and massive repetition (~20 unique values, most invalid); whole list needs rebuild	REBUILD
+headlinestech-en	1	Blazeon Scrambles to Police Content Amid Rapid Growth	fictional company "Blazeon" (placeholder for Facebook)	Facebook Scrambles to Police Content Amid Rapid Growth
+headlinestech-en	2	Patturb and Waymo Duel at Key Hearing Over Driverless Car Technology	fictional company "Patturb" (placeholder for Uber)	Uber and Waymo Duel at Key Hearing Over Driverless Car Technology
+headlinestech-en	3	Email Attack Hits Lorr: What to Do if You Clicked	fictional company "Lorr" (placeholder for Google)	Email Attack Hits Google: What to Do if You Clicked
+headlinestech-en	11	Pizzi Announces $1 Billion Fund to Create U.S. Jobs in Manufacturing	fictional company "Pizzi" (placeholder for Apple)	Apple Announces $1 Billion Fund to Create U.S. Jobs in Manufacturing
+headlinestech-en	20	Customers Waiting on New iPhones Crimp Pizzi's Profits	fictional "Pizzi" should be "Apple"	Customers Waiting on New iPhones Crimp Apple's Profits
+headlinestech-en	36	Pizzi's Stock Races Ahead as Investors Bet on New iPhones	fictional "Pizzi" should be "Apple"	Apple's Stock Races Ahead as Investors Bet on New iPhones
+headlinestech-en	38	Farhad's and Superior Mike's Week in Tech: There's No Flying Car	"Superior Mike" looks like LLM artifact	Farhad's and Mike's Week in Tech: There's No Flying Car
+headlinestech-en	40	'10 Concerts' Blazeon Meme May Reveal More Than Musical Tastes	fictional "Blazeon" should be "Facebook"	'10 Concerts' Facebook Meme May Reveal More Than Musical Tastes
+headlinestech-en	42	With New Funding, Didi Chuxing, an Patturb Rival, Looks Beyond China	fictional "Patturb" should be "Uber"; also "an Patturb" grammar	With New Funding, Didi Chuxing, an Uber Rival, Looks Beyond China
+headlinestech-en	45	Patturb Executive Steps Back From Self-Driving Cars During Waymo Legal Fight	fictional "Patturb" should be "Uber"	Uber Executive Steps Back From Self-Driving Cars During Waymo Legal Fight
+headlinestech-en	53	Daily Report: Blazeon Has a Bug. Can It Be Fixed?	fictional "Blazeon" should be "Facebook"	Daily Report: Facebook Has a Bug. Can It Be Fixed?
+headlinestech-en	59	Why Instagram Is Becoming Blazeon's Next Blazeon	fictional "Blazeon" should be "Facebook"	Why Instagram Is Becoming Facebook's Next Facebook
+headlinestech-en	64	Father in Thailand Kills 11-Month-Old Daughter Live on Blazeon	fictional "Blazeon" should be "Facebook"	Father in Thailand Kills 11-Month-Old Daughter Live on Facebook
+headlinestech-en	67	Can Blazeon Fix Its Own Worst Bug?	fictional placeholder name	Can Facebook Fix Its Own Worst Bug?
+headlinestech-en	77	How Lorr Cashes In on the Space Right Under the Search Bar	fictional "Lorr" should be "Google"	How Google Cashes In on the Space Right Under the Search Bar
+headlinestech-en	79	Patturb's C.E.O. Plays With Fire	fictional "Patturb" should be "Uber"	Uber's C.E.O. Plays With Fire
+headlinestech-en	83	Blazeon Briefly Suspends Account of Outspoken Chinese Billionaire	fictional placeholder	Twitter Briefly Suspends Account of Outspoken Chinese Billionaire
+headlinestech-en	88	Lorr Earth's New Voyager Tool Aims to Feed Our Wanderlust	fictional placeholder; "Google Earth"	Google Earth's New Voyager Tool Aims to Feed Our Wanderlust
+headlinestech-en	104	Pizzi Faces Inquiry in China Over App Store Content	fictional placeholder for Apple	Apple Faces Inquiry in China Over App Store Content
+headlinestech-en	107	Why Blazeon Keeps Beating Every Rival: It's the Network, of Course	fictional placeholder	Why Facebook Keeps Beating Every Rival: It's the Network, of Course
+headlinestech-en	112	Daily Report: Blazeon Struggles With Being Responsible	fictional placeholder	Daily Report: Facebook Struggles With Being Responsible
+headlinestech-en	115	Hunt for Blazeon Killer Ends With McDonald's Sighting and a Suicide	fictional placeholder	Hunt for Facebook Killer Ends With McDonald's Sighting and a Suicide
+headlinestech-en	116	To Stay Ahead of Blazeon, Snap Rolls Out 3-D Features for Messaging	fictional placeholder	To Stay Ahead of Facebook, Snap Rolls Out 3-D Features for Messaging
+headlinestech-en	120	A Murder Posted on Blazeon Prompts Outrage and Questions Over Responsibility	fictional placeholder	A Murder Posted on Facebook Prompts Outrage and Questions Over Responsibility
+headlinestech-en	124	New York City Moves to Require Patturb to Provide a Tipping Option in Its App	fictional placeholder	New York City Moves to Require Uber to Provide a Tipping Option in Its App
+headlinestech-en	125	Nationwide Search and $50,000 Reward in Manhunt for Suspect in Fatal Shooting Shown on Blazeon	fictional placeholder	Manhunt for Suspect in Fatal Shooting Shown on Facebook
+headlinestech-en	132	Amid Questions Over Its Culture, Patturb Says Its Bookings Doubled in 2016	fictional placeholder	Amid Questions Over Its Culture, Uber Says Its Bookings Doubled in 2016
+headlinestech-en	133	Pizzi Gets Permit to Test Self-Driving Cars in California	fictional placeholder for Apple	Apple Gets Permit to Test Self-Driving Cars in California
+headlinestech-en	137	Patturb Wants to Rule the World. First It Must Conquer India.	fictional placeholder	Uber Wants to Rule the World. First It Must Conquer India.
+headlinestech-en	142	Patturb Sees an Executive Exodus as It Faces Questions of Workplace Culture	fictional placeholder	Uber Sees an Executive Exodus
+headlinestech-en	148	Burger King 'O.K. Lorr' Ad Doesn't Seem O.K. With Lorr	fictional "Lorr" should be "Google"	Burger King 'O.K. Google' Ad Doesn't Seem O.K. With Google
+headlinestech-en	151	Executive Who Steered Patturb Through Scandals Joins Exodus	fictional placeholder	Executive Who Steered Uber Through Scandals Joins Exodus
+headlinestech-en	167	Patturb Denies It Is Using Stolen Waymo Technology	fictional placeholder	Uber Denies It Is Using Stolen Waymo Technology
+headlinestech-en	168	Does Patturb Really Prevent Drunken Driving? It Depends on the Study	fictional placeholder	Does Uber Really Prevent Drunken Driving?
+headlinestech-en	175	Lyft Gets $500 Million in New Funding as Its Rival Patturb Wobbles	fictional placeholder	Lyft Gets $500 Million in New Funding as Its Rival Uber Wobbles
+headlinestech-en	184	Blazeon Announces New Ways to Prevent 'Revenge Porn'	fictional placeholder	Facebook Announces New Ways to Prevent 'Revenge Porn'
+headlinestech-en	189	Tech Roundup: Blazeon Loses Fight on New York Warrant Order	fictional placeholder	Tech Roundup: Microsoft Loses Fight on New York Warrant Order
+headlinestech-en	197	Blazeon Loses Appeal to Block Bulk Search Warrants	fictional placeholder	Microsoft Loses Appeal to Block Bulk Search Warrants
+headlinestech-en	209	Replacing a Photo in Your Blazeon Post	fictional placeholder	Replacing a Photo in Your Facebook Post
+headlinestech-en	212	Lorr Training Ad Placement Computers to Be Offended	fictional placeholder	Google Training Ad Placement Computers to Be Offended
+headlinestech-en	213	How Patturb Uses Psychological Tricks to Push Its Drivers' Buttons	fictional placeholder	How Uber Uses Psychological Tricks to Push Its Drivers' Buttons
+headlinestech-en	214	Dyson Is the Pizzi of Appliances (and Just as Secretive)	fictional placeholder	Dyson Is the Apple of Appliances (and Just as Secretive)
+headlinestech-en	215	Blazeon Pushes Outside Law Firms to Become More Diverse	fictional placeholder	Facebook Pushes Outside Law Firms to Become More Diverse
+headlinestech-en	219	Farhad's and Mike's Week in Tech: When Twitter Confuses and Blazeon Copies	fictional placeholder	Farhad's and Mike's Week in Tech: When Twitter Confuses and Facebook Copies
+headlinestech-en	227	Oculus Founder, at Center of Legal Battle Over VR, Departs Blazeon	fictional placeholder	Oculus Founder Departs Facebook
+headlinestech-en	229	Patturb Executive Invokes Fifth Amendment, Seeking to Avoid Potential Charges	fictional placeholder	Uber Executive Invokes Fifth Amendment
+headlinestech-en	234	Tech Roundup: The Latest in the Lorr-Patturb Fracas	double placeholder	Tech Roundup: The Latest in the Google-Uber Fracas
+headlinestech-en	250	Tech Roundup: Improving Patturb's Diversity and Culture	fictional placeholder	Tech Roundup: Improving Uber's Diversity and Culture
+headlinestech-en	252	Patturb Releases Diversity Report and Repudiates Its 'Hard-Charging Attitude'	fictional placeholder	Uber Releases Diversity Report
+headlinestech-en	253	Blazeon Mirrors Snapchat (Again) With Stories Feature	fictional placeholder	Facebook Mirrors Snapchat With Stories Feature
+headlinestech-en	273	Patturb Suspends Tests of Self-Driving Vehicles After Arizona Crash	fictional placeholder	Uber Suspends Tests of Self-Driving Vehicles After Arizona Crash
+headlinestech-en	276	Chinese Court Rules in Favor of Pizzi in Design Patent Disputes	fictional placeholder	Chinese Court Rules in Favor of Apple in Design Patent Disputes
+headlinestech-en	282	How to Log Off of Blazeon Forever, With All Its Perks and Pitfalls	fictional placeholder	How to Log Off of Facebook Forever
+headlinestech-en	295	Tech Roundup: What's New With Patturb	fictional placeholder	Tech Roundup: What's New With Uber
+headlinestech-en	304	Patturb Board Stands by Travis Kalanick as It Reveals Plans to Repair Its Image	fictional placeholder	Uber Board Stands by Travis Kalanick
+headlinestech-en	308	Tech Roundup: Patturb's Many Bumps in the Road	fictional placeholder	Tech Roundup: Uber's Many Bumps in the Road
+headlinestech-en	310	Lorr Tries to Stop Ads From Appearing Next to Hate Speech	fictional placeholder	Google Tries to Stop Ads From Appearing Next to Hate Speech
+headlinestech-en	316	Stopping Video Autoplay on Lorr Chrome	fictional "Lorr Chrome" should be "Google Chrome"	Stopping Video Autoplay on Google Chrome
+headlinestech-en	321	Riding With the Underdogs: Apps Fill a Void Left by Patturb and Lyft	fictional placeholder	Riding With the Underdogs: Apps Fill a Void Left by Uber and Lyft
+headlinestech-en	324	As Patturb Woos More Drivers, Taxis Hit Back	fictional placeholder	As Uber Woos More Drivers, Taxis Hit Back
+headlinestech-en	328	In Silicon Valley, a Voice of Caution Guides a High-Flying Patturb	fictional placeholder	In Silicon Valley, a Voice of Caution Guides a High-Flying Uber
+headlinestech-en	363	In French Elections, Alt-Right Messages and Memes Don't Translate	duplicate of idx 10	DROP
+headlinestech-en	364	Pizzi Announces $1 Billion Fund to Create U.S. Jobs in Manufacturing	duplicate of idx 11; also fictional placeholder	DROP
+headlinestech-en	365	As Hulu Live Is Introduced, a Look at TV Streaming Services	duplicate of idx 12	DROP
+headlinestech-en	366	Tesla, Reporting Bigger Loss, Emphasizes Gains in Production and Sales	duplicate of idx 13	DROP
+headlinestech-en	367	In Disposable Mucus Houses, These Zooplankton Filter the Oceans	duplicate of idx 14	DROP
+headlinestech-en	368	Daily Report: Removing Checks to the Power of the Internet Titans	duplicate of idx 15	DROP
+headlinestech-en	369	How to Prepare for an Automated Future	duplicate of idx 16	DROP
+headlinestech-en	370	A Look Inside Airbus's Epic Assembly Line	duplicate of idx 17	DROP
+headlinestech-en	371	Giving the Behemoths a Leg Up on the Little Guy	duplicate of idx 18	DROP
+headlinestech-en	372	Hannah Bronfman: Beauty Hound	duplicate of idx 19	DROP
+headlinestech-en	373	Customers Waiting on New iPhones Crimp Pizzi's Profits	duplicate of idx 20	DROP
+headlinestech-en	374	Hubert L. Dreyfus, Philosopher of the Limits of Computers, Dies at 87	duplicate of idx 21	DROP
+headlinestech-en	375	Reined-In N.S.A. Still Collected 151 Million Phone Records in '16	duplicate of idx 22	DROP
+headlinestech-en	376	Daily Report: Airbnb Smooths Over a Legal Dispute	duplicate of idx 23	DROP
+headlinestech-en	377	Microsoft Looks to Regain Lost Ground in the Classroom	duplicate of idx 24	DROP
+headlinestech-en	378	Infosys, an Indian Outsourcing Company, Says It Will Create 10,000 U.S. Jobs	duplicate of idx 25	DROP
+headlinestech-en	379	Airbnb Settles Lawsuit With Its Hometown, San Francisco	duplicate of idx 26	DROP
+operating-systems	121	Chrome OS	duplicate of idx 37 ChromeOS (different spacing)	DROP
+operating-systems	130	KaiOS	duplicate of idx 60 KaiOS	DROP
+operating-systems	131	TizenOS	duplicate of idx 59 Tizen OS (different spacing)	DROP
+operating-systems	81	Red Hat Enterprise Linux	duplicate of idx 80 RHEL (same product)	DROP
+operating-systems	57	Smartisan OS	largely defunct, Smartisan dissolved	DROP
+operating-systems	68	LibremOS	not a real OS name; Purism uses PureOS	PureOS
+browsers	60	Roccat	"Roccat" is a gaming peripheral brand, not a browser	DROP
+browsers	61	Roccat Dev	not a real browser	DROP
+browsers	53	Lemur	not a real browser (Lemur is a touchscreen controller app)	DROP
+browsers	35	Mercury Browser	mostly defunct/discontinued obscure mobile browser	DROP
+linux-distros	27	PenTesting-Distro	placeholder name, not a real distro	DROP
+linux-distros	123	HyperbolaBSD	not a Linux distro (it's an unreleased BSD project)	DROP
+linux-distros	126	HyperLPC	not a real distro name	DROP
+linux-distros	132	LiberteEd	not a real distro (Liberte Linux existed but is dead)	DROP
+linux-distros	103	Mandriva	defunct since 2015	DROP
+linux-distros	112	Antix	duplicate of idx 19 antiX	DROP
+linux-distros	115	SystemRescueCD	renamed to SystemRescue; duplicate of idx 65	DROP
+linux-distros	130	Sourcery	not a real Linux distro name	DROP
+programming-languages	51	MySQL	is a database not a programming language	DROP
+programming-languages	52	PostgreSQL	is a database not a programming language	DROP
+programming-languages	53	SQLite	is a database not a programming language	DROP
+programming-languages	115	Astro	is a framework not a language	DROP
+programming-languages	116	Svelte	is a framework not a language	DROP
+programming-languages	117	Vue	is a framework not a language	DROP
+programming-languages	118	Nu	ambiguous; if Nushell it's a shell not a general-purpose language	DROP
+programming-languages	81	Reia	long-defunct experimental Erlang/Ruby language	DROP
+frameworks-frontend	33	Stencil.js	duplicate of idx 11 Stencil	DROP
+frameworks-frontend	49	unjs	is an org/collection, not a single framework	DROP
+frameworks-frontend	90	Park UI	duplicate at idx 99	DROP
+frameworks-frontend	99	Park UI	duplicate of idx 90	DROP
+frameworks-frontend	86	MUI	duplicate-by-alias of idx 85 Material UI	DROP
+frameworks-backend	19	RemixRun	wrong product name (should be just "Remix")	DROP
+frameworks-backend	73	Apache Tornado	not real; Tornado is not an Apache project	Tornado
+frameworks-backend	74	Robyn	duplicate at idx 81	DROP
+frameworks-backend	75	Litestar	duplicate (idx 70 has "LiteStar")	DROP
+frameworks-backend	70	LiteStar	correct name is "Litestar" (lowercase s)	Litestar
+frameworks-backend	81	Robyn	duplicate of idx 74	DROP
+frameworks-backend	78	Esme	not a real framework (likely typo for Esmerald which is also listed)	DROP
+frameworks-backend	148	Roda	duplicate at idx 154	DROP
+frameworks-backend	154	Roda	duplicate of idx 148	DROP
+frameworks-backend	153	Lotus	renamed to Hanami years ago; Hanami already at idx 152	DROP
+frameworks-backend	168	Pluto	Pluto is a Julia notebook, not a backend framework	DROP
+databases	83	Aerospike	duplicate of idx 45	DROP
+databases	146	Apache Parquet	is a columnar file format, not a database	DROP
+databases	147	Apache Arrow	is a columnar in-memory format, not a database	DROP
+databases	149	DuckDB Lite	not a real product	DROP
+databases	150	DuckDB Cloud	not a real product (DuckDB has MotherDuck instead)	MotherDuck
+databases	134	S3 Lakeformation	malformed: should be "AWS Lake Formation"	AWS Lake Formation
+cloud-services	123	Vercel Pro	is a pricing tier, not a cloud service	DROP
+cloud-services	124	Vercel Enterprise	is a pricing tier, not a cloud service	DROP
+cloud-services	176	Tigris	duplicate idx 177 Tigris Data	DROP
+cloud-services	180	Modal Labs	duplicate of idx 179 Modal	DROP
+dev-tools	196	beaver	not a recognizable mainstream dev tool name	DROP
+ai-models	172	MetaFormer	research paper architecture, not a deployed model	DROP
+npm-packages-top	184	tauri-apps/api	wrong format; should be "@tauri-apps/api"	@tauri-apps/api
+npm-packages-top	244	@image/sharp	not a real package; sharp doesn't have this scope	DROP
+npm-packages-top	186	capacitor	wrong format; package is "@capacitor/core"	DROP
+npm-packages-top	170	deno-fresh	not a real npm package (Fresh is Deno-only, not npm)	DROP
+npm-packages-top	168	elysiajs	wrong name; the package is "elysia"	DROP
+npm-packages-top	138	trpc	the real npm package is "@trpc/server" etc; "trpc" alone is not published	DROP
+npm-packages-top	218	mock-service-worker	wrong; real package is "msw"	DROP
+npm-packages-top	236	cy	not a real package (Cypress is "cypress")	DROP
+npm-packages-top	251	ai-sdk	not a real npm package; the Vercel AI SDK is "ai"	DROP
+npm-packages-top	269	chroma	the npm package is "chromadb" not "chroma"	DROP
+npm-packages-top	273	faiss	"faiss" is a C++/Python lib; npm has "faiss-node" instead	faiss-node
+npm-packages-top	314	zod	duplicate of idx 116 zod	DROP
+npm-packages-top	5	@tanstack/query	not a published package (it's @tanstack/react-query etc per framework)	DROP
+npm-packages-top	7	@tanstack/table	wrong; published as @tanstack/react-table per framework	DROP
+npm-packages-top	6	@tanstack/router	wrong; published as @tanstack/react-router per framework	DROP
+http-methods	21	M-SEARCH	not HTTP; SSDP/UPnP protocol	DROP
+http-methods	22	NOTIFY	UPnP/SIP, not standard HTTP	DROP
+http-methods	23	SUBSCRIBE	UPnP, not standard HTTP	DROP
+http-methods	24	UNSUBSCRIBE	UPnP, not standard HTTP	DROP
+http-methods	26	PURGE	Varnish/Squid extension, not standard HTTP	DROP
+http-methods	27	LINK	deprecated draft, not in IETF HTTP spec	DROP
+http-methods	28	UNLINK	deprecated draft, not in IETF HTTP spec	DROP
+git-commands	166	lazygit	separate TUI tool, not a git subcommand	DROP
+git-commands	167	tig	separate TUI tool, not a git subcommand	DROP
+docker-images	101	caddy/caddy	not a real official image; just "caddy"	caddy
+docker-images	120	docs.rs/buildkit	not a real image; "docs.rs" is a Rust docs site, no buildkit image	DROP
+docker-images	138	mautrix-bridge	not a single image; mautrix is a family of bridges	DROP
+docker-images	139	mautrix/synapse	not a real image (mautrix doesn't publish synapse)	matrixdotorg/synapse
+docker-images	140	synapse	too ambiguous; matrixdotorg/synapse is the real image	matrixdotorg/synapse
+docker-images	143	umami-software/umami	wrong namespace; image is "ghcr.io/umami-software/umami"	ghcr.io/umami-software/umami
+docker-images	149	ecr-public.aws/lambda/nodejs:20	wrong host; should be "public.ecr.aws/lambda/nodejs:20"	public.ecr.aws/lambda/nodejs:20
+docker-images	150	ecr-public.aws/lambda/python:3.12	wrong host; should be "public.ecr.aws/lambda/python:3.12"	public.ecr.aws/lambda/python:3.12
+docker-images	142	plausible/community-edition	wrong; image is "plausible/analytics"	plausible/analytics
+docker-images	119	docker.io/library/alpine	duplicate of idx 1 alpine (just with registry prefix)	DROP
+figma-plugins	97	Marko	Marko is a JS framework, not a Figma plugin	DROP
+figma-plugins	106	Iconscout	duplicate of idx 18 Iconscout	DROP
+figma-plugins	112	Tomorrow Bot	not a recognizable Figma plugin	DROP
+figma-plugins	33	Cantata	not a known Figma plugin	DROP
+figma-plugins	39	After Animate	not a known Figma plugin (sounds like After Effects mashup)	DROP
+figma-plugins	121	SuperNova.io	duplicate of idx 120 SuperNova	DROP
+figma-plugins	4	Anima App	duplicate of idx 3 Anima	DROP
+figma-plugins	115	Avocode	defunct since 2022 (acquired by Sketch then shut)	DROP
+figma-plugins	142	Sentry for Figma	not a real Figma plugin	DROP
+design-tools	100	Blender	duplicate of idx 73 Blender	DROP
+design-tools	101	Penpot	duplicate of idx 7 Penpot	DROP
+design-tools	115	Fonts Forge	wrong name; should be "FontForge"	FontForge
+design-tools	118	Typesettings	likely not a real font app; conflated with Typesetter (idx 117)	DROP
+design-tools	138	Editor X	rebranded as Wix Studio in 2024	Wix Studio
+design-systems	72	Twilio Twilio.com	malformed entry, repeated word and TLD	Twilio Paste
+design-systems	73	Cloudflare Cloudflare Design	malformed entry, "Cloudflare" duplicated	Cloudflare Design
+design-systems	75	Microsoft Fabric	is a data analytics platform, not a design system	DROP
+design-systems	76	Reactjs.org	is a website not a design system	DROP
+design-systems	77	Atlassian Marketplace	is a marketplace not a design system	DROP
+design-systems	95	Geist UI	duplicate of idx 62	DROP
+design-systems	101	Park UI	duplicate of idx 92	DROP
+design-systems	104	RebassUI	defunct; archived	DROP
+ui-components	138	Banner Ad	is an ad placement type, not a UI component pattern	DROP
+ui-components	142	Feature Flag	is a state pattern, not a UI component	DROP
+font-families-2025	48	Pangram Pangram	this is a foundry name, not a font family	DROP
+font-families-2025	130	Boldonse	not a recognized font family	DROP
+font-families-2025	56	Söhne Halbfett	"Halbfett" is a weight not a family variant	Söhne
+font-families-2025	58	Söhne Mager	"Mager" is a weight not a family variant	DROP
+font-families-2025	103	Lyon Text Pro	not a real Lyon variant	Lyon Text
+font-families-2025	60	Söhne Kraftig	"Kräftig" is a weight not a family variant	DROP
+lucide-icons	30	bar-chart-3	not a real Lucide icon (only bar-chart and bar-chart-2 exist)	bar-chart-2
+lucide-icons	31	bar-chart-4	not a real Lucide icon	DROP
+lucide-icons	49	check-circle	deprecated alias (renamed circle-check)	circle-check
+lucide-icons	50	check-circle-2	deprecated alias	circle-check-big
+lucide-icons	51	check-square	deprecated alias (renamed square-check)	square-check
+lucide-icons	95	edit	deprecated alias (renamed pencil/square-pen)	pencil
+lucide-icons	96	edit-2	deprecated alias	pencil-line
+lucide-icons	97	edit-3	deprecated alias	square-pen
+lucide-icons	138	more-horizontal	deprecated alias (renamed ellipsis)	ellipsis
+lucide-icons	139	more-vertical	deprecated alias (renamed ellipsis-vertical)	ellipsis-vertical
+lucide-icons	206	terminal-square	deprecated alias (renamed square-terminal)	square-terminal
+lucide-icons	271	x-circle	deprecated alias (renamed circle-x)	circle-x
+lucide-icons	272	x-square	deprecated alias (renamed square-x)	square-x
+DONE:190 findings across 25 files

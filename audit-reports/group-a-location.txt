@@ -1,0 +1,251 @@
+countries	29	Burma	Outdated/colonial country name; ISO has Myanmar	Myanmar
+countries	107	Macedonia	Outdated; renamed in 2019 to North Macedonia	North Macedonia
+countries	175	Swaziland	Outdated; renamed in 2018 to Eswatini	Eswatini
+countries	77	Holy See	Inconsistent with country-codes list which uses Vatican City	Vatican City
+countries	142	Palestinian Territories	Inconsistent with country-codes list which uses Palestine	Palestine
+cities	39	Hyderabad	Duplicate entry (Hyderabad already appears at index 39 in IN context; reappearing at 77 in PK context)	DROP
+cities	77	Hyderabad	Duplicate of entry 39; if intended as Pakistani Hyderabad, label distinctly	Hyderabad, Pakistan
+cities-nl_nl	93	Helder	Clipped name; real city is Den Helder	Den Helder
+cities-nl_nl	66	Geul	Not a Dutch city; possibly clipped from Valkenburg aan de Geul	Valkenburg aan de Geul
+cities-nl_nl	71	Zoom	Not a city; possibly clipped from Bergen op Zoom	Bergen op Zoom
+cities-nl_nl	119	Rijn	Not a city; possibly clipped from Alphen aan den Rijn or Katwijk aan den Rijn	Alphen aan den Rijn
+postal-fr	101	21000	Duplicate of entry 81 (21000 = Dijon); appears twice in the list	DROP
+postal-fr	88	31000	Same as 81 area pattern; 31000=Toulouse is fine but duplicate-prone	21300
+postal-fr	95	21200	21200 = Beaune; OK but Dijon (21000) already present makes 21xxx area dense	51200
+postal-zip-us	28	00702	US ZIP starting with 00 is Puerto Rico; AR (entry suggests Arkansas usage) does not have 007xx ZIPs	72701
+phone-en_us	1	(364) 106-7572	NANP area code 364 is unassigned; exchange 106 starts with 1 (invalid in NANP, must be 2-9)	(213) 555-7572
+phone-en_us	2	(052) 611-5711	NANP area code cannot start with 0	(212) 611-5711
+phone-en_us	6	(062) 109-9222	NANP area code cannot start with 0; exchange cannot start with 1	(202) 555-9222
+phone-en_us	14	(003) 104-6706	NANP area code cannot start with 0; exchange cannot start with 1	(305) 555-6706
+phone-en_us	27	(078) 350-8590	NANP area code cannot start with 0	(478) 350-8590
+phone-en_us	28	(094) 696-1485	NANP area code cannot start with 0	(404) 696-1485
+phone-en_us	39	(041) 738-7138	NANP area code cannot start with 0	(415) 738-7138
+phone-en_us	47	(057) 255-8120	NANP area code cannot start with 0	(517) 255-8120
+phone-en_us	57	(093) 331-5660	NANP area code cannot start with 0	(503) 331-5660
+phone-en_us	60	(107) 198-5246	NANP area code cannot start with 1; exchange cannot start with 1	(207) 555-5246
+phone-en_us	71	(074) 753-5650	NANP area code cannot start with 0	(704) 753-5650
+phone-en_us	87	(092) 601-1933	NANP area code cannot start with 0	(602) 555-1933
+phone-en_us	118	(012) 373-9244	NANP area code cannot start with 0; exchange cannot start with 1	(312) 555-9244
+phone-en_us	120	(048) 709-5721	NANP area code cannot start with 0	(408) 555-5721
+phone-en_us	121	(470) 087-9553	NANP exchange cannot start with 0	(470) 555-9553
+phone-en_us	127	(027) 270-3492	NANP area code cannot start with 0	(727) 555-3492
+phone-en_us	129	(716) 787-9234	(716)=Buffalo NY, OK	OK
+phone-en_us	160	(092) 601-1933	duplicate of an earlier finding; area code cannot start with 0	(602) 555-1933
+phone-en_us	257	(082) 179-9153	NANP area code cannot start with 0; exchange cannot start with 1	(802) 555-9153
+phone-en_us	276	(028) 713-3333	NANP area code cannot start with 0	(208) 713-3333
+phone-en_us	293	(065) 722-5600	NANP area code cannot start with 0	(605) 722-5600
+phone-en_us	308	(019) 570-6834	NANP area code cannot start with 0	(919) 570-6834
+phone-en_us	309	(001) 633-9980	NANP area code cannot start with 0	(201) 633-9980
+phone-en_us	310	(062) 616-3535	NANP area code cannot start with 0	(602) 616-3535
+phone-en_us	316	(073) 916-4924	NANP area code cannot start with 0	(703) 916-4924
+phone-en_us	320	(072) 755-5496	NANP area code cannot start with 0	(702) 555-5496
+phone-en_us	339	(054) 588-2408	NANP area code cannot start with 0	(504) 588-2408
+phone-en_us	347	(037) 762-6730	NANP area code cannot start with 0	(307) 762-6730
+phone-en_us	348	(093) 869-1238	NANP area code cannot start with 0	(303) 869-1238
+phone-en_us	376	(025) 014-2029	NANP area code cannot start with 0; exchange cannot start with 0	(425) 555-2029
+phone-en_us	378	(004) 933-8953	NANP area code cannot start with 0	(404) 933-8953
+phone-en_us	393	(018) 962-0303	NANP area code cannot start with 0	(818) 555-0303
+phone-en_us	405	(012) 127-5222	NANP area code cannot start with 0; exchange cannot start with 1	(212) 555-5222
+phone-en_us	411	(083) 845-0799	NANP area code cannot start with 0	(803) 845-0799
+phone-en_us	419	(095) 860-3532	NANP area code cannot start with 0	(905) 860-3532
+phone-en_us	421	(103) 512-7357	NANP area code cannot start with 1; exchange cannot start with 1	(213) 555-7357
+phone-en_us	429	(081) 731-2946	NANP area code cannot start with 0	(801) 731-2946
+phone-en_us	437	(076) 303-6817	NANP area code cannot start with 0	(706) 303-6817
+phone-en_us	447	(033) 192-9257	NANP area code cannot start with 0; exchange cannot start with 1	(303) 555-9257
+phone-en_us	448	(099) 588-8725	NANP area code cannot start with 0	(909) 588-8725
+phone-en_us	465	(079) 292-0924	NANP area code cannot start with 0	(708) 292-0924
+phone-en_us	477	(034) 931-1755	NANP area code cannot start with 0	(304) 931-1755
+phone-en_us	485	(030) 566-4124	NANP area code cannot start with 0	(303) 566-4124
+phone-en_us	495	(043) 254-5638	NANP area code cannot start with 0	(443) 254-5638
+phone-en_us	503	(061) 293-7005	NANP area code cannot start with 0	(601) 293-7005
+phone-en_us	500	(880) 771-3503	(880) is unassigned NANP area code	(813) 771-3503
+phone-en_us	1	(364) 106-7572	NANP exchange 106 starts with 1; invalid	(364) 555-7572
+phone-en_us	463	(077) 835-4000	NANP area code cannot start with 0	(707) 835-4000
+phone-en_us	470	(294) 523-0039	(294) is unassigned NANP area code	(424) 523-0039
+phone-en_us	74	(266) 442-9893	(266) is unassigned NANP area code	(216) 442-9893
+phone-en_gb	1	(0161) 347 8854	UK phone numbers shown in national 0-prefix format mixed with no country code; format should be either +44 161 347 8854 or 0161 347 8854 without parens	+44 161 347 8854
+phone-en_gb	51	(0131) 955 4688	UK area code 0131=Edinburgh OK but format uses brackets around the dial-out 0 (non-standard)	+44 131 955 4688
+phone-en_gb	142	(0117) 938 2172	Bristol area; correct number format should drop the dial-out 0 when using country code	+44 117 938 2172
+phone-mx_mx	27	+52 1 55 1122 3344	Old Mexico mobile prefix "+52 1" was abolished in 2019; modern format is just +52 55	+52 55 1122 3344
+phone-mx_mx	28	+52 1 55 2233 4455	Old Mexico mobile prefix abolished in 2019	+52 55 2233 4455
+phone-mx_mx	29	+52 1 33 3344 5566	Old Mexico mobile prefix abolished in 2019	+52 33 3344 5566
+phone-mx_mx	30	+52 1 81 4455 6677	Old Mexico mobile prefix abolished in 2019	+52 81 4455 6677
+phone-mx_mx	31	+52 1 55 5566 7788	Old Mexico mobile prefix abolished in 2019	+52 55 5566 7788
+phone-mx_mx	32	+52 1 55 6677 8899	Old Mexico mobile prefix abolished in 2019	+52 55 6677 8899
+phone-mx_mx	33	+52 1 55 7788 9900	Old Mexico mobile prefix abolished in 2019	+52 55 7788 9900
+phone-mx_mx	34	+52 1 55 8899 0011	Old Mexico mobile prefix abolished in 2019	+52 55 8899 0011
+phone-mx_mx	35	+52 1 55 9900 1122	Old Mexico mobile prefix abolished in 2019	+52 55 9900 1122
+phone-mx_mx	36	+52 1 55 1010 2020	Old Mexico mobile prefix abolished in 2019	+52 55 1010 2020
+phone-mx_mx	37	+52 1 55 3030 4040	Old Mexico mobile prefix abolished in 2019	+52 55 3030 4040
+phone-mx_mx	38	+52 1 33 5050 6060	Old Mexico mobile prefix abolished in 2019	+52 33 5050 6060
+phone-de_de	1	+49 30 12345678	Obvious test-pattern sequential digits (12345678); unrealistic	+49 30 28456712
+phone-de_de	3	+49 30 91234567	Sequential digits; unrealistic	+49 30 81653472
+phone-de_de	4	+49 40 12345678	Sequential digits; unrealistic	+49 40 38765412
+phone-de_de	7	+49 89 12345678	Sequential digits; unrealistic	+49 89 24385712
+phone-de_de	10	+49 69 12345678	Sequential digits; unrealistic	+49 69 28456712
+phone-de_de	12	+49 211 1234567	Sequential digits; unrealistic	+49 211 8456712
+phone-de_de	13	+49 221 1234567	Sequential digits; unrealistic	+49 221 8456712
+phone-de_de	17	+49 171 1234567	Sequential digits; unrealistic mobile number	+49 171 8456712
+phone-de_de	18	+49 172 2345678	Sequential digits; unrealistic mobile number	+49 172 8456712
+phone-de_de	19	+49 175 3456789	Sequential digits; unrealistic mobile number	+49 175 8456712
+phone-de_de	21	+49 152 12345678	Sequential digits; unrealistic mobile number	+49 152 28456712
+phone-fr_fr	18	+33 6 12 34 56 78	Sequential digits 12345678; unrealistic	+33 6 28 45 67 12
+phone-fr_fr	28	+33 7 81 23 45 67	Sequential digits	+33 7 81 38 56 24
+phone-jp_jp	1	+81 3-1234-5678	Sequential test-pattern digits	+81 3-5285-7412
+phone-jp_jp	22	+81 90-1234-5678	Sequential test-pattern digits	+81 90-5821-7412
+phone-jp_jp	23	+81 90-2345-6789	Sequential test-pattern digits	+81 90-3582-7414
+phone-jp_jp	24	+81 90-3456-7890	Sequential test-pattern digits	+81 90-4582-7415
+phone-jp_jp	25	+81 90-4567-8901	Sequential test-pattern digits	+81 90-5832-7416
+phone-jp_jp	26	+81 90-5678-9012	Sequential test-pattern digits	+81 90-6582-7417
+phone-jp_jp	36	+81 70-9999-0000	Repeated digits placeholder pattern	+81 70-5821-7418
+phone-au_au	34	+61 4 1234 5678	Sequential test-pattern digits	+61 4 5821 7412
+phone-au_au	35	+61 4 9876 5432	Sequential reverse test-pattern digits	+61 4 5825 7314
+phone-au_au	38	+61 4 9999 0000	Repeated digits placeholder pattern	+61 4 5821 7415
+phone-au_au	36	+61 4 5555 6666	Repeated digits placeholder pattern	+61 4 2538 7411
+phone-au_au	37	+61 4 7777 8888	Repeated digits placeholder pattern	+61 4 6285 9123
+phone-in_in	1	+91 98765 43210	Sequential test-pattern digits	+91 98214 75321
+phone-br_br	1	+55 11 91234-5678	Sequential test-pattern digits	+55 11 95821-7412
+phone-br_br	2	+55 11 92345-6789	Sequential test-pattern digits	+55 11 96321-7458
+phone-br_br	3	+55 11 93456-7890	Sequential test-pattern digits	+55 11 97412-5836
+gpscoordinates	9	54°05′N 2°80′W	Minutes value 80 is invalid (must be < 60)	54°05′N 2°50′W
+gpscoordinates	28	82°30′N 62°20′W	82°N latitude is high Arctic and unrealistic for a generic city list	45°25′N 75°41′W
+gpscoordinates	53	90°00′S 0°00′E	Geographic South Pole placeholder; unrealistic for a city list	51°30′N 0°07′W
+gpscoordinates	74	51°53′N 176°39′W	Aleutian Islands; valid but extreme location for a generic city list	48°51′N 2°20′E
+gpscoordinates	104	77°51′S 166°40′W	Antarctica McMurdo area; not a city location	52°31′N 13°23′E
+gpscoordinates	120	81°36′N 16°40′W	Greenland uninhabited; not a city location	59°20′N 18°04′E
+gpscoordinates	189	43º32′N 5º42′W	Wrong degree symbol (º instead of °); inconsistent with rest of list	43°32′N 5°42′W
+gpscoordinates	316	16°30′S 180°00′W	180°00′W is exact antimeridian placeholder; unrealistic	18°08′S 178°27′E
+gpscoordinates	227	63°24′S 56°59′W	Antarctica; not a city location	35°41′N 139°42′E
+gpscoordinates	392	76°25′N 82°54′W	Canadian Arctic uninhabited; not a city location	45°25′N 75°41′W
+hotels	101	Rin Grand Hotel	Likely garbled token; "RIN Grand Hotel" Bucharest exists but capitalization+spacing odd	JW Marriott Bucharest Grand Hotel
+hotels	7	Sands Cotai Central	Renamed in 2018 to "The Londoner Macao"	The Londoner Macao
+hotels	76	SLS Las Vegas	Renamed in 2020 to "Sahara Las Vegas"	Sahara Las Vegas
+hotels	13	Four Seasons	Too generic; "Four Seasons" has hundreds of properties—needs specifier	Four Seasons Hotel New York
+hotels	88	Crown Casino	Generic; multiple Crown Casinos exist (Melbourne, Perth, Sydney)	Crown Casino Melbourne
+hotels	90	Chelsea Hotel	Generic; iconic NYC Chelsea Hotel was closed for years; specify	Hotel Chelsea New York
+hotels	91	JW Marriott	Too generic; brand has 100+ properties	JW Marriott Los Angeles L.A. LIVE
+hotels	92	Ritz Carlton	Too generic; brand has 100+ properties	The Ritz-Carlton New York Central Park
+hotels	110	Grand Hyatt	Too generic; brand has many properties	Grand Hyatt New York
+hotels	123	Yacht Club	Too generic; needs property context	Disney's Yacht Club Resort
+hotels	124	Beach Club	Too generic; needs property context	Disney's Beach Club Resort
+hotels	149	New Yorker	Too generic; The New Yorker A Wyndham Hotel is the formal name	The New Yorker A Wyndham Hotel
+hotels	146	Roosevelt Hotel	Too generic; The Roosevelt Hotel NYC closed in 2020; needs city	The Roosevelt New Orleans
+hotels	78	Hotel Pennsylvania	Hotel Pennsylvania NYC closed and demolished 2023	The Hotel at Times Square
+hotels	29	The Linq	Should be "The LINQ Hotel + Experience" (full name)	The LINQ Hotel + Experience
+hotels	56	Riviera	Riviera Hotel Las Vegas closed and demolished in 2016	Wynn Las Vegas
+hotels	123	Riviera	Riviera Hotel Las Vegas closed and demolished in 2016	Wynn Las Vegas
+hotels	119	Yalta Hotel Complex	Generic name; "Yalta-Intourist Hotel Complex" is the formal name	Yalta-Intourist Hotel Complex
+hotels	98	Foxwoods Resort Casino	OK	OK
+hotels	106	Olympic	wait, no item like this	OK
+postal-au	1	2000	Australian postal codes are 4 digits but no preceding context; entire list is just 4-digit numbers without state—OK but minimal context	2000 NSW
+postal-de	37	20097	Hamburg postal area; valid	OK
+postal-de	100	06110	Halle (Saale) postal; valid	OK
+postal-uk	1	SW1A 1AA	Buckingham Palace postal code; OK as a real famous postcode	OK
+postal-uk	2	SW1A 2AA	10 Downing Street postal code; OK as a real famous postcode	OK
+postal-jp	1	100-0001	Tokyo Chiyoda valid	OK
+postal-br	1	01000-000	São Paulo center valid	OK
+postal-in	1	110001	New Delhi Connaught Place valid	OK
+postal-ca	1	A1A 1A1	St. John's NL placeholder/test postal code—it's a real postcode but commonly used as test data	A1B 3Y8
+postal-ca	2	A1B 1A1	Sequential test pattern	A1C 5A4
+postal-ca	9	C1A 1A1	Charlottetown sequential test pattern	C1A 7N8
+postal-ca	11	G1A 1A1	Quebec test pattern	G1K 7P4
+postal-ca	13	G1R 2J5	Quebec valid	OK
+postal-ca	15	H1A 1A1	Montreal test pattern	H1A 1V3
+postal-ca	19	H2X 1Y4	Montreal valid	OK
+postal-ca	29	K1A 0A1	Ottawa Government of Canada generic postal code	K1A 0B1
+postal-ca	35	K1V 0R5	Ottawa valid	OK
+postal-ca	37	L4B 1A1	Richmond Hill test pattern	L4B 4G6
+postal-ca	42	M1A 1A1	Toronto test pattern	M1A 1X2
+postal-ca	57	M7A 1A1	Toronto Queen's Park test pattern	M7A 1A2
+postal-ca	58	M9A 1A1	Toronto Etobicoke test pattern	M9A 4Y8
+postal-ca	60	N1A 1A1	Niagara Falls test pattern	N1A 1A2
+postal-ca	63	P0A 1A1	Northern Ontario rural test pattern	P0A 1B0
+postal-ca	64	P0B 1A1	Northern Ontario rural test pattern	P0B 1C0
+postal-ca	65	R0A 1A1	Manitoba rural test pattern	R0A 1B0
+postal-ca	69	S0A 1A1	Saskatchewan rural test pattern	S0A 0A4
+postal-ca	72	T0A 1A1	Alberta rural test pattern	T0A 0A0
+postal-ca	79	T7Z 1A1	Drayton Valley AB; format ok	OK
+postal-ca	80	V0A 1A1	BC rural test pattern	V0A 1B0
+postal-ca	93	V8V 1A1	Victoria test pattern	V8V 1B1
+postal-ca	100	X0A 1A1	Nunavut/NWT rural test pattern	X0A 0H0
+postal-ca	101	Y1A 1A1	Yukon test pattern	Y1A 1B1
+address-en_us	7	97561 Gene Rest, North Audreanneville, CO 00498-2987	ZIP 00498 doesn't exist; CO ZIPs start with 80-81	97561 Gene Rest, North Audreanne, CO 80014-2987
+address-en_us	28	447 Rahsaan Throughway Suite 704, Trinityberg, TN 00702-7087	TN ZIPs start with 37-38; 00702 is Puerto Rico	447 Rahsaan Throughway Suite 704, Trinityberg, TN 37202-7087
+address-en_us	51	994 Bud Rapid Apt. 167, Hintzborough, NM 52535-5464	NM ZIPs start with 87-88; 52535 is Iowa	994 Bud Rapid Apt. 167, Hintzborough, NM 87105-5464
+address-en_us	60	6692 Harris Gardens Suite 113, Wardville, TX 01456-8423	TX ZIPs start with 75-79; 01456 is Massachusetts	6692 Harris Gardens Suite 113, Wardville, TX 75201-8423
+address-en_us	88	5636 Clinton Rapids, Hayesmouth, DC 22646	DC ZIPs are 20001-20599; 22646 is Virginia	5636 Clinton Rapids, Hayesmouth, DC 20009
+address-en_us	104	57554 Kuhlman Keys Suite 435, North Hoseaside, SD 17258-9946	SD ZIPs start with 57; 17258 is Pennsylvania	57554 Kuhlman Keys Suite 435, North Hoseaside, SD 57104-9946
+address-en_us	118	434 Bernadette Hills Suite 042, Lake Kayleyton, NM 20442-0265	NM ZIPs start with 87-88; 20442 is DC area	434 Bernadette Hills Suite 042, Lake Kayleyton, NM 87105-0265
+address-en_us	149	1853 Brook Crossing Apt. 613, Port Robbieport, CO 93070-9510	CO ZIPs start with 80-81; 93070 is California	1853 Brook Crossing Apt. 613, Port Robbieport, CO 80014-9510
+address-en_us	160	2233 Jean Road, Gulgowskihaven, IN 98816	IN ZIPs start with 46-47; 98816 is Washington	2233 Jean Road, Gulgowskihaven, IN 46201
+address-en_us	172	5839 Kenya Pass, Roobborough, MN 32566	MN ZIPs start with 55-56; 32566 is Florida	5839 Kenya Pass, Roobborough, MN 55401
+address-en_us	206	29796 Viva Loaf, South Brannon, CO 09704	CO ZIPs start with 80-81; 09704 is invalid (NJ area)	29796 Viva Loaf, South Brannon, CO 80014
+address-en_us	217	184 Korbin Land Apt. 582, South Keyonburgh, SC 56005-0106	SC ZIPs start with 29; 56005 is Minnesota	184 Korbin Land Apt. 582, South Keyonburgh, SC 29401-0106
+address-en_us	273	5407 Schiller Motorway, West Morton, OR 94537-2186	OR ZIPs start with 97; 94537 is California	5407 Schiller Motorway, West Morton, OR 97201-2186
+address-en_us	286	395 Jacinthe Track, Port Rollinland, MO 85014-1720	MO ZIPs start with 63-65; 85014 is Arizona	395 Jacinthe Track, Port Rollinland, MO 63101-1720
+address-en_us	351	2939 Becker Island Suite 140, Macejkovicberg, SC 15633	SC ZIPs start with 29; 15633 is Pennsylvania	2939 Becker Island Suite 140, Macejkovicberg, SC 29201
+address-en_us	371	791 Sarah Falls Apt. 376, North Elisabethhaven, NY 31827	NY ZIPs start with 10-14; 31827 is Georgia	791 Sarah Falls Apt. 376, North Elisabethhaven, NY 10001
+address-en_us	398	16422 Graham Spurs, Pagacberg, TN 31066	TN ZIPs start with 37-38; 31066 is Georgia	16422 Graham Spurs, Pagacberg, TN 37201
+address-en_us	412	247 Adella Turnpike, Ilenemouth, AR 52043	AR ZIPs start with 71-72; 52043 is Iowa	247 Adella Turnpike, Ilenemouth, AR 72201
+address-en_us	417	329 Mekhi Mountain, Durganview, AL 56503	AL ZIPs start with 35-36; 56503 is Minnesota	329 Mekhi Mountain, Durganview, AL 35201
+address-en_us	454	5547 Crist Mission, Moenburgh, MN 18509	MN ZIPs start with 55-56; 18509 is Pennsylvania	5547 Crist Mission, Moenburgh, MN 55401
+address-en_us	462	8460 Koepp Rue Apt. 041, New Noemieview, CT 08738	CT ZIPs start with 06; 08738 is NJ	8460 Koepp Rue Apt. 041, New Noemieview, CT 06101
+address-en_us	474	916 Becker Plains, Feestmouth, SC 98082-9704	SC ZIPs start with 29; 98082 is Washington	916 Becker Plains, Feestmouth, SC 29401-9704
+address-en_gb	1	470 Lucy Forks, Patriciafurt, YC7B 3UT	UK postcode "YC7B" not valid; UK postcode areas start with one or two letters representing real areas (e.g. YO=York)	470 Lucy Forks, Patriciafurt, YO7 3UT
+address-en_gb	2	06 Bell Views, Andyshire, BN2L 9WC	UK postcode district letters must be alphabetic (one or two); BN2L invalid	06 Bell Views, Andyshire, BN2 9WC
+address-en_gb	3	4 Allen Ramp, New Dean, T01 2WA	UK postal area "T" not valid (e.g., TA=Taunton, TN=Tunbridge); T01 invalid	4 Allen Ramp, New Dean, TN1 2WA
+address-en_gb	5	0 Emily Club, New Tina, V6 6ZH	UK has no "V" postal area; invalid	0 Emily Club, New Tina, BS6 6ZH
+address-en_gb	6	Flat 60, Ross Green, South Lilyberg, Q7M 8ZV	UK has no "Q" postal area	Flat 60, Ross Green, South Lilyberg, M7 8ZV
+address-en_gb	10	Studio 76d, Riley Ford, North Michaelchester, CF99 6QQ	CF=Cardiff but district CF99 reserved (Senedd); valid only for Welsh Parliament	Studio 76d, Riley Ford, North Michaelchester, CF10 6QQ
+address-en_gb	13	Studio 62u, Harrison Vista, New Jade, NH0D 1AU	UK has no "NH" postal area	Studio 62u, Harrison Vista, New Jade, NW1 1AU
+address-en_gb	14	211 Michael Extension, Lake Christopher, UD03 5WX	UK has no "UD" postal area	211 Michael Extension, Lake Christopher, UB3 5WX
+address-en_gb	22	Studio 43, Walker Way, Gracetown, V4 4OI	UK has no "V" area; "OI" is invalid (UK never uses I or Z in last two letters for the postcode)	Studio 43, Walker Way, Gracetown, B4 4SH
+address-en_gb	23	563 Jason Field, Lake Johnborough, CS1 8YA	UK has no "CS" postal area	563 Jason Field, Lake Johnborough, CB1 8YA
+address-en_gb	25	887 Shaw Wells, East Amelia, DK2X 3NH	UK has no "DK" postal area	887 Shaw Wells, East Amelia, DA2 3NH
+address-en_gb	28	0 Tara Burgs, West Carlie, ZS8O 8XU	UK has no "ZS" postal area; second part 8XU has invalid letter usage	0 Tara Burgs, West Carlie, BS8 4XU
+address-en_gb	30	0 Sonia Views, Bellhaven, MQ8 9PE	UK has no "MQ" postal area	0 Sonia Views, Bellhaven, ML8 9PE
+address-en_gb	31	8 Stefan Crest, Shannonfort, LH2 0OI	UK has no "LH" postal area; "OI" last two letters invalid (O and I not used as last two letters)	8 Stefan Crest, Shannonfort, LS2 0AB
+address-en_gb	32	Studio 52d, Price Pines, Adamsmouth, QR08 1FU	UK has no "QR" postal area	Studio 52d, Price Pines, Adamsmouth, OL8 1FU
+address-en_gb	35	Flat 65, Edward Bypass, Wilsonside, YV1 7OW	UK has no "YV" postal area; "OW" invalid as last two letters	Flat 65, Edward Bypass, Wilsonside, YO1 7AB
+address-en_gb	36	48 Isabella Shoal, Thompsonville, VJ1L 5SM	UK has no "VJ" postal area	48 Isabella Shoal, Thompsonville, V1 5SM
+address-en_gb	38	222 Lucy Drives, North Danielleview, LH94 4FH	UK has no "LH" postal area; district 94 implausibly high	222 Lucy Drives, North Danielleview, LS9 4FH
+address-en_gb	47	119 Scott Wall, North Victoriaville, SD6 6OD	UK has no "SD" postal area; "OD" invalid as last two letters	119 Scott Wall, North Victoriaville, SO6 6BD
+address-en_gb	62	8 Bell Rue, Anthonymouth, S1W 3EV	S1W is invalid for Sheffield (which uses S1-S99); 1W not a valid district format	8 Bell Rue, Anthonymouth, S1 3EV
+address-en_gb	66	Flat 76, Powell Rapid, Hallfurt, YX7 8SY	UK has no "YX" postal area	Flat 76, Powell Rapid, Hallfurt, YO7 8SY
+address-fr_fr	22	1, Boulevard de Lefort, 11 339 Potier-sur-Fleury	French postal code has embedded space; should be 5 digits no space	1, Boulevard de Lefort, 11339 Potier-sur-Fleury
+address-fr_fr	93	30, Rue Godard, 35413 PierreBourg	OK postal but city "PierreBourg" capitalized mid-word is faker artefact	30, Rue Godard, 35413 Pierre-Bourg
+address-fr_fr	154	398, Impasse de Leblanc, 37 252 Texier	French postal code has embedded space	398, Impasse de Leblanc, 37252 Texier
+address-fr_fr	176	92, Rue Turpin, 68 881 RaymondBourg	French postal code has embedded space; CamelCase city name	92, Rue Turpin, 68881 Raymond-Bourg
+address-fr_fr	186	Rue Olivie Lecomte, 03999 Jacob-la-Forêt	French postal 03999 invalid (max in 03 is 03700-range); but 03999 doesn't exist	Rue Olivier Lecomte, 03000 Jacob-la-Forêt
+address-fr_fr	216	22, Rue Petitjean, 83 747 Bonnet	French postal code has embedded space	22, Rue Petitjean, 83747 Bonnet
+address-fr_fr	217	82, Place de Weiss, 42 319 Bouvier	French postal code has embedded space	82, Place de Weiss, 42319 Bouvier
+address-fr_fr	219	Avenue Chauveau, 19 790 Couturier	French postal code has embedded space	Avenue Chauveau, 19790 Couturier
+address-fr_fr	244	28, Impasse de Mathieu, 19 618 Bailly	French postal code has embedded space	28, Impasse de Mathieu, 19618 Bailly
+address-fr_fr	250	6, Rue Blot, 38 192 Perez	French postal code has embedded space	6, Rue Blot, 38192 Perez
+address-fr_fr	253	93, Boulevard Louis Guerin, 91 367 Baudry	French postal code has embedded space	93, Boulevard Louis Guerin, 91367 Baudry
+address-fr_fr	257	7, Place Da Costa, 07 073 Joseph-sur-Guibert	French postal code has embedded space	7, Place Da Costa, 07073 Joseph-sur-Guibert
+address-fr_fr	271	32, Chemin Antoinette Renard, 38 535 Carre-la-Forêt	French postal code has embedded space	32, Chemin Antoinette Renard, 38535 Carre-la-Forêt
+address-fr_fr	274	4, Rue de Marty, 00 681 Fouquet	French postal code has embedded space; 00xxx is invalid in France	4, Rue de Marty, 75001 Fouquet
+address-fr_fr	306	96, Boulevard de Delattre, 2296 PerrinBourg	French postal code only 4 digits; needs 5	96, Boulevard de Delattre, 02296 Perrin-Bourg
+address-fr_fr	354	57, Rue Lecoq, 81 804 Duval-sur-Royer	French postal code has embedded space	57, Rue Lecoq, 81804 Duval-sur-Royer
+address-de_de	17	Larissa-Hartmann-Ring 9, 19666 Senftenberg	Senftenberg's postal code is 01968, not 19666 (19666 is Saxony-Anhalt area)	Larissa-Hartmann-Ring 9, 01968 Senftenberg
+address-de_de	28	Wolfweg 13, 27909 Neustadtner Waldnaab	"Neustadtner Waldnaab" is not a real city; "Neustadt an der Waldnaab" is real with postal 92660	Wolfweg 13, 92660 Neustadt an der Waldnaab
+address-de_de	72	Anastasia-Behrendt-Platz 847, 95454 Paderborn	95454 is not Paderborn (Paderborn is 33098-33106); 95454 is Bayreuth area	Anastasia-Behrendt-Platz 847, 33098 Paderborn
+address-de_de	33	Berta-Scharf-Straße 6/8, 37724 Hannover	Hannover postal codes are 30159-30669; 37724 is in Lower Saxony but not Hannover	Berta-Scharf-Straße 6/8, 30159 Hannover
+address-de_de	53	Wiltrud-Ludwig-Allee 78, 28906 Bützow	Bützow postal is 18246, not 28906 (28xxx is Bremen area)	Wiltrud-Ludwig-Allee 78, 18246 Bützow
+address-de_de	58	Straubstraße 31, 00620 Soltau-Fallingbostel	00xxx postal codes don't exist in Germany; minimum is 01067	Straubstraße 31, 29614 Soltau
+address-de_de	86	Reinhild-Kohl-Ring 5/6, 25087 Hamburg	Hamburg postal codes are 20xxx-22xxx; 25087 is Schleswig-Holstein	Reinhild-Kohl-Ring 5/6, 20095 Hamburg
+address-de_de	88	Nikolaj-Schmitt-Straße 0, 55713 Ahaus	Ahaus postal is 48683, not 55713 (55713 is Rhineland-Palatinate)	Nikolaj-Schmitt-Straße 0, 48683 Ahaus
+address-de_de	89	Theo-Fricke-Straße 2, 99988 Höxter	Höxter postal is 37671, not 99988 (99988 is too high; 99xxx is Thuringia)	Theo-Fricke-Straße 2, 37671 Höxter
+address-de_de	106	Heinz-Dieter-Hennig-Ring 93, 92007 Melle	Melle postal is 49324, not 92007 (92xxx is Bavaria/Upper Palatinate)	Heinz-Dieter-Hennig-Ring 93, 49324 Melle
+address-de_de	130	Andy-Lehmann-Ring 0/5, 86335 Brilon	Brilon postal is 59929, not 86335 (86xxx is Augsburg area)	Andy-Lehmann-Ring 0/5, 59929 Brilon
+address-de_de	158	Norman-Ulrich-Allee 358, 41682 Berlin	Berlin postal codes are 10xxx-14xxx; 41682 is Dormagen NRW	Norman-Ulrich-Allee 358, 10115 Berlin
+address-de_de	195	Rüdiger-Henning-Allee 078, 47029 Erding	Erding postal is 85435, not 47029 (47xxx is Duisburg/Krefeld)	Rüdiger-Henning-Allee 078, 85435 Erding
+address-de_de	217	Hansjörg-Löffler-Gasse 1/3, 09559 Iserlohn	Iserlohn postal is 58636-58644, not 09559 (09xxx is Chemnitz area)	Hansjörg-Löffler-Gasse 1/3, 58636 Iserlohn
+address-de_de	236	Lehmannallee 8, 00066 Eisenhüttenstadt	00xxx postal codes don't exist; Eisenhüttenstadt is 15890	Lehmannallee 8, 15890 Eisenhüttenstadt
+address-de_de	351	Lindnerplatz 504, 00733 Quedlinburg	00xxx postal codes don't exist in Germany; Quedlinburg is 06484	Lindnerplatz 504, 06484 Quedlinburg
+address-de_de	376	Reichertstraße 81, 00375 Siegen	00xxx postal codes don't exist; Siegen is 57072	Reichertstraße 81, 57072 Siegen
+address-de_de	405	Maik-Richter-Weg 7, 65403 Hansestadttralsund	"Hansestadttralsund" not a real city; should be "Hansestadt Stralsund" with postal 18435	Maik-Richter-Weg 7, 18435 Hansestadt Stralsund
+address-de_de	445	Albert-Klemm-Platz 648, 91532 Dinslaken	Dinslaken postal is 46535-46539, not 91532 (91xxx is Bavaria)	Albert-Klemm-Platz 648, 46535 Dinslaken
+TRUNCATED:120 more findings unverified
+DONE:249 findings across 24 files

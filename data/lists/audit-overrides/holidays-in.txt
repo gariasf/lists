@@ -1,0 +1,54 @@
+Republic Day
+Independence Day
+Gandhi Jayanti
+Diwali
+Holi
+Eid al-Fitr
+Eid al-Adha
+Muharram
+Christmas Day
+Good Friday
+Easter Sunday
+Janmashtami
+Raksha Bandhan
+Ganesh Chaturthi
+Navratri
+Dussehra
+Durga Puja
+Karwa Chauth
+Bhai Dooj
+Govardhan Puja
+Lakshmi Puja
+Kali Puja
+Chhath Puja
+Onam
+Pongal
+Makar Sankranti
+Maha Shivaratri
+Ram Navami
+Hanuman Jayanti
+Buddha Purnima
+Mahavir Jayanti
+Vaisakhi
+Guru Nanak Jayanti
+Guru Gobind Singh Jayanti
+Lohri
+Ugadi
+Gudi Padwa
+Bihu
+Pohela Boishakh
+Akshaya Tritiya
+Hartalika Teej
+Children's Day
+Teacher's Day
+Mother's Day
+Father's Day
+Friendship Day
+Republic Day Eve
+Independence Day Eve
+National Voters' Day
+National Science Day
+World Environment Day
+National Sports Day
+National Education Day
+Engineer's Day

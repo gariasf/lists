@@ -1,0 +1,101 @@
+Hypertension
+Type 1 Diabetes
+Type 2 Diabetes
+Asthma
+Chronic obstructive pulmonary disease (COPD)
+Coronary artery disease
+Heart failure
+Arrhythmia
+Atrial fibrillation
+Stroke
+Migraine
+Epilepsy
+Parkinson's disease
+Alzheimer's disease
+Multiple sclerosis
+ALS
+Depression
+Anxiety disorder
+Generalized anxiety disorder
+Panic disorder
+Bipolar disorder
+Schizophrenia
+ADHD
+Autism spectrum disorder
+PTSD
+OCD
+Insomnia
+Sleep apnea
+Restless legs syndrome
+GERD
+Irritable bowel syndrome
+Crohn's disease
+Ulcerative colitis
+Celiac disease
+Lactose intolerance
+Gastritis
+Peptic ulcer
+Gallstones
+Hepatitis A
+Hepatitis B
+Hepatitis C
+Cirrhosis
+Fatty liver disease
+Kidney stones
+Chronic kidney disease
+Urinary tract infection
+Prostatitis
+Endometriosis
+Polycystic ovary syndrome
+Hypothyroidism
+Hyperthyroidism
+Hashimoto's thyroiditis
+Graves' disease
+Osteoporosis
+Osteoarthritis
+Rheumatoid arthritis
+Psoriatic arthritis
+Gout
+Lupus
+Fibromyalgia
+Chronic fatigue syndrome
+Anemia
+Sickle cell disease
+Thalassemia
+Hemochromatosis
+Vitamin D deficiency
+B12 deficiency
+Iron deficiency
+Atopic dermatitis (eczema)
+Psoriasis
+Acne
+Rosacea
+Vitiligo
+Cellulitis
+Shingles
+Influenza
+COVID-19
+Common cold
+Strep throat
+Pneumonia
+Bronchitis
+Tuberculosis
+HIV
+Mononucleosis
+Lyme disease
+Mumps
+Measles
+Chickenpox
+Hand, foot, and mouth disease
+Whooping cough
+Malaria
+Dengue fever
+Zika virus
+RSV
+Norovirus
+Conjunctivitis
+Otitis media
+Sinusitis
+Allergic rhinitis
+Sleep terrors
+Sleepwalking

@@ -1,0 +1,121 @@
+Cabernet Sauvignon
+Merlot
+Pinot Noir
+Syrah
+Shiraz
+Malbec
+Tempranillo
+Sangiovese
+Nebbiolo
+Barbera
+Dolcetto
+Zinfandel
+Primitivo
+Carménère
+Gamay
+Mourvèdre
+Grenache
+Cinsault
+Petite Sirah
+Petit Verdot
+Cabernet Franc
+Aglianico
+Montepulciano
+Corvina
+Refosco
+Negroamaro
+Nero d'Avola
+Touriga Nacional
+Touriga Franca
+Tinta Roriz
+Bordeaux Blend
+Rhône Blend
+Super Tuscan
+Chardonnay
+Sauvignon Blanc
+Riesling
+Pinot Grigio
+Pinot Gris
+Gewürztraminer
+Chenin Blanc
+Semillon
+Viognier
+Albariño
+Verdejo
+Godello
+Vermentino
+Greco di Tufo
+Fiano
+Falanghina
+Garganega
+Trebbiano
+Cortese
+Arneis
+Grüner Veltliner
+Müller-Thurgau
+Silvaner
+Furmint
+Assyrtiko
+Moschofilero
+Roussanne
+Marsanne
+Picpoul
+Muscadet
+Aligoté
+Torrontés
+Verdelho
+Champagne
+Prosecco
+Cava
+Crémant
+Franciacorta
+Lambrusco
+Sparkling Rosé
+Pet-Nat
+Sancerre
+Pouilly-Fumé
+Chablis
+Meursault
+Puligny-Montrachet
+Chassagne-Montrachet
+Bâtard-Montrachet
+Vouvray
+Châteauneuf-du-Pape
+Côtes du Rhône
+Côte-Rôtie
+Hermitage
+Brunello di Montalcino
+Chianti Classico
+Barolo
+Barbaresco
+Amarone
+Valpolicella
+Soave
+Rioja
+Ribera del Duero
+Priorat
+Bierzo
+Rías Baixas
+Douro
+Port
+Madeira
+Sherry
+Manzanilla
+Fino
+Oloroso
+Amontillado
+Pedro Ximénez
+Marsala
+Vin Santo
+Tokaji
+Sauternes
+Ice Wine
+Eiswein
+Late Harvest
+Beerenauslese
+Trockenbeerenauslese
+Orange Wine
+Skin-Contact Wine
+Natural Wine
+Biodynamic Wine
+Organic Wine

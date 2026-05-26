@@ -1,0 +1,119 @@
+Back squat
+Front squat
+Goblet squat
+Overhead squat
+Box squat
+Bulgarian split squat
+Step-up
+Lunge
+Reverse lunge
+Walking lunge
+Curtsy lunge
+Pistol squat
+Single-leg deadlift
+Conventional deadlift
+Romanian deadlift
+Sumo deadlift
+Trap bar deadlift
+Deficit deadlift
+Stiff-leg deadlift
+Hip thrust
+Glute bridge
+Single-leg hip thrust
+Cable pull-through
+Kettlebell swing
+American kettlebell swing
+Russian kettlebell swing
+Kettlebell snatch
+Kettlebell clean
+Kettlebell jerk
+Power clean
+Hang clean
+Clean and jerk
+Snatch
+Push press
+Push jerk
+Split jerk
+Bench press
+Incline bench press
+Decline bench press
+Close-grip bench press
+Dumbbell bench press
+Dumbbell incline press
+Dumbbell decline press
+Floor press
+Overhead press
+Strict press
+Dumbbell shoulder press
+Arnold press
+Landmine press
+Z press
+Pin press
+Push-up
+Diamond push-up
+Decline push-up
+Pseudo planche push-up
+Archer push-up
+Pull-up
+Chin-up
+Wide-grip pull-up
+Neutral-grip pull-up
+Weighted pull-up
+Muscle-up
+Bar muscle-up
+Ring muscle-up
+Ring dip
+Bar dip
+Triceps dip
+Inverted row
+TRX row
+Barbell row
+Pendlay row
+Bent-over row
+Yates row
+T-bar row
+Chest-supported row
+Seal row
+Meadows row
+Lat pulldown
+Seated cable row
+Face pull
+Lateral raise
+Front raise
+Rear delt fly
+Cable lateral raise
+Reverse pec deck
+Shrug
+Barbell shrug
+Dumbbell curl
+Hammer curl
+Preacher curl
+Concentration curl
+Cable curl
+EZ-bar curl
+Spider curl
+Bayesian curl
+Overhead triceps extension
+Triceps pushdown
+Skull crusher
+JM press
+Hyperextension
+Reverse hyperextension
+Cable woodchopper
+Pallof press
+Plank
+Side plank
+Hollow body hold
+L-sit
+Dragon flag
+Hanging leg raise
+Toes-to-bar
+Ab wheel rollout
+Cable crunch
+Decline sit-up
+Russian twist
+Farmer's carry
+Suitcase carry
+Yoke walk
+Sled push
+Sled pull
