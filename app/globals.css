@@ -560,6 +560,90 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 .btn-ghost { background: transparent; color: var(--text-secondary); }
 .btn-ghost:hover { background: var(--bg-surface-hover); }
 
+/* Augmented (locally added via AI) detail items */
+.ls-detail-item.is-extra {
+  background: color-mix(in srgb, var(--bg-container-inset) 60%, transparent);
+  box-shadow: inset 2px 0 0 0 color-mix(in srgb, var(--text-secondary) 35%, transparent);
+}
+
+.ls-detail-item .extra-badge {
+  display: inline-flex;
+  align-items: center;
+  height: 18px;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: var(--bg-surface-inset);
+  color: var(--text-secondary);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 0 1px var(--border-tertiary);
+  margin-left: 6px;
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .ls-detail-item .extra-badge {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-primary);
+}
+
+.ls-detail-item .extra-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  margin-left: 4px;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-subdued);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  font-family: var(--font-sans);
+  transition: background 120ms ease, color 120ms ease;
+  -webkit-tap-highlight-color: transparent;
+  flex-shrink: 0;
+}
+
+.ls-detail-item .extra-remove:hover {
+  background: rgba(228, 90, 78, 0.12);
+  color: #b13a2a;
+}
+
+[data-theme="dark"] .ls-detail-item .extra-remove:hover {
+  background: rgba(228, 90, 78, 0.2);
+  color: #f5a99a;
+}
+
+/* Footer row under the augmented items */
+.ls-detail-extras-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  margin-top: 6px;
+  background: var(--bg-container-inset);
+  border-top: 1px solid var(--border-tertiary);
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+
+.ls-detail-extras-note {
+  font-size: 12px;
+  color: var(--text-subdued);
+  line-height: 1.4;
+}
+
+.ls-detail-extras-foot .btn {
+  font-size: 12px;
+  padding: 6px 12px;
+  flex-shrink: 0;
+}
+
 .btn-lg {
   padding: 11px 14px;
   font-size: 13px;
