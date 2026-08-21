@@ -61,3 +61,6 @@ packages/npm/
 packages/raycast-extension/node_modules/
 packages/raycast-extension/dist/
 packages/raycast-extension/raycast-env.d.ts
+
+# Figma listing assets are generated on demand
+packages/figma-plugin/listing/

@@ -27,9 +27,12 @@ from any project.
   Import `manifest.json` via Plugins → Development → Import plugin from manifest.
 - `packages/raycast-extension/` — search the catalog and copy items from
   Raycast. `npm install && npm run dev` installs it locally, no store needed.
-- npm package — `npm run build:npm` generates `packages/npm/` from the built
-  site, then `cd packages/npm && npm publish`. Typed slugs, zero dependencies,
-  seeded sampling for CI: `sample('names-pt_br', 3, 42)`.
+- npm package (`lists-design`) — `npm run build:npm` regenerates
+  `packages/npm/` from the built site so the two can't drift, then
+  `npm login && cd packages/npm && npm publish`. Typed slugs, zero
+  dependencies, seeded sampling for CI: `sample('names-pt_br', 3, 42)`.
+
+Each package has a `PUBLISHING.md` with the store-specific requirements.
 
 ## API
 
