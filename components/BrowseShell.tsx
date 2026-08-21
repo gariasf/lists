@@ -21,6 +21,7 @@ import {
   Check,
   ChevronR,
   Sparkles,
+  Cpu,
   X,
   CATEGORY_ICONS,
 } from '@/components/icons'
@@ -270,8 +271,12 @@ export default function BrowseShell({ lists }: BrowseShellProps) {
           </button>
           <Link href="/skills" className="ls-side-link">
             <Sparkles />
-            Skills
+            Generators
             <span className="count">{5}</span>
+          </Link>
+          <Link href="/api" className="ls-side-link">
+            <Cpu />
+            API
           </Link>
 
           <div className="ls-side-label">By category</div>

@@ -74,7 +74,7 @@ export default async function OgImage() {
               marginTop: 8,
             }}
           >
-            {LIST_DEFINITIONS.length} curated lists - 5 AI generators - free + open source
+            {`${LIST_DEFINITIONS.length} curated lists - 5 AI generators - free + open source`}
           </div>
         </div>
 

@@ -9,6 +9,7 @@ import { CATEGORIES } from '@/lib/types'
 import { usePalette } from '@/lib/palette-context'
 import { useTheme } from '@/lib/use-theme'
 import { useAugment } from '@/lib/use-augment'
+import { snippetsFor } from '@/lib/tools'
 import {
   Search,
   Logo,
@@ -27,6 +28,7 @@ import {
   Layers,
 
   Sparkles,
+  Cpu,
   CATEGORY_ICONS,
 } from '@/components/icons'
 
@@ -118,6 +120,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
   const [augmenting, setAugmenting] = useState(false)
   const [augmentError, setAugmentError] = useState<string | null>(null)
   const [showMobileMenu, setShowMobileMenu] = useState(false)
+  const [copiedSnippet, setCopiedSnippet] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
   const { openPalette, pushRecent } = usePalette()
   const { extras, append, removeAt, clear } = useAugment(list.slug)
@@ -159,6 +162,24 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
     if (q === '') return combinedItems
     return combinedItems.filter((item) => item.toLowerCase().includes(q))
   }, [combinedItems, query])
+
+  const snippets = useMemo(() => snippetsFor(list.slug), [list.slug])
+
+  // Both copy buttons take the ACTIVE tab's payload; say so, because "Copy
+  // all" next to a JSON panel reads like it copies the plain items.
+  const formatLabel =
+    format === 'list' ? 'all' : format === 'ts' ? 'TS' : format.toUpperCase()
+
+  const handleCopySnippet = async () => {
+    try {
+      await navigator.clipboard.writeText(snippets.curl)
+      setCopiedSnippet(true)
+      toast.success('Command copied')
+      setTimeout(() => setCopiedSnippet(false), 1400)
+    } catch (err) {
+      console.error('Copy failed:', err)
+    }
+  }
 
   const handleCopyItem = async (item: string, index: number) => {
     try {
@@ -309,8 +330,12 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
           </Link>
           <Link href="/skills" className="ls-side-link">
             <Sparkles />
-            Skills
+            Generators
             <span className="count">{5}</span>
+          </Link>
+          <Link href="/api" className="ls-side-link">
+            <Cpu />
+            API
           </Link>
 
           <div className="ls-side-label">By category</div>
@@ -400,7 +425,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                           title={`Download .${format === 'list' ? 'txt' : format}`}
                         >
                           <Download />
-                          Download
+                          {`Download .${format === 'list' ? 'txt' : format}`}
                         </button>
                         <button
                           type="button"
@@ -408,7 +433,7 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                           onClick={handleCopyAll}
                         >
                           {copiedAll ? <Check /> : <Copy />}
-                          {copiedAll ? 'Copied' : 'Copy all'}
+                          {copiedAll ? 'Copied' : `Copy ${formatLabel}`}
                         </button>
                       </div>
                     </div>
@@ -451,9 +476,23 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                   </div>
 
                   {format !== 'list' ? (
-                    <pre className="code-block" aria-label={`${format.toUpperCase()} output`}>
-                      <code>{formattedPayload}</code>
-                    </pre>
+                    // List mode copies per item on click; the code views had
+                    // no copy affordance of their own, so the only way to take
+                    // the payload was scrolling back up to the header button.
+                    <div className="code-block-wrap">
+                      <button
+                        type="button"
+                        className="code-block-copy"
+                        onClick={handleCopyAll}
+                        title={`Copy as ${format.toUpperCase()}`}
+                      >
+                        {copiedAll ? <Check /> : <Copy />}
+                        {copiedAll ? 'Copied' : `Copy ${formatLabel}`}
+                      </button>
+                      <pre className="code-block" aria-label={`${format.toUpperCase()} output`}>
+                        <code>{formattedPayload}</code>
+                      </pre>
+                    </div>
                   ) : filteredItems.length === 0 ? (
                     <div style={{ padding: '24px', color: 'var(--text-secondary)', fontSize: 13 }}>
                       No items match &ldquo;{query}&rdquo;.
@@ -617,10 +656,24 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                   </div>
                 )}
 
+                {/* Replaces the old generic tip card, whose advice already
+                    lived in the bottombar. This is the moment someone wants
+                    this list somewhere else, and the page knows the slug. */}
                 <div className="rail-card dark">
-                  <div className="rail-eyebrow">Tip</div>
+                  <div className="rail-eyebrow">Fetch this list</div>
+                  <pre className="rail-snippet">{snippets.curl}</pre>
+                  <button
+                    type="button"
+                    className="rail-snippet-copy"
+                    onClick={handleCopySnippet}
+                  >
+                    {copiedSnippet ? <Check /> : <Copy />}
+                    {copiedSnippet ? 'Copied' : 'Copy command'}
+                  </button>
                   <div className="tip-body">
-                    Click any value to copy it. Use the search above to filter this list, or press <kbd>⌘K</kbd> to jump anywhere.
+                    Add <code>?seed=42</code> to <code>/api/sample</code> and you
+                    get the same items every run — safe for tests.{' '}
+                    <Link href="/api/">All endpoints →</Link>
                   </div>
                 </div>
               </div>

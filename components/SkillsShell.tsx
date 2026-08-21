@@ -17,6 +17,7 @@ import {
   Sun,
   Layers,
   Sparkles,
+  Cpu,
   ChevronR,
   CATEGORY_ICONS,
   Cart,
@@ -101,8 +102,12 @@ export default function SkillsShell({ allLists }: { allLists: CatalogEntry[] }) 
           </Link>
           <Link href="/skills" className="ls-side-link active">
             <Sparkles />
-            Skills
+            Generators
             <span className="count">{SKILLS.length}</span>
+          </Link>
+          <Link href="/api" className="ls-side-link">
+            <Cpu />
+            API
           </Link>
 
           <div className="ls-side-label">By category</div>
@@ -160,10 +165,10 @@ export default function SkillsShell({ allLists }: { allLists: CatalogEntry[] }) 
           <div className="ls-content">
             <div className="ls-content-head">
               <div className="ls-h1-row">
-                <h1 className="ls-h1">Skills</h1>
+                <h1 className="ls-h1">Generators</h1>
                 <div className="ls-meta">
-                  Curated AI recipes. Compose lists + generation into
-                  coherent mock-data scenarios.
+                  Recipes that compose lists into one coherent thing — a
+                  user, a receipt, a pricing page. Run one, copy the result.
                 </div>
               </div>
             </div>
@@ -241,9 +246,82 @@ export default function SkillsShell({ allLists }: { allLists: CatalogEntry[] }) 
               <span className="kbd">Esc</span>Back
             </span>
             <div style={{ marginLeft: 'auto' }}>
-              {SKILLS.length} skills · powered by Workers AI
+              {SKILLS.length} generators · powered by Workers AI
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Mobile shell. Every other shell ships one; without it this page
+          rendered a blank white screen at <=900px, because the desktop
+          block is display:none there. */}
+      <div className="m-frame m-only">
+        <div className="m-nav">
+          <Link href="/" className="brand">
+            <span className="brand-mark">
+              <Logo />
+            </span>
+            <span className="brand-name">Lists</span>
+          </Link>
+          <div className="right">
+            <a
+              href="https://github.com/gariasf/lists"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ls-icon-btn"
+              aria-label="GitHub"
+            >
+              <Github />
+            </a>
+            <button
+              type="button"
+              className="ls-icon-btn ghost"
+              onClick={cycleTheme}
+              aria-label={themeLabel}
+              title={themeLabel}
+            >
+              {themeIcon}
+            </button>
+          </div>
+        </div>
+
+        <div className="crumb m-crumb">
+          <Link href="/">All lists</Link>
+          <ChevronR />
+          <span className="current">Generators</span>
+        </div>
+
+        <div className="m-hero">
+          <h1>Generators</h1>
+          <p>
+            Recipes that compose lists into one coherent thing — a user, a
+            receipt, a pricing page. Run one, copy the result.
+          </p>
+        </div>
+
+        <div className="skills-grid">
+          {SKILLS.map((skill) => {
+            const Icon = SKILL_ICONS[skill.icon] ?? Sparkles
+            return (
+              <Link
+                key={skill.slug}
+                href={`/skills/${skill.slug}/`}
+                className="skill-card"
+              >
+                <div className="skill-card-head">
+                  <span className="skill-card-icon">
+                    <Icon />
+                  </span>
+                  <div className="skill-card-text">
+                    <div className="skill-card-title">{skill.name}</div>
+                    <div className="skill-card-tagline">{skill.tagline}</div>
+                  </div>
+                  <ChevronR />
+                </div>
+                <p className="skill-card-desc">{skill.description}</p>
+              </Link>
+            )
+          })}
         </div>
       </div>
     </>

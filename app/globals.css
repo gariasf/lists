@@ -2463,3 +2463,212 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   padding: 10px 12px;
   overflow-x: auto;
 }
+
+/* ============================================================
+   Fetch-this-list rail card + /api page
+   ============================================================ */
+
+.rail-snippet {
+  margin: 10px 0 8px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: var(--radius-md, 8px);
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 11.5px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-all;
+  overflow-x: auto;
+}
+
+.rail-snippet-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: var(--radius-md, 8px);
+  background: rgba(255, 255, 255, 0.12);
+  color: inherit;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.rail-snippet-copy:hover { background: rgba(255, 255, 255, 0.2); }
+
+.rail-card.dark .tip-body a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.api-endpoints {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.api-endpoint {
+  padding: 16px 18px;
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-border-xs);
+}
+
+.api-endpoint-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.api-method {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: var(--bg-surface-inset);
+  color: var(--text-subdued);
+}
+
+.api-path {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.api-blurb {
+  margin: 8px 0 0;
+  font-size: 13.5px;
+  color: var(--text-secondary, var(--text-subdued));
+  max-width: 62ch;
+}
+
+.api-example {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.api-example pre {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 9px 12px;
+  background: var(--bg-surface-inset);
+  border-radius: var(--radius-md, 8px);
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 12px;
+  overflow-x: auto;
+}
+
+.api-example .rail-snippet-copy {
+  background: var(--bg-surface-inset);
+  color: var(--text-subdued);
+}
+
+.api-example .rail-snippet-copy:hover { background: var(--bg-surface-hover); }
+
+.api-note {
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: var(--bg-surface-inset);
+  border-radius: var(--radius-lg);
+  font-size: 13.5px;
+  color: var(--text-subdued);
+  max-width: 68ch;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.tool-card {
+  display: block;
+  padding: 16px 18px;
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-border-xs);
+  text-decoration: none;
+  color: inherit;
+}
+
+.tool-card:hover { background: var(--bg-surface-hover); }
+
+.tool-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tool-card-name { font-size: 14px; font-weight: 600; }
+
+.tool-status {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+
+.tool-status.live { background: var(--accent-soft, #e3f0e7); color: #1a7a4a; }
+.tool-status.from-repo { background: var(--bg-surface-inset); color: var(--text-subdued); }
+
+.tool-card-blurb {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--text-subdued);
+}
+
+.tool-card-note {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--text-subdued);
+  opacity: 0.85;
+}
+
+:root[data-theme="dark"] .tool-status.live { background: #1e3428; color: #4cc183; }
+
+/* Copy control pinned inside the JSON / CSV / TS panel — the code views
+   have no per-item click-to-copy the way the list view does. */
+.code-block-wrap {
+  position: relative;
+}
+
+.code-block-copy {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  border: none;
+  border-radius: var(--radius-md, 8px);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-border-xs);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.code-block-copy:hover { background: var(--bg-surface-hover); }
+.code-block-copy svg { width: 14px; height: 14px; }

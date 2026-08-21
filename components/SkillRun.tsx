@@ -354,7 +354,11 @@ export default function SkillRun({ skill, allLists }: Props) {
           </Link>
           <Link href="/skills" className="ls-side-link">
             <Sparkles />
-            Skills
+            Generators
+          </Link>
+          <Link href="/api" className="ls-side-link">
+            <Cpu />
+            API
           </Link>
 
           <div className="ls-side-label">This skill</div>
@@ -401,7 +405,7 @@ export default function SkillRun({ skill, allLists }: Props) {
             <div className="crumb">
               <Link href="/">All lists</Link>
               <ChevronR />
-              <Link href="/skills">Skills</Link>
+              <Link href="/skills">Generators</Link>
               <ChevronR />
               <span className="current">{skill.name}</span>
             </div>
@@ -465,7 +469,7 @@ export default function SkillRun({ skill, allLists }: Props) {
         <div className="crumb m-crumb">
           <Link href="/">All</Link>
           <ChevronR />
-          <Link href="/skills">Skills</Link>
+          <Link href="/skills">Generators</Link>
           <ChevronR />
           <span className="current">{skill.name}</span>
         </div>
