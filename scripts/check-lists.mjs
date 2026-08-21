@@ -40,6 +40,43 @@ for (const file of (await fs.readdir(DIR, { recursive: true })).sort()) {
   }
 }
 
+// IBANs carry their own mod-97 checksum, so a typo is machine-detectable —
+// and an IBAN that fails validation is worse than useless in a mockup, since
+// any real form will reject it.
+function ibanValid(raw) {
+  const iban = raw.replace(/\s+/g, '').toUpperCase()
+  if (!/^[A-Z]{2}[0-9]{2}[A-Z0-9]{10,30}$/.test(iban)) return false
+  const shifted = iban.slice(4) + iban.slice(0, 4)
+  let rem = 0
+  for (const ch of shifted) {
+    const digits = /[0-9]/.test(ch) ? ch : String(ch.charCodeAt(0) - 55)
+    for (const d of digits) rem = (rem * 10 + Number(d)) % 97
+  }
+  return rem === 1
+}
+
+for (const file of ['iban-by-country.json']) {
+  const p = path.join(DIR, file)
+  try {
+    const rows = JSON.parse(await fs.readFile(p, 'utf8'))
+    for (const row of rows) {
+      const value = row.example ?? row.value ?? row
+      if (typeof value !== 'string') continue
+      if (!ibanValid(value)) errors.push(`${file}: IBAN fails checksum: ${value}`)
+      if (row.iso2 && !value.startsWith(row.iso2)) {
+        errors.push(`${file}: ${value} does not start with its country code ${row.iso2}`)
+      }
+      if (row.length && value.replace(/\s+/g, '').length !== row.length) {
+        errors.push(
+          `${file}: ${value} is ${value.replace(/\s+/g, '').length} chars, declared ${row.length}`,
+        )
+      }
+    }
+  } catch {
+    /* file absent — nothing to check */
+  }
+}
+
 // A renamed slug whose data file didn't move ships an empty list silently
 // (lib/lists.ts swallows ENOENT), so check both sides of the registry.
 const registry = await fs.readFile(path.join(process.cwd(), 'lib', 'lists-data.ts'), 'utf8')
