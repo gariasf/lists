@@ -193,6 +193,12 @@ const COUNTRY_POSTAL_SLUGS: Record<string, string> = {
   IN: 'postal-in', BR: 'postal-br', MX: 'postal-mx', AU: 'postal-au',
   CA: 'postal-ca',
 }
+const COUNTRY_NAME_SLUGS: Record<string, string> = {
+  US: 'names-en_us', GB: 'names-en_gb', DE: 'names-de_de', FR: 'names-fr_fr',
+  IT: 'names-it_it', ES: 'names-es_es', NL: 'names-nl_nl', JP: 'names-ja_jp',
+  KR: 'names-ko_kr', CN: 'names-zh_cn', IN: 'names-hi_in', BR: 'names-pt_br',
+  MX: 'names-es_mx', AU: 'names-en_gb', CA: 'names-en_us',
+}
 
 const SKILLS: Record<string, SkillSpec> = {
   'realistic-user': {
@@ -275,24 +281,37 @@ const SKILLS: Record<string, SkillSpec> = {
       return {
         system:
           'You generate postal addresses with locale-correct formatting. Output strict JSON only: { "addresses": [{ "name": string, "street1": string, "street2": string (optional, can be empty), "city": string, "state_or_region": string, "postal_code": string, "country": string (full name), "country_code": string (ISO 2), "phone": string (with country code) }] }. Every field must match the country\'s real conventions. Phone numbers include the country dial code.',
-        user: `Generate exactly ${count} addresses for country ${country}.\nCountry guidance: ${hint}\n\nRespond with JSON only.`,
+        user: `Generate exactly ${count} addresses for country ${country}.\nCountry guidance: ${hint}\n\nstreet1 must be an actual street line (building/house number + street or block), never the city or region name; street2 is only for apartment/floor/suite. Never repeat the city in street1 or street2.\n\nRespond with JSON only.`,
         resultKey: 'addresses',
       }
     },
-    // The 8B model reliably hallucinates phone and postal shapes — overwrite
-    // both from the curated per-country lists when we have them.
+    // The 8B model hallucinates phone/postal shapes and falls back to
+    // "John Doe" — overwrite all three from the curated country lists.
     postProcess: async (parsed, knobs, get) => {
       if (!Array.isArray(parsed)) return parsed
       const country = asString(knobs.country, 'US').toUpperCase()
-      const [phones, postals] = await Promise.all([
+      const [phones, postals, names] = await Promise.all([
         COUNTRY_PHONE_SLUGS[country] ? get(COUNTRY_PHONE_SLUGS[country]) : [],
         COUNTRY_POSTAL_SLUGS[country] ? get(COUNTRY_POSTAL_SLUGS[country]) : [],
+        COUNTRY_NAME_SLUGS[country] ? get(COUNTRY_NAME_SLUGS[country]) : [],
       ])
-      return parsed.map((a: Record<string, unknown>) => ({
-        ...a,
-        ...(phones.length > 0 ? { phone: pick(phones) } : {}),
-        ...(postals.length > 0 ? { postal_code: pick(postals) } : {}),
-      }))
+      const usedNames = new Set<string>()
+      return parsed.map((a: Record<string, unknown>) => {
+        let name: string | undefined
+        if (names.length > 0) {
+          for (let i = 0; i < 10; i++) {
+            name = pick(names)
+            if (!usedNames.has(name)) break
+          }
+          if (name) usedNames.add(name)
+        }
+        return {
+          ...a,
+          ...(name ? { name } : {}),
+          ...(phones.length > 0 ? { phone: pick(phones) } : {}),
+          ...(postals.length > 0 ? { postal_code: pick(postals) } : {}),
+        }
+      })
     },
   },
 
