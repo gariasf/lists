@@ -49,6 +49,17 @@ function bytesToKb(items: string[]) {
   return (total / 1024).toFixed(1)
 }
 
+// Fixed UTC parts: the date is a commit date, not a local moment, and
+// rendering it per-timezone would make the static HTML mismatch on hydrate.
+function formatVerified(date: string) {
+  const [y, m] = date.split('-')
+  const month = new Date(Date.UTC(Number(y), Number(m) - 1, 1)).toLocaleString('en-US', {
+    month: 'short',
+    timeZone: 'UTC',
+  })
+  return `${month} ${y}`
+}
+
 function csvEscape(value: unknown): string {
   const s = value == null ? '' : String(value)
   return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
@@ -578,6 +589,12 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                       <span className="v">{bytesToKb(combinedItems)} KB</span>
                     </div>
                   </div>
+                  {list.verified && (
+                    <div className="rail-verified">
+                      Verified {formatVerified(list.verified)}
+                      {list.churn && <span className="churn"> · refreshed every {list.churn}</span>}
+                    </div>
+                  )}
                 </div>
 
                 {relatedLists.length > 0 && (

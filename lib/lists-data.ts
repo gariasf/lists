@@ -19,6 +19,54 @@ export interface ListDefinition {
   layer?: 'append' | 'replace'
 }
 
+/**
+ * How fast a list's content goes stale. Only listed slugs churn; everything
+ * else is evergreen (a cheese is a cheese). `month` is when the refresh is
+ * due — the monthly reminder workflow reads this.
+ */
+export const CHURN: Record<string, { every: 'season' | 'year' | 'quarter'; month: number }> = {
+  // European football: promotion/relegation settles in May, seasons start August.
+  'premier-league-teams': { every: 'season', month: 8 },
+  'laliga-teams': { every: 'season', month: 8 },
+  'bundesliga-teams': { every: 'season', month: 8 },
+  'seriea-teams': { every: 'season', month: 8 },
+  'ligue1-teams': { every: 'season', month: 8 },
+  'mls-teams': { every: 'season', month: 3 },
+  'nwsl-teams': { every: 'season', month: 3 },
+  'wnba-teams': { every: 'season', month: 5 },
+  'nba-teams': { every: 'season', month: 10 },
+  'nfl-teams': { every: 'season', month: 9 },
+  'nhl-teams': { every: 'season', month: 10 },
+  'mlb-teams': { every: 'season', month: 4 },
+  // F1 confirms the grid over the winter; first race is March.
+  'f1-teams': { every: 'year', month: 3 },
+  'f1-drivers': { every: 'year', month: 3 },
+  'tennis-atp': { every: 'year', month: 1 },
+  'tennis-wta': { every: 'year', month: 1 },
+  'athletes-current': { every: 'year', month: 1 },
+  // Culture rots fastest.
+  'memes-current': { every: 'quarter', month: 1 },
+  'gen-z-slang': { every: 'quarter', month: 1 },
+  'hashtags-trending': { every: 'quarter', month: 1 },
+  // Annual product cycles.
+  'devices-phones-modern': { every: 'year', month: 10 },
+  'devices-laptops-modern': { every: 'year', month: 11 },
+  'devices-tablets-modern': { every: 'year', month: 11 },
+  'os-versions': { every: 'year', month: 10 },
+  'ai-models': { every: 'quarter', month: 1 },
+  'ai-companies': { every: 'year', month: 1 },
+  'npm-packages-top': { every: 'year', month: 1 },
+  'font-families-modern': { every: 'year', month: 1 },
+  'movies-modern': { every: 'year', month: 1 },
+  'tv-shows-modern': { every: 'year', month: 1 },
+  'music-artists-modern': { every: 'year', month: 1 },
+  'music-songs-modern': { every: 'year', month: 1 },
+  'video-games': { every: 'year', month: 1 },
+  'stock-tickers-sp100': { every: 'year', month: 1 },
+  'stock-tickers-nasdaq100': { every: 'year', month: 1 },
+  'crypto-tickers': { every: 'year', month: 1 },
+}
+
 export const LIST_DEFINITIONS: ListDefinition[] = [
   // Identity
   { slug: 'names', name: 'Names', category: 'identity', upstream: { file: 'names.txt' } },

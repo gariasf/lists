@@ -6,6 +6,10 @@ export interface ListItem {
   items: string[]
   structured?: Record<string, unknown>[]
   format: 'txt' | 'json'
+  /** Date the underlying data file was last committed (YYYY-MM-DD). */
+  verified?: string
+  /** Set for lists whose content goes stale on a known cycle. */
+  churn?: 'season' | 'year' | 'quarter'
 }
 
 export type Category =

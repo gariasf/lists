@@ -1192,6 +1192,19 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   gap: 14px;
 }
 
+.rail-verified {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-subtle, rgba(128, 128, 128, 0.18));
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: var(--text-subdued);
+}
+
+.rail-verified .churn {
+  opacity: 0.75;
+}
+
 .rail-stat {
   display: flex;
   flex-direction: column;

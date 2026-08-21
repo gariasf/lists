@@ -27,6 +27,8 @@ export async function GET(_req: Request, { params }: RouteParams) {
       category: list.category,
       count: list.items.length,
       format: list.format,
+      ...(list.verified ? { verified: list.verified } : {}),
+      ...(list.churn ? { churn: list.churn } : {}),
       items: list.items,
       ...(list.structured ? { structured: list.structured } : {}),
     },

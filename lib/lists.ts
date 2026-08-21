@@ -7,6 +7,8 @@ import {
   UpstreamSource,
 } from './lists-data'
 import { AUDIT_OVERRIDES } from './audit-overrides'
+import { CHURN } from './lists-data'
+import VERIFIED from '../data/verified.json'
 
 const GITHUB_RAW_BASE =
   'https://raw.githubusercontent.com/listsfordesign/Lists/master/Lists'
@@ -115,6 +117,8 @@ export async function getList(slug: string): Promise<ListItem | null> {
       items: local.items,
       structured: undefined,
       format: 'txt',
+      verified: (VERIFIED as Record<string, string>)[def.slug],
+      churn: CHURN[def.slug]?.every,
     }
   }
 
@@ -140,6 +144,8 @@ export async function getList(slug: string): Promise<ListItem | null> {
     items,
     structured: local.structured,
     format: def.local?.format === 'json' ? 'json' : 'txt',
+    verified: (VERIFIED as Record<string, string>)[def.slug],
+    churn: CHURN[def.slug]?.every,
   }
 }
 

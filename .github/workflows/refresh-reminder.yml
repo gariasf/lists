@@ -1,0 +1,41 @@
+name: Refresh reminder
+
+on:
+  schedule:
+    # 09:00 UTC on the 1st of each month
+    - cron: '0 9 1 * *'
+  workflow_dispatch:
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Collect lists due this month
+        id: due
+        run: |
+          BODY=$(node scripts/refresh-due.mjs)
+          if [ "$BODY" = "NOTHING_DUE" ]; then
+            echo "nothing=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "nothing=false" >> "$GITHUB_OUTPUT"
+            {
+              echo 'body<<REFRESH_EOF'
+              echo "$BODY"
+              echo REFRESH_EOF
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open the refresh issue
+        if: steps.due.outputs.nothing == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BODY: ${{ steps.due.outputs.body }}
+        run: |
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "Refresh due: $(date -u '+%B %Y')" \
+            --body "$BODY"
