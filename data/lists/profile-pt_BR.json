@@ -1,0 +1,362 @@
+[
+ {
+  "value": "Leonardo Duarte — Belo Horizonte",
+  "name": "Leonardo Duarte",
+  "city": "Belo Horizonte",
+  "region": "Minas Gerais",
+  "postal": "30130-010",
+  "phone": "+55 31 98643-5555",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Ana Júlia Melo — Belo Horizonte",
+  "name": "Ana Júlia Melo",
+  "city": "Belo Horizonte",
+  "region": "Minas Gerais",
+  "postal": "30130-010",
+  "phone": "+55 31 94327-5960",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Isabela Freitas — Belo Horizonte",
+  "name": "Isabela Freitas",
+  "city": "Belo Horizonte",
+  "region": "Minas Gerais",
+  "postal": "30130-010",
+  "phone": "+55 31 94247-7116",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Helena Fernandes — Belo Horizonte",
+  "name": "Helena Fernandes",
+  "city": "Belo Horizonte",
+  "region": "Minas Gerais",
+  "postal": "30130-010",
+  "phone": "+55 31 98054-3201",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Patrícia Ramos — Brasília",
+  "name": "Patrícia Ramos",
+  "city": "Brasília",
+  "region": "Distrito Federal",
+  "postal": "70040-010",
+  "phone": "+55 61 95254-4896",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Lucas Ferreira — Rio de Janeiro",
+  "name": "Lucas Ferreira",
+  "city": "Rio de Janeiro",
+  "region": "Rio de Janeiro",
+  "postal": "22021-001",
+  "phone": "+55 21 92112-3211",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Arthur Castro — Salvador",
+  "name": "Arthur Castro",
+  "city": "Salvador",
+  "region": "Bahia",
+  "postal": "40026-010",
+  "phone": "+55 71 95550-1282",
+  "timezone": "America/Bahia"
+ },
+ {
+  "value": "Caio Sampaio — Salvador",
+  "name": "Caio Sampaio",
+  "city": "Salvador",
+  "region": "Bahia",
+  "postal": "40026-010",
+  "phone": "+55 71 96578-1863",
+  "timezone": "America/Bahia"
+ },
+ {
+  "value": "Luana Moura — Belém",
+  "name": "Luana Moura",
+  "city": "Belém",
+  "region": "Pará",
+  "postal": "66010-020",
+  "phone": "+55 91 98965-4303",
+  "timezone": "America/Belem"
+ },
+ {
+  "value": "João Vitor Serra — Manaus",
+  "name": "João Vitor Serra",
+  "city": "Manaus",
+  "region": "Amazonas",
+  "postal": "69005-040",
+  "phone": "+55 92 93611-4890",
+  "timezone": "America/Manaus"
+ },
+ {
+  "value": "Larissa Cavalcanti — Porto Alegre",
+  "name": "Larissa Cavalcanti",
+  "city": "Porto Alegre",
+  "region": "Rio Grande do Sul",
+  "postal": "90010-150",
+  "phone": "+55 51 96563-7446",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Felipe Cardoso — Fortaleza",
+  "name": "Felipe Cardoso",
+  "city": "Fortaleza",
+  "region": "Ceará",
+  "postal": "60165-081",
+  "phone": "+55 85 90146-6516",
+  "timezone": "America/Fortaleza"
+ },
+ {
+  "value": "Maurício Rezende — Belém",
+  "name": "Maurício Rezende",
+  "city": "Belém",
+  "region": "Pará",
+  "postal": "66010-020",
+  "phone": "+55 91 92448-1246",
+  "timezone": "America/Belem"
+ },
+ {
+  "value": "Thainá Godoy — Curitiba",
+  "name": "Thainá Godoy",
+  "city": "Curitiba",
+  "region": "Paraná",
+  "postal": "80020-310",
+  "phone": "+55 41 98339-8305",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Amanda Rocha — Brasília",
+  "name": "Amanda Rocha",
+  "city": "Brasília",
+  "region": "Distrito Federal",
+  "postal": "70040-010",
+  "phone": "+55 61 96640-5308",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Camila Ribeiro — Belém",
+  "name": "Camila Ribeiro",
+  "city": "Belém",
+  "region": "Pará",
+  "postal": "66010-020",
+  "phone": "+55 91 92812-2638",
+  "timezone": "America/Belem"
+ },
+ {
+  "value": "Nicolas Camargo — Manaus",
+  "name": "Nicolas Camargo",
+  "city": "Manaus",
+  "region": "Amazonas",
+  "postal": "69005-040",
+  "phone": "+55 92 92177-6656",
+  "timezone": "America/Manaus"
+ },
+ {
+  "value": "Rafael Nascimento — Manaus",
+  "name": "Rafael Nascimento",
+  "city": "Manaus",
+  "region": "Amazonas",
+  "postal": "69005-040",
+  "phone": "+55 92 99130-4064",
+  "timezone": "America/Manaus"
+ },
+ {
+  "value": "Vitória Barreto — Curitiba",
+  "name": "Vitória Barreto",
+  "city": "Curitiba",
+  "region": "Paraná",
+  "postal": "80020-310",
+  "phone": "+55 41 95081-4360",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Vanessa Correia — Belo Horizonte",
+  "name": "Vanessa Correia",
+  "city": "Belo Horizonte",
+  "region": "Minas Gerais",
+  "postal": "30130-010",
+  "phone": "+55 31 93694-2384",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Milena Rodrigues — Belo Horizonte",
+  "name": "Milena Rodrigues",
+  "city": "Belo Horizonte",
+  "region": "Minas Gerais",
+  "postal": "30130-010",
+  "phone": "+55 31 94725-5833",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Bernardo Furtado — Cuiabá",
+  "name": "Bernardo Furtado",
+  "city": "Cuiabá",
+  "region": "Mato Grosso",
+  "postal": "78005-370",
+  "phone": "+55 65 96782-3843",
+  "timezone": "America/Cuiaba"
+ },
+ {
+  "value": "Maicon Domingues — Recife",
+  "name": "Maicon Domingues",
+  "city": "Recife",
+  "region": "Pernambuco",
+  "postal": "50030-230",
+  "phone": "+55 81 97056-8339",
+  "timezone": "America/Recife"
+ },
+ {
+  "value": "Carolina Mendes — Fortaleza",
+  "name": "Carolina Mendes",
+  "city": "Fortaleza",
+  "region": "Ceará",
+  "postal": "60165-081",
+  "phone": "+55 85 96448-0189",
+  "timezone": "America/Fortaleza"
+ },
+ {
+  "value": "Pedro Henrique Borges — Cuiabá",
+  "name": "Pedro Henrique Borges",
+  "city": "Cuiabá",
+  "region": "Mato Grosso",
+  "postal": "78005-370",
+  "phone": "+55 65 94913-1454",
+  "timezone": "America/Cuiaba"
+ },
+ {
+  "value": "Priscila Menezes — Curitiba",
+  "name": "Priscila Menezes",
+  "city": "Curitiba",
+  "region": "Paraná",
+  "postal": "80020-310",
+  "phone": "+55 41 97723-0105",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Maria Clara Torres — Porto Alegre",
+  "name": "Maria Clara Torres",
+  "city": "Porto Alegre",
+  "region": "Rio Grande do Sul",
+  "postal": "90010-150",
+  "phone": "+55 51 92226-1865",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Michele Peixoto — Recife",
+  "name": "Michele Peixoto",
+  "city": "Recife",
+  "region": "Pernambuco",
+  "postal": "50030-230",
+  "phone": "+55 81 98394-4158",
+  "timezone": "America/Recife"
+ },
+ {
+  "value": "Sabrina Guimarães — Belo Horizonte",
+  "name": "Sabrina Guimarães",
+  "city": "Belo Horizonte",
+  "region": "Minas Gerais",
+  "postal": "30130-010",
+  "phone": "+55 31 95482-6315",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Sofia Bittencourt — Belo Horizonte",
+  "name": "Sofia Bittencourt",
+  "city": "Belo Horizonte",
+  "region": "Minas Gerais",
+  "postal": "30130-010",
+  "phone": "+55 31 99716-7410",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Elaine Brito — Belo Horizonte",
+  "name": "Elaine Brito",
+  "city": "Belo Horizonte",
+  "region": "Minas Gerais",
+  "postal": "30130-010",
+  "phone": "+55 31 98040-4438",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Laura Aguiar — Manaus",
+  "name": "Laura Aguiar",
+  "city": "Manaus",
+  "region": "Amazonas",
+  "postal": "69005-040",
+  "phone": "+55 92 94351-1844",
+  "timezone": "America/Manaus"
+ },
+ {
+  "value": "Bianca Nogueira — Curitiba",
+  "name": "Bianca Nogueira",
+  "city": "Curitiba",
+  "region": "Paraná",
+  "postal": "80020-310",
+  "phone": "+55 41 90304-9319",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Alice Vieira — Fortaleza",
+  "name": "Alice Vieira",
+  "city": "Fortaleza",
+  "region": "Ceará",
+  "postal": "60165-081",
+  "phone": "+55 85 94296-0106",
+  "timezone": "America/Fortaleza"
+ },
+ {
+  "value": "Antônio Chaves — Belo Horizonte",
+  "name": "Antônio Chaves",
+  "city": "Belo Horizonte",
+  "region": "Minas Gerais",
+  "postal": "30130-010",
+  "phone": "+55 31 97444-3158",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Fernanda Lima — Curitiba",
+  "name": "Fernanda Lima",
+  "city": "Curitiba",
+  "region": "Paraná",
+  "postal": "80020-310",
+  "phone": "+55 41 95030-2993",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Jéssica Tavares — Porto Alegre",
+  "name": "Jéssica Tavares",
+  "city": "Porto Alegre",
+  "region": "Rio Grande do Sul",
+  "postal": "90010-150",
+  "phone": "+55 51 92133-7253",
+  "timezone": "America/Sao_Paulo"
+ },
+ {
+  "value": "Henrique Sales — Manaus",
+  "name": "Henrique Sales",
+  "city": "Manaus",
+  "region": "Amazonas",
+  "postal": "69005-040",
+  "phone": "+55 92 90560-9930",
+  "timezone": "America/Manaus"
+ },
+ {
+  "value": "Marcelo Pinto — Recife",
+  "name": "Marcelo Pinto",
+  "city": "Recife",
+  "region": "Pernambuco",
+  "postal": "50030-230",
+  "phone": "+55 81 97683-3406",
+  "timezone": "America/Recife"
+ },
+ {
+  "value": "Yasmin Albuquerque — Manaus",
+  "name": "Yasmin Albuquerque",
+  "city": "Manaus",
+  "region": "Amazonas",
+  "postal": "69005-040",
+  "phone": "+55 92 91690-6377",
+  "timezone": "America/Manaus"
+ }
+]

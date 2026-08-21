@@ -1,0 +1,690 @@
+{
+ "en_US": [
+  {
+   "city": "New York",
+   "region": "New York",
+   "postal": "10001",
+   "timezone": "America/New_York",
+   "prefix": "+1 (212)"
+  },
+  {
+   "city": "Boston",
+   "region": "Massachusetts",
+   "postal": "02108",
+   "timezone": "America/New_York",
+   "prefix": "+1 (617)"
+  },
+  {
+   "city": "Miami",
+   "region": "Florida",
+   "postal": "33130",
+   "timezone": "America/New_York",
+   "prefix": "+1 (305)"
+  },
+  {
+   "city": "Chicago",
+   "region": "Illinois",
+   "postal": "60601",
+   "timezone": "America/Chicago",
+   "prefix": "+1 (312)"
+  },
+  {
+   "city": "Houston",
+   "region": "Texas",
+   "postal": "77002",
+   "timezone": "America/Chicago",
+   "prefix": "+1 (713)"
+  },
+  {
+   "city": "Nashville",
+   "region": "Tennessee",
+   "postal": "37203",
+   "timezone": "America/Chicago",
+   "prefix": "+1 (615)"
+  },
+  {
+   "city": "Denver",
+   "region": "Colorado",
+   "postal": "80202",
+   "timezone": "America/Denver",
+   "prefix": "+1 (303)"
+  },
+  {
+   "city": "Phoenix",
+   "region": "Arizona",
+   "postal": "85004",
+   "timezone": "America/Phoenix",
+   "prefix": "+1 (602)"
+  },
+  {
+   "city": "Seattle",
+   "region": "Washington",
+   "postal": "98101",
+   "timezone": "America/Los_Angeles",
+   "prefix": "+1 (206)"
+  },
+  {
+   "city": "San Francisco",
+   "region": "California",
+   "postal": "94103",
+   "timezone": "America/Los_Angeles",
+   "prefix": "+1 (415)"
+  },
+  {
+   "city": "Anchorage",
+   "region": "Alaska",
+   "postal": "99501",
+   "timezone": "America/Anchorage",
+   "prefix": "+1 (907)"
+  },
+  {
+   "city": "Honolulu",
+   "region": "Hawaii",
+   "postal": "96813",
+   "timezone": "Pacific/Honolulu",
+   "prefix": "+1 (808)"
+  }
+ ],
+ "en_GB": [
+  {
+   "city": "London",
+   "region": "Greater London",
+   "postal": "SW1A 1AA",
+   "timezone": "Europe/London",
+   "prefix": "+44 20"
+  },
+  {
+   "city": "Manchester",
+   "region": "Greater Manchester",
+   "postal": "M1 1AE",
+   "timezone": "Europe/London",
+   "prefix": "+44 161"
+  },
+  {
+   "city": "Birmingham",
+   "region": "West Midlands",
+   "postal": "B2 4QA",
+   "timezone": "Europe/London",
+   "prefix": "+44 121"
+  },
+  {
+   "city": "Liverpool",
+   "region": "Merseyside",
+   "postal": "L1 1JD",
+   "timezone": "Europe/London",
+   "prefix": "+44 151"
+  },
+  {
+   "city": "Leeds",
+   "region": "West Yorkshire",
+   "postal": "LS1 4DY",
+   "timezone": "Europe/London",
+   "prefix": "+44 113"
+  },
+  {
+   "city": "Sheffield",
+   "region": "South Yorkshire",
+   "postal": "S1 2BP",
+   "timezone": "Europe/London",
+   "prefix": "+44 114"
+  },
+  {
+   "city": "Bristol",
+   "region": "Bristol",
+   "postal": "BS1 6QF",
+   "timezone": "Europe/London",
+   "prefix": "+44 117"
+  },
+  {
+   "city": "Newcastle upon Tyne",
+   "region": "Tyne and Wear",
+   "postal": "NE1 5DL",
+   "timezone": "Europe/London",
+   "prefix": "+44 191"
+  },
+  {
+   "city": "Edinburgh",
+   "region": "Scotland",
+   "postal": "EH1 1BB",
+   "timezone": "Europe/London",
+   "prefix": "+44 131"
+  },
+  {
+   "city": "Glasgow",
+   "region": "Scotland",
+   "postal": "G1 3SL",
+   "timezone": "Europe/London",
+   "prefix": "+44 141"
+  },
+  {
+   "city": "Cardiff",
+   "region": "Wales",
+   "postal": "CF10 1EP",
+   "timezone": "Europe/London",
+   "prefix": "+44 29"
+  },
+  {
+   "city": "Belfast",
+   "region": "Northern Ireland",
+   "postal": "BT1 5GS",
+   "timezone": "Europe/London",
+   "prefix": "+44 28"
+  }
+ ],
+ "de_DE": [
+  {
+   "city": "Berlin",
+   "region": "Berlin",
+   "postal": "10117",
+   "timezone": "Europe/Berlin",
+   "prefix": "+49 30"
+  },
+  {
+   "city": "Hamburg",
+   "region": "Hamburg",
+   "postal": "20095",
+   "timezone": "Europe/Berlin",
+   "prefix": "+49 40"
+  },
+  {
+   "city": "München",
+   "region": "Bayern",
+   "postal": "80331",
+   "timezone": "Europe/Berlin",
+   "prefix": "+49 89"
+  },
+  {
+   "city": "Nürnberg",
+   "region": "Bayern",
+   "postal": "90402",
+   "timezone": "Europe/Berlin",
+   "prefix": "+49 911"
+  },
+  {
+   "city": "Köln",
+   "region": "Nordrhein-Westfalen",
+   "postal": "50667",
+   "timezone": "Europe/Berlin",
+   "prefix": "+49 221"
+  },
+  {
+   "city": "Düsseldorf",
+   "region": "Nordrhein-Westfalen",
+   "postal": "40213",
+   "timezone": "Europe/Berlin",
+   "prefix": "+49 211"
+  },
+  {
+   "city": "Frankfurt am Main",
+   "region": "Hessen",
+   "postal": "60311",
+   "timezone": "Europe/Berlin",
+   "prefix": "+49 69"
+  },
+  {
+   "city": "Stuttgart",
+   "region": "Baden-Württemberg",
+   "postal": "70173",
+   "timezone": "Europe/Berlin",
+   "prefix": "+49 711"
+  },
+  {
+   "city": "Leipzig",
+   "region": "Sachsen",
+   "postal": "04109",
+   "timezone": "Europe/Berlin",
+   "prefix": "+49 341"
+  },
+  {
+   "city": "Dresden",
+   "region": "Sachsen",
+   "postal": "01067",
+   "timezone": "Europe/Berlin",
+   "prefix": "+49 351"
+  },
+  {
+   "city": "Bremen",
+   "region": "Bremen",
+   "postal": "28195",
+   "timezone": "Europe/Berlin",
+   "prefix": "+49 421"
+  },
+  {
+   "city": "Hannover",
+   "region": "Niedersachsen",
+   "postal": "30159",
+   "timezone": "Europe/Berlin",
+   "prefix": "+49 511"
+  }
+ ],
+ "it_IT": [
+  {
+   "city": "Roma",
+   "region": "Lazio",
+   "postal": "00184",
+   "timezone": "Europe/Rome",
+   "prefix": "+39 06"
+  },
+  {
+   "city": "Milano",
+   "region": "Lombardia",
+   "postal": "20121",
+   "timezone": "Europe/Rome",
+   "prefix": "+39 02"
+  },
+  {
+   "city": "Napoli",
+   "region": "Campania",
+   "postal": "80121",
+   "timezone": "Europe/Rome",
+   "prefix": "+39 081"
+  },
+  {
+   "city": "Torino",
+   "region": "Piemonte",
+   "postal": "10121",
+   "timezone": "Europe/Rome",
+   "prefix": "+39 011"
+  },
+  {
+   "city": "Firenze",
+   "region": "Toscana",
+   "postal": "50122",
+   "timezone": "Europe/Rome",
+   "prefix": "+39 055"
+  },
+  {
+   "city": "Bologna",
+   "region": "Emilia-Romagna",
+   "postal": "40121",
+   "timezone": "Europe/Rome",
+   "prefix": "+39 051"
+  },
+  {
+   "city": "Venezia",
+   "region": "Veneto",
+   "postal": "30121",
+   "timezone": "Europe/Rome",
+   "prefix": "+39 041"
+  },
+  {
+   "city": "Genova",
+   "region": "Liguria",
+   "postal": "16121",
+   "timezone": "Europe/Rome",
+   "prefix": "+39 010"
+  },
+  {
+   "city": "Trieste",
+   "region": "Friuli-Venezia Giulia",
+   "postal": "34121",
+   "timezone": "Europe/Rome",
+   "prefix": "+39 040"
+  },
+  {
+   "city": "Bari",
+   "region": "Puglia",
+   "postal": "70121",
+   "timezone": "Europe/Rome",
+   "prefix": "+39 080"
+  },
+  {
+   "city": "Palermo",
+   "region": "Sicilia",
+   "postal": "90133",
+   "timezone": "Europe/Rome",
+   "prefix": "+39 091"
+  },
+  {
+   "city": "Cagliari",
+   "region": "Sardegna",
+   "postal": "09124",
+   "timezone": "Europe/Rome",
+   "prefix": "+39 070"
+  }
+ ],
+ "ja_JP": [
+  {
+   "city": "Shinjuku-ku",
+   "region": "Tokyo",
+   "postal": "160-0022",
+   "timezone": "Asia/Tokyo",
+   "prefix": "+81 3"
+  },
+  {
+   "city": "Shibuya-ku",
+   "region": "Tokyo",
+   "postal": "150-0002",
+   "timezone": "Asia/Tokyo",
+   "prefix": "+81 3"
+  },
+  {
+   "city": "Chiyoda-ku",
+   "region": "Tokyo",
+   "postal": "100-0005",
+   "timezone": "Asia/Tokyo",
+   "prefix": "+81 3"
+  },
+  {
+   "city": "Yokohama",
+   "region": "Kanagawa",
+   "postal": "220-0012",
+   "timezone": "Asia/Tokyo",
+   "prefix": "+81 45"
+  },
+  {
+   "city": "Osaka",
+   "region": "Osaka",
+   "postal": "530-0001",
+   "timezone": "Asia/Tokyo",
+   "prefix": "+81 6"
+  },
+  {
+   "city": "Kyoto",
+   "region": "Kyoto",
+   "postal": "600-8216",
+   "timezone": "Asia/Tokyo",
+   "prefix": "+81 75"
+  },
+  {
+   "city": "Nagoya",
+   "region": "Aichi",
+   "postal": "450-0002",
+   "timezone": "Asia/Tokyo",
+   "prefix": "+81 52"
+  },
+  {
+   "city": "Sapporo",
+   "region": "Hokkaido",
+   "postal": "060-0001",
+   "timezone": "Asia/Tokyo",
+   "prefix": "+81 11"
+  },
+  {
+   "city": "Sendai",
+   "region": "Miyagi",
+   "postal": "980-0021",
+   "timezone": "Asia/Tokyo",
+   "prefix": "+81 22"
+  },
+  {
+   "city": "Hiroshima",
+   "region": "Hiroshima",
+   "postal": "730-0011",
+   "timezone": "Asia/Tokyo",
+   "prefix": "+81 82"
+  },
+  {
+   "city": "Fukuoka",
+   "region": "Fukuoka",
+   "postal": "812-0011",
+   "timezone": "Asia/Tokyo",
+   "prefix": "+81 92"
+  },
+  {
+   "city": "Naha",
+   "region": "Okinawa",
+   "postal": "900-0006",
+   "timezone": "Asia/Tokyo",
+   "prefix": "+81 98"
+  }
+ ],
+ "pt_BR": [
+  {
+   "city": "São Paulo",
+   "region": "São Paulo",
+   "postal": "01310-100",
+   "timezone": "America/Sao_Paulo",
+   "prefix": "+55 11"
+  },
+  {
+   "city": "Rio de Janeiro",
+   "region": "Rio de Janeiro",
+   "postal": "22021-001",
+   "timezone": "America/Sao_Paulo",
+   "prefix": "+55 21"
+  },
+  {
+   "city": "Belo Horizonte",
+   "region": "Minas Gerais",
+   "postal": "30130-010",
+   "timezone": "America/Sao_Paulo",
+   "prefix": "+55 31"
+  },
+  {
+   "city": "Brasília",
+   "region": "Distrito Federal",
+   "postal": "70040-010",
+   "timezone": "America/Sao_Paulo",
+   "prefix": "+55 61"
+  },
+  {
+   "city": "Curitiba",
+   "region": "Paraná",
+   "postal": "80020-310",
+   "timezone": "America/Sao_Paulo",
+   "prefix": "+55 41"
+  },
+  {
+   "city": "Porto Alegre",
+   "region": "Rio Grande do Sul",
+   "postal": "90010-150",
+   "timezone": "America/Sao_Paulo",
+   "prefix": "+55 51"
+  },
+  {
+   "city": "Salvador",
+   "region": "Bahia",
+   "postal": "40026-010",
+   "timezone": "America/Bahia",
+   "prefix": "+55 71"
+  },
+  {
+   "city": "Recife",
+   "region": "Pernambuco",
+   "postal": "50030-230",
+   "timezone": "America/Recife",
+   "prefix": "+55 81"
+  },
+  {
+   "city": "Fortaleza",
+   "region": "Ceará",
+   "postal": "60165-081",
+   "timezone": "America/Fortaleza",
+   "prefix": "+55 85"
+  },
+  {
+   "city": "Belém",
+   "region": "Pará",
+   "postal": "66010-020",
+   "timezone": "America/Belem",
+   "prefix": "+55 91"
+  },
+  {
+   "city": "Manaus",
+   "region": "Amazonas",
+   "postal": "69005-040",
+   "timezone": "America/Manaus",
+   "prefix": "+55 92"
+  },
+  {
+   "city": "Cuiabá",
+   "region": "Mato Grosso",
+   "postal": "78005-370",
+   "timezone": "America/Cuiaba",
+   "prefix": "+55 65"
+  }
+ ],
+ "es_MX": [
+  {
+   "city": "Ciudad de México",
+   "region": "Ciudad de México",
+   "postal": "06000",
+   "timezone": "America/Mexico_City",
+   "prefix": "+52 55"
+  },
+  {
+   "city": "Guadalajara",
+   "region": "Jalisco",
+   "postal": "44100",
+   "timezone": "America/Mexico_City",
+   "prefix": "+52 33"
+  },
+  {
+   "city": "Puebla",
+   "region": "Puebla",
+   "postal": "72000",
+   "timezone": "America/Mexico_City",
+   "prefix": "+52 222"
+  },
+  {
+   "city": "Querétaro",
+   "region": "Querétaro",
+   "postal": "76000",
+   "timezone": "America/Mexico_City",
+   "prefix": "+52 442"
+  },
+  {
+   "city": "Oaxaca de Juárez",
+   "region": "Oaxaca",
+   "postal": "68000",
+   "timezone": "America/Mexico_City",
+   "prefix": "+52 951"
+  },
+  {
+   "city": "Monterrey",
+   "region": "Nuevo León",
+   "postal": "64000",
+   "timezone": "America/Monterrey",
+   "prefix": "+52 81"
+  },
+  {
+   "city": "Mérida",
+   "region": "Yucatán",
+   "postal": "97000",
+   "timezone": "America/Merida",
+   "prefix": "+52 999"
+  },
+  {
+   "city": "Cancún",
+   "region": "Quintana Roo",
+   "postal": "77500",
+   "timezone": "America/Cancun",
+   "prefix": "+52 998"
+  },
+  {
+   "city": "Chihuahua",
+   "region": "Chihuahua",
+   "postal": "31000",
+   "timezone": "America/Chihuahua",
+   "prefix": "+52 614"
+  },
+  {
+   "city": "Hermosillo",
+   "region": "Sonora",
+   "postal": "83000",
+   "timezone": "America/Hermosillo",
+   "prefix": "+52 662"
+  },
+  {
+   "city": "La Paz",
+   "region": "Baja California Sur",
+   "postal": "23000",
+   "timezone": "America/Mazatlan",
+   "prefix": "+52 612"
+  },
+  {
+   "city": "Tijuana",
+   "region": "Baja California",
+   "postal": "22000",
+   "timezone": "America/Tijuana",
+   "prefix": "+52 664"
+  }
+ ],
+ "hi_IN": [
+  {
+   "city": "New Delhi",
+   "region": "Delhi",
+   "postal": "110001",
+   "timezone": "Asia/Kolkata",
+   "prefix": "+91 11"
+  },
+  {
+   "city": "Mumbai",
+   "region": "Maharashtra",
+   "postal": "400001",
+   "timezone": "Asia/Kolkata",
+   "prefix": "+91 22"
+  },
+  {
+   "city": "Pune",
+   "region": "Maharashtra",
+   "postal": "411001",
+   "timezone": "Asia/Kolkata",
+   "prefix": "+91 20"
+  },
+  {
+   "city": "Bengaluru",
+   "region": "Karnataka",
+   "postal": "560001",
+   "timezone": "Asia/Kolkata",
+   "prefix": "+91 80"
+  },
+  {
+   "city": "Chennai",
+   "region": "Tamil Nadu",
+   "postal": "600001",
+   "timezone": "Asia/Kolkata",
+   "prefix": "+91 44"
+  },
+  {
+   "city": "Hyderabad",
+   "region": "Telangana",
+   "postal": "500001",
+   "timezone": "Asia/Kolkata",
+   "prefix": "+91 40"
+  },
+  {
+   "city": "Kolkata",
+   "region": "West Bengal",
+   "postal": "700001",
+   "timezone": "Asia/Kolkata",
+   "prefix": "+91 33"
+  },
+  {
+   "city": "Ahmedabad",
+   "region": "Gujarat",
+   "postal": "380001",
+   "timezone": "Asia/Kolkata",
+   "prefix": "+91 79"
+  },
+  {
+   "city": "Jaipur",
+   "region": "Rajasthan",
+   "postal": "302001",
+   "timezone": "Asia/Kolkata",
+   "prefix": "+91 141"
+  },
+  {
+   "city": "Lucknow",
+   "region": "Uttar Pradesh",
+   "postal": "226001",
+   "timezone": "Asia/Kolkata",
+   "prefix": "+91 522"
+  },
+  {
+   "city": "Bhopal",
+   "region": "Madhya Pradesh",
+   "postal": "462001",
+   "timezone": "Asia/Kolkata",
+   "prefix": "+91 755"
+  },
+  {
+   "city": "Kochi",
+   "region": "Kerala",
+   "postal": "682001",
+   "timezone": "Asia/Kolkata",
+   "prefix": "+91 484"
+  }
+ ]
+}

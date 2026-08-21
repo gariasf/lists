@@ -1,0 +1,402 @@
+[
+ {
+  "value": "Anaya Nair — Pune",
+  "name": "Anaya Nair",
+  "native_name": "अनाया नायर",
+  "city": "Pune",
+  "region": "Maharashtra",
+  "postal": "411001",
+  "phone": "+91 20 8643 5555",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Sara Trivedi — Pune",
+  "name": "Sara Trivedi",
+  "native_name": "सारा त्रिवेदी",
+  "city": "Pune",
+  "region": "Maharashtra",
+  "postal": "411001",
+  "phone": "+91 20 4327 5960",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Aditya Mehra — Hyderabad",
+  "name": "Aditya Mehra",
+  "native_name": "आदित्य मेहरा",
+  "city": "Hyderabad",
+  "region": "Telangana",
+  "postal": "500001",
+  "phone": "+91 40 2477 1161",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Nyra Pandey — Pune",
+  "name": "Nyra Pandey",
+  "native_name": "नायरा पांडे",
+  "city": "Pune",
+  "region": "Maharashtra",
+  "postal": "411001",
+  "phone": "+91 20 8054 3201",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Krishna Bhatt — Bengaluru",
+  "name": "Krishna Bhatt",
+  "native_name": "कृष्णा भट्ट",
+  "city": "Bengaluru",
+  "region": "Karnataka",
+  "postal": "560001",
+  "phone": "+91 80 5254 4896",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Aarav Singh — Mumbai",
+  "name": "Aarav Singh",
+  "native_name": "आरव सिंह",
+  "city": "Mumbai",
+  "region": "Maharashtra",
+  "postal": "400001",
+  "phone": "+91 22 2112 3211",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Advait Goswami — Kolkata",
+  "name": "Advait Goswami",
+  "native_name": "अद्वैत गोस्वामी",
+  "city": "Kolkata",
+  "region": "West Bengal",
+  "postal": "700001",
+  "phone": "+91 33 5550 1282",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Aryan Khanna — Kolkata",
+  "name": "Aryan Khanna",
+  "native_name": "आर्यन खन्ना",
+  "city": "Kolkata",
+  "region": "West Bengal",
+  "postal": "700001",
+  "phone": "+91 33 6578 1863",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Anvi Bhattacharya — Lucknow",
+  "name": "Anvi Bhattacharya",
+  "native_name": "अन्वी भट्टाचार्य",
+  "city": "Lucknow",
+  "region": "Uttar Pradesh",
+  "postal": "226001",
+  "phone": "+91 522 8965 4303",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Anika Bhardwaj — Bhopal",
+  "name": "Anika Bhardwaj",
+  "native_name": "अनिका भारद्वाज",
+  "city": "Bhopal",
+  "region": "Madhya Pradesh",
+  "postal": "462001",
+  "phone": "+91 755 3611 4890",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Priya Patel — Hyderabad",
+  "name": "Priya Patel",
+  "native_name": "प्रिया पटेल",
+  "city": "Hyderabad",
+  "region": "Telangana",
+  "postal": "500001",
+  "phone": "+91 40 6563 7446",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Diya Iyer — Jaipur",
+  "name": "Diya Iyer",
+  "native_name": "दिया अय्यर",
+  "city": "Jaipur",
+  "region": "Rajasthan",
+  "postal": "302001",
+  "phone": "+91 141 0146 6516",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Kiara Krishnan — Lucknow",
+  "name": "Kiara Krishnan",
+  "native_name": "कियारा कृष्णन",
+  "city": "Lucknow",
+  "region": "Uttar Pradesh",
+  "postal": "226001",
+  "phone": "+91 522 2448 1246",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Ayaan Ghosh — Chennai",
+  "name": "Ayaan Ghosh",
+  "native_name": "अयान घोष",
+  "city": "Chennai",
+  "region": "Tamil Nadu",
+  "postal": "600001",
+  "phone": "+91 44 8339 8305",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Aarnav Agrawal — Ahmedabad",
+  "name": "Aarnav Agrawal",
+  "native_name": "आर्नव अग्रवाल",
+  "city": "Ahmedabad",
+  "region": "Gujarat",
+  "postal": "380001",
+  "phone": "+91 79 4053 0807",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Hridaan Sinha — Mumbai",
+  "name": "Hridaan Sinha",
+  "native_name": "हृदान सिन्हा",
+  "city": "Mumbai",
+  "region": "Maharashtra",
+  "postal": "400001",
+  "phone": "+91 22 2263 8288",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Aadhya Joshi — Mumbai",
+  "name": "Aadhya Joshi",
+  "native_name": "आध्या जोशी",
+  "city": "Mumbai",
+  "region": "Maharashtra",
+  "postal": "400001",
+  "phone": "+91 22 7766 5608",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Rhea Dixit — Mumbai",
+  "name": "Rhea Dixit",
+  "native_name": "रिया दीक्षित",
+  "city": "Mumbai",
+  "region": "Maharashtra",
+  "postal": "400001",
+  "phone": "+91 22 3040 6493",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Aarohi Subramanian — New Delhi",
+  "name": "Aarohi Subramanian",
+  "native_name": "आरोही सुब्रमण्यन",
+  "city": "New Delhi",
+  "region": "Delhi",
+  "postal": "110001",
+  "phone": "+91 11 8143 6021",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Vivaan Desai — Ahmedabad",
+  "name": "Vivaan Desai",
+  "native_name": "विवान देसाई",
+  "city": "Ahmedabad",
+  "region": "Gujarat",
+  "postal": "380001",
+  "phone": "+91 79 9423 8482",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Aarush Chauhan — Jaipur",
+  "name": "Aarush Chauhan",
+  "native_name": "आरुष चौहान",
+  "city": "Jaipur",
+  "region": "Rajasthan",
+  "postal": "302001",
+  "phone": "+91 141 2558 3379",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Veer Mishra — Lucknow",
+  "name": "Veer Mishra",
+  "native_name": "वीर मिश्रा",
+  "city": "Lucknow",
+  "region": "Uttar Pradesh",
+  "postal": "226001",
+  "phone": "+91 522 8238 4396",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Mira Sengupta — New Delhi",
+  "name": "Mira Sengupta",
+  "native_name": "मीरा सेनगुप्ता",
+  "city": "New Delhi",
+  "region": "Delhi",
+  "postal": "110001",
+  "phone": "+91 11 5683 3927",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Yuvaan Kapoor — Lucknow",
+  "name": "Yuvaan Kapoor",
+  "native_name": "युवान कपूर",
+  "city": "Lucknow",
+  "region": "Uttar Pradesh",
+  "postal": "226001",
+  "phone": "+91 522 0189 6949",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Reyansh Gupta — Chennai",
+  "name": "Reyansh Gupta",
+  "native_name": "रेयांश गुप्ता",
+  "city": "Chennai",
+  "region": "Tamil Nadu",
+  "postal": "600001",
+  "phone": "+91 44 1454 9477",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Aaradhya Menon — Chennai",
+  "name": "Aaradhya Menon",
+  "native_name": "आराध्या मेनन",
+  "city": "Chennai",
+  "region": "Tamil Nadu",
+  "postal": "600001",
+  "phone": "+91 44 0105 6422",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Saanvi Rao — Lucknow",
+  "name": "Saanvi Rao",
+  "native_name": "सान्वी राव",
+  "city": "Lucknow",
+  "region": "Uttar Pradesh",
+  "postal": "226001",
+  "phone": "+91 522 6504 6839",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Kabir Malhotra — Hyderabad",
+  "name": "Kabir Malhotra",
+  "native_name": "कबीर मल्होत्रा",
+  "city": "Hyderabad",
+  "region": "Telangana",
+  "postal": "500001",
+  "phone": "+91 40 1584 2548",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Rudra Vyas — Chennai",
+  "name": "Rudra Vyas",
+  "native_name": "रुद्र व्यास",
+  "city": "Chennai",
+  "region": "Tamil Nadu",
+  "postal": "600001",
+  "phone": "+91 44 1582 9716",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Inaya Naidu — Chennai",
+  "name": "Inaya Naidu",
+  "native_name": "इनाया नायडू",
+  "city": "Chennai",
+  "region": "Tamil Nadu",
+  "postal": "600001",
+  "phone": "+91 44 1042 8040",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Pari Pillai — Bhopal",
+  "name": "Pari Pillai",
+  "native_name": "परी पिल्लई",
+  "city": "Bhopal",
+  "region": "Madhya Pradesh",
+  "postal": "462001",
+  "phone": "+91 755 8784 3511",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Vanya Choudhary — Chennai",
+  "name": "Vanya Choudhary",
+  "native_name": "वान्या चौधरी",
+  "city": "Chennai",
+  "region": "Tamil Nadu",
+  "postal": "600001",
+  "phone": "+91 44 4823 0304",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Anvika Talwar — Chennai",
+  "name": "Anvika Talwar",
+  "native_name": "अन्विका तलवार",
+  "city": "Chennai",
+  "region": "Tamil Nadu",
+  "postal": "600001",
+  "phone": "+91 44 1976 4296",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Shaurya Tiwari — Pune",
+  "name": "Shaurya Tiwari",
+  "native_name": "शौर्य तिवारी",
+  "city": "Pune",
+  "region": "Maharashtra",
+  "postal": "411001",
+  "phone": "+91 20 7444 3158",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Ishaan Verma — Chennai",
+  "name": "Ishaan Verma",
+  "native_name": "ईशान वर्मा",
+  "city": "Chennai",
+  "region": "Tamil Nadu",
+  "postal": "600001",
+  "phone": "+91 44 5030 2993",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Myra Chopra — Jaipur",
+  "name": "Myra Chopra",
+  "native_name": "मायरा चोपड़ा",
+  "city": "Jaipur",
+  "region": "Rajasthan",
+  "postal": "302001",
+  "phone": "+91 141 2536 4805",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Vihaan Kumar — Bhopal",
+  "name": "Vihaan Kumar",
+  "native_name": "विहान कुमार",
+  "city": "Bhopal",
+  "region": "Madhya Pradesh",
+  "postal": "462001",
+  "phone": "+91 755 9305 3676",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Riya Ramaswamy — New Delhi",
+  "name": "Riya Ramaswamy",
+  "native_name": "रिया रामास्वामी",
+  "city": "New Delhi",
+  "region": "Delhi",
+  "postal": "110001",
+  "phone": "+91 11 6881 6906",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Pranav Iyengar — Lucknow",
+  "name": "Pranav Iyengar",
+  "native_name": "प्रणव अयंगर",
+  "city": "Lucknow",
+  "region": "Uttar Pradesh",
+  "postal": "226001",
+  "phone": "+91 522 4969 0950",
+  "timezone": "Asia/Kolkata"
+ },
+ {
+  "value": "Aisha Bansal — Bhopal",
+  "name": "Aisha Bansal",
+  "native_name": "आयशा बंसल",
+  "city": "Bhopal",
+  "region": "Madhya Pradesh",
+  "postal": "462001",
+  "phone": "+91 755 9871 9612",
+  "timezone": "Asia/Kolkata"
+ }
+]

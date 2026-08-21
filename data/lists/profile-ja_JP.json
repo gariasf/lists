@@ -1,0 +1,402 @@
+[
+ {
+  "value": "Aoi Kato — Chiyoda-ku",
+  "name": "Aoi Kato",
+  "native_name": "加藤 葵",
+  "city": "Chiyoda-ku",
+  "region": "Tokyo",
+  "postal": "100-0005",
+  "phone": "+81 3 8643-5555",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Misaki Kondo — Chiyoda-ku",
+  "name": "Misaki Kondo",
+  "native_name": "近藤 美咲",
+  "city": "Chiyoda-ku",
+  "region": "Tokyo",
+  "postal": "100-0005",
+  "phone": "+81 3 4327-5960",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Ren Yoshida — Kyoto",
+  "name": "Ren Yoshida",
+  "native_name": "吉田 蓮",
+  "city": "Kyoto",
+  "region": "Kyoto",
+  "postal": "600-8216",
+  "phone": "+81 75 2477-1161",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Riko Endo — Chiyoda-ku",
+  "name": "Riko Endo",
+  "native_name": "遠藤 莉子",
+  "city": "Chiyoda-ku",
+  "region": "Tokyo",
+  "postal": "100-0005",
+  "phone": "+81 3 8054-3201",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Hiroto Sasaki — Yokohama",
+  "name": "Hiroto Sasaki",
+  "native_name": "佐々木 大翔",
+  "city": "Yokohama",
+  "region": "Kanagawa",
+  "postal": "220-0012",
+  "phone": "+81 45 5254-4896",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Haruto Suzuki — Shibuya-ku",
+  "name": "Haruto Suzuki",
+  "native_name": "鈴木 陽翔",
+  "city": "Shibuya-ku",
+  "region": "Tokyo",
+  "postal": "150-0002",
+  "phone": "+81 3 2112-3211",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Ryusei Sakamoto — Nagoya",
+  "name": "Ryusei Sakamoto",
+  "native_name": "坂本 龍生",
+  "city": "Nagoya",
+  "region": "Aichi",
+  "postal": "450-0002",
+  "phone": "+81 52 5550-1282",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Itsuki Matsumoto — Nagoya",
+  "name": "Itsuki Matsumoto",
+  "native_name": "松本 樹",
+  "city": "Nagoya",
+  "region": "Aichi",
+  "postal": "450-0002",
+  "phone": "+81 52 6578-1863",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Rin Saito — Hiroshima",
+  "name": "Rin Saito",
+  "native_name": "斎藤 凛",
+  "city": "Hiroshima",
+  "region": "Hiroshima",
+  "postal": "730-0011",
+  "phone": "+81 82 8965-4303",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Aoi Hasegawa — Fukuoka",
+  "name": "Aoi Hasegawa",
+  "native_name": "長谷川 葵",
+  "city": "Fukuoka",
+  "region": "Fukuoka",
+  "postal": "812-0011",
+  "phone": "+81 92 3611-4890",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Sakura Tanaka — Kyoto",
+  "name": "Sakura Tanaka",
+  "native_name": "田中 さくら",
+  "city": "Kyoto",
+  "region": "Kyoto",
+  "postal": "600-8216",
+  "phone": "+81 75 6563-7446",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Hina Ito — Sendai",
+  "name": "Hina Ito",
+  "native_name": "伊藤 ひな",
+  "city": "Sendai",
+  "region": "Miyagi",
+  "postal": "980-0021",
+  "phone": "+81 22 0146-6516",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Yuna Hashimoto — Hiroshima",
+  "name": "Yuna Hashimoto",
+  "native_name": "橋本 結菜",
+  "city": "Hiroshima",
+  "region": "Hiroshima",
+  "postal": "730-0011",
+  "phone": "+81 82 2448-1246",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Daiki Fujimoto — Osaka",
+  "name": "Daiki Fujimoto",
+  "native_name": "藤本 大輝",
+  "city": "Osaka",
+  "region": "Osaka",
+  "postal": "530-0001",
+  "phone": "+81 6 8339-8305",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Sota Ishii — Sapporo",
+  "name": "Sota Ishii",
+  "native_name": "石井 颯太",
+  "city": "Sapporo",
+  "region": "Hokkaido",
+  "postal": "060-0001",
+  "phone": "+81 11 4053-0807",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Hiroto Ota — Shibuya-ku",
+  "name": "Hiroto Ota",
+  "native_name": "太田 陽翔",
+  "city": "Shibuya-ku",
+  "region": "Tokyo",
+  "postal": "150-0002",
+  "phone": "+81 3 2263-8288",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Mei Yamada — Shibuya-ku",
+  "name": "Mei Yamada",
+  "native_name": "山田 芽衣",
+  "city": "Shibuya-ku",
+  "region": "Tokyo",
+  "postal": "150-0002",
+  "phone": "+81 3 7766-5608",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Akari Okamoto — Shibuya-ku",
+  "name": "Akari Okamoto",
+  "native_name": "岡本 あかり",
+  "city": "Shibuya-ku",
+  "region": "Tokyo",
+  "postal": "150-0002",
+  "phone": "+81 3 3040-6493",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Koharu Maeda — Shinjuku-ku",
+  "name": "Koharu Maeda",
+  "native_name": "前田 心春",
+  "city": "Shinjuku-ku",
+  "region": "Tokyo",
+  "postal": "160-0022",
+  "phone": "+81 3 8143-6021",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Yusuke Kimura — Sapporo",
+  "name": "Yusuke Kimura",
+  "native_name": "木村 悠介",
+  "city": "Sapporo",
+  "region": "Hokkaido",
+  "postal": "060-0001",
+  "phone": "+81 11 9423-8482",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Kaito Mori — Sendai",
+  "name": "Kaito Mori",
+  "native_name": "森 海斗",
+  "city": "Sendai",
+  "region": "Miyagi",
+  "postal": "980-0021",
+  "phone": "+81 22 2558-3379",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Asahi Murakami — Hiroshima",
+  "name": "Asahi Murakami",
+  "native_name": "村上 朝陽",
+  "city": "Hiroshima",
+  "region": "Hiroshima",
+  "postal": "730-0011",
+  "phone": "+81 82 8238-4396",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Nanami Aoki — Shinjuku-ku",
+  "name": "Nanami Aoki",
+  "native_name": "青木 七海",
+  "city": "Shinjuku-ku",
+  "region": "Tokyo",
+  "postal": "160-0022",
+  "phone": "+81 3 5683-3927",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Haruki Ishikawa — Hiroshima",
+  "name": "Haruki Ishikawa",
+  "native_name": "石川 陽輝",
+  "city": "Hiroshima",
+  "region": "Hiroshima",
+  "postal": "730-0011",
+  "phone": "+81 82 0189-6949",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Daiki Kobayashi — Osaka",
+  "name": "Daiki Kobayashi",
+  "native_name": "小林 大輝",
+  "city": "Osaka",
+  "region": "Osaka",
+  "postal": "530-0001",
+  "phone": "+81 6 1454-9477",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Yuna Yamaguchi — Osaka",
+  "name": "Yuna Yamaguchi",
+  "native_name": "山口 結菜",
+  "city": "Osaka",
+  "region": "Osaka",
+  "postal": "530-0001",
+  "phone": "+81 6 0105-6422",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Hana Nakamura — Hiroshima",
+  "name": "Hana Nakamura",
+  "native_name": "中村 花",
+  "city": "Hiroshima",
+  "region": "Hiroshima",
+  "postal": "730-0011",
+  "phone": "+81 82 6504-6839",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Riku Ikeda — Kyoto",
+  "name": "Riku Ikeda",
+  "native_name": "池田 陸",
+  "city": "Kyoto",
+  "region": "Kyoto",
+  "postal": "600-8216",
+  "phone": "+81 75 1584-2548",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Sho Goto — Osaka",
+  "name": "Sho Goto",
+  "native_name": "後藤 翔",
+  "city": "Osaka",
+  "region": "Osaka",
+  "postal": "530-0001",
+  "phone": "+81 6 1582-9716",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Nao Fujii — Osaka",
+  "name": "Nao Fujii",
+  "native_name": "藤井 奈緒",
+  "city": "Osaka",
+  "region": "Osaka",
+  "postal": "530-0001",
+  "phone": "+81 6 1042-8040",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Honoka Hayashi — Fukuoka",
+  "name": "Honoka Hayashi",
+  "native_name": "林 ほのか",
+  "city": "Fukuoka",
+  "region": "Fukuoka",
+  "postal": "812-0011",
+  "phone": "+81 92 8784-3511",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Sora Fukuda — Osaka",
+  "name": "Sora Fukuda",
+  "native_name": "福田 そら",
+  "city": "Osaka",
+  "region": "Osaka",
+  "postal": "530-0001",
+  "phone": "+81 6 4823-0304",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Hina Tamura — Osaka",
+  "name": "Hina Tamura",
+  "native_name": "田村 ひな",
+  "city": "Osaka",
+  "region": "Osaka",
+  "postal": "530-0001",
+  "phone": "+81 6 1976-4296",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Yamato Fujita — Chiyoda-ku",
+  "name": "Yamato Fujita",
+  "native_name": "藤田 大和",
+  "city": "Chiyoda-ku",
+  "region": "Tokyo",
+  "postal": "100-0005",
+  "phone": "+81 3 7444-3158",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Riku Yamamoto — Osaka",
+  "name": "Riku Yamamoto",
+  "native_name": "山本 陸",
+  "city": "Osaka",
+  "region": "Osaka",
+  "postal": "530-0001",
+  "phone": "+81 6 5030-2993",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Mio Inoue — Sendai",
+  "name": "Mio Inoue",
+  "native_name": "井上 美桜",
+  "city": "Sendai",
+  "region": "Miyagi",
+  "postal": "980-0021",
+  "phone": "+81 22 2536-4805",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Sota Watanabe — Fukuoka",
+  "name": "Sota Watanabe",
+  "native_name": "渡辺 颯太",
+  "city": "Fukuoka",
+  "region": "Fukuoka",
+  "postal": "812-0011",
+  "phone": "+81 92 9305-3676",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Akari Abe — Shinjuku-ku",
+  "name": "Akari Abe",
+  "native_name": "阿部 あかり",
+  "city": "Shinjuku-ku",
+  "region": "Tokyo",
+  "postal": "160-0022",
+  "phone": "+81 3 6881-6906",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Yamato Saito — Hiroshima",
+  "name": "Yamato Saito",
+  "native_name": "斎藤 大和",
+  "city": "Hiroshima",
+  "region": "Hiroshima",
+  "postal": "730-0011",
+  "phone": "+81 82 4969-0950",
+  "timezone": "Asia/Tokyo"
+ },
+ {
+  "value": "Misaki Nakano — Fukuoka",
+  "name": "Misaki Nakano",
+  "native_name": "中野 美咲",
+  "city": "Fukuoka",
+  "region": "Fukuoka",
+  "postal": "812-0011",
+  "phone": "+81 92 9871-9612",
+  "timezone": "Asia/Tokyo"
+ }
+]

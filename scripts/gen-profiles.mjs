@@ -16,16 +16,21 @@ const CITIES = path.join(process.cwd(), 'data', 'profile-cities.json')
 const UPSTREAM = 'https://raw.githubusercontent.com/listsfordesign/Lists/master/Lists'
 const ROWS = 40
 
-// locale → { names: local file | {upstream}, native?: aligned local file, phone: local file }
+// locale → { names: local file | {upstream}, native?: aligned local file,
+//            subscriber: builds the digits after the city's dial prefix }
+const digits = (rand, n) =>
+  Array.from({ length: n }, () => Math.floor(rand() * 10)).join('')
+
 const LOCALES = {
-  en_US: { names: { upstream: 'names-en_US.txt' }, phone: 'phone-us_US.txt' },
-  en_GB: { names: { upstream: 'names-en_GB.txt' }, phone: 'phone-gb_GB.txt' },
-  de_DE: { names: { upstream: 'names-de_DE.txt' }, phone: 'phone-de_DE.txt' },
-  it_IT: { names: 'names-it_IT.txt', phone: 'phone-it_IT.txt' },
-  ja_JP: { names: 'names-ja_JP.txt', native: 'names-ja_JP-native.txt', phone: 'phone-jp_JP.txt' },
-  pt_BR: { names: 'names-pt_BR.txt', phone: 'phone-br_BR.txt' },
-  es_MX: { names: 'names-es_MX.txt', phone: 'phone-mx_MX.txt' },
-  hi_IN: { names: 'names-hi_IN.txt', native: 'names-hi_IN-native.txt', phone: 'phone-in_IN.txt' },
+  // US/UK use the reserved fictional ranges (555-01xx, Ofcom xxx 496 0xxx).
+  en_US: { names: { upstream: 'names-en_US.txt' }, subscriber: (r) => `555-01${digits(r, 2)}` },
+  en_GB: { names: { upstream: 'names-en_GB.txt' }, subscriber: (r) => `496 0${digits(r, 3)}` },
+  de_DE: { names: { upstream: 'names-de_DE.txt' }, subscriber: (r) => digits(r, 7) },
+  it_IT: { names: 'names-it_IT.txt', subscriber: (r) => `${digits(r, 4)} ${digits(r, 4)}` },
+  ja_JP: { names: 'names-ja_JP.txt', native: 'names-ja_JP-native.txt', subscriber: (r) => `${digits(r, 4)}-${digits(r, 4)}` },
+  pt_BR: { names: 'names-pt_BR.txt', subscriber: (r) => `9${digits(r, 4)}-${digits(r, 4)}` },
+  es_MX: { names: 'names-es_MX.txt', subscriber: (r) => `${digits(r, 4)} ${digits(r, 4)}` },
+  hi_IN: { names: 'names-hi_IN.txt', native: 'names-hi_IN-native.txt', subscriber: (r) => `${digits(r, 4)} ${digits(r, 4)}` },
 }
 
 function mulberry32(seed) {
@@ -64,6 +69,12 @@ for (const [locale, cfg] of Object.entries(LOCALES)) {
     console.error(`gen-profiles: no city tuples for ${locale}, skipping`)
     continue
   }
+  const noPrefix = tuples.filter((t) => !t.prefix).map((t) => t.city)
+  if (noPrefix.length > 0) {
+    // A row without a city-matching dial code defeats the whole point.
+    console.error(`gen-profiles: ${locale} cities missing a dial prefix: ${noPrefix.join(', ')}`)
+    process.exit(1)
+  }
   let names, natives
   try {
     names = await loadNames(cfg.names)
@@ -75,7 +86,6 @@ for (const [locale, cfg] of Object.entries(LOCALES)) {
     continue
   }
 
-  const phones = await readLines(cfg.phone)
   const rand = mulberry32(1337)
   const rows = []
   const usedNames = new Set()
@@ -86,6 +96,9 @@ for (const [locale, cfg] of Object.entries(LOCALES)) {
     } while (usedNames.has(ni))
     usedNames.add(ni)
     const t = tuples[Math.floor(rand() * tuples.length)]
+    // The whole point of these bundles: the phone's area code belongs to
+    // the same city as the postal code, so no row contradicts itself.
+    const phone = t.prefix ? `${t.prefix} ${cfg.subscriber(rand)}` : undefined
     rows.push({
       value: `${names[ni]} — ${t.city}`,
       name: names[ni],
@@ -93,7 +106,7 @@ for (const [locale, cfg] of Object.entries(LOCALES)) {
       city: t.city,
       region: t.region,
       postal: t.postal,
-      phone: phones[Math.floor(rand() * phones.length)],
+      ...(phone ? { phone } : {}),
       timezone: t.timezone,
     })
   }
