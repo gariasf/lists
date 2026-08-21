@@ -15,7 +15,7 @@ interface Env extends RateLimitEnv {
     run: (
       model: string,
       input: Record<string, unknown>,
-    ) => Promise<{ response?: string }>
+    ) => Promise<{ response?: string | Record<string, unknown> | unknown[] }>
   }
 }
 
@@ -233,32 +233,39 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   const knobs = (body.knobs ?? {}) as Record<string, unknown>
   const { system, user, resultKey } = spec.buildPrompt(knobs)
 
-  let aiResult: { response?: string }
+  let aiResult: { response?: string | Record<string, unknown> | unknown[] }
   try {
-    aiResult = (await env.AI.run(MODEL, {
+    aiResult = await env.AI.run(MODEL, {
       messages: [
         { role: 'system', content: system },
         { role: 'user', content: user },
       ],
       max_tokens: 3072,
       temperature: 0.75,
-    })) as { response?: string }
+    })
   } catch (err) {
+    // 500, not 502: Cloudflare's edge replaces origin 502 bodies with its
+    // own plain-text error page on proxied domains, hiding the JSON detail.
     return jsonResponse(
       { error: 'AI request failed', detail: String((err as Error).message ?? err) },
-      502,
+      500,
     )
   }
 
-  const raw = (aiResult?.response ?? '').toString()
-  if (!raw) return jsonResponse({ error: 'Empty response from model' }, 502)
+  // Newer Workers AI models may return `response` as an already-parsed
+  // object instead of a JSON string.
+  const resp = aiResult?.response
+  const parsed =
+    resp !== null && typeof resp === 'object' ? resp : extractJson((resp ?? '').toString())
 
-  const parsed = extractJson(raw)
-  if (parsed == null)
+  if (parsed == null) {
+    const raw = String(resp ?? '')
+    if (!raw) return jsonResponse({ error: 'Empty response from model' }, 500)
     return jsonResponse(
       { error: 'Could not parse JSON from model output', raw: raw.slice(0, 400) },
-      502,
+      500,
     )
+  }
 
   // Pick result inside top-level wrapper if specified
   let payload: unknown = parsed

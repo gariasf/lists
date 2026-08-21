@@ -5,7 +5,7 @@ interface Env extends RateLimitEnv {
     run: (
       model: string,
       input: Record<string, unknown>,
-    ) => Promise<{ response?: string } | { response: string }>
+    ) => Promise<{ response?: string | Record<string, unknown> | unknown[] }>
   }
 }
 
@@ -61,26 +61,27 @@ function buildUserPrompt(
   return lines.join('\n')
 }
 
+function itemsFromParsed(obj: unknown, count: number): string[] {
+  const arr = Array.isArray(obj)
+    ? obj
+    : obj && Array.isArray((obj as { items?: unknown[] }).items)
+      ? (obj as { items: unknown[] }).items
+      : null
+  if (!arr) return []
+  return arr
+    .filter((v: unknown): v is string => typeof v === 'string')
+    .map((v: string) => v.trim())
+    .filter(Boolean)
+    .slice(0, count)
+}
+
 function tryParseItems(raw: string, count: number): string[] {
   const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)```/i)
   const candidate = fenced ? fenced[1] : raw
 
   try {
-    const obj = JSON.parse(candidate)
-    if (obj && Array.isArray(obj.items)) {
-      return obj.items
-        .filter((v: unknown): v is string => typeof v === 'string')
-        .map((v: string) => v.trim())
-        .filter(Boolean)
-        .slice(0, count)
-    }
-    if (Array.isArray(obj)) {
-      return obj
-        .filter((v: unknown): v is string => typeof v === 'string')
-        .map((v: string) => v.trim())
-        .filter(Boolean)
-        .slice(0, count)
-    }
+    const items = itemsFromParsed(JSON.parse(candidate), count)
+    if (items.length > 0) return items
   } catch {
     /* fall through */
   }
@@ -139,31 +140,39 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
 
   const userPrompt = buildUserPrompt(prompt, count, seeds)
 
-  let result: { response?: string }
+  let result: { response?: string | Record<string, unknown> | unknown[] }
   try {
-    result = (await env.AI.run(MODEL, {
+    result = await env.AI.run(MODEL, {
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         { role: 'user', content: userPrompt },
       ],
       max_tokens: 2048,
       temperature: 0.8,
-    })) as { response?: string }
+    })
   } catch (err) {
+    // 500, not 502: Cloudflare's edge replaces origin 502 bodies with its
+    // own plain-text error page on proxied domains, hiding the JSON detail.
     return jsonResponse(
       { error: 'AI request failed', detail: String((err as Error).message ?? err) },
-      502,
+      500,
     )
   }
 
-  const raw = (result?.response ?? '').toString()
-  if (!raw) return jsonResponse({ error: 'Empty response from model' }, 502)
+  // Newer Workers AI models may return `response` as an already-parsed
+  // object instead of a JSON string.
+  const resp = result?.response
+  const items =
+    resp !== null && typeof resp === 'object'
+      ? itemsFromParsed(resp, count)
+      : tryParseItems((resp ?? '').toString(), count)
 
-  const items = tryParseItems(raw, count)
   if (items.length === 0) {
+    const raw = typeof resp === 'object' ? JSON.stringify(resp) : String(resp ?? '')
+    if (!raw) return jsonResponse({ error: 'Empty response from model' }, 500)
     return jsonResponse(
       { error: 'Could not parse items from model output', raw: raw.slice(0, 400) },
-      502,
+      500,
     )
   }
 
