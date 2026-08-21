@@ -54,8 +54,11 @@ next-env.d.ts
 .DS_Store
 Thumbs.db
 
-# Generated npm package (rebuilt from out/ via npm run build:npm)
-packages/npm/
+# The npm package is generated from the built site (npm run build:npm), so
+# its 431 data files stay out of git — but the folder itself must exist on
+# GitHub, because the site links people to it.
+packages/npm/*
+!packages/npm/README.md
 
 # Raycast extension build output + deps
 packages/raycast-extension/node_modules/
