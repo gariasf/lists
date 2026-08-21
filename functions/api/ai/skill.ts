@@ -162,12 +162,21 @@ interface SkillSpec {
   compose?: (knobs: Record<string, unknown>, get: GetList) => Promise<unknown>
 }
 
-const DICEBEAR_STYLES = ['lorelei', 'avataaars', 'fun-emoji', 'thumbs', 'bottts']
+// Person-like styles only: a robot or a frowning emoji beside a name and job
+// title reads as broken, not as a realistic profile. Bottts/fun-emoji also
+// carry different intrinsic padding, so mixing styles makes evenly-sized
+// avatars look mismatched.
+const PORTRAIT_STYLES = ['lorelei', 'avataaars', 'notionists', 'personas']
 
 function avatarUrl(seed: string, style?: string): string {
-  const s = style ?? DICEBEAR_STYLES[Math.floor(Math.random() * DICEBEAR_STYLES.length)]
+  const s = style ?? PORTRAIT_STYLES[0]
   const safeSeed = encodeURIComponent(seed || `user-${Math.floor(Math.random() * 10000)}`)
   return `https://api.dicebear.com/9.x/${s}/svg?seed=${safeSeed}`
+}
+
+/** One style per response, so a set of profiles looks like one product. */
+function pickAvatarStyle(): string {
+  return PORTRAIT_STYLES[Math.floor(Math.random() * PORTRAIT_STYLES.length)]
 }
 
 /** Locale → curated romanized-names list, used to seed realistic-user. */
@@ -225,9 +234,10 @@ const SKILLS: Record<string, SkillSpec> = {
     },
     postProcess: (parsed) => {
       if (!Array.isArray(parsed)) return parsed
+      const style = pickAvatarStyle()
       return parsed.map((u: Record<string, unknown>) => ({
         ...u,
-        avatar_url: avatarUrl(String(u.name ?? '')),
+        avatar_url: avatarUrl(String(u.name ?? ''), style),
       }))
     },
   },
