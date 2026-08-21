@@ -517,14 +517,4 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'number-formats-by-locale', name: 'Number Formats by Locale', category: 'numbers', local: { file: 'number-formats-by-locale.txt', format: 'txt' } },
   { slug: 'prices-localized', name: 'Prices (localized)', category: 'finance', local: { file: 'prices-localized.txt', format: 'txt' } },
 
-  // profiles-<locale>: internally consistent identity bundles (generated
-  // by scripts/gen-profiles.mjs from curated lists + verified city tuples)
-  { slug: 'profile-en_us', name: 'Profiles (US)', category: 'identity', local: { file: 'profile-en_US.json', format: 'json', valueKey: 'value' } },
-  { slug: 'profile-en_gb', name: 'Profiles (UK)', category: 'identity', local: { file: 'profile-en_GB.json', format: 'json', valueKey: 'value' } },
-  { slug: 'profile-de_de', name: 'Profiles (Germany)', category: 'identity', local: { file: 'profile-de_DE.json', format: 'json', valueKey: 'value' } },
-  { slug: 'profile-it_it', name: 'Profiles (Italy)', category: 'identity', local: { file: 'profile-it_IT.json', format: 'json', valueKey: 'value' } },
-  { slug: 'profile-ja_jp', name: 'Profiles (Japan)', category: 'identity', local: { file: 'profile-ja_JP.json', format: 'json', valueKey: 'value' } },
-  { slug: 'profile-pt_br', name: 'Profiles (Brazil)', category: 'identity', local: { file: 'profile-pt_BR.json', format: 'json', valueKey: 'value' } },
-  { slug: 'profile-es_mx', name: 'Profiles (Mexico)', category: 'identity', local: { file: 'profile-es_MX.json', format: 'json', valueKey: 'value' } },
-  { slug: 'profile-hi_in', name: 'Profiles (India)', category: 'identity', local: { file: 'profile-hi_IN.json', format: 'json', valueKey: 'value' } },
 ]

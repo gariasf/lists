@@ -49,7 +49,13 @@ async function loadNames(src) {
   return (await res.text()).split('\n').map((l) => l.trim()).filter(Boolean)
 }
 
-const cities = JSON.parse(await fs.readFile(CITIES, 'utf8'))
+let cities
+try {
+  cities = JSON.parse(await fs.readFile(CITIES, 'utf8'))
+} catch {
+  console.log('gen-profiles: no data/profile-cities.json, skipping')
+  process.exit(0)
+}
 let generated = 0
 
 for (const [locale, cfg] of Object.entries(LOCALES)) {
