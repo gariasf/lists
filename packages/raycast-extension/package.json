@@ -1,0 +1,59 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "lists-mock-data",
+  "title": "Lists",
+  "description": "Search 430+ curated lists of realistic mock data and copy items straight to the clipboard.",
+  "icon": "icon.png",
+  "author": "gariasf",
+  "license": "MIT",
+  "platforms": ["macOS"],
+  "categories": ["Design Tools", "Developer Tools"],
+  "commands": [
+    {
+      "name": "search-lists",
+      "title": "Search Lists",
+      "subtitle": "lists.gariasf.com",
+      "description": "Browse the catalog, preview a list, and copy all or a random sample.",
+      "mode": "view"
+    },
+    {
+      "name": "copy-random",
+      "title": "Copy Random Items",
+      "subtitle": "lists.gariasf.com",
+      "description": "Copy a random sample from a list by slug without opening a view.",
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "slug",
+          "placeholder": "names-pt_br",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "count",
+          "placeholder": "5",
+          "type": "text",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^2.0.4",
+    "@raycast/utils": "^2.3.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.4",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.12",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix"
+  }
+}

@@ -56,3 +56,8 @@ Thumbs.db
 
 # Generated npm package (rebuilt from out/ via npm run build:npm)
 packages/npm/
+
+# Raycast extension build output + deps
+packages/raycast-extension/node_modules/
+packages/raycast-extension/dist/
+packages/raycast-extension/raycast-env.d.ts
