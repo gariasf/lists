@@ -1,0 +1,24 @@
+$49.99 · USD en-US
+$1,299.00 · USD en-US
+£42.50 · GBP en-GB
+1.234,56 € · EUR de-DE
+89,90 € · EUR fr-FR
+19,95 € · EUR es-ES
+249,00 € · EUR it-IT
+€ 74,95 · EUR nl-NL
+R$ 1.234,56 · BRL pt-BR
+$899.00 · MXN es-MX
+￥128,000 · JPY ja-JP
+₩49,000 · KRW ko-KR
+¥6,999.00 · CNY zh-CN
+₹74,999.00 · INR hi-IN
+₹12,50,000.00 · INR en-IN
+495,00 kr · SEK sv-SE
+219,99 zł · PLN pl-PL
+₺1.899,00 · TRY tr-TR
+4 990,00 ₽ · RUB ru-RU
+‏٨٥٠٫٠٠ ج.م.‏ · EGP ar-EG
+CHF 320.00 · CHF de-CH
+$64.99 · CAD en-CA
+$129.00 · AUD en-AU
+349,95 kr. · DKK da-DK

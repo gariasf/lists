@@ -1,0 +1,322 @@
+[
+ {
+  "value": "Sign in · Anmelden · Se connecter · Iniciar sessão · Kirjaudu sisään",
+  "en": "Sign in",
+  "de": "Anmelden",
+  "fr": "Se connecter",
+  "pt": "Iniciar sessão",
+  "fi": "Kirjaudu sisään"
+ },
+ {
+  "value": "Sign out · Abmelden · Se déconnecter · Terminar sessão · Kirjaudu ulos",
+  "en": "Sign out",
+  "de": "Abmelden",
+  "fr": "Se déconnecter",
+  "pt": "Terminar sessão",
+  "fi": "Kirjaudu ulos"
+ },
+ {
+  "value": "Settings · Einstellungen · Paramètres · Definições · Asetukset",
+  "en": "Settings",
+  "de": "Einstellungen",
+  "fr": "Paramètres",
+  "pt": "Definições",
+  "fi": "Asetukset"
+ },
+ {
+  "value": "Save · Speichern · Enregistrer · Guardar · Tallenna",
+  "en": "Save",
+  "de": "Speichern",
+  "fr": "Enregistrer",
+  "pt": "Guardar",
+  "fi": "Tallenna"
+ },
+ {
+  "value": "Cancel · Abbrechen · Annuler · Cancelar · Peruuta",
+  "en": "Cancel",
+  "de": "Abbrechen",
+  "fr": "Annuler",
+  "pt": "Cancelar",
+  "fi": "Peruuta"
+ },
+ {
+  "value": "Delete · Löschen · Supprimer · Eliminar · Poista",
+  "en": "Delete",
+  "de": "Löschen",
+  "fr": "Supprimer",
+  "pt": "Eliminar",
+  "fi": "Poista"
+ },
+ {
+  "value": "Search · Suchen · Rechercher · Pesquisar · Hae",
+  "en": "Search",
+  "de": "Suchen",
+  "fr": "Rechercher",
+  "pt": "Pesquisar",
+  "fi": "Hae"
+ },
+ {
+  "value": "Notifications · Benachrichtigungen · Notifications · Notificações · Ilmoitukset",
+  "en": "Notifications",
+  "de": "Benachrichtigungen",
+  "fr": "Notifications",
+  "pt": "Notificações",
+  "fi": "Ilmoitukset"
+ },
+ {
+  "value": "Mark all as read · Alle als gelesen markieren · Tout marquer comme lu · Marcar tudo como lido · Merkitse kaikki luetuiksi",
+  "en": "Mark all as read",
+  "de": "Alle als gelesen markieren",
+  "fr": "Tout marquer comme lu",
+  "pt": "Marcar tudo como lido",
+  "fi": "Merkitse kaikki luetuiksi"
+ },
+ {
+  "value": "Download · Herunterladen · Télécharger · Transferir · Lataa",
+  "en": "Download",
+  "de": "Herunterladen",
+  "fr": "Télécharger",
+  "pt": "Transferir",
+  "fi": "Lataa"
+ },
+ {
+  "value": "Upload · Hochladen · Importer · Carregar · Lataa palvelimelle",
+  "en": "Upload",
+  "de": "Hochladen",
+  "fr": "Importer",
+  "pt": "Carregar",
+  "fi": "Lataa palvelimelle"
+ },
+ {
+  "value": "Share · Teilen · Partager · Partilhar · Jaa",
+  "en": "Share",
+  "de": "Teilen",
+  "fr": "Partager",
+  "pt": "Partilhar",
+  "fi": "Jaa"
+ },
+ {
+  "value": "Edit profile · Profil bearbeiten · Modifier le profil · Editar perfil · Muokkaa profiilia",
+  "en": "Edit profile",
+  "de": "Profil bearbeiten",
+  "fr": "Modifier le profil",
+  "pt": "Editar perfil",
+  "fi": "Muokkaa profiilia"
+ },
+ {
+  "value": "Change password · Passwort ändern · Modifier le mot de passe · Alterar palavra-passe · Vaihda salasana",
+  "en": "Change password",
+  "de": "Passwort ändern",
+  "fr": "Modifier le mot de passe",
+  "pt": "Alterar palavra-passe",
+  "fi": "Vaihda salasana"
+ },
+ {
+  "value": "Forgot password? · Passwort vergessen? · Mot de passe oublié ? · Esqueceu-se da palavra-passe? · Unohditko salasanasi?",
+  "en": "Forgot password?",
+  "de": "Passwort vergessen?",
+  "fr": "Mot de passe oublié ?",
+  "pt": "Esqueceu-se da palavra-passe?",
+  "fi": "Unohditko salasanasi?"
+ },
+ {
+  "value": "Add to cart · In den Warenkorb · Ajouter au panier · Adicionar ao carrinho · Lisää ostoskoriin",
+  "en": "Add to cart",
+  "de": "In den Warenkorb",
+  "fr": "Ajouter au panier",
+  "pt": "Adicionar ao carrinho",
+  "fi": "Lisää ostoskoriin"
+ },
+ {
+  "value": "Checkout · Zur Kasse · Passer la commande · Finalizar compra · Siirry kassalle",
+  "en": "Checkout",
+  "de": "Zur Kasse",
+  "fr": "Passer la commande",
+  "pt": "Finalizar compra",
+  "fi": "Siirry kassalle"
+ },
+ {
+  "value": "Continue · Fortfahren · Continuer · Continuar · Jatka",
+  "en": "Continue",
+  "de": "Fortfahren",
+  "fr": "Continuer",
+  "pt": "Continuar",
+  "fi": "Jatka"
+ },
+ {
+  "value": "Back · Zurück · Retour · Voltar · Takaisin",
+  "en": "Back",
+  "de": "Zurück",
+  "fr": "Retour",
+  "pt": "Voltar",
+  "fi": "Takaisin"
+ },
+ {
+  "value": "Next · Weiter · Suivant · Seguinte · Seuraava",
+  "en": "Next",
+  "de": "Weiter",
+  "fr": "Suivant",
+  "pt": "Seguinte",
+  "fi": "Seuraava"
+ },
+ {
+  "value": "Submit · Absenden · Envoyer · Submeter · Lähetä",
+  "en": "Submit",
+  "de": "Absenden",
+  "fr": "Envoyer",
+  "pt": "Submeter",
+  "fi": "Lähetä"
+ },
+ {
+  "value": "Loading… · Wird geladen… · Chargement… · A carregar… · Ladataan…",
+  "en": "Loading…",
+  "de": "Wird geladen…",
+  "fr": "Chargement…",
+  "pt": "A carregar…",
+  "fi": "Ladataan…"
+ },
+ {
+  "value": "Try again · Erneut versuchen · Réessayer · Tentar novamente · Yritä uudelleen",
+  "en": "Try again",
+  "de": "Erneut versuchen",
+  "fr": "Réessayer",
+  "pt": "Tentar novamente",
+  "fi": "Yritä uudelleen"
+ },
+ {
+  "value": "Learn more · Mehr erfahren · En savoir plus · Saber mais · Lue lisää",
+  "en": "Learn more",
+  "de": "Mehr erfahren",
+  "fr": "En savoir plus",
+  "pt": "Saber mais",
+  "fi": "Lue lisää"
+ },
+ {
+  "value": "Get started · Jetzt loslegen · Commencer · Começar · Aloita",
+  "en": "Get started",
+  "de": "Jetzt loslegen",
+  "fr": "Commencer",
+  "pt": "Começar",
+  "fi": "Aloita"
+ },
+ {
+  "value": "Free trial · Kostenlose Testversion · Essai gratuit · Avaliação gratuita · Ilmainen kokeilu",
+  "en": "Free trial",
+  "de": "Kostenlose Testversion",
+  "fr": "Essai gratuit",
+  "pt": "Avaliação gratuita",
+  "fi": "Ilmainen kokeilu"
+ },
+ {
+  "value": "Subscribe · Abonnieren · S'abonner · Subscrever · Tilaa",
+  "en": "Subscribe",
+  "de": "Abonnieren",
+  "fr": "S'abonner",
+  "pt": "Subscrever",
+  "fi": "Tilaa"
+ },
+ {
+  "value": "Unsubscribe · Abbestellen · Se désabonner · Anular subscrição · Peruuta tilaus",
+  "en": "Unsubscribe",
+  "de": "Abbestellen",
+  "fr": "Se désabonner",
+  "pt": "Anular subscrição",
+  "fi": "Peruuta tilaus"
+ },
+ {
+  "value": "Terms of service · Nutzungsbedingungen · Conditions d'utilisation · Termos de serviço · Käyttöehdot",
+  "en": "Terms of service",
+  "de": "Nutzungsbedingungen",
+  "fr": "Conditions d'utilisation",
+  "pt": "Termos de serviço",
+  "fi": "Käyttöehdot"
+ },
+ {
+  "value": "Privacy policy · Datenschutzerklärung · Politique de confidentialité · Política de privacidade · Tietosuojakäytäntö",
+  "en": "Privacy policy",
+  "de": "Datenschutzerklärung",
+  "fr": "Politique de confidentialité",
+  "pt": "Política de privacidade",
+  "fi": "Tietosuojakäytäntö"
+ },
+ {
+  "value": "Help center · Hilfe-Center · Centre d'aide · Centro de ajuda · Ohjekeskus",
+  "en": "Help center",
+  "de": "Hilfe-Center",
+  "fr": "Centre d'aide",
+  "pt": "Centro de ajuda",
+  "fi": "Ohjekeskus"
+ },
+ {
+  "value": "Contact support · Support kontaktieren · Contacter l'assistance · Contactar o suporte · Ota yhteyttä tukeen",
+  "en": "Contact support",
+  "de": "Support kontaktieren",
+  "fr": "Contacter l'assistance",
+  "pt": "Contactar o suporte",
+  "fi": "Ota yhteyttä tukeen"
+ },
+ {
+  "value": "Dark mode · Dunkelmodus · Mode sombre · Modo escuro · Tumma tila",
+  "en": "Dark mode",
+  "de": "Dunkelmodus",
+  "fr": "Mode sombre",
+  "pt": "Modo escuro",
+  "fi": "Tumma tila"
+ },
+ {
+  "value": "Language · Sprache · Langue · Idioma · Kieli",
+  "en": "Language",
+  "de": "Sprache",
+  "fr": "Langue",
+  "pt": "Idioma",
+  "fi": "Kieli"
+ },
+ {
+  "value": "Invite teammates · Teammitglieder einladen · Inviter des membres de l'équipe · Convidar colegas de equipa · Kutsu tiimin jäseniä",
+  "en": "Invite teammates",
+  "de": "Teammitglieder einladen",
+  "fr": "Inviter des membres de l'équipe",
+  "pt": "Convidar colegas de equipa",
+  "fi": "Kutsu tiimin jäseniä"
+ },
+ {
+  "value": "Copy link · Link kopieren · Copier le lien · Copiar ligação · Kopioi linkki",
+  "en": "Copy link",
+  "de": "Link kopieren",
+  "fr": "Copier le lien",
+  "pt": "Copiar ligação",
+  "fi": "Kopioi linkki"
+ },
+ {
+  "value": "Undo · Rückgängig · Annuler · Anular · Kumoa",
+  "en": "Undo",
+  "de": "Rückgängig",
+  "fr": "Annuler",
+  "pt": "Anular",
+  "fi": "Kumoa"
+ },
+ {
+  "value": "Redo · Wiederholen · Rétablir · Refazer · Tee uudelleen",
+  "en": "Redo",
+  "de": "Wiederholen",
+  "fr": "Rétablir",
+  "pt": "Refazer",
+  "fi": "Tee uudelleen"
+ },
+ {
+  "value": "Archive · Archivieren · Archiver · Arquivar · Arkistoi",
+  "en": "Archive",
+  "de": "Archivieren",
+  "fr": "Archiver",
+  "pt": "Arquivar",
+  "fi": "Arkistoi"
+ },
+ {
+  "value": "Empty trash · Papierkorb leeren · Vider la corbeille · Esvaziar o lixo · Tyhjennä roskakori",
+  "en": "Empty trash",
+  "de": "Papierkorb leeren",
+  "fr": "Vider la corbeille",
+  "pt": "Esvaziar o lixo",
+  "fi": "Tyhjennä roskakori"
+ }
+]
