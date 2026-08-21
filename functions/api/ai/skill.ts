@@ -8,7 +8,12 @@
  * (e.g. deterministic avatar URLs that don't depend on LLM accuracy).
  */
 
-import { checkRateLimit, LLM_LIMIT, type RateLimitEnv } from '../../_lib/ratelimit'
+import {
+  checkBodySize,
+  checkRateLimit,
+  LLM_LIMIT,
+  type RateLimitEnv,
+} from '../../_lib/ratelimit'
 
 interface Env extends RateLimitEnv {
   AI: {
@@ -377,11 +382,24 @@ const SKILLS: Record<string, SkillSpec> = {
         'Out for delivery',
         'Delivered',
       ]
+      // Fetch each carrier's list once, not once per row, and hand out
+      // distinct tracking numbers.
+      const numbersByCarrier = new Map<string, string[]>()
+      const taken = new Set<string>()
       const packages = await Promise.all(
         Array.from({ length: count }, async () => {
-          const carrier =
-            wanted in CARRIERS ? wanted : pick(Object.keys(CARRIERS))
-          const numbers = await get(CARRIERS[carrier])
+          // Object.hasOwn, not `in`: `in` walks the prototype chain, so
+          // "constructor" / "__proto__" would pass as a carrier name.
+          const carrier = Object.hasOwn(CARRIERS, wanted)
+            ? wanted
+            : pick(Object.keys(CARRIERS))
+          if (!numbersByCarrier.has(carrier)) {
+            numbersByCarrier.set(carrier, await get(CARRIERS[carrier]))
+          }
+          const numbers = numbersByCarrier.get(carrier)!
+          let tracking = pick(numbers)
+          for (let i = 0; i < 10 && taken.has(tracking); i++) tracking = pick(numbers)
+          taken.add(tracking)
           const stage = 1 + Math.floor(Math.random() * TIMELINE.length)
           const start = Date.now() - (2 + Math.floor(Math.random() * 4)) * 86400000
           const step = (Date.now() - start) / stage
@@ -392,7 +410,7 @@ const SKILLS: Record<string, SkillSpec> = {
           const delivered = events[events.length - 1].status === 'Delivered'
           return {
             carrier,
-            tracking_number: pick(numbers),
+            tracking_number: tracking,
             status: events[events.length - 1].status,
             events: events.reverse(),
             ...(delivered
@@ -408,6 +426,9 @@ const SKILLS: Record<string, SkillSpec> = {
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {
   const { request, env } = context
+
+  const tooLarge = checkBodySize(request)
+  if (tooLarge) return tooLarge
 
   let body: Body
   try {

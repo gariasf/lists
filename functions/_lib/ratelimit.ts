@@ -94,6 +94,22 @@ function bodyTooLarge(): Response {
 }
 
 /**
+ * Header-only size check. Call this BEFORE `request.json()` — once the body
+ * has been buffered the damage is done, and endpoints that skip the rate
+ * limiter (zero-LLM skills) still need the guard.
+ */
+export function checkBodySize(request: Request): Response | null {
+  const declaredLength = parseInt(
+    request.headers.get('content-length') ?? '0',
+    10,
+  )
+  if (Number.isFinite(declaredLength) && declaredLength > MAX_BODY_BYTES) {
+    return bodyTooLarge()
+  }
+  return null
+}
+
+/**
  * Throws a 429 Response if the caller is over either the global or per-IP
  * budget. Otherwise increments both counters and returns null.
  */
@@ -102,13 +118,8 @@ export async function checkRateLimit(
   request: Request,
   kind: LimitKind,
 ): Promise<Response | null> {
-  const declaredLength = parseInt(
-    request.headers.get('content-length') ?? '0',
-    10,
-  )
-  if (Number.isFinite(declaredLength) && declaredLength > MAX_BODY_BYTES) {
-    return bodyTooLarge()
-  }
+  const tooLarge = checkBodySize(request)
+  if (tooLarge) return tooLarge
 
   const ip = clientIp(request)
   const gKey = dayKey(kind.bucket)

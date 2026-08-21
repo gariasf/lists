@@ -80,10 +80,12 @@ function tryParseItems(raw: string, count: number): string[] {
   const candidate = fenced ? fenced[1] : raw
 
   try {
-    const items = itemsFromParsed(JSON.parse(candidate), count)
-    if (items.length > 0) return items
+    const parsed = JSON.parse(candidate)
+    // Parsed cleanly: trust the result even when it's empty. Falling back to
+    // line-splitting here would return the JSON's own punctuation as items.
+    return itemsFromParsed(parsed, count)
   } catch {
-    /* fall through */
+    /* not JSON — fall through to the line-splitting last resort */
   }
 
   // Last resort: split lines, strip bullets/numbers

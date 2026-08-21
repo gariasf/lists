@@ -1,6 +1,11 @@
-/list/f1-drivers-2025 /list/f1-drivers 301
-/list/f1-teams-2025 /list/f1-teams 301
-/list/font-families-2025 /list/font-families-modern 301
+# next.config.ts sets trailingSlash: true, so the indexed URLs carry a
+# trailing slash — both forms are listed.
+/list/f1-drivers-2025 /list/f1-drivers/ 301
+/list/f1-drivers-2025/ /list/f1-drivers/ 301
+/list/f1-teams-2025 /list/f1-teams/ 301
+/list/f1-teams-2025/ /list/f1-teams/ 301
+/list/font-families-2025 /list/font-families-modern/ 301
+/list/font-families-2025/ /list/font-families-modern/ 301
 /api/lists/f1-drivers-2025 /api/lists/f1-drivers 301
 /api/lists/f1-teams-2025 /api/lists/f1-teams 301
 /api/lists/font-families-2025 /api/lists/font-families-modern 301

@@ -17,20 +17,37 @@ const UPSTREAM = 'https://raw.githubusercontent.com/listsfordesign/Lists/master/
 const ROWS = 40
 
 // locale → { names: local file | {upstream}, native?: aligned local file,
-//            subscriber: builds the digits after the city's dial prefix }
+//            subscriber: digits after the city's dial prefix }
+//
+// `subscriber` receives the prefix's area-code length, because national
+// number length is fixed while area codes vary: London is +44 20 with 8
+// local digits, Manchester +44 161 with 7. A fixed digit count per locale
+// produces undialable numbers for half the cities.
 const digits = (rand, n) =>
   Array.from({ length: n }, () => Math.floor(rand() * 10)).join('')
 
+const areaLen = (prefix) => prefix.split(' ').slice(1).join('').replace(/\D/g, '').length
+
+// Ofcom reserves a per-area fictional block; it is not the same digits
+// everywhere, so map the three 2-digit areas explicitly.
+const UK_DRAMA = { '20': '7946 0', '29': '2018 0', '28': '9018 0', '191': '498 0' }
+
 const LOCALES = {
-  // US/UK use the reserved fictional ranges (555-01xx, Ofcom xxx 496 0xxx).
+  // Reserved fictional ranges: US 555-01xx, UK Ofcom drama blocks.
   en_US: { names: { upstream: 'names-en_US.txt' }, subscriber: (r) => `555-01${digits(r, 2)}` },
-  en_GB: { names: { upstream: 'names-en_GB.txt' }, subscriber: (r) => `496 0${digits(r, 3)}` },
-  de_DE: { names: { upstream: 'names-de_DE.txt' }, subscriber: (r) => digits(r, 7) },
-  it_IT: { names: 'names-it_IT.txt', subscriber: (r) => `${digits(r, 4)} ${digits(r, 4)}` },
-  ja_JP: { names: 'names-ja_JP.txt', native: 'names-ja_JP-native.txt', subscriber: (r) => `${digits(r, 4)}-${digits(r, 4)}` },
+  en_GB: {
+    names: { upstream: 'names-en_GB.txt' },
+    subscriber: (r, _len, area) => `${UK_DRAMA[area] ?? '496 0'}${digits(r, 3)}`,
+  },
+  // German subscriber numbers shrink as the Vorwahl grows.
+  de_DE: { names: { upstream: 'names-de_DE.txt' }, subscriber: (r, len) => digits(r, 10 - len) },
+  // Italian prefixes keep their leading 0, which doesn't count toward length.
+  it_IT: { names: 'names-it_IT.txt', subscriber: (r, len) => `${digits(r, 3)} ${digits(r, 10 - len - 3)}` },
+  ja_JP: { names: 'names-ja_JP.txt', native: 'names-ja_JP-native.txt', subscriber: (r, len) => `${digits(r, 5 - len)}-${digits(r, 4)}` },
+  // Brazilian mobiles: 9 + 8 digits after the 2-digit DDD.
   pt_BR: { names: 'names-pt_BR.txt', subscriber: (r) => `9${digits(r, 4)}-${digits(r, 4)}` },
-  es_MX: { names: 'names-es_MX.txt', subscriber: (r) => `${digits(r, 4)} ${digits(r, 4)}` },
-  hi_IN: { names: 'names-hi_IN.txt', native: 'names-hi_IN-native.txt', subscriber: (r) => `${digits(r, 4)} ${digits(r, 4)}` },
+  es_MX: { names: 'names-es_MX.txt', subscriber: (r, len) => `${digits(r, 10 - len - 4)} ${digits(r, 4)}` },
+  hi_IN: { names: 'names-hi_IN.txt', native: 'names-hi_IN-native.txt', subscriber: (r, len) => `${digits(r, 10 - len - 4)} ${digits(r, 4)}` },
 }
 
 function mulberry32(seed) {
@@ -78,6 +95,9 @@ for (const [locale, cfg] of Object.entries(LOCALES)) {
   let names, natives
   try {
     names = await loadNames(cfg.names)
+    // A 200 with an empty body would otherwise overwrite good committed
+    // data with [].
+    if (names.length === 0) throw new Error('empty name list')
     natives = cfg.native ? await readLines(cfg.native) : null
   } catch (err) {
     // Upstream fetch hiccup: keep the previously committed file rather
@@ -98,7 +118,8 @@ for (const [locale, cfg] of Object.entries(LOCALES)) {
     const t = tuples[Math.floor(rand() * tuples.length)]
     // The whole point of these bundles: the phone's area code belongs to
     // the same city as the postal code, so no row contradicts itself.
-    const phone = t.prefix ? `${t.prefix} ${cfg.subscriber(rand)}` : undefined
+    const area = t.prefix.split(' ').slice(1).join('').replace(/\D/g, '')
+    const phone = `${t.prefix} ${cfg.subscriber(rand, areaLen(t.prefix), area)}`
     rows.push({
       value: `${names[ni]} — ${t.city}`,
       name: names[ni],
@@ -106,7 +127,7 @@ for (const [locale, cfg] of Object.entries(LOCALES)) {
       city: t.city,
       region: t.region,
       postal: t.postal,
-      ...(phone ? { phone } : {}),
+      phone,
       timezone: t.timezone,
     })
   }

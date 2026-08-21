@@ -5,35 +5,53 @@
   "city": "Puebla",
   "region": "Puebla",
   "postal": "72000",
-  "phone": "+52 222 8643 5555",
+  "phone": "+52 222 864 3555",
   "timezone": "America/Mexico_City"
  },
  {
-  "value": "Pablo Higuera Cordero — Puebla",
-  "name": "Pablo Higuera Cordero",
-  "city": "Puebla",
-  "region": "Puebla",
-  "postal": "72000",
-  "phone": "+52 222 4327 5960",
+  "value": "Alberto Verduzco Peralta — Cancún",
+  "name": "Alberto Verduzco Peralta",
+  "city": "Cancún",
+  "region": "Quintana Roo",
+  "postal": "77500",
+  "phone": "+52 998 143 2759",
+  "timezone": "America/Cancun"
+ },
+ {
+  "value": "Elena Zepeda Carbajal — Guadalajara",
+  "name": "Elena Zepeda Carbajal",
+  "city": "Guadalajara",
+  "region": "Jalisco",
+  "postal": "44100",
+  "phone": "+52 33 1242 4771",
   "timezone": "America/Mexico_City"
  },
  {
-  "value": "Daniela Espinoza Márquez — Puebla",
-  "name": "Daniela Espinoza Márquez",
-  "city": "Puebla",
-  "region": "Puebla",
-  "postal": "72000",
-  "phone": "+52 222 4247 7116",
+  "value": "Emiliano Chávez Ríos — Chihuahua",
+  "name": "Emiliano Chávez Ríos",
+  "city": "Chihuahua",
+  "region": "Chihuahua",
+  "postal": "31000",
+  "phone": "+52 614 172 8054",
+  "timezone": "America/Chihuahua"
+ },
+ {
+  "value": "Héctor Villalobos Bernal — Querétaro",
+  "name": "Héctor Villalobos Bernal",
+  "city": "Querétaro",
+  "region": "Querétaro",
+  "postal": "76000",
+  "phone": "+52 442 012 3525",
   "timezone": "America/Mexico_City"
  },
  {
-  "value": "Marco Antonio Sotelo Ledesma — Puebla",
-  "name": "Marco Antonio Sotelo Ledesma",
-  "city": "Puebla",
-  "region": "Puebla",
-  "postal": "72000",
-  "phone": "+52 222 8054 3201",
-  "timezone": "America/Mexico_City"
+  "value": "César Valdez Orozco — Monterrey",
+  "name": "César Valdez Orozco",
+  "city": "Monterrey",
+  "region": "Nuevo León",
+  "postal": "64000",
+  "phone": "+52 81 8960 1211",
+  "timezone": "America/Monterrey"
  },
  {
   "value": "Andrea Padilla Miranda — Querétaro",
@@ -41,62 +59,53 @@
   "city": "Querétaro",
   "region": "Querétaro",
   "postal": "76000",
-  "phone": "+52 442 5254 4896",
+  "phone": "+52 442 211 7555",
   "timezone": "America/Mexico_City"
  },
  {
-  "value": "Santiago Morales Reyes — Guadalajara",
-  "name": "Santiago Morales Reyes",
-  "city": "Guadalajara",
-  "region": "Jalisco",
-  "postal": "44100",
-  "phone": "+52 33 2112 3211",
+  "value": "Adriana Rubio Franco — Ciudad de México",
+  "name": "Adriana Rubio Franco",
+  "city": "Ciudad de México",
+  "region": "Ciudad de México",
+  "postal": "06000",
+  "phone": "+52 55 1282 2565",
   "timezone": "America/Mexico_City"
  },
  {
-  "value": "Abril Castañeda Loera — Mérida",
-  "name": "Abril Castañeda Loera",
-  "city": "Mérida",
-  "region": "Yucatán",
-  "postal": "97000",
-  "phone": "+52 999 5550 1282",
-  "timezone": "America/Merida"
- },
- {
-  "value": "Emilio Zamora Barrera — Mérida",
-  "name": "Emilio Zamora Barrera",
-  "city": "Mérida",
-  "region": "Yucatán",
-  "postal": "97000",
-  "phone": "+52 999 6578 1863",
-  "timezone": "America/Merida"
- },
- {
-  "value": "Alejandra Olvera Zúñiga — Hermosillo",
-  "name": "Alejandra Olvera Zúñiga",
-  "city": "Hermosillo",
-  "region": "Sonora",
-  "postal": "83000",
-  "phone": "+52 662 8965 4303",
-  "timezone": "America/Hermosillo"
- },
- {
-  "value": "Elena Zepeda Carbajal — La Paz",
-  "name": "Elena Zepeda Carbajal",
+  "value": "Marco Antonio Sotelo Ledesma — La Paz",
+  "name": "Marco Antonio Sotelo Ledesma",
   "city": "La Paz",
   "region": "Baja California Sur",
   "postal": "23000",
-  "phone": "+52 612 3611 4890",
+  "phone": "+52 612 186 3378",
   "timezone": "America/Mazatlan"
  },
  {
-  "value": "Ximena Cruz Delgado — Monterrey",
-  "name": "Ximena Cruz Delgado",
-  "city": "Monterrey",
-  "region": "Nuevo León",
-  "postal": "64000",
-  "phone": "+52 81 6563 7446",
-  "timezone": "America/Monterrey"
+  "value": "Kevin Rosas Talamantes — Cancún",
+  "name": "Kevin Rosas Talamantes",
+  "city": "Cancún",
+  "region": "Quintana Roo",
+  "postal": "77500",
+  "phone": "+52 998 543 0369",
+  "timezone": "America/Cancun"
+ },
+ {
+  "value": "Karla Arellano Quintero — Cancún",
+  "name": "Karla Arellano Quintero",
+  "city": "Cancún",
+  "region": "Quintana Roo",
+  "postal": "77500",
+  "phone": "+52 998 114 8900",
+  "timezone": "America/Cancun"
+ },
+ {
+  "value": "Jorge Anaya Beltrán — Cancún",
+  "name": "Jorge Anaya Beltrán",
+  "city": "Cancún",
+  "region": "Quintana Roo",
+  "postal": "77500",
+  "phone": "+52 998 563 7446",
+  "timezone": "America/Cancun"
  },
  {
   "value": "Juan Carlos Mendoza Aguilar — Chihuahua",
@@ -104,17 +113,17 @@
   "city": "Chihuahua",
   "region": "Chihuahua",
   "postal": "31000",
-  "phone": "+52 614 0146 6516",
+  "phone": "+52 614 014 6651",
   "timezone": "America/Chihuahua"
  },
  {
-  "value": "Enrique Lozano Segura — Hermosillo",
-  "name": "Enrique Lozano Segura",
-  "city": "Hermosillo",
-  "region": "Sonora",
-  "postal": "83000",
-  "phone": "+52 662 2448 1246",
-  "timezone": "America/Hermosillo"
+  "value": "Lucía Madrigal Ortega — Monterrey",
+  "name": "Lucía Madrigal Ortega",
+  "city": "Monterrey",
+  "region": "Nuevo León",
+  "postal": "64000",
+  "phone": "+52 81 7244 8124",
+  "timezone": "America/Monterrey"
  },
  {
   "value": "Uriel Cornejo Baeza — Oaxaca de Juárez",
@@ -122,107 +131,116 @@
   "city": "Oaxaca de Juárez",
   "region": "Oaxaca",
   "postal": "68000",
-  "phone": "+52 951 8339 8305",
+  "phone": "+52 951 833 9830",
   "timezone": "America/Mexico_City"
  },
  {
-  "value": "Regina Salazar Contreras — Querétaro",
-  "name": "Regina Salazar Contreras",
+  "value": "Beatriz Quiroz Salas — Guadalajara",
+  "name": "Beatriz Quiroz Salas",
+  "city": "Guadalajara",
+  "region": "Jalisco",
+  "postal": "44100",
+  "phone": "+52 33 2664 0530",
+  "timezone": "America/Mexico_City"
+ },
+ {
+  "value": "Osvaldo Gaytán Murillo — Ciudad de México",
+  "name": "Osvaldo Gaytán Murillo",
+  "city": "Ciudad de México",
+  "region": "Ciudad de México",
+  "postal": "06000",
+  "phone": "+52 55 7281 2263",
+  "timezone": "America/Mexico_City"
+ },
+ {
+  "value": "Juan Pablo Elizondo Garza — Querétaro",
+  "name": "Juan Pablo Elizondo Garza",
   "city": "Querétaro",
   "region": "Querétaro",
   "postal": "76000",
-  "phone": "+52 442 6640 5308",
+  "phone": "+52 442 882 1776",
   "timezone": "America/Mexico_City"
  },
  {
-  "value": "Alejandro Fuentes Cabrera — Hermosillo",
-  "name": "Alejandro Fuentes Cabrera",
-  "city": "Hermosillo",
-  "region": "Sonora",
-  "postal": "83000",
-  "phone": "+52 662 2812 2638",
-  "timezone": "America/Hermosillo"
+  "value": "Ramón Uribe Balderas — Mérida",
+  "name": "Ramón Uribe Balderas",
+  "city": "Mérida",
+  "region": "Yucatán",
+  "postal": "97000",
+  "phone": "+52 999 608 9130",
+  "timezone": "America/Merida"
  },
  {
-  "value": "Juan Pablo Elizondo Garza — La Paz",
-  "name": "Juan Pablo Elizondo Garza",
-  "city": "La Paz",
-  "region": "Baja California Sur",
-  "postal": "23000",
-  "phone": "+52 612 2177 6656",
-  "timezone": "America/Mazatlan"
- },
- {
-  "value": "Valeria Gutiérrez Sánchez — La Paz",
+  "value": "Valeria Gutiérrez Sánchez — Cancún",
   "name": "Valeria Gutiérrez Sánchez",
-  "city": "La Paz",
-  "region": "Baja California Sur",
-  "postal": "23000",
-  "phone": "+52 612 9130 4064",
-  "timezone": "America/Mazatlan"
- },
- {
-  "value": "Alan Cázares Quezada — Oaxaca de Juárez",
-  "name": "Alan Cázares Quezada",
-  "city": "Oaxaca de Juárez",
-  "region": "Oaxaca",
-  "postal": "68000",
-  "phone": "+52 951 5081 4360",
-  "timezone": "America/Mexico_City"
- },
- {
-  "value": "Alondra Alvarado Montoya — Puebla",
-  "name": "Alondra Alvarado Montoya",
-  "city": "Puebla",
-  "region": "Puebla",
-  "postal": "72000",
-  "phone": "+52 222 3694 2384",
-  "timezone": "America/Mexico_City"
- },
- {
-  "value": "Ana Karen Sepúlveda Garibay — Puebla",
-  "name": "Ana Karen Sepúlveda Garibay",
-  "city": "Puebla",
-  "region": "Puebla",
-  "postal": "72000",
-  "phone": "+52 222 4725 5833",
-  "timezone": "America/Mexico_City"
- },
- {
-  "value": "Yamileth Espinosa Cedillo — Tijuana",
-  "name": "Yamileth Espinosa Cedillo",
-  "city": "Tijuana",
-  "region": "Baja California",
-  "postal": "22000",
-  "phone": "+52 664 6782 3843",
-  "timezone": "America/Tijuana"
- },
- {
-  "value": "Danna Ureña Vallejo — Cancún",
-  "name": "Danna Ureña Vallejo",
   "city": "Cancún",
   "region": "Quintana Roo",
   "postal": "77500",
-  "phone": "+52 998 7056 8339",
+  "phone": "+52 998 493 5081",
   "timezone": "America/Cancun"
  },
  {
-  "value": "Paola Zavala Cortés — Chihuahua",
-  "name": "Paola Zavala Cortés",
+  "value": "Raúl Serrano Lara — Chihuahua",
+  "name": "Raúl Serrano Lara",
   "city": "Chihuahua",
   "region": "Chihuahua",
   "postal": "31000",
-  "phone": "+52 614 6448 0189",
+  "phone": "+52 614 021 3694",
   "timezone": "America/Chihuahua"
  },
  {
-  "value": "Salvador Rentería Bustos — Tijuana",
-  "name": "Salvador Rentería Bustos",
-  "city": "Tijuana",
-  "region": "Baja California",
-  "postal": "22000",
-  "phone": "+52 664 4913 1454",
-  "timezone": "America/Tijuana"
+  "value": "Mariana Camacho Trejo — Oaxaca de Juárez",
+  "name": "Mariana Camacho Trejo",
+  "city": "Oaxaca de Juárez",
+  "region": "Oaxaca",
+  "postal": "68000",
+  "phone": "+52 951 848 2472",
+  "timezone": "America/Mexico_City"
+ },
+ {
+  "value": "Francisco Terán Bravo — Mérida",
+  "name": "Francisco Terán Bravo",
+  "city": "Mérida",
+  "region": "Yucatán",
+  "postal": "97000",
+  "phone": "+52 999 833 7967",
+  "timezone": "America/Merida"
+ },
+ {
+  "value": "Ana Sofía Del Río Cantú — Puebla",
+  "name": "Ana Sofía Del Río Cantú",
+  "city": "Puebla",
+  "region": "Puebla",
+  "postal": "72000",
+  "phone": "+52 222 384 3967",
+  "timezone": "America/Mexico_City"
+ },
+ {
+  "value": "Santiago Morales Reyes — Cancún",
+  "name": "Santiago Morales Reyes",
+  "city": "Cancún",
+  "region": "Quintana Roo",
+  "postal": "77500",
+  "phone": "+52 998 683 3927",
+  "timezone": "America/Cancun"
+ },
+ {
+  "value": "Gustavo Marín Arriaga — Oaxaca de Juárez",
+  "name": "Gustavo Marín Arriaga",
+  "city": "Oaxaca de Juárez",
+  "region": "Oaxaca",
+  "postal": "68000",
+  "phone": "+52 951 480 1896",
+  "timezone": "America/Mexico_City"
+ },
+ {
+  "value": "Estrella Portillo Meraz — Oaxaca de Juárez",
+  "name": "Estrella Portillo Meraz",
+  "city": "Oaxaca de Juárez",
+  "region": "Oaxaca",
+  "postal": "68000",
+  "phone": "+52 951 913 1454",
+  "timezone": "America/Mexico_City"
  },
  {
   "value": "Estefanía Bustamante Leal — Oaxaca de Juárez",
@@ -230,133 +248,115 @@
   "city": "Oaxaca de Juárez",
   "region": "Oaxaca",
   "postal": "68000",
-  "phone": "+52 951 7723 0105",
+  "phone": "+52 951 772 3010",
   "timezone": "America/Mexico_City"
  },
  {
-  "value": "Rocío Alcántara Tovar — Monterrey",
+  "value": "Verónica Casillas Duarte — Cancún",
+  "name": "Verónica Casillas Duarte",
+  "city": "Cancún",
+  "region": "Quintana Roo",
+  "postal": "77500",
+  "phone": "+52 998 422 2618",
+  "timezone": "America/Cancun"
+ },
+ {
+  "value": "Silvia Guevara Pineda — Mérida",
+  "name": "Silvia Guevara Pineda",
+  "city": "Mérida",
+  "region": "Yucatán",
+  "postal": "97000",
+  "phone": "+52 999 046 8394",
+  "timezone": "America/Merida"
+ },
+ {
+  "value": "Leonardo Juárez Escobar — Mérida",
+  "name": "Leonardo Juárez Escobar",
+  "city": "Mérida",
+  "region": "Yucatán",
+  "postal": "97000",
+  "phone": "+52 999 842 5482",
+  "timezone": "America/Merida"
+ },
+ {
+  "value": "Rocío Alcántara Tovar — Oaxaca de Juárez",
   "name": "Rocío Alcántara Tovar",
-  "city": "Monterrey",
-  "region": "Nuevo León",
-  "postal": "64000",
-  "phone": "+52 81 2226 1865",
-  "timezone": "America/Monterrey"
- },
- {
-  "value": "Yaretzi Campos Rendón — Cancún",
-  "name": "Yaretzi Campos Rendón",
-  "city": "Cancún",
-  "region": "Quintana Roo",
-  "postal": "77500",
-  "phone": "+52 998 8394 4158",
-  "timezone": "America/Cancun"
- },
- {
-  "value": "Dulce Cisneros Mora — Puebla",
-  "name": "Dulce Cisneros Mora",
-  "city": "Puebla",
-  "region": "Puebla",
-  "postal": "72000",
-  "phone": "+52 222 5482 6315",
+  "city": "Oaxaca de Juárez",
+  "region": "Oaxaca",
+  "postal": "68000",
+  "phone": "+52 951 158 2971",
   "timezone": "America/Mexico_City"
  },
  {
-  "value": "Osvaldo Gaytán Murillo — Puebla",
-  "name": "Osvaldo Gaytán Murillo",
-  "city": "Puebla",
-  "region": "Puebla",
-  "postal": "72000",
-  "phone": "+52 222 9716 7410",
+  "value": "Ulises Carranza Mota — Oaxaca de Juárez",
+  "name": "Ulises Carranza Mota",
+  "city": "Oaxaca de Juárez",
+  "region": "Oaxaca",
+  "postal": "68000",
+  "phone": "+52 951 104 2804",
   "timezone": "America/Mexico_City"
  },
  {
-  "value": "Araceli Montes Aguirre — Puebla",
+  "value": "Araceli Montes Aguirre — Oaxaca de Juárez",
   "name": "Araceli Montes Aguirre",
-  "city": "Puebla",
-  "region": "Puebla",
-  "postal": "72000",
-  "phone": "+52 222 8040 4438",
+  "city": "Oaxaca de Juárez",
+  "region": "Oaxaca",
+  "postal": "68000",
+  "phone": "+52 951 887 8435",
   "timezone": "America/Mexico_City"
  },
  {
-  "value": "Cristian Olivares Puga — La Paz",
-  "name": "Cristian Olivares Puga",
+  "value": "Sebastián Velázquez Nava — La Paz",
+  "name": "Sebastián Velázquez Nava",
   "city": "La Paz",
   "region": "Baja California Sur",
   "postal": "23000",
-  "phone": "+52 612 4351 1844",
+  "phone": "+52 612 448 2303",
   "timezone": "America/Mazatlan"
  },
  {
-  "value": "Jimena Villanueva Estrada — Oaxaca de Juárez",
-  "name": "Jimena Villanueva Estrada",
+  "value": "Guadalupe Torres Medina — Oaxaca de Juárez",
+  "name": "Guadalupe Torres Medina",
   "city": "Oaxaca de Juárez",
   "region": "Oaxaca",
   "postal": "68000",
-  "phone": "+52 951 0304 9319",
+  "phone": "+52 951 931 9764",
   "timezone": "America/Mexico_City"
  },
  {
-  "value": "Eduardo Manríquez Solórzano — Chihuahua",
-  "name": "Eduardo Manríquez Solórzano",
-  "city": "Chihuahua",
-  "region": "Chihuahua",
-  "postal": "31000",
-  "phone": "+52 614 4296 0106",
-  "timezone": "America/Chihuahua"
+  "value": "Miguel Ángel Ávila Galván — Tijuana",
+  "name": "Miguel Ángel Ávila Galván",
+  "city": "Tijuana",
+  "region": "Baja California",
+  "postal": "22000",
+  "phone": "+52 664 601 0675",
+  "timezone": "America/Tijuana"
  },
  {
-  "value": "Armando Godínez Escamilla — Puebla",
-  "name": "Armando Godínez Escamilla",
-  "city": "Puebla",
-  "region": "Puebla",
-  "postal": "72000",
-  "phone": "+52 222 7444 3158",
-  "timezone": "America/Mexico_City"
- },
- {
-  "value": "Camila Herrera Vargas — Oaxaca de Juárez",
-  "name": "Camila Herrera Vargas",
-  "city": "Oaxaca de Juárez",
-  "region": "Oaxaca",
-  "postal": "68000",
-  "phone": "+52 951 5030 2993",
-  "timezone": "America/Mexico_City"
- },
- {
-  "value": "Nayeli Barajas Corona — Monterrey",
-  "name": "Nayeli Barajas Corona",
+  "value": "Abril Castañeda Loera — Monterrey",
+  "name": "Abril Castañeda Loera",
   "city": "Monterrey",
   "region": "Nuevo León",
   "postal": "64000",
-  "phone": "+52 81 2133 7253",
+  "phone": "+52 81 4431 5813",
   "timezone": "America/Monterrey"
  },
  {
-  "value": "César Valdez Orozco — La Paz",
-  "name": "César Valdez Orozco",
-  "city": "La Paz",
-  "region": "Baja California Sur",
-  "postal": "23000",
-  "phone": "+52 612 0560 9930",
-  "timezone": "America/Mazatlan"
+  "value": "Patricia Aranda Cuevas — Ciudad de México",
+  "name": "Patricia Aranda Cuevas",
+  "city": "Ciudad de México",
+  "region": "Ciudad de México",
+  "postal": "06000",
+  "phone": "+52 55 3029 9344",
+  "timezone": "America/Mexico_City"
  },
  {
-  "value": "Gerardo Palacios Valencia — Cancún",
-  "name": "Gerardo Palacios Valencia",
-  "city": "Cancún",
-  "region": "Quintana Roo",
-  "postal": "77500",
-  "phone": "+52 998 7683 3406",
-  "timezone": "America/Cancun"
- },
- {
-  "value": "Luis Ángel Cavazos Longoria — La Paz",
-  "name": "Luis Ángel Cavazos Longoria",
-  "city": "La Paz",
-  "region": "Baja California Sur",
-  "postal": "23000",
-  "phone": "+52 612 1690 6377",
-  "timezone": "America/Mazatlan"
+  "value": "Arturo Maldonado Robles — Querétaro",
+  "name": "Arturo Maldonado Robles",
+  "city": "Querétaro",
+  "region": "Querétaro",
+  "postal": "76000",
+  "phone": "+52 442 725 3648",
+  "timezone": "America/Mexico_City"
  }
 ]
