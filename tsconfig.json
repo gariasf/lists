@@ -23,5 +23,8 @@
     "target": "ES2017"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", "functions"]
+  // `packages/` holds standalone projects (Raycast extension, Figma plugin,
+  // the generated npm package) with their own tsconfig and their own
+  // dependencies — the site build must not try to typecheck them.
+  "exclude": ["node_modules", "functions", "packages"]
 }
