@@ -1,0 +1,122 @@
+[
+ {
+  "value": "$49.99",
+  "currency": "USD",
+  "locale": "en-US"
+ },
+ {
+  "value": "$1,299.00",
+  "currency": "USD",
+  "locale": "en-US"
+ },
+ {
+  "value": "£42.50",
+  "currency": "GBP",
+  "locale": "en-GB"
+ },
+ {
+  "value": "1.234,56 €",
+  "currency": "EUR",
+  "locale": "de-DE"
+ },
+ {
+  "value": "89,90 €",
+  "currency": "EUR",
+  "locale": "fr-FR"
+ },
+ {
+  "value": "19,95 €",
+  "currency": "EUR",
+  "locale": "es-ES"
+ },
+ {
+  "value": "249,00 €",
+  "currency": "EUR",
+  "locale": "it-IT"
+ },
+ {
+  "value": "€ 74,95",
+  "currency": "EUR",
+  "locale": "nl-NL"
+ },
+ {
+  "value": "R$ 1.234,56",
+  "currency": "BRL",
+  "locale": "pt-BR"
+ },
+ {
+  "value": "$899.00",
+  "currency": "MXN",
+  "locale": "es-MX"
+ },
+ {
+  "value": "￥128,000",
+  "currency": "JPY",
+  "locale": "ja-JP"
+ },
+ {
+  "value": "₩49,000",
+  "currency": "KRW",
+  "locale": "ko-KR"
+ },
+ {
+  "value": "¥6,999.00",
+  "currency": "CNY",
+  "locale": "zh-CN"
+ },
+ {
+  "value": "₹74,999.00",
+  "currency": "INR",
+  "locale": "hi-IN"
+ },
+ {
+  "value": "₹12,50,000.00",
+  "currency": "INR",
+  "locale": "en-IN"
+ },
+ {
+  "value": "495,00 kr",
+  "currency": "SEK",
+  "locale": "sv-SE"
+ },
+ {
+  "value": "219,99 zł",
+  "currency": "PLN",
+  "locale": "pl-PL"
+ },
+ {
+  "value": "₺1.899,00",
+  "currency": "TRY",
+  "locale": "tr-TR"
+ },
+ {
+  "value": "4 990,00 ₽",
+  "currency": "RUB",
+  "locale": "ru-RU"
+ },
+ {
+  "value": "‏٨٥٠٫٠٠ ج.م.‏",
+  "currency": "EGP",
+  "locale": "ar-EG"
+ },
+ {
+  "value": "CHF 320.00",
+  "currency": "CHF",
+  "locale": "de-CH"
+ },
+ {
+  "value": "$64.99",
+  "currency": "CAD",
+  "locale": "en-CA"
+ },
+ {
+  "value": "$129.00",
+  "currency": "AUD",
+  "locale": "en-AU"
+ },
+ {
+  "value": "349,95 kr.",
+  "currency": "DKK",
+  "locale": "da-DK"
+ }
+]

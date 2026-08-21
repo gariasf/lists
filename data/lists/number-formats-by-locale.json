@@ -1,0 +1,302 @@
+[
+ {
+  "value": "1,234,567.89",
+  "locale": "en-US",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1,234,567.89",
+  "locale": "en-GB",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1.234.567,89",
+  "locale": "de-DE",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1 234 567,89",
+  "locale": "fr-FR",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1.234.567,89",
+  "locale": "es-ES",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1,234,567.89",
+  "locale": "es-MX",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1.234.567,89",
+  "locale": "it-IT",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1.234.567,89",
+  "locale": "nl-NL",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1.234.567,89",
+  "locale": "pt-BR",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1 234 567,89",
+  "locale": "sv-SE",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1 234 567,89",
+  "locale": "pl-PL",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1.234.567,89",
+  "locale": "tr-TR",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1 234 567,89",
+  "locale": "ru-RU",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1,234,567.89",
+  "locale": "ja-JP",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1,234,567.89",
+  "locale": "ko-KR",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1,234,567.89",
+  "locale": "zh-CN",
+  "source": "1234567.89"
+ },
+ {
+  "value": "12,34,567.89",
+  "locale": "hi-IN",
+  "source": "1234567.89"
+ },
+ {
+  "value": "12,34,567.89",
+  "locale": "en-IN",
+  "source": "1234567.89"
+ },
+ {
+  "value": "١٬٢٣٤٬٥٦٧٫٨٩",
+  "locale": "ar-EG",
+  "source": "1234567.89"
+ },
+ {
+  "value": "1,234,567.89",
+  "locale": "he-IL",
+  "source": "1234567.89"
+ },
+ {
+  "value": "72.0%",
+  "locale": "en-US",
+  "source": "0.72"
+ },
+ {
+  "value": "72.0%",
+  "locale": "en-GB",
+  "source": "0.72"
+ },
+ {
+  "value": "72,0 %",
+  "locale": "de-DE",
+  "source": "0.72"
+ },
+ {
+  "value": "72,0 %",
+  "locale": "fr-FR",
+  "source": "0.72"
+ },
+ {
+  "value": "72,0 %",
+  "locale": "es-ES",
+  "source": "0.72"
+ },
+ {
+  "value": "72.0%",
+  "locale": "es-MX",
+  "source": "0.72"
+ },
+ {
+  "value": "72,0%",
+  "locale": "it-IT",
+  "source": "0.72"
+ },
+ {
+  "value": "72,0%",
+  "locale": "nl-NL",
+  "source": "0.72"
+ },
+ {
+  "value": "72,0%",
+  "locale": "pt-BR",
+  "source": "0.72"
+ },
+ {
+  "value": "72,0 %",
+  "locale": "sv-SE",
+  "source": "0.72"
+ },
+ {
+  "value": "72,0%",
+  "locale": "pl-PL",
+  "source": "0.72"
+ },
+ {
+  "value": "%72,0",
+  "locale": "tr-TR",
+  "source": "0.72"
+ },
+ {
+  "value": "72,0 %",
+  "locale": "ru-RU",
+  "source": "0.72"
+ },
+ {
+  "value": "72.0%",
+  "locale": "ja-JP",
+  "source": "0.72"
+ },
+ {
+  "value": "72.0%",
+  "locale": "ko-KR",
+  "source": "0.72"
+ },
+ {
+  "value": "72.0%",
+  "locale": "zh-CN",
+  "source": "0.72"
+ },
+ {
+  "value": "72.0%",
+  "locale": "hi-IN",
+  "source": "0.72"
+ },
+ {
+  "value": "72.0%",
+  "locale": "en-IN",
+  "source": "0.72"
+ },
+ {
+  "value": "٧٢٫٠٪؜",
+  "locale": "ar-EG",
+  "source": "0.72"
+ },
+ {
+  "value": "72.0%",
+  "locale": "he-IL",
+  "source": "0.72"
+ },
+ {
+  "value": "-4,520.5",
+  "locale": "en-US",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4,520.5",
+  "locale": "en-GB",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4.520,5",
+  "locale": "de-DE",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4 520,5",
+  "locale": "fr-FR",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4520,5",
+  "locale": "es-ES",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4,520.5",
+  "locale": "es-MX",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4520,5",
+  "locale": "it-IT",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4.520,5",
+  "locale": "nl-NL",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4.520,5",
+  "locale": "pt-BR",
+  "source": "-4520.5"
+ },
+ {
+  "value": "−4 520,5",
+  "locale": "sv-SE",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4520,5",
+  "locale": "pl-PL",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4.520,5",
+  "locale": "tr-TR",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4 520,5",
+  "locale": "ru-RU",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4,520.5",
+  "locale": "ja-JP",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4,520.5",
+  "locale": "ko-KR",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4,520.5",
+  "locale": "zh-CN",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4,520.5",
+  "locale": "hi-IN",
+  "source": "-4520.5"
+ },
+ {
+  "value": "-4,520.5",
+  "locale": "en-IN",
+  "source": "-4520.5"
+ },
+ {
+  "value": "؜-٤٬٥٢٠٫٥",
+  "locale": "ar-EG",
+  "source": "-4520.5"
+ },
+ {
+  "value": "‎-4,520.5",
+  "locale": "he-IL",
+  "source": "-4520.5"
+ }
+]

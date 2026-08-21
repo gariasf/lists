@@ -2672,3 +2672,12 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 
 .code-block-copy:hover { background: var(--bg-surface-hover); }
 .code-block-copy svg { width: 14px; height: 14px; }
+
+/* Each list value is its own bidi paragraph: an RTL item (Arabic prices,
+   Hebrew dates, native-script names) must not reorder around neighbouring
+   Latin text or drag its punctuation to the wrong end of the line. */
+.ls-detail-item .v,
+.m-item .v,
+.skill-preview-value {
+  unicode-bidi: isolate;
+}

@@ -561,9 +561,9 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'counties-uk', name: 'UK Counties', category: 'location', local: { file: 'counties-uk.txt', format: 'txt' } },
   { slug: 'provinces-es', name: 'Spanish Provinces', category: 'location', local: { file: 'provinces-es.txt', format: 'txt' } },
   { slug: 'text-expansion-samples', name: 'Text Expansion Samples', category: 'text', local: { file: 'text-expansion-samples.json', format: 'json', valueKey: 'value' } },
-  { slug: 'date-formats-by-locale', name: 'Date Formats by Locale', category: 'time', local: { file: 'date-formats-by-locale.txt', format: 'txt' } },
-  { slug: 'number-formats-by-locale', name: 'Number Formats by Locale', category: 'numbers', local: { file: 'number-formats-by-locale.txt', format: 'txt' } },
-  { slug: 'prices-localized', name: 'Prices (localized)', category: 'finance', local: { file: 'prices-localized.txt', format: 'txt' } },
+  { slug: 'date-formats-by-locale', name: 'Date Formats by Locale', category: 'time', local: { file: 'date-formats-by-locale.json', format: 'json', valueKey: 'value' } },
+  { slug: 'number-formats-by-locale', name: 'Number Formats by Locale', category: 'numbers', local: { file: 'number-formats-by-locale.json', format: 'json', valueKey: 'value' } },
+  { slug: 'prices-localized', name: 'Prices (localized)', category: 'finance', local: { file: 'prices-localized.json', format: 'json', valueKey: 'value' } },
 
   // profiles-<locale>: internally consistent identity bundles (generated
   // by scripts/gen-profiles.mjs from curated lists + verified city tuples)

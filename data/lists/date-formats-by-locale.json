@@ -1,0 +1,302 @@
+[
+ {
+  "value": "8/21/26",
+  "locale": "en-US",
+  "style": "short"
+ },
+ {
+  "value": "21/08/2026",
+  "locale": "en-GB",
+  "style": "short"
+ },
+ {
+  "value": "21.08.26",
+  "locale": "de-DE",
+  "style": "short"
+ },
+ {
+  "value": "21/08/2026",
+  "locale": "fr-FR",
+  "style": "short"
+ },
+ {
+  "value": "21/8/26",
+  "locale": "es-ES",
+  "style": "short"
+ },
+ {
+  "value": "21/08/26",
+  "locale": "es-MX",
+  "style": "short"
+ },
+ {
+  "value": "21/08/26",
+  "locale": "it-IT",
+  "style": "short"
+ },
+ {
+  "value": "21-08-2026",
+  "locale": "nl-NL",
+  "style": "short"
+ },
+ {
+  "value": "21/08/2026",
+  "locale": "pt-BR",
+  "style": "short"
+ },
+ {
+  "value": "2026-08-21",
+  "locale": "sv-SE",
+  "style": "short"
+ },
+ {
+  "value": "21.08.2026",
+  "locale": "pl-PL",
+  "style": "short"
+ },
+ {
+  "value": "21.08.2026",
+  "locale": "tr-TR",
+  "style": "short"
+ },
+ {
+  "value": "21.08.2026",
+  "locale": "ru-RU",
+  "style": "short"
+ },
+ {
+  "value": "2026/08/21",
+  "locale": "ja-JP",
+  "style": "short"
+ },
+ {
+  "value": "26. 8. 21.",
+  "locale": "ko-KR",
+  "style": "short"
+ },
+ {
+  "value": "2026/8/21",
+  "locale": "zh-CN",
+  "style": "short"
+ },
+ {
+  "value": "21/8/26",
+  "locale": "hi-IN",
+  "style": "short"
+ },
+ {
+  "value": "21/08/26",
+  "locale": "en-IN",
+  "style": "short"
+ },
+ {
+  "value": "٢١‏/٨‏/٢٠٢٦",
+  "locale": "ar-EG",
+  "style": "short"
+ },
+ {
+  "value": "21.8.2026",
+  "locale": "he-IL",
+  "style": "short"
+ },
+ {
+  "value": "Aug 21, 2026",
+  "locale": "en-US",
+  "style": "medium"
+ },
+ {
+  "value": "21 Aug 2026",
+  "locale": "en-GB",
+  "style": "medium"
+ },
+ {
+  "value": "21.08.2026",
+  "locale": "de-DE",
+  "style": "medium"
+ },
+ {
+  "value": "21 août 2026",
+  "locale": "fr-FR",
+  "style": "medium"
+ },
+ {
+  "value": "21 ago 2026",
+  "locale": "es-ES",
+  "style": "medium"
+ },
+ {
+  "value": "21 ago 2026",
+  "locale": "es-MX",
+  "style": "medium"
+ },
+ {
+  "value": "21 ago 2026",
+  "locale": "it-IT",
+  "style": "medium"
+ },
+ {
+  "value": "21 aug 2026",
+  "locale": "nl-NL",
+  "style": "medium"
+ },
+ {
+  "value": "21 de ago. de 2026",
+  "locale": "pt-BR",
+  "style": "medium"
+ },
+ {
+  "value": "21 aug. 2026",
+  "locale": "sv-SE",
+  "style": "medium"
+ },
+ {
+  "value": "21 sie 2026",
+  "locale": "pl-PL",
+  "style": "medium"
+ },
+ {
+  "value": "21 Ağu 2026",
+  "locale": "tr-TR",
+  "style": "medium"
+ },
+ {
+  "value": "21 авг. 2026 г.",
+  "locale": "ru-RU",
+  "style": "medium"
+ },
+ {
+  "value": "2026/08/21",
+  "locale": "ja-JP",
+  "style": "medium"
+ },
+ {
+  "value": "2026. 8. 21.",
+  "locale": "ko-KR",
+  "style": "medium"
+ },
+ {
+  "value": "2026年8月21日",
+  "locale": "zh-CN",
+  "style": "medium"
+ },
+ {
+  "value": "21 अग॰ 2026",
+  "locale": "hi-IN",
+  "style": "medium"
+ },
+ {
+  "value": "21 Aug 2026",
+  "locale": "en-IN",
+  "style": "medium"
+ },
+ {
+  "value": "٢١‏/٠٨‏/٢٠٢٦",
+  "locale": "ar-EG",
+  "style": "medium"
+ },
+ {
+  "value": "21 באוג׳ 2026",
+  "locale": "he-IL",
+  "style": "medium"
+ },
+ {
+  "value": "August 21, 2026",
+  "locale": "en-US",
+  "style": "long"
+ },
+ {
+  "value": "21 August 2026",
+  "locale": "en-GB",
+  "style": "long"
+ },
+ {
+  "value": "21. August 2026",
+  "locale": "de-DE",
+  "style": "long"
+ },
+ {
+  "value": "21 août 2026",
+  "locale": "fr-FR",
+  "style": "long"
+ },
+ {
+  "value": "21 de agosto de 2026",
+  "locale": "es-ES",
+  "style": "long"
+ },
+ {
+  "value": "21 de agosto de 2026",
+  "locale": "es-MX",
+  "style": "long"
+ },
+ {
+  "value": "21 agosto 2026",
+  "locale": "it-IT",
+  "style": "long"
+ },
+ {
+  "value": "21 augustus 2026",
+  "locale": "nl-NL",
+  "style": "long"
+ },
+ {
+  "value": "21 de agosto de 2026",
+  "locale": "pt-BR",
+  "style": "long"
+ },
+ {
+  "value": "21 augusti 2026",
+  "locale": "sv-SE",
+  "style": "long"
+ },
+ {
+  "value": "21 sierpnia 2026",
+  "locale": "pl-PL",
+  "style": "long"
+ },
+ {
+  "value": "21 Ağustos 2026",
+  "locale": "tr-TR",
+  "style": "long"
+ },
+ {
+  "value": "21 августа 2026 г.",
+  "locale": "ru-RU",
+  "style": "long"
+ },
+ {
+  "value": "2026年8月21日",
+  "locale": "ja-JP",
+  "style": "long"
+ },
+ {
+  "value": "2026년 8월 21일",
+  "locale": "ko-KR",
+  "style": "long"
+ },
+ {
+  "value": "2026年8月21日",
+  "locale": "zh-CN",
+  "style": "long"
+ },
+ {
+  "value": "21 अगस्त 2026",
+  "locale": "hi-IN",
+  "style": "long"
+ },
+ {
+  "value": "21 August 2026",
+  "locale": "en-IN",
+  "style": "long"
+ },
+ {
+  "value": "٢١ أغسطس ٢٠٢٦",
+  "locale": "ar-EG",
+  "style": "long"
+ },
+ {
+  "value": "21 באוגוסט 2026",
+  "locale": "he-IL",
+  "style": "long"
+ }
+]
