@@ -98,7 +98,6 @@ World History
 Art History
 Philosophy
 Ethics
-Logic
 Literature
 English
 Creative Writing

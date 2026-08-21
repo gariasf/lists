@@ -128,5 +128,4 @@ Holo
 PixelExperience
 Fuchsia
 FydeOS
-KaiOS
 TizenOS

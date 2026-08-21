@@ -55,7 +55,6 @@ id Software
 Arkane Studios
 Arkane Lyon
 MachineGames
-Tango Gameworks
 inXile Entertainment
 Obsidian Entertainment
 Compulsion Games

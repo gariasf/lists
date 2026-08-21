@@ -108,8 +108,6 @@ Oktoberfest
 Stein Lager
 Black Lager
 Helles Bock
-Doppelbock
-Eisbock
 Heller Bock
 Anniversary Ale
 Birthday Ale

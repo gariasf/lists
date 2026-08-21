@@ -138,7 +138,6 @@ synapse
 mattermost/mattermost-team-edition
 plausible/community-edition
 umami-software/umami
-metabase/metabase
 docs.rs/buildkit
 docker.io/library/alpine
 docker.io/library/nginx

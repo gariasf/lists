@@ -106,7 +106,6 @@ N-1 Starfighter
 T-65 X-wing
 T-70 X-wing
 T-85 X-wing
-Tantive IV
 Outrider
 Ghost (Star Wars Rebels)
 Star Fighter Defiance

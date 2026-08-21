@@ -80,7 +80,6 @@ Puligny-Montrachet
 Chassagne-Montrachet
 Bâtard-Montrachet
 Vouvray
-Sancerre
 Châteauneuf-du-Pape
 Côtes du Rhône
 Côte-Rôtie
@@ -117,7 +116,6 @@ Beerenauslese
 Trockenbeerenauslese
 Orange Wine
 Skin-Contact Wine
-Pet-Nat
 Natural Wine
 Biodynamic Wine
 Organic Wine

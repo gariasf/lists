@@ -113,7 +113,6 @@ Tiny Core Linux
 Damn Small Linux
 Puppy Linux
 Slitaz
-Antix
 SystemRescueCD
 Clonezilla
 GRML

@@ -102,8 +102,6 @@ Tiled
 GIMP
 Krita
 Inkscape
-Blender
-Penpot
 PaintTool SAI
 Clip Studio Paint
 Storyboard Pro

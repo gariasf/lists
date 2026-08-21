@@ -103,7 +103,6 @@ Storybook Connect
 Storybook Sync
 Component Stocks
 Toolabs
-Iconscout
 Stock
 Stock by Lummi
 Material Design Icons

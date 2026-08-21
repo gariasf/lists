@@ -30,7 +30,6 @@ Nokia
 Anker
 Belkin
 Logitech
-Razer
 Keychron
 Das Keyboard
 HHKB

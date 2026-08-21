@@ -26,7 +26,6 @@ Math rock
 Garage rock
 Psychedelic rock
 Shoegaze
-Dream pop
 Slowcore
 Sadcore
 Stoner rock
@@ -177,7 +176,6 @@ Outrun
 Retrowave
 Witch house
 Hauntology
-Hyperpop
 Glitchcore
 Digicore
 Bedroom rock

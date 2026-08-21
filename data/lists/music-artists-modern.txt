@@ -45,11 +45,9 @@ Demi Lovato
 Miley Cyrus
 Halsey
 The 1975
-Phoebe Bridgers
 Hozier
 Sam Smith
 Sam Fender
-Hozier
 Harry Styles
 One Direction
 Niall Horan
@@ -99,7 +97,6 @@ Sleep Token
 Bad Omens
 Spiritbox
 Knocked Loose
-Sleep Token
 Polyphia
 Plini
 Fleet Foxes
@@ -110,7 +107,6 @@ Soccer Mommy
 Snail Mail
 beabadoobee
 Clairo
-Phoebe Bridgers
 Maggie Rogers
 Carly Rae Jepsen
 Caroline Polachek
@@ -119,7 +115,6 @@ Father John Misty
 Bon Iver
 Sufjan Stevens
 Bonny Light Horseman
-Hozier
 Burna Burna
 Burna Boy
 Asake
@@ -127,7 +122,6 @@ Rema
 Tems
 Wizkid
 Davido
-Tyla
 Ayra Starr
 Black Sherif
 Stormzy
@@ -154,7 +148,6 @@ Bad Gyal
 Maluma
 J Balvin
 Shakira
-Bizarrap
 Bizarrap Music Sessions
 Anitta
 Pabllo Vittar

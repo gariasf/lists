@@ -63,7 +63,7 @@ export const AUDIT_OVERRIDES = new Set<string>([
   'fitness-apps',
   'flight-numbers',
   'flowers',
-  'font-families-2025',
+  'font-families-modern',
   'food-en',
   'frameworks-backend',
   'frameworks-frontend',

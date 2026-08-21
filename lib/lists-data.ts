@@ -248,8 +248,8 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'bundesliga-teams', name: 'Bundesliga Teams', category: 'sports', local: { file: 'bundesliga-teams.txt', format: 'txt' } },
   { slug: 'seriea-teams', name: 'Serie A Teams', category: 'sports', local: { file: 'seriea-teams.txt', format: 'txt' } },
   { slug: 'ligue1-teams', name: 'Ligue 1 Teams', category: 'sports', local: { file: 'ligue1-teams.txt', format: 'txt' } },
-  { slug: 'f1-teams-2025', name: 'F1 Teams (2025)', category: 'sports', local: { file: 'f1-teams-2025.txt', format: 'txt' } },
-  { slug: 'f1-drivers-2025', name: 'F1 Drivers (2025)', category: 'sports', local: { file: 'f1-drivers-2025.txt', format: 'txt' } },
+  { slug: 'f1-teams', name: 'F1 Teams', category: 'sports', local: { file: 'f1-teams.txt', format: 'txt' } },
+  { slug: 'f1-drivers', name: 'F1 Drivers', category: 'sports', local: { file: 'f1-drivers.txt', format: 'txt' } },
   { slug: 'athletes-current', name: 'Athletes (current)', category: 'sports', local: { file: 'athletes-current.txt', format: 'txt' } },
   { slug: 'tennis-atp', name: 'Tennis Players (ATP)', category: 'sports', local: { file: 'tennis-atp.txt', format: 'txt' } },
   { slug: 'tennis-wta', name: 'Tennis Players (WTA)', category: 'sports', local: { file: 'tennis-wta.txt', format: 'txt' } },
@@ -337,7 +337,7 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
 
   // Design (local additions)
   { slug: 'tailwind-shades', name: 'Tailwind Shades', category: 'design', local: { file: 'tailwind-shades.txt', format: 'txt' } },
-  { slug: 'font-families-2025', name: 'Font Families (modern)', category: 'design', local: { file: 'font-families-2025.txt', format: 'txt' } },
+  { slug: 'font-families-modern', name: 'Font Families (modern)', category: 'design', local: { file: 'font-families-modern.txt', format: 'txt' } },
   { slug: 'figma-plugins', name: 'Figma Plugins', category: 'design', local: { file: 'figma-plugins.txt', format: 'txt' } },
   { slug: 'design-tools', name: 'Design Tools', category: 'design', local: { file: 'design-tools.txt', format: 'txt' } },
   { slug: 'gradients', name: 'Gradients', category: 'design', local: { file: 'gradients.txt', format: 'txt' } },
@@ -451,6 +451,7 @@ export const LIST_DEFINITIONS: ListDefinition[] = [
   { slug: 'scifi-planet-names', name: 'Sci-Fi Planet Names', category: 'culture', local: { file: 'scifi-planet-names.txt', format: 'txt' } },
   { slug: 'hashtags-trending', name: 'Hashtags (trending)', category: 'culture', local: { file: 'hashtags-trending.txt', format: 'txt' } },
   { slug: 'memes-current', name: 'Memes (current)', category: 'culture', local: { file: 'memes-current.txt', format: 'txt' } },
+  { slug: 'memes-classic', name: 'Memes (classic)', category: 'culture', local: { file: 'memes-classic.txt', format: 'txt' } },
   { slug: 'subreddits', name: 'Subreddits', category: 'culture', local: { file: 'subreddits.txt', format: 'txt' } },
   { slug: 'internet-slang', name: 'Internet Slang', category: 'culture', local: { file: 'internet-slang.txt', format: 'txt' } },
   { slug: 'gen-z-slang', name: 'Gen Z Slang', category: 'culture', local: { file: 'gen-z-slang.txt', format: 'txt' } },

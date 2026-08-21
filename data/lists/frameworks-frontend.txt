@@ -95,7 +95,6 @@ Park UI
 DaisyUI
 NextUI
 HeroUI
-Park UI
 Geist UI
 Sonner
 Vaul

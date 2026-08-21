@@ -22,7 +22,7 @@ edX MITx Mathematics for Computer Science
 edX MITx Probability
 edX BerkeleyX CS169x Software Engineering
 Udemy Complete Python Bootcamp
-Udemy The Web Developer Bootcamp 2025
+Udemy The Web Developer Bootcamp 2026
 Udemy Master the Coding Interview
 Udemy SwiftUI Masterclass
 Udemy AWS Certified Solutions Architect

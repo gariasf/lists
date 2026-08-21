@@ -249,7 +249,6 @@ commitlint
 @commitlint/config-conventional
 changesets
 @changesets/cli
-turbo
 nx
 @nx/workspace
 pnpm
@@ -311,5 +310,4 @@ chromadb
 weaviate-ts-client
 qdrant-client
 faiss
-zod
 zod-to-json-schema

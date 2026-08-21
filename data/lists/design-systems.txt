@@ -92,7 +92,6 @@ Chakra UI Pro
 Park UI
 HeroUI
 NextUI
-Geist UI
 TailGrids
 Tailwind UI
 Tailwind Plus
@@ -103,7 +102,6 @@ Mantine
 RebassUI
 Theme UI
 Magic UI
-Park UI
 Joy UI
 Saas UI
 Tremor

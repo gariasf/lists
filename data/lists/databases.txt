@@ -78,7 +78,6 @@ KeyDB
 Dragonfly
 Garnet
 Valkey
-Aerospike
 Memcached
 Tarantool
 Hazelcast

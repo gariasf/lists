@@ -28,6 +28,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Lint list data
+        run: node scripts/check-lists.mjs
+
       - name: Build
         run: npm run build
 
