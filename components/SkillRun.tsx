@@ -49,6 +49,41 @@ interface SkillResponse {
   payload: unknown
 }
 
+/**
+ * Last run per skill, kept in sessionStorage: coming back to a skill within
+ * the same tab shows what you already generated instead of spending another
+ * call against the hourly AI budget. Closing the tab clears it, which is the
+ * point — this is a within-visit convenience, not saved work.
+ */
+const CACHE_PREFIX = 'lists.skill.'
+
+interface CachedRun {
+  knobs: Record<string, unknown>
+  payload: unknown
+}
+
+function readCache(slug: string): CachedRun | null {
+  if (typeof window === 'undefined') return null
+  try {
+    const raw = window.sessionStorage.getItem(CACHE_PREFIX + slug)
+    if (!raw) return null
+    const parsed = JSON.parse(raw) as CachedRun
+    return parsed && 'payload' in parsed ? parsed : null
+  } catch {
+    // Private mode / storage disabled — caching is optional, carry on.
+    return null
+  }
+}
+
+function writeCache(slug: string, run: CachedRun) {
+  if (typeof window === 'undefined') return
+  try {
+    window.sessionStorage.setItem(CACHE_PREFIX + slug, JSON.stringify(run))
+  } catch {
+    /* quota or disabled — ignore */
+  }
+}
+
 function toCSV(value: unknown): string {
   if (Array.isArray(value) && value.length > 0 && typeof value[0] === 'object') {
     const rows = value as Record<string, unknown>[]
@@ -88,6 +123,17 @@ export default function SkillRun({ skill, allLists }: Props) {
   const [error, setError] = useState<string | null>(null)
   const [view, setView] = useState<'preview' | 'json' | 'csv'>('preview')
   const [copied, setCopied] = useState(false)
+  const [restored, setRestored] = useState(false)
+
+  // Restore this tab's last run for this skill. Runs after mount so the
+  // server-rendered markup and the first client render agree.
+  useEffect(() => {
+    const cached = readCache(skill.slug)
+    if (!cached) return
+    setResult(cached.payload)
+    setKnobs({ ...initialKnobs, ...cached.knobs })
+    setRestored(true)
+  }, [skill.slug, initialKnobs])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -104,6 +150,7 @@ export default function SkillRun({ skill, allLists }: Props) {
     setRunning(true)
     setError(null)
     setResult(null)
+    setRestored(false)
     const toastId = toast.loading(`Generating ${skill.name.toLowerCase()}…`)
     try {
       const res = await fetch('/api/ai/skill', {
@@ -120,6 +167,7 @@ export default function SkillRun({ skill, allLists }: Props) {
       }
       const data = (await res.json()) as SkillResponse
       setResult(data.payload)
+      writeCache(skill.slug, { knobs, payload: data.payload })
       toast.success(`${skill.name} ready`, { id: toastId })
     } catch (err) {
       setError('Network error')
@@ -224,6 +272,11 @@ export default function SkillRun({ skill, allLists }: Props) {
   const resultBlock =
     result != null ? (
       <div className="skill-result">
+        {restored && (
+          <div className="skill-result-restored">
+            Your last run this visit — generate again for a new set.
+          </div>
+        )}
         <div className="skill-result-head">
           <div className="fmt-tabs">
             <button
@@ -443,12 +496,14 @@ function SkillPreview({ skill, result }: { skill: SkillDef; result: unknown }) {
       <div className="skill-preview-table">
         {rows.map((row, i) => (
           <div key={i} className="skill-preview-row">
-            {keys.map((k) => (
-              <div key={k} className="skill-preview-cell">
-                <div className="skill-preview-label">{k.replace(/_/g, ' ')}</div>
-                <div className="skill-preview-value">{renderValue(row[k])}</div>
-              </div>
-            ))}
+            <div className="skill-preview-fields">
+              {keys.map((k) => (
+                <div key={k} className="skill-preview-cell">
+                  <div className="skill-preview-label">{k.replace(/_/g, ' ')}</div>
+                  <div className="skill-preview-value">{renderValue(row[k])}</div>
+                </div>
+              ))}
+            </div>
             {'avatar_url' in row && typeof row.avatar_url === 'string' && (
               <img
                 className="skill-preview-avatar"

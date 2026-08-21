@@ -2105,6 +2105,12 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
   flex-wrap: wrap;
 }
 
+.skill-result-restored {
+  font-size: 12px;
+  color: var(--text-subdued);
+  margin-bottom: 10px;
+}
+
 .skill-result-actions {
   display: flex;
   gap: 8px;
@@ -2117,15 +2123,24 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 }
 
 .skill-preview-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 10px 18px;
-  align-items: start;
+  display: flex;
+  align-items: center;
+  gap: 16px;
   padding: 12px 14px;
   background: var(--bg-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-border-xs);
-  position: relative;
+}
+
+/* The fields grid and the avatar are siblings: the avatar reserves its own
+   space instead of floating over whichever cell lands top-right. */
+.skill-preview-fields {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px 18px;
+  align-items: start;
 }
 
 .skill-preview-cell {
@@ -2156,13 +2171,13 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 }
 
 .skill-preview-avatar {
+  flex: none;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
   background: var(--bg-surface-inset);
   box-shadow: inset 0 0 0 1px var(--border-tertiary);
-  position: absolute;
-  top: 12px;
-  right: 14px;
 }
 
 .skill-preview-record {
@@ -2424,14 +2439,13 @@ button { font-family: var(--font-sans); cursor: pointer; border: 0; background: 
 }
 
 .m-skill-body .skill-preview-row {
-  grid-template-columns: 1fr;
   padding: 10px 12px;
-  gap: 8px 0;
+  gap: 12px;
 }
 
-.m-skill-body .skill-preview-avatar {
-  position: static;
-  align-self: flex-start;
+.m-skill-body .skill-preview-fields {
+  grid-template-columns: 1fr;
+  gap: 8px 0;
 }
 
 .m-skill-body .skill-preview-record {

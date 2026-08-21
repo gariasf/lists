@@ -123,6 +123,10 @@ export default function CommandPalette() {
   const [genError, setGenError] = useState<string | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const listRef = useRef<HTMLDivElement>(null)
+  // Rows re-render under a stationary cursor after a generation, and the
+  // browser fires mouseenter for that — which would steal the selection from
+  // the row we just chose. Hover only counts once the pointer really moves.
+  const pointerMovedRef = useRef(false)
 
   useEffect(() => {
     if (!open) return
@@ -521,6 +525,9 @@ export default function CommandPalette() {
   useEffect(() => {
     if (!generated) return
     listRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
+    // Row 0 of the Generated group is "Copy all …" — the thing you almost
+    // always want right after generating.
+    pointerMovedRef.current = false
     setSelected(0)
   }, [generated?.ts])
 
@@ -533,9 +540,11 @@ export default function CommandPalette() {
         closePalette()
       } else if (e.key === 'ArrowDown') {
         e.preventDefault()
+        pointerMovedRef.current = false
         setSelected((s) => Math.min(flatRows.length - 1, s + 1))
       } else if (e.key === 'ArrowUp') {
         e.preventDefault()
+        pointerMovedRef.current = false
         setSelected((s) => Math.max(0, s - 1))
       } else if (e.key === 'Enter') {
         e.preventDefault()
@@ -572,7 +581,13 @@ export default function CommandPalette() {
           />
         </div>
 
-        <div className="cmd-scroll" ref={listRef}>
+        <div
+          className="cmd-scroll"
+          ref={listRef}
+          onMouseMove={() => {
+            pointerMovedRef.current = true
+          }}
+        >
           {flatRows.length === 0 ? (
             <div className="cmd-empty">
               {query.trim().length === 0 ? (
@@ -611,7 +626,7 @@ export default function CommandPalette() {
                           className={`cmd-row${on ? ' on' : ''}`}
                           data-cmd-row={rowIdx >= 0 ? rowIdx : undefined}
                           onMouseEnter={() => {
-                            if (rowIdx >= 0) setSelected(rowIdx)
+                            if (rowIdx >= 0 && pointerMovedRef.current) setSelected(rowIdx)
                           }}
                           onClick={r.onActivate}
                         >
