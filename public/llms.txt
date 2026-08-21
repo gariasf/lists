@@ -1,6 +1,6 @@
 # Lists — realistic mock data for designers and developers
 
-Lists is a curated library of 365 datasets of real-looking mock data
+Lists is a curated library of 420+ datasets of real-looking mock data
 (names, prices, addresses, IBANs, brands, colors, products, postal
 codes, css properties, http status, etc.) plus 5 AI-composed
 scenarios (user profiles, pricing pages, order receipts, testimonial
@@ -27,12 +27,19 @@ every deploy of this site.
 
 - GET  /api/manifest                # catalog of every list
 - GET  /api/lists/<slug>            # one curated list as JSON
+- GET  /api/lists/<slug>.txt        # same list, one item per line
+- GET  /api/lists/<slug>.csv        # same list as CSV (real columns when structured)
+- GET  /api/sample/<slug>?n=5       # n random items; add &seed=42 for
+                                    # deterministic picks (CI-safe)
 - POST /api/ai/skill                # composed scenario, body = {name, knobs}
 - POST /api/ai/generate             # extend an existing list
 
-Manifest lists every available `<slug>`. AI endpoints are
-rate-limited (~120 LLM calls/day global, 6/hour per IP); raw list
-endpoints are unmetered.
+Manifest lists every available `<slug>`. All GET endpoints send
+`Access-Control-Allow-Origin: *` — fetch() them from anywhere.
+AI endpoints are rate-limited (~120 LLM calls/day global, 6/hour per
+IP); raw list and sample endpoints are unmetered.
+
+Example: curl -s https://lists.gariasf.com/api/sample/names-pt_br?n=3
 
 ## Recipes (also inlined in the offline bundle's SKILL.md)
 

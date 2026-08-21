@@ -7,9 +7,21 @@
   X-Robots-Tag: noindex
   Cross-Origin-Resource-Policy: same-origin
 
-# Static API JSON outputs. Cache modestly; rebuilds with each deploy.
+# Static API outputs. Cache modestly; rebuilds with each deploy.
+# Next static export emits extensionless files, which Pages would
+# otherwise serve as application/octet-stream.
 /api/lists/*
   Cache-Control: public, max-age=3600, s-maxage=86400
+  Content-Type: application/json; charset=utf-8
+
+# Later rules override earlier ones for the same header, so the
+# plain-text and CSV variants get their real types back.
+/api/lists/*.txt
+  Content-Type: text/plain; charset=utf-8
+
+/api/lists/*.csv
+  Content-Type: text/csv; charset=utf-8
 
 /api/manifest
   Cache-Control: public, max-age=3600, s-maxage=86400
+  Content-Type: application/json; charset=utf-8

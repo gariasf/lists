@@ -19,7 +19,11 @@ export default async function OgImage({
   const list = await getList(slug)
   const name = list?.name ?? 'List not found'
   const count = list?.items.length ?? 0
-  const sample = list?.items.slice(0, 4) ?? []
+  // Satori can't shape RTL/Indic/Thai scripts (build hard-fails on them),
+  // so sample rows stick to scripts it can render; CJK downloads fine.
+  const UNRENDERABLE = /[\u0590-\u08FF\u0900-\u0DFF\u0E00-\u0E7F]/
+  const sample =
+    list?.items.filter((s) => !UNRENDERABLE.test(s)).slice(0, 4) ?? []
 
   return new ImageResponse(
     (
@@ -100,7 +104,7 @@ export default async function OgImage({
 
         <div
           style={{
-            display: 'flex',
+            display: sample.length > 0 ? 'flex' : 'none',
             flexDirection: 'column',
             gap: 6,
             padding: '18px 22px',

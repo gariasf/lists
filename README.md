@@ -8,7 +8,7 @@ Copy-paste data for your designs. Names, places, companies, prices, and more.
 
 When you're designing a UI, you need realistic content. Not "Lorem ipsum" or "John Doe" repeated fifty times. This site gives you actual data you can copy with one click.
 
-365 lists across 19 categories:
+420+ lists across 19 categories:
 - Names (20+ locales, romanized + native scripts for JA / KO / ZH)
 - Addresses, cities, postal codes, IBANs
 - Companies, job titles, products, brands
@@ -20,6 +20,18 @@ When you're designing a UI, you need realistic content. Not "Lorem ipsum" or "Jo
 Plus 5 AI generators (user profiles, pricing pages, receipts, testimonials,
 addresses) and a Claude Code skill bundle so the data is one curl away
 from any project.
+
+## API
+
+Every list is served as static JSON with CORS enabled:
+
+```
+GET /api/manifest              # catalog of every list
+GET /api/lists/<slug>          # one list as JSON
+GET /api/lists/<slug>.txt      # one item per line
+GET /api/lists/<slug>.csv      # CSV (real columns for structured lists)
+GET /api/sample/<slug>?n=5     # n random items; &seed=42 = deterministic
+```
 
 ## Running locally
 

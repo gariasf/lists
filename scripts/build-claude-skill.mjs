@@ -51,7 +51,12 @@ async function main() {
     JSON.stringify(localManifest, null, 0),
   )
 
-  const slugs = await fs.readdir(API_LISTS)
+  const csvCell = (v) => {
+    const s = v == null ? '' : String(v)
+    return /[",\n]/.test(s) ? `"${s.replaceAll('"', '""')}"` : s
+  }
+
+  const slugs = (await fs.readdir(API_LISTS)).filter((s) => !s.includes('.'))
   let bytes = 0
   for (const slug of slugs) {
     const src = path.join(API_LISTS, slug)
@@ -60,6 +65,19 @@ async function main() {
     const dest = path.join(DATA_DIR, `${slug}.json`)
     await copyJsonFile(src, dest)
     bytes += stat.size
+
+    // Plain-text and CSV variants beside the JSON:
+    // curl .../api/lists/<slug>.txt | shuf -n 5
+    const list = JSON.parse(await fs.readFile(src, 'utf8'))
+    await fs.writeFile(path.join(API_LISTS, `${slug}.txt`), list.items.join('\n') + '\n')
+    let csv
+    if (Array.isArray(list.structured) && list.structured.length > 0) {
+      const cols = Object.keys(list.structured[0])
+      csv = [cols.join(','), ...list.structured.map((r) => cols.map((c) => csvCell(r[c])).join(','))]
+    } else {
+      csv = ['value', ...list.items.map(csvCell)]
+    }
+    await fs.writeFile(path.join(API_LISTS, `${slug}.csv`), csv.join('\n') + '\n')
   }
 
   await fs.rm(TARBALL, { force: true })
