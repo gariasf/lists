@@ -1,0 +1,30 @@
+On time
+Scheduled
+Delayed
+Delayed 15 min
+Delayed 45 min
+Delayed 2 hr
+Estimated departure 18:05
+Check-in open
+Check-in closed
+Boarding soon
+Boarding
+Now boarding
+Final call
+Gate closed
+Departed
+In air
+En route
+Landed
+Arrived
+Arrived early
+Taxiing to gate
+At gate
+Awaiting aircraft
+Return to gate
+Cancelled
+Diverted
+Diverted to ORD
+Gate change
+Gate changed to B14
+Rescheduled

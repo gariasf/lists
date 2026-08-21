@@ -1,0 +1,170 @@
+[
+ {
+  "value": "Delete project? — This will permanently delete Aurora and all of its data.",
+  "title": "Delete project?",
+  "body": "This will permanently delete Aurora and all of its data. This can't be undone.",
+  "confirm": "Delete project",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Delete 3 files? — These files will be permanently removed from your workspace.",
+  "title": "Delete 3 files?",
+  "body": "These files will be permanently removed from your workspace. You won't be able to recover them.",
+  "confirm": "Delete files",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Discard changes? — You have unsaved edits to this page.",
+  "title": "Discard changes?",
+  "body": "You have unsaved edits to this page. If you leave now, they'll be lost.",
+  "confirm": "Discard",
+  "cancel": "Keep editing"
+ },
+ {
+  "value": "Discard draft? — Your draft reply will be deleted.",
+  "title": "Discard draft?",
+  "body": "Your draft reply will be deleted. This can't be undone.",
+  "confirm": "Discard draft",
+  "cancel": "Keep draft"
+ },
+ {
+  "value": "Sign out? — You'll need to enter your password the next time you sign in.",
+  "title": "Sign out?",
+  "body": "You'll need to enter your password the next time you sign in.",
+  "confirm": "Sign out",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Sign out of all devices? — This will end your active sessions on 4 devices.",
+  "title": "Sign out of all devices?",
+  "body": "This will end your active sessions on 4 devices. You'll stay signed in on this one.",
+  "confirm": "Sign out everywhere",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Cancel subscription? — You'll keep Pro features until March 14, then your workspace moves to the free plan.",
+  "title": "Cancel subscription?",
+  "body": "You'll keep Pro features until March 14, then your workspace moves to the free plan. You can resubscribe at any time.",
+  "confirm": "Cancel subscription",
+  "cancel": "Keep subscription"
+ },
+ {
+  "value": "End your trial early? — Your trial ends immediately and you'll lose access to premium features.",
+  "title": "End your trial early?",
+  "body": "Your trial ends immediately and you'll lose access to premium features. You won't be charged.",
+  "confirm": "End trial",
+  "cancel": "Keep trial"
+ },
+ {
+  "value": "Remove Maya from the team? — Maya Chen will lose access to all projects in this workspace.",
+  "title": "Remove Maya from the team?",
+  "body": "Maya Chen will lose access to all projects in this workspace. Any files she owns will be transferred to you.",
+  "confirm": "Remove member",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Remove 2 members? — They'll be removed from Design Systems immediately and will need a new invite to rejoin.",
+  "title": "Remove 2 members?",
+  "body": "They'll be removed from Design Systems immediately and will need a new invite to rejoin.",
+  "confirm": "Remove members",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Archive this project? — Atlas will be hidden from your dashboard and become read-only.",
+  "title": "Archive this project?",
+  "body": "Atlas will be hidden from your dashboard and become read-only. You can restore it anytime from Archived projects.",
+  "confirm": "Archive",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Archive conversation? — This thread will move to your archive.",
+  "title": "Archive conversation?",
+  "body": "This thread will move to your archive. New replies will bring it back to your inbox.",
+  "confirm": "Archive",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Transfer ownership? — Priya Patel will become the owner of this workspace and you'll become an admin.",
+  "title": "Transfer ownership?",
+  "body": "Priya Patel will become the owner of this workspace and you'll become an admin. Only the new owner can undo this.",
+  "confirm": "Transfer ownership",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Make Sam the project owner? — You'll no longer be able to delete this project or manage its billing.",
+  "title": "Make Sam the project owner?",
+  "body": "You'll no longer be able to delete this project or manage its billing. This change takes effect immediately.",
+  "confirm": "Transfer",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Revoke API key? — Any integrations using this key will stop working immediately.",
+  "title": "Revoke API key?",
+  "body": "Any integrations using this key will stop working immediately. This can't be undone.",
+  "confirm": "Revoke key",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Revoke access for this app? — Zapier will no longer be able to read or update your data.",
+  "title": "Revoke access for this app?",
+  "body": "Zapier will no longer be able to read or update your data. You can reconnect it later.",
+  "confirm": "Revoke access",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Unsubscribe from all emails? — You'll stop receiving product updates, tips, and newsletters.",
+  "title": "Unsubscribe from all emails?",
+  "body": "You'll stop receiving product updates, tips, and newsletters. Account and billing emails will still be sent.",
+  "confirm": "Unsubscribe",
+  "cancel": "Stay subscribed"
+ },
+ {
+  "value": "Unsubscribe from this list? — You'll no longer receive the weekly digest.",
+  "title": "Unsubscribe from this list?",
+  "body": "You'll no longer receive the weekly digest. You can resubscribe anytime in your notification settings.",
+  "confirm": "Unsubscribe",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Leave this workspace? — You'll lose access to all projects in Northwind and will need an invite to rejoin.",
+  "title": "Leave this workspace?",
+  "body": "You'll lose access to all projects in Northwind and will need an invite to rejoin.",
+  "confirm": "Leave workspace",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Leave the channel? — You'll stop receiving messages from #launch-planning.",
+  "title": "Leave the channel?",
+  "body": "You'll stop receiving messages from #launch-planning. You can rejoin anytime.",
+  "confirm": "Leave channel",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Restart to update? — Restarting will install version 2.14.0.",
+  "title": "Restart to update?",
+  "body": "Restarting will install version 2.14.0. Unsaved changes in open documents may be lost.",
+  "confirm": "Restart now",
+  "cancel": "Later"
+ },
+ {
+  "value": "Restart this server? — api-prod-1 will be unavailable for about 2 minutes while it restarts.",
+  "title": "Restart this server?",
+  "body": "api-prod-1 will be unavailable for about 2 minutes while it restarts. Active connections will be dropped.",
+  "confirm": "Restart server",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Replace existing file? — A file named logo.svg already exists in this folder.",
+  "title": "Replace existing file?",
+  "body": "A file named logo.svg already exists in this folder. Replacing it will erase the current version.",
+  "confirm": "Replace file",
+  "cancel": "Cancel"
+ },
+ {
+  "value": "Overwrite saved settings? — Importing this configuration will replace your current preferences.",
+  "title": "Overwrite saved settings?",
+  "body": "Importing this configuration will replace your current preferences. Your existing settings won't be recoverable.",
+  "confirm": "Overwrite",
+  "cancel": "Cancel"
+ }
+]

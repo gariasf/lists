@@ -1,0 +1,40 @@
+99.98%
+99.95% (30 days)
+100% (24h)
+Operational
+Degraded performance
+Partial outage
+99.9% SLA
+SLO 99.95%
+99.99%
+99.999%
+100% (7 days)
+99.97% (90 days)
+99.92% (last 30 days)
+99.86% (365 days)
+100% uptime this month
+Major outage
+Under maintenance
+All systems operational
+Investigating
+Monitoring
+Identified
+Resolved
+99.5% SLA
+99.99% SLA
+SLO 99.9%
+99.94% — SLO met
+99.89% — below SLO
+Error budget: 42% remaining
+Error budget exhausted
+100% (past week)
+99.96% (quarter)
+99.982% (12 months)
+Uptime 99.93%
+No incidents in 45 days
+Last incident: 12 days ago
+Scheduled maintenance 02:00–04:00 UTC
+99.95% target
+99.9% (excl. maintenance)
+Downtime: 21m this month
+Downtime: 4h 22m (past year)

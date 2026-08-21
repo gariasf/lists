@@ -1,0 +1,60 @@
+Email is required
+Enter a valid email address
+That email is already registered
+Password is required
+Password must be at least 8 characters
+Password must include at least one number
+Password must include at least one uppercase letter
+Password can't contain your name or email
+Passwords don't match
+That username is taken
+Username must be between 3 and 20 characters
+Username can only contain letters, numbers, and underscores
+This field is required
+First name is required
+Last name can't contain numbers
+Enter a valid phone number
+Phone number must be 10 digits
+Card number is invalid
+Card number must be 16 digits
+Enter a valid expiration date
+Card has expired
+Security code must be 3 or 4 digits
+Name on card is required
+Enter a valid ZIP code
+Choose a country
+Enter a valid URL
+URL must start with https://
+Enter a valid date
+End date must be after start date
+Date can't be in the past
+You must be at least 18 to sign up
+You must accept the terms to continue
+Select at least one option
+File must be under 10 MB
+Only PNG, JPG, and PDF files are allowed
+Upload at least one file
+Image must be at least 400 × 400 pixels
+Amount must be greater than 0
+Amount can't exceed $10,000.00
+Enter a whole number
+Value must be between 1 and 100
+Title is required
+Title must be 100 characters or less
+Bio can't exceed 160 characters
+Message must be at least 20 characters
+That slug is already in use
+Slug can only contain lowercase letters, numbers, and hyphens
+Workspace name is already taken
+Coupon code isn't valid
+This coupon has expired
+You can't invite your own email address
+You've reached the maximum of 5 tags
+Routing number must be 9 digits
+Enter a valid IBAN
+Verification code must be 6 digits
+That code has expired — request a new one
+Looks good!
+Username is available
+Strong password
+Email confirmed

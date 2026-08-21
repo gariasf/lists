@@ -1,0 +1,182 @@
+[
+ {
+  "value": "MRR $84.2K · +12.4%",
+  "label": "MRR",
+  "amount": "$84.2K",
+  "delta": "+12.4%"
+ },
+ {
+  "value": "ARR $1.01M · +11.8%",
+  "label": "ARR",
+  "amount": "$1.01M",
+  "delta": "+11.8%"
+ },
+ {
+  "value": "NRR 118% · +2.4pp",
+  "label": "NRR",
+  "amount": "118%",
+  "delta": "+2.4pp"
+ },
+ {
+  "value": "DAU 18.6K · +5.2%",
+  "label": "DAU",
+  "amount": "18.6K",
+  "delta": "+5.2%"
+ },
+ {
+  "value": "WAU 52.3K · +3.8%",
+  "label": "WAU",
+  "amount": "52.3K",
+  "delta": "+3.8%"
+ },
+ {
+  "value": "MAU 104K · +2.9%",
+  "label": "MAU",
+  "amount": "104K",
+  "delta": "+2.9%"
+ },
+ {
+  "value": "Churn 2.1% · −0.3pp",
+  "label": "Churn",
+  "amount": "2.1%",
+  "delta": "−0.3pp"
+ },
+ {
+  "value": "Activation rate 38% · +1.6pp",
+  "label": "Activation rate",
+  "amount": "38%",
+  "delta": "+1.6pp"
+ },
+ {
+  "value": "Conversion 3.4% · +0.2pp",
+  "label": "Conversion",
+  "amount": "3.4%",
+  "delta": "+0.2pp"
+ },
+ {
+  "value": "LTV $4,820 · +6.1%",
+  "label": "LTV",
+  "amount": "$4,820",
+  "delta": "+6.1%"
+ },
+ {
+  "value": "CAC $1,240 · −4.8%",
+  "label": "CAC",
+  "amount": "$1,240",
+  "delta": "−4.8%"
+ },
+ {
+  "value": "NPS 47 · +5",
+  "label": "NPS",
+  "amount": "47",
+  "delta": "+5"
+ },
+ {
+  "value": "p95 latency 340ms · −28ms",
+  "label": "p95 latency",
+  "amount": "340ms",
+  "delta": "−28ms"
+ },
+ {
+  "value": "Uptime 99.98% · +0.01pp",
+  "label": "Uptime",
+  "amount": "99.98%",
+  "delta": "+0.01pp"
+ },
+ {
+  "value": "ARPU $86 · +2.4%",
+  "label": "ARPU",
+  "amount": "$86",
+  "delta": "+2.4%"
+ },
+ {
+  "value": "Trial-to-paid 22% · +1.8pp",
+  "label": "Trial-to-paid",
+  "amount": "22%",
+  "delta": "+1.8pp"
+ },
+ {
+  "value": "Expansion revenue $9.6K · +14.2%",
+  "label": "Expansion revenue",
+  "amount": "$9.6K",
+  "delta": "+14.2%"
+ },
+ {
+  "value": "Burn multiple 1.4× · −0.2",
+  "label": "Burn multiple",
+  "amount": "1.4×",
+  "delta": "−0.2"
+ },
+ {
+  "value": "Payback period 14 mo · −1 mo",
+  "label": "Payback period",
+  "amount": "14 mo",
+  "delta": "−1 mo"
+ },
+ {
+  "value": "Sessions 412K · +8.7%",
+  "label": "Sessions",
+  "amount": "412K",
+  "delta": "+8.7%"
+ },
+ {
+  "value": "Bounce rate 42% · −1.9pp",
+  "label": "Bounce rate",
+  "amount": "42%",
+  "delta": "−1.9pp"
+ },
+ {
+  "value": "Error rate 0.12% · −0.03pp",
+  "label": "Error rate",
+  "amount": "0.12%",
+  "delta": "−0.03pp"
+ },
+ {
+  "value": "Tickets resolved 1,284 · +9.2%",
+  "label": "Tickets resolved",
+  "amount": "1,284",
+  "delta": "+9.2%"
+ },
+ {
+  "value": "CSAT 94% · +1.1pp",
+  "label": "CSAT",
+  "amount": "94%",
+  "delta": "+1.1pp"
+ },
+ {
+  "value": "Pipeline $2.4M · +18.6%",
+  "label": "Pipeline",
+  "amount": "$2.4M",
+  "delta": "+18.6%"
+ },
+ {
+  "value": "Win rate 31% · +2.2pp",
+  "label": "Win rate",
+  "amount": "31%",
+  "delta": "+2.2pp"
+ },
+ {
+  "value": "Seats 4,120 · +260",
+  "label": "Seats",
+  "amount": "4,120",
+  "delta": "+260"
+ },
+ {
+  "value": "API calls 38.4M · +6.9%",
+  "label": "API calls",
+  "amount": "38.4M",
+  "delta": "+6.9%"
+ },
+ {
+  "value": "Storage used 2.8 TB · +140 GB",
+  "label": "Storage used",
+  "amount": "2.8 TB",
+  "delta": "+140 GB"
+ },
+ {
+  "value": "Deploy frequency 24/wk · +3",
+  "label": "Deploy frequency",
+  "amount": "24/wk",
+  "delta": "+3"
+ }
+]

@@ -1,0 +1,60 @@
+42ms
+380ms
+1.2s
+p95 340ms
+p99 1.8s
+2m 14s
+avg 128ms
+cold start 900ms
+TTFB 210ms
+3.4s (slow 3G)
+8ms
+16ms
+23ms
+67ms
+94ms
+150ms
+230ms
+485ms
+612ms
+890ms
+1.6s
+2.3s
+4.6s
+8.9s
+350µs
+0.8ms
+p50 62ms
+p50 118ms
+p75 180ms
+p90 425ms
+p95 1.1s
+p99 3.2s
+p99.9 6.4s
+avg 340ms
+avg 2.1s
+median 95ms
+max 4.2s
+min 12ms
+45s
+1m 02s
+4m 30s
+12m 45s
+1h 12m
+2h 05m
+DNS 28ms
+TLS handshake 64ms
+DB query 8.2ms
+cache hit 0.4ms
+cache miss 46ms
+queue time 1.4s
+render 16ms
+round trip 88ms
+LCP 2.4s
+FCP 1.1s
+TTI 3.8s
+INP 180ms
+2.8s (4G)
+1.3s (cable)
+timeout after 30s
+retry in 5s

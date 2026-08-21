@@ -1,0 +1,25 @@
+Paid
+Pending
+Processing
+Authorized
+Captured
+Partially captured
+Failed
+Declined
+Refunded
+Partially refunded
+Refund pending
+Disputed
+Chargeback
+Chargeback reversed
+Voided
+Expired
+Requires action
+Requires confirmation
+Awaiting bank transfer
+Overdue
+Uncollectible
+Cancelled
+Settled
+Scheduled
+On hold

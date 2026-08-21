@@ -1,0 +1,70 @@
+Maya Chen approved your request · 2h ago
+deploy-bot pushed 3 commits to main · just now
+Priya mentioned you in #design-crit · 5m ago
+Jonas moved 'Q3 roadmap' to Done · yesterday
+Alex Rivera commented on your pull request · 12m ago
+ci-runner marked build #4821 as failed · 3m ago
+Sofia Lindqvist uploaded brand-guidelines-v2.pdf · 1h ago
+Marcus assigned you to 'Fix login redirect' · 20m ago
+renovate-bot opened a pull request in web-app · 6h ago
+Elena Petrova invited you to the Growth workspace · 4h ago
+Tom resolved a comment on 'Onboarding flow v3' · 30m ago
+Aisha merged 'feature/dark-mode' into main · 2d ago
+backup-bot completed the nightly snapshot · 8h ago
+Dan starred your project 'Design tokens' · 1d ago
+Yuki Tanaka requested a review on PR #312 · 45m ago
+Grace replied to your comment on 'Pricing page' · 15m ago
+slack-sync added 12 new members to #announcements · 5h ago
+Omar changed the due date on 'Beta launch' to Friday · 3h ago
+Lucia archived the 'Old campaigns' board · yesterday
+security-bot flagged a new sign-in from Berlin, Germany · 9m ago
+Nate duplicated 'Homepage hero' in Marketing Site · 1h ago
+Ingrid left a comment on invoice #2041 · 2h ago
+analytics-bot generated your weekly report · 7h ago
+Hana approved the expense report for $482.19 · 3d ago
+Felix reopened issue #987 'Safari flicker on scroll' · 25m ago
+auto-scaler added 2 instances to prod-cluster · 40m ago
+Priya Nair shared 'Q4 OKRs' with your team · 6h ago
+Leo mentioned you in a comment on 'Checkout redesign' · 10m ago
+Sam updated the status of 'API migration' to In Progress · 55m ago
+github-actions deployed release v2.14.0 to production · 1h ago
+Chloe uploaded 6 photos to 'Offsite 2026' · 2d ago
+Viktor removed you from the 'Legacy infra' project · 4d ago
+billing-bot sent invoice INV-0193 to Acme Corp · 3h ago
+Amara created a new branch 'fix/rate-limit' · 18m ago
+Diego closed 4 issues in the mobile-app repo · yesterday
+Rosa scheduled 'Design review' for tomorrow at 10:00 · 2h ago
+crash-reporter logged 14 new events in checkout-service · 6m ago
+Wei Zhang suggested changes on PR #298 · 1h ago
+Tara joined your workspace · just now
+Noah moved 'User interviews' from Backlog to In Progress · 4h ago
+status-bot resolved the incident 'Elevated API latency' · 2h ago
+Isabelle renamed 'Untitled' to 'Sprint 42 retro notes' · 35m ago
+Kofi requested access to 'Finance dashboards' · 1h ago
+calendar-bot rescheduled your 1:1 with Maya to Thursday · 5h ago
+Julia liked your comment on 'Navigation revamp' · 22m ago
+Andrei unassigned himself from 'Refactor auth middleware' · 3h ago
+lint-bot fixed 27 formatting issues in styles/ · 50m ago
+Beth published 'Release notes — August' to the changelog · yesterday
+Hugo restored 'Pricing experiments' from trash · 1d ago
+import-bot finished syncing 1,204 contacts from HubSpot · 12m ago
+Sana requested changes on 'Email templates v2' · 2h ago
+Pete forked 'Component library' into his workspace · 3d ago
+Mia set the priority of 'iOS crash on launch' to Urgent · 8m ago
+uptime-bot detected downtime on api.acme.dev · 4m ago
+Ravi added a checklist to 'Launch day runbook' · 1h ago
+Freya exported the 'Q2 revenue' report as CSV · 6h ago
+dependabot bumped lodash from 4.17.20 to 4.17.21 · 2d ago
+Carmen tagged you in a note on the Northwind account · 2h ago
+Oli submitted a timesheet for the week of Aug 11 · yesterday
+Zara approved 2 pending members for #eng-frontend · 30m ago
+review-bot assigned Maya Chen as a reviewer on PR #305 · 16m ago
+Ken updated the description of 'Payment retries' · 1h ago
+Nia recorded a 4-minute walkthrough of the new dashboard · 5h ago
+sync-bot pulled 38 new rows into the Leads table · 9m ago
+Theo left 3 comments on 'Mobile nav exploration' · 1h ago
+Priya resolved the thread on 'Empty states copy' · 42m ago
+Anders shared a read-only link to 'Brand assets' · 7h ago
+qa-bot passed all 214 checks on release/2.15 · 28m ago
+Layla changed your role to Admin · 3d ago
+Miguel closed the sprint 'August week 3' · just now

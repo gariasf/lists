@@ -1,0 +1,30 @@
+Label created
+Shipment information received
+Picked up
+Accepted at origin facility
+Departed origin facility
+In transit
+Arrived at sorting facility
+Departed sorting facility
+Processed at regional hub
+Arrived at destination facility
+Customs clearance
+Customs clearance completed
+Held by customs
+Import fees due
+Out for delivery
+Delivery attempted
+Delivered
+Delivered — signed by resident
+Delivered — left at front door
+Delivered to mailroom
+Held at pickup point
+Ready for pickup
+Picked up by recipient
+Delivery rescheduled
+Address correction needed
+Delayed due to weather
+Exception
+Return to sender
+Forwarded to new address
+Tendered to local carrier

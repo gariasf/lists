@@ -1,0 +1,30 @@
+Order confirmed
+Order received
+Payment verified
+Processing
+Preparing for shipment
+Awaiting stock
+Backordered
+Partially shipped
+Shipped
+Out for delivery
+Delivered
+Delivery attempted
+Awaiting pickup
+Picked up
+On hold
+Pending review
+Awaiting payment
+Payment failed
+Cancelled by customer
+Cancelled by seller
+Return requested
+Return approved
+Return in transit
+Return received
+Refund issued
+Partially refunded
+Exchange requested
+Exchange shipped
+Completed
+Archived

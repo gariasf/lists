@@ -1,0 +1,60 @@
+Can we bump the contrast here?
++1, but ship it
+This breaks on mobile — see frame 12
+Resolved — updated the token
+@sam is this final copy?
+nit: extra space before the period
+Love this direction 🔥
+Blocking: legal hasn't signed off
+Should this use the primary button style instead?
+Holding off until we hear back from the data team
+The spacing feels tight — can we go to 16px?
+Approved from my side ✅
+@maya can you take a pass at the empty state?
+This contradicts what we agreed in the kickoff doc
+Same comment as above applies here too
+Can we see a version without the illustration?
+Typo: "recieve" → "receive"
+Is this AA? The gray on white looks like 3:1
+What happens when the title wraps to two lines?
+FYI this component is deprecated — use Card/v2
+Big fan of the new nav, small fan of the drop shadow
+Left some inline edits, feel free to reject
+Where does this link go?
+Can we align this to the 8pt grid?
+This copy reads a bit corporate — can we loosen it?
+Punting this to v2, tracked in LIN-482
+Non-blocking, but the icon feels off-brand
+Truncation looks wrong with long German strings
+Works for me — ok to resolve?
+Can we test this with real data? Lorem hides the problem
+The CTA is below the fold on a 13-inch screen
+Updated per feedback — take another look?
+@jordan wdyt about the hover state?
+We already have a pattern for this, see the settings page
+Missing the loading state
+Should the date format be localized here?
+This will collide with the banner experiment
+s/utilize/use
+Marking as resolved, reopen if I misread
+Can we get a link to the mobile version?
+The numbers in the mock don't add up to 100%
+Screenshot is from the old build — ignore my last comment
+Who owns final sign-off on this?
+The animation feels slow — try 200ms?
++1 to Priya's point above
+Careful, this string is user-generated and can be huge
+Can we not ship another modal? 🙃
+Needs alt text before this goes out
+Placeholder avatar is still the default — intentional?
+Discussed offline — we're going with option B
+This is the third divider style on one screen
+lgtm 🚢
+Might be out of scope, but the footer needs the same fix
+What's the tap target size here? Looks under 44px
+Do we have dark mode for this yet?
+Splitting hairs, but the corners are 6px everywhere else
+Copy check: it's "sign in" not "log in" per the style guide
+This solves it, thank you 🙏
+Can we keep the old flow behind a flag for a week?
+Adding @lena for the a11y review

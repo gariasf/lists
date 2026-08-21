@@ -1,0 +1,100 @@
+sounds good, pushing at 3
+can you hop on a quick call?
+lol ok sending it now
+did you see the figma comment?
+brb coffee
+shipped 🚀
+wait which branch?
+on it
+^^ this
+let me check with legal first
+omw now
+merged, you're unblocked
+can this wait til after standup?
+yes but only if we cut the animation
+she said yes btw
+staging is down again
+it's cache, hard refresh
+ok that fixed it, thanks
+who owns the billing page now?
+i think that's still marco
+lunch? the taco place?
+can't, got a 1:1 at noon
+rain check then
+is the demo still at 2?
+moved to 2:30, check the invite
+approved, ship it ✅
+one small nit, left it inline
+fair, fixing
+do we have a ticket for this or should i make one
+make one, tag it p2
+sorry, double booked, can we do tomorrow?
+tomorrow works
+the new onboarding flow looks so good
+right?? sarah killed it
+anyone else seeing 502s on staging?
+yep, deploy in progress, give it 5
+hold off on merging, found a race condition
+good catch
+what's the wifi password in the small room again
+it's on the whiteboard lol
+gonna log off early, headache
+feel better!
+did the invoice go out?
+sent this morning, cc'd you
+can you re-run the pipeline? it flaked
+rerunning now
+pipeline's green ✅
+who's taking notes today?
+i got it
+this thread is getting long, moving it to a doc
+link pls
+one sec
+deep links don't work on android, just fyi
+known issue, fix is in review
+ok cool
+are we still doing friday demos?
+yeah, signup sheet is pinned
+can someone unmute dave
+dave you're muted
+lol classic
+i'll take the on-call swap if you cover next week
+deal 🤝
+pushing the release to monday, too many unknowns
+probably the right call
+did you get my dm?
+just saw it, replying now
+no rush
+the client loved the prototype btw
+huge win
+can you resend the deck? can't find it
+yep, resending now
+got it, thanks
+typo on the pricing page, "recieve"
+oof, fixing now 😅
+don't merge yet, ci is lying
+lol how is ci lying
+it's caching the old lockfile, restarting the runner
+ahh makes sense
+heads up, i renamed the channel
+noticed lol
+free at 4 for a quick sync?
+4 works
+cool, sending an invite
+actually can we do 4:15
+fine by me
+who broke the build 👀
+me, reverting
+respect tbh
+is figma down for anyone else?
+works for me, try incognito
+weird, ok it's back
+did we ever decide on the empty state copy?
+going with option b
+good choice
+heading into focus mode, ping me if urgent
+running 5 late, start without me
+np, we'll save the eng update for you
+new laptop day 🎉
+ooh nice, the 16 inch?
+yeah, migrating everything over now

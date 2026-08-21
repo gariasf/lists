@@ -1,0 +1,40 @@
+A5
+A12
+A31
+B7
+B22
+B44
+B87
+C2
+C18
+C34
+D6
+D25
+D41
+E9
+E17
+E33
+F4
+F28
+G3
+G14
+G52
+H8
+H21
+K11
+K36
+L7
+M19
+S2
+S14
+T1 Gate 3
+T2 Gate 27
+T4 Gate 12
+T5 Gate 8
+Gate 9
+Gate 24
+Gate 61
+Gate 108
+68B
+35X
+130
