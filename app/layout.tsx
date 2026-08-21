@@ -4,6 +4,7 @@ import { PaletteProvider } from "@/lib/palette-context";
 import CommandPalette from "@/components/CommandPalette";
 import ToasterClient from "@/components/ToasterClient";
 import { getAllLists } from "@/lib/lists";
+import { LIST_DEFINITIONS } from "@/lib/lists-data";
 
 const BASE_URL = "https://lists.gariasf.com";
 
@@ -105,8 +106,7 @@ export default async function RootLayout({
     "@type": "WebSite",
     name: "Lists",
     url: BASE_URL,
-    description:
-      "365 curated lists of realistic mock data for designers and developers.",
+    description: `${LIST_DEFINITIONS.length} curated lists of realistic mock data for designers and developers.`,
     potentialAction: {
       "@type": "SearchAction",
       target: {

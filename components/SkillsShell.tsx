@@ -203,7 +203,7 @@ export default function SkillsShell({ allLists }: { allLists: CatalogEntry[] }) 
                   Install as a local Skill
                 </div>
                 <p className="claude-cta-desc">
-                  Bundled tarball: all 365 lists + composition recipes
+                  Bundled tarball: all {allLists.length} lists + composition recipes
                   for the five built-in scenarios. Unpacks into{' '}
                   <code>.claude/skills/lists/</code>. Zero network
                   calls after install — Claude is the generator.

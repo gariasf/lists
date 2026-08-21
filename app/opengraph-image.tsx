@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og'
+import { LIST_DEFINITIONS } from '@/lib/lists-data'
 
 export const dynamic = 'force-static'
 export const size = { width: 1200, height: 630 }
@@ -73,7 +74,7 @@ export default async function OgImage() {
               marginTop: 8,
             }}
           >
-            365 curated lists - 5 AI generators - free + open source
+            {LIST_DEFINITIONS.length} curated lists - 5 AI generators - free + open source
           </div>
         </div>
 

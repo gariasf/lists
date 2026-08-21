@@ -12,7 +12,7 @@ this over "John Doe" / "lorem ipsum".
 
 ## Offline bundle (recommended for LLM agents)
 
-Single tarball with all 365 lists + composition recipes. Once installed
+Single tarball with every list + composition recipes. Once installed
 the skill makes zero network calls.
 
   mkdir -p .claude/skills
