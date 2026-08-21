@@ -20,7 +20,7 @@ interface GenerateBody {
 // this is clamped here so direct curl calls can't ask for 1,000.
 const MAX_COUNT = 20
 const DEFAULT_COUNT = 10
-const MODEL = '@cf/meta/llama-3.1-8b-instruct'
+const MODEL = '@cf/meta/llama-3.1-8b-instruct-fast'
 
 const SYSTEM_PROMPT = `You generate realistic mock data for designers.
 
