@@ -110,16 +110,51 @@ const COUNTRY_HINTS: Record<string, string> = {
   CA: 'Canada. Format: name / street / city PROVINCE postal_code / Canada. Postal codes look like K1A 0B1. Phone +1.',
 }
 
+/** Fetches a static list's items; used to seed prompts and to overwrite
+ * fields the model can't be trusted with (phones, postals, names). */
+type GetList = (slug: string) => Promise<string[]>
+
+function pick<T>(arr: T[]): T {
+  return arr[Math.floor(Math.random() * arr.length)]
+}
+
+function shuffledSlice<T>(arr: T[], n: number): T[] {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a.slice(0, n)
+}
+
+function today(): string {
+  return new Date().toISOString().slice(0, 10)
+}
+
 interface SkillSpec {
-  /** A description of expected output shape sent to the model. */
-  buildPrompt: (knobs: Record<string, unknown>) => {
+  /** A description of expected output shape sent to the model.
+   *  `seeds` is filled from `seedSlug` when configured. */
+  buildPrompt?: (
+    knobs: Record<string, unknown>,
+    seeds?: string[],
+  ) => {
     system: string
     user: string
     /** Top-level key in the model's JSON output that contains the result. */
     resultKey?: string
   }
-  /** Optional post-processing after parse. */
-  postProcess?: (parsed: unknown, knobs: Record<string, unknown>) => unknown
+  /** Static list whose items get few-shot-seeded into the prompt. */
+  seedSlug?: (knobs: Record<string, unknown>) => string | undefined
+  /** Optional post-processing after parse. May fetch curated lists to
+   *  overwrite fields the model hallucinates (phones, postal codes). */
+  postProcess?: (
+    parsed: unknown,
+    knobs: Record<string, unknown>,
+    get: GetList,
+  ) => unknown | Promise<unknown>
+  /** Zero-LLM path: composes the payload entirely from curated lists.
+   *  No AI call, no rate limit — free at any scale. */
+  compose?: (knobs: Record<string, unknown>, get: GetList) => Promise<unknown>
 }
 
 const DICEBEAR_STYLES = ['lorelei', 'avataaars', 'fun-emoji', 'thumbs', 'bottts']
@@ -130,16 +165,50 @@ function avatarUrl(seed: string, style?: string): string {
   return `https://api.dicebear.com/9.x/${s}/svg?seed=${safeSeed}`
 }
 
+/** Locale → curated romanized-names list, used to seed realistic-user. */
+const LOCALE_NAME_SLUGS: Record<string, string> = {
+  en_US: 'names-en_us',
+  en_GB: 'names-en_gb',
+  ja_JP: 'names-ja_jp',
+  ko_KR: 'names-ko_kr',
+  zh_CN: 'names-zh_cn',
+  es_ES: 'names-es_es',
+  fr_FR: 'names-fr_fr',
+  de_DE: 'names-de_de',
+  it_IT: 'names-it_it',
+  pt_BR: 'names-pt_br',
+  hi_IN: 'names-hi_in',
+}
+
+/** Country → curated phone / postal lists, used to overwrite what the
+ * model invents in address-block. */
+const COUNTRY_PHONE_SLUGS: Record<string, string> = {
+  US: 'phone-us_us', GB: 'phone-gb_gb', DE: 'phone-de_de', FR: 'phone-fr_fr',
+  IT: 'phone-it_it', ES: 'phone-es_es', JP: 'phone-jp_jp', KR: 'phone-kr_kr',
+  IN: 'phone-in_in', BR: 'phone-br_br', MX: 'phone-mx_mx', AU: 'phone-au_au',
+}
+const COUNTRY_POSTAL_SLUGS: Record<string, string> = {
+  US: 'postal-zip-us', GB: 'postal-uk', DE: 'postal-de', FR: 'postal-fr',
+  IT: 'postal-it', ES: 'postal-es', NL: 'postal-nl', JP: 'postal-jp',
+  IN: 'postal-in', BR: 'postal-br', MX: 'postal-mx', AU: 'postal-au',
+  CA: 'postal-ca',
+}
+
 const SKILLS: Record<string, SkillSpec> = {
   'realistic-user': {
-    buildPrompt: (knobs) => {
+    seedSlug: (knobs) => LOCALE_NAME_SLUGS[asString(knobs.locale, 'en_US')],
+    buildPrompt: (knobs, seeds) => {
       const count = clampInt(knobs.count, 1, 20, 5)
       const locale = asString(knobs.locale, 'en_US')
       const hint = LOCALE_HINTS[locale] ?? LOCALE_HINTS.en_US
+      const seedLine =
+        seeds && seeds.length > 0
+          ? `\nUse names in exactly this style (romanized, culturally accurate): ${seeds.join(', ')}.`
+          : ''
       return {
         system:
-          'You generate locale-coherent user profiles for designer mockups. Output strict JSON only: { "users": [{ "name": string, "role": string, "email": string, "company": string, "city": string, "country": string, "bio": string }] }. No prose, no markdown fences. Names must match the locale culture. Emails should use plausible domains for the locale. Bios are 6-12 words.',
-        user: `Generate exactly ${count} user profiles. Locale: ${locale}. Locale guidance: ${hint}\n\nRespond with JSON only.`,
+          'You generate locale-coherent user profiles for designer mockups. Output strict JSON only: { "users": [{ "name": string, "role": string, "email": string, "company": string, "city": string, "country": string, "bio": string }] }. No prose, no markdown fences. All JSON string values in Latin script (romanized). Names must match the locale culture. Emails should use plausible domains for the locale. Bios are 6-12 words.',
+        user: `Generate exactly ${count} user profiles. Locale: ${locale}. Locale guidance: ${hint}${seedLine}\n\nRespond with JSON only.`,
         resultKey: 'users',
       }
     },
@@ -172,7 +241,7 @@ const SKILLS: Record<string, SkillSpec> = {
       return {
         system:
           'You generate e-commerce receipts for designer mockups. Output strict JSON only: { "receipt": { "order_number": string (looks like #A1029384 or ORD-2025-00042), "date": string (ISO yyyy-mm-dd), "customer_name": string, "items": [{ "name": string, "qty": number, "unit_price": string ("$12.99"), "subtotal": string }], "subtotal": string, "shipping": string, "tax": string, "total": string, "tracking_number": string (real-shape: UPS 1Z* / FedEx 12-digit / USPS 9400... / DHL 10-digit), "carrier": string ("UPS"|"FedEx"|"USPS"|"DHL"), "eta": string (e.g. "Tue, Jun 4") } }. All monetary values use the same currency. Subtotals + tax + shipping = total (close enough).',
-        user: `Generate a receipt with exactly ${itemCount} line items. Product category: ${category}.\n\nRespond with JSON only.`,
+        user: `Generate a receipt with exactly ${itemCount} line items. Product category: ${category}. Today is ${today()}; the order date must be within the last 7 days and the ETA within the next 10 days.\n\nRespond with JSON only.`,
         resultKey: 'receipt',
       }
     },
@@ -210,14 +279,116 @@ const SKILLS: Record<string, SkillSpec> = {
         resultKey: 'addresses',
       }
     },
+    // The 8B model reliably hallucinates phone and postal shapes — overwrite
+    // both from the curated per-country lists when we have them.
+    postProcess: async (parsed, knobs, get) => {
+      if (!Array.isArray(parsed)) return parsed
+      const country = asString(knobs.country, 'US').toUpperCase()
+      const [phones, postals] = await Promise.all([
+        COUNTRY_PHONE_SLUGS[country] ? get(COUNTRY_PHONE_SLUGS[country]) : [],
+        COUNTRY_POSTAL_SLUGS[country] ? get(COUNTRY_POSTAL_SLUGS[country]) : [],
+      ])
+      return parsed.map((a: Record<string, unknown>) => ({
+        ...a,
+        ...(phones.length > 0 ? { phone: pick(phones) } : {}),
+        ...(postals.length > 0 ? { postal_code: pick(postals) } : {}),
+      }))
+    },
+  },
+
+  'flight-itinerary': {
+    compose: async (knobs, get) => {
+      const count = clampInt(knobs.count, 1, 10, 3)
+      const [routes, airlines, seats, gates, statuses] = await Promise.all([
+        get('flight-routes'),
+        get('airline-codes'),
+        get('seat-numbers'),
+        get('gate-numbers'),
+        get('flight-statuses'),
+      ])
+      const PNR_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'
+      const pnr = () =>
+        Array.from({ length: 6 }, () => PNR_ALPHABET[Math.floor(Math.random() * PNR_ALPHABET.length)]).join('')
+      const itineraries = Array.from({ length: count }, () => {
+        const [origin, destination] = pick(routes).split('-')
+        const [code, airline] = pick(airlines).split(' — ')
+        const dep = new Date(Date.now() + Math.floor(Math.random() * 60) * 86400000)
+        const depH = 6 + Math.floor(Math.random() * 16)
+        const depM = pick([0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55])
+        const durationMin = 75 + Math.floor(Math.random() * 540)
+        const arr = new Date(dep.getTime())
+        arr.setUTCHours(depH, depM + durationMin, 0, 0)
+        const hh = (n: number) => String(n).padStart(2, '0')
+        return {
+          booking_reference: pnr(),
+          airline: airline ?? code,
+          flight_number: `${code}${100 + Math.floor(Math.random() * 4900)}`,
+          origin,
+          destination,
+          date: dep.toISOString().slice(0, 10),
+          departure_time: `${hh(depH)}:${hh(depM)}`,
+          arrival_time: `${hh(arr.getUTCHours())}:${hh(arr.getUTCMinutes())}`,
+          duration: `${Math.floor(durationMin / 60)}h ${hh(durationMin % 60)}m`,
+          seat: pick(seats),
+          gate: pick(gates),
+          status: pick(statuses),
+        }
+      })
+      return itineraries
+    },
+  },
+
+  'package-tracking': {
+    compose: async (knobs, get) => {
+      const count = clampInt(knobs.count, 1, 10, 3)
+      const CARRIERS: Record<string, string> = {
+        UPS: 'tracking-ups',
+        FedEx: 'tracking-fedex',
+        USPS: 'tracking-usps',
+        DHL: 'tracking-dhl',
+      }
+      const wanted = asString(knobs.carrier, 'random')
+      // ponytail: fixed canonical timeline; shipping-statuses.txt has more
+      // exotic states but a coherent history needs a known order.
+      const TIMELINE = [
+        'Label created',
+        'Picked up',
+        'In transit',
+        'Arrived at sorting facility',
+        'Out for delivery',
+        'Delivered',
+      ]
+      const packages = await Promise.all(
+        Array.from({ length: count }, async () => {
+          const carrier =
+            wanted in CARRIERS ? wanted : pick(Object.keys(CARRIERS))
+          const numbers = await get(CARRIERS[carrier])
+          const stage = 1 + Math.floor(Math.random() * TIMELINE.length)
+          const start = Date.now() - (2 + Math.floor(Math.random() * 4)) * 86400000
+          const step = (Date.now() - start) / stage
+          const events = TIMELINE.slice(0, stage).map((status, i) => ({
+            status,
+            timestamp: new Date(start + i * step).toISOString(),
+          }))
+          const delivered = events[events.length - 1].status === 'Delivered'
+          return {
+            carrier,
+            tracking_number: pick(numbers),
+            status: events[events.length - 1].status,
+            events: events.reverse(),
+            ...(delivered
+              ? {}
+              : { eta: new Date(Date.now() + (1 + Math.floor(Math.random() * 3)) * 86400000).toISOString().slice(0, 10) }),
+          }
+        }),
+      )
+      return packages
+    },
   },
 }
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {
   const { request, env } = context
-
-  const limited = await checkRateLimit(env, request, LLM_LIMIT)
-  if (limited) return limited
 
   let body: Body
   try {
@@ -231,7 +402,31 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   if (!spec) return jsonResponse({ error: `Unknown skill: ${name}` }, 404)
 
   const knobs = (body.knobs ?? {}) as Record<string, unknown>
-  const { system, user, resultKey } = spec.buildPrompt(knobs)
+  const origin = new URL(request.url).origin
+  const getList: GetList = async (slug) => {
+    try {
+      const res = await fetch(`${origin}/api/lists/${slug}`)
+      if (!res.ok) return []
+      const data = (await res.json()) as { items?: string[] }
+      return Array.isArray(data.items) ? data.items : []
+    } catch {
+      return []
+    }
+  }
+
+  // Zero-LLM skills: pure composition of curated lists. No neurons, no
+  // rate limit — a static read is free at any scale.
+  if (spec.compose) {
+    const payload = await spec.compose(knobs, getList)
+    return jsonResponse({ skill: name, knobs, payload, model: null })
+  }
+
+  const limited = await checkRateLimit(env, request, LLM_LIMIT)
+  if (limited) return limited
+
+  const seedSlug = spec.seedSlug?.(knobs)
+  const seeds = seedSlug ? shuffledSlice(await getList(seedSlug), 8) : undefined
+  const { system, user, resultKey } = spec.buildPrompt!(knobs, seeds)
 
   let aiResult: { response?: string | Record<string, unknown> | unknown[] }
   try {
@@ -273,7 +468,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     payload = (parsed as Record<string, unknown>)[resultKey]
   }
 
-  if (spec.postProcess) payload = spec.postProcess(payload, knobs)
+  if (spec.postProcess) payload = await spec.postProcess(payload, knobs, getList)
 
   return jsonResponse({
     skill: name,

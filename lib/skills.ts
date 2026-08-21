@@ -175,6 +175,45 @@ export const SKILLS: SkillDef[] = [
     ],
     example: 'recipient · street · city · region · postal code · country',
   },
+  {
+    slug: 'flight-itinerary',
+    name: 'Flight Itinerary',
+    tagline: 'Instant — no AI, no rate limit',
+    description:
+      'Compose complete flight itineraries from curated route, airline, seat, and gate lists: PNR, flight number, times, and status. No AI call — instant, unlimited, and never hallucinated.',
+    icon: 'map',
+    primaryFields: ['booking_reference', 'flight_number', 'origin', 'destination', 'status'],
+    knobs: [
+      { name: 'count', label: 'Count', type: 'number', default: 3, min: 1, max: 10 },
+    ],
+    example: 'PNR · airline · flight · route · times · seat · gate · status',
+  },
+  {
+    slug: 'package-tracking',
+    name: 'Package Tracking',
+    tagline: 'Instant — no AI, no rate limit',
+    description:
+      'Compose parcel tracking records with carrier-correct tracking numbers and a coherent event timeline ending at the current status. No AI call — instant and unlimited.',
+    icon: 'cart',
+    primaryFields: ['carrier', 'tracking_number', 'status', 'eta'],
+    knobs: [
+      { name: 'count', label: 'Count', type: 'number', default: 3, min: 1, max: 10 },
+      {
+        name: 'carrier',
+        label: 'Carrier',
+        type: 'select',
+        default: 'random',
+        options: [
+          { value: 'random', label: 'Random' },
+          { value: 'UPS', label: 'UPS' },
+          { value: 'FedEx', label: 'FedEx' },
+          { value: 'USPS', label: 'USPS' },
+          { value: 'DHL', label: 'DHL' },
+        ],
+      },
+    ],
+    example: 'carrier · tracking number · status · event timeline · ETA',
+  },
 ]
 
 export function getSkill(slug: string): SkillDef | undefined {

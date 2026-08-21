@@ -47,7 +47,9 @@ Example: curl -s https://lists.gariasf.com/api/sample/names-pt_br?n=3
 - pricing-page        tiered SaaS pricing
 - order-receipt       self-consistent receipt (totals add up)
 - customer-card       testimonial blocks
-- address-block       country-aware postal addresses
+- address-block       country-aware postal addresses (curated phones/postals)
+- flight-itinerary    composed from curated lists — no AI, no rate limit
+- package-tracking    composed from curated lists — no AI, no rate limit
 
 ## Source
 
