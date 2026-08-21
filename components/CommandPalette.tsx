@@ -506,8 +506,11 @@ export default function CommandPalette() {
     return out
   }, [groups])
 
-  // Reset selection when rows change.
+  // Reset selection when rows change. Any re-render can slide a different row
+  // under a parked cursor, so re-arm the hover suppression too — otherwise the
+  // phantom mouseenter that follows would move the selection on its own.
   useEffect(() => {
+    pointerMovedRef.current = false
     setSelected((s) => Math.min(s, Math.max(0, flatRows.length - 1)))
   }, [flatRows.length])
 
