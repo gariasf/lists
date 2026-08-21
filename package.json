@@ -11,7 +11,8 @@
     "export": "next build && node scripts/build-claude-skill.mjs && node scripts/build-sitemap.mjs",
     "build:claude-skill": "node scripts/build-claude-skill.mjs",
     "build:sitemap": "node scripts/build-sitemap.mjs",
-    "build:index": "tsx scripts/build-search-index.ts"
+    "build:index": "tsx scripts/build-search-index.ts",
+    "build:npm": "npm run build && node scripts/build-npm-package.mjs"
   },
   "dependencies": {
     "fuzzysort": "^3.1.0",

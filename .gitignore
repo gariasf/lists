@@ -53,3 +53,6 @@ next-env.d.ts
 # OS
 .DS_Store
 Thumbs.db
+
+# Generated npm package (rebuilt from out/ via npm run build:npm)
+packages/npm/

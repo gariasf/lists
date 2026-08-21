@@ -21,6 +21,14 @@ Plus 5 AI generators (user profiles, pricing pages, receipts, testimonials,
 addresses) and a Claude Code skill bundle so the data is one curl away
 from any project.
 
+## Packages
+
+- `packages/figma-plugin/` — fills selected Figma text layers from any list.
+  Import `manifest.json` via Plugins → Development → Import plugin from manifest.
+- npm package — `npm run build:npm` generates `packages/npm/` from the built
+  site, then `cd packages/npm && npm publish`. Typed slugs, zero dependencies,
+  seeded sampling for CI: `sample('names-pt_br', 3, 42)`.
+
 ## API
 
 Every list is served as static JSON with CORS enabled:

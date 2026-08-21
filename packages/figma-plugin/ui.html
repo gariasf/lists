@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #1a1a1a;
+    --muted: #7a7a7a;
+    --line: #e6e6e6;
+    --accent: #1a7a4a;
+    --accent-ink: #ffffff;
+    --row-hover: #f4f6f3;
+    --row-active: #e3f0e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #2c2c2c;
+      --ink: #e8e8e8;
+      --muted: #9a9a9a;
+      --line: #3d3d3d;
+      --accent: #4cc183;
+      --accent-ink: #10281c;
+      --row-hover: #363836;
+      --row-active: #26362c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font: 11px/1.45 Inter, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  header { padding: 10px 12px 8px; border-bottom: 1px solid var(--line); }
+  input[type="search"] {
+    width: 100%;
+    padding: 7px 9px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    background: var(--bg);
+    color: var(--ink);
+    font: inherit;
+  }
+  input[type="search"]:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  #list { flex: 1; overflow-y: auto; }
+  .row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 6px 12px;
+    cursor: default;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    color: inherit;
+    font: inherit;
+  }
+  .row:hover { background: var(--row-hover); }
+  .row[aria-selected="true"] { background: var(--row-active); }
+  .row .nm { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .row .ct { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 10px; }
+  .empty { padding: 18px 12px; color: var(--muted); }
+  footer { border-top: 1px solid var(--line); padding: 9px 12px; display: grid; gap: 7px; }
+  .status { color: var(--muted); }
+  .actions { display: flex; gap: 6px; }
+  button.go {
+    flex: 1;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button.go:disabled { opacity: 0.45; cursor: default; }
+  button.ghost {
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    background: none;
+    color: var(--ink);
+    font: inherit;
+    cursor: pointer;
+  }
+  button.ghost:disabled { opacity: 0.45; cursor: default; }
+</style>
+</head>
+<body>
+  <header>
+    <input type="search" id="q" placeholder="Search 430+ lists…" autocomplete="off" spellcheck="false">
+  </header>
+  <div id="list"><div class="empty">Loading catalog…</div></div>
+  <footer>
+    <div class="status" id="status">Select text layers in Figma</div>
+    <div class="actions">
+      <button class="go" id="fill" disabled>Fill layers</button>
+      <button class="ghost" id="shuffle" disabled title="Fill again with different items">Shuffle</button>
+    </div>
+  </footer>
+
+<script>
+const API = 'https://lists.gariasf.com'
+const $list = document.getElementById('list')
+const $q = document.getElementById('q')
+const $fill = document.getElementById('fill')
+const $shuffle = document.getElementById('shuffle')
+const $status = document.getElementById('status')
+
+let catalog = []
+let selectedSlug = null
+let selectedName = ''
+let layerCount = 0
+let busy = false
+
+function refreshButtons() {
+  const ready = Boolean(selectedSlug) && layerCount > 0 && !busy
+  $fill.disabled = !ready
+  $shuffle.disabled = !ready
+  if (busy) return
+  if (layerCount === 0) $status.textContent = 'Select text layers in Figma'
+  else if (!selectedSlug) $status.textContent = layerCount + ' layer' + (layerCount === 1 ? '' : 's') + ' selected — pick a list'
+  else $status.textContent = selectedName + ' → ' + layerCount + ' layer' + (layerCount === 1 ? '' : 's')
+}
+
+function render() {
+  const q = $q.value.trim().toLowerCase()
+  const rows = (q
+    ? catalog.filter((l) => l.slug.includes(q) || l.name.toLowerCase().includes(q))
+    : catalog
+  ).slice(0, 200)
+
+  if (rows.length === 0) {
+    $list.innerHTML = '<div class="empty">No list matches “' + q.replace(/[<&]/g, '') + '”</div>'
+    return
+  }
+
+  $list.innerHTML = ''
+  for (const l of rows) {
+    const btn = document.createElement('button')
+    btn.className = 'row'
+    btn.setAttribute('aria-selected', String(l.slug === selectedSlug))
+    const nm = document.createElement('span')
+    nm.className = 'nm'
+    nm.textContent = l.name
+    const ct = document.createElement('span')
+    ct.className = 'ct'
+    ct.textContent = l.category
+    btn.append(nm, ct)
+    btn.onclick = () => {
+      selectedSlug = l.slug
+      selectedName = l.name
+      render()
+      refreshButtons()
+    }
+    $list.append(btn)
+  }
+}
+
+async function fill() {
+  if (!selectedSlug || busy) return
+  busy = true
+  $status.textContent = 'Fetching ' + selectedName + '…'
+  refreshButtons()
+  try {
+    // Ask for exactly as many items as there are layers; unseeded, so
+    // Shuffle gets a fresh set each press.
+    const res = await fetch(API + '/api/sample/' + selectedSlug + '?n=' + Math.min(layerCount, 20))
+    if (!res.ok) throw new Error('HTTP ' + res.status)
+    const data = await res.json()
+    let items = data.items || []
+    // Fewer distinct items than layers: repeat rather than leaving blanks.
+    if (items.length === 0) throw new Error('empty list')
+    parent.postMessage({ pluginMessage: { type: 'fill', items } }, '*')
+  } catch (err) {
+    busy = false
+    $status.textContent = 'Could not reach lists.gariasf.com'
+    refreshButtons()
+  }
+}
+
+$q.oninput = render
+$fill.onclick = fill
+$shuffle.onclick = fill
+
+onmessage = (event) => {
+  const msg = event.data.pluginMessage
+  if (!msg) return
+  if (msg.type === 'selection') {
+    layerCount = msg.count
+    refreshButtons()
+  }
+  if (msg.type === 'done') {
+    busy = false
+    refreshButtons()
+  }
+}
+
+;(async () => {
+  try {
+    const res = await fetch(API + '/api/manifest')
+    if (!res.ok) throw new Error('HTTP ' + res.status)
+    const data = await res.json()
+    catalog = data.lists || []
+    $q.placeholder = 'Search ' + catalog.length + ' lists…'
+    render()
+  } catch (err) {
+    $list.innerHTML = '<div class="empty">Could not load the catalog. Check your connection and reopen the plugin.</div>'
+  }
+  parent.postMessage({ pluginMessage: { type: 'ready' } }, '*')
+})()
+</script>
+</body>
+</html>

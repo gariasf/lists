@@ -1,0 +1,13 @@
+{
+  "name": "Lists — realistic mock data",
+  "id": "lists-gariasf-mock-data",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["https://lists.gariasf.com"],
+    "reasoning": "Fetches the list catalog and list contents from lists.gariasf.com so the data stays current without shipping a copy inside the plugin."
+  }
+}
