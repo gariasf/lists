@@ -659,22 +659,26 @@ export default function DetailShell({ list, relatedLists, allLists }: DetailShel
                 {/* Replaces the old generic tip card, whose advice already
                     lived in the bottombar. This is the moment someone wants
                     this list somewhere else, and the page knows the slug. */}
-                <div className="rail-card dark">
-                  <div className="rail-eyebrow">Fetch this list</div>
-                  <pre className="rail-snippet">{snippets.curl}</pre>
-                  <button
-                    type="button"
-                    className="rail-snippet-copy"
-                    onClick={handleCopySnippet}
-                  >
-                    {copiedSnippet ? <Check /> : <Copy />}
-                    {copiedSnippet ? 'Copied' : 'Copy command'}
-                  </button>
-                  <div className="tip-body">
-                    Add <code>?seed=42</code> to <code>/api/sample</code> and you
-                    get the same items every run — safe for tests.{' '}
-                    <Link href="/api/">All endpoints →</Link>
+                <div className="rail-card dark fetch-card">
+                  <div className="fetch-head">
+                    <div className="rail-eyebrow">Fetch this list</div>
+                    <button
+                      type="button"
+                      className="fetch-copy"
+                      onClick={handleCopySnippet}
+                      aria-label="Copy command"
+                      title={copiedSnippet ? 'Copied' : 'Copy command'}
+                    >
+                      {copiedSnippet ? <Check /> : <Copy />}
+                    </button>
                   </div>
+                  {/* One line that scrolls, never a mid-word wrap: breaking a
+                      URL across lines makes it unreadable and unverifiable. */}
+                  <pre className="fetch-snippet">{snippets.curl}</pre>
+                  <p className="fetch-hint">
+                    <code>?seed=42</code> returns the same items every run.{' '}
+                    <Link href="/api/">All endpoints →</Link>
+                  </p>
                 </div>
               </div>
             </div>

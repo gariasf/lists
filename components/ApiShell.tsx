@@ -115,7 +115,7 @@ export default function ApiShell({ allLists }: { allLists: CatalogEntry[] }) {
               <pre>{e.example}</pre>
               <button
                 type="button"
-                className="rail-snippet-copy"
+                className="api-copy"
                 onClick={() => copyText(e.example, e.path)}
               >
                 {copied === e.path ? <Check /> : <Copy />}
