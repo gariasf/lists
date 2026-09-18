@@ -126,12 +126,6 @@ export default function ApiShell({ allLists }: { allLists: CatalogEntry[] }) {
         ))}
       </div>
 
-      <div className="api-note">
-        <strong>CORS is open</strong>, so <code>fetch()</code> works from a
-        prototype, a CodePen or a Storybook story without a proxy. Responses are
-        cached at the edge and rebuilt on every deploy.
-      </div>
-
       <div className="ls-content-head" style={{ marginTop: 34 }}>
         <div className="ls-h1-row">
           <h2 className="ls-h1" style={{ fontSize: 26 }}>
